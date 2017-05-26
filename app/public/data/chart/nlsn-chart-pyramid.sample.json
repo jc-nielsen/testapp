@@ -1,0 +1,133 @@
+{
+  "mainLabel": "Sample Pyramid Chart",
+  "side1Label": "Sales",
+  "side2Label": "Units (In Thousands)",
+  "axis1Labels": [
+    "$50,000",
+    "$40,000",
+    "$30,000",
+    "$20,000",
+    "$10,000",
+    "0"
+  ],
+  "axis2Labels": [
+    "50",
+    "40",
+    "30",
+    "20",
+    "10",
+    "0"
+  ],
+  "data": [
+    {
+      "rowLabel": "Category 1",
+      "metric1": 43041,
+      "metric2": 40852
+    },
+    {
+      "rowLabel": "Category 2",
+      "metric1": 38867,
+      "metric2": 36296
+    },
+    {
+      "rowLabel": "Category 3",
+      "metric1": 41748,
+      "metric2": 40757
+    },
+    {
+      "rowLabel": "Category 4",
+      "metric1": 24831,
+      "metric2": 23624
+    },
+    {
+      "rowLabel": "Category 5",
+      "metric1": 15764,
+      "metric2": 15299
+    },
+    {
+      "rowLabel": "Category 6",
+      "metric1": 17006,
+      "metric2": 16071
+    },
+    {
+      "rowLabel": "Category 7",
+      "metric1": 24309,
+      "metric2": 23235
+    },
+    {
+      "rowLabel": "Category 8",
+      "metric1": 46756,
+      "metric2": 46065
+    },
+    {
+      "rowLabel": "Category 9",
+      "metric1": 41923,
+      "metric2": 41704
+    },
+    {
+      "rowLabel": "Category 10",
+      "metric1": 42565,
+      "metric2": 42159
+    },
+    {
+      "rowLabel": "Category 11",
+      "metric1": 44316,
+      "metric2": 45468
+    },
+    {
+      "rowLabel": "Category 12",
+      "metric1": 42975,
+      "metric2": 44223
+    },
+    {
+      "rowLabel": "Category 13",
+      "metric1": 36755,
+      "metric2": 39452
+    },
+    {
+      "rowLabel": "Category 14",
+      "metric1": 31578,
+      "metric2": 34063
+    },
+    {
+      "rowLabel": "Category 15",
+      "metric1": 10328,
+      "metric2": 11799
+    },
+    {
+      "rowLabel": "Category 16",
+      "metric1": 13917,
+      "metric2": 14949
+    },
+    {
+      "rowLabel": "Category 17",
+      "metric1": 7920,
+      "metric2": 8589
+    },
+    {
+      "rowLabel": "Category 18",
+      "metric1": 9003,
+      "metric2": 10397
+    },
+    {
+      "rowLabel": "Category 19",
+      "metric1": 14322,
+      "metric2": 16832
+    },
+    {
+      "rowLabel": "Category 20",
+      "metric1": 12369,
+      "metric2": 15836
+    },
+    {
+      "rowLabel": "Category 21",
+      "metric1": 8710,
+      "metric2": 12377
+    },
+    {
+      "rowLabel": "Category 22",
+      "metric1": 5853,
+      "metric2": 12213
+    }
+  ]
+}
