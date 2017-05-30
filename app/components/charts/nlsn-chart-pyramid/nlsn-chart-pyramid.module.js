@@ -24,4 +24,15 @@ angular.module('nlsnChart.Pyramid', [])
         scope: {},
         templateUrl: 'components/charts/nlsn-chart-pyramid/nlsn-chart-pyramid.html'
       };
-    }]);
+    }])
+
+  .service('nlsnChartDataSvc', ['$resource', function ($resource) {
+    this.getChartDataPyramid = function () {
+      var pyramidChartApiUrl = '/public/data/chart/nlsn-chart-pyramid.sample.json';
+      var theResource = $resource(pyramidChartApiUrl);
+      //return theResource.query();
+      return null;
+    }
+  }])
+
+;
