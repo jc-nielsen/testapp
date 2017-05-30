@@ -4,9 +4,10 @@
 angular.module('myApp', [
   'ngResource',
   'ngRoute',
-  'nlsnHomePage',
-  'nlsnChartPage',
-  'nlsnChart.Pyramid'
+  'nlsnHomePage.module',
+  'nlsnChartPage.module',
+  'nlsnChart.Pyramid.module',
+  'nlsnDataSvc.module'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

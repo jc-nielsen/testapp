@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nlsnHomePage', ['ngRoute'])
+angular.module('nlsnHomePage.module', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/home', {

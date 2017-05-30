@@ -1,1 +1,5 @@
 <p>this is a test of the chart</p>
+<div ng-repeat="data in vm.chartData.data">
+  <span>{{data.rowLabel}}</span>
+</div>
+<pre>{{vm.chartData|json}}</pre>

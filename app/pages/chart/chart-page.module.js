@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nlsnChartPage', ['ngRoute'])
+angular.module('nlsnChartPage.module', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/chart', {
