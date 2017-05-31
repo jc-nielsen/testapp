@@ -39,6 +39,8 @@ angular.module('nlsnChart.Pyramid.module', [])
           metric1BarColor = '#41a6f4',
           metric2BarColor = '#42f4e8';
 
+        // Range is used for scale. Needed for each of the metrics.
+        // Minimum is not required when scaled to zero minimum.
         var dataRange1 = d3.max(data, function (d) {
           return d.metric1;
         });
@@ -55,6 +57,10 @@ angular.module('nlsnChart.Pyramid.module', [])
           xScale1 = d3.scale.linear().domain([0, dataRange1]).range([0, chartWidth - labelSpace]),
           xScale2 = d3.scale.linear().domain([0, dataRange2]).range([0, chartWidth - labelSpace]),
           commas = d3.format(",.0f");
+
+        // Rendering starts here.
+        // Remove any existing chart elements.
+        mySvg.selectAll("*").remove();
 
         // Set chart size
         mySvg.attr("width", w)
