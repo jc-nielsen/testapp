@@ -5,7 +5,6 @@ angular.module('nlsnChart.Pyramid.module', [])
     'nlsnDataSvc',
     function (nlsnDataSvc) {
       var mySvg;
-      var data;
       var theController = function ($scope) {
         $scope.chartData = nlsnDataSvc.getChartDataPyramid();
       };
@@ -30,19 +29,19 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         var chartData = newValue;
 
-        mySvg.attr("width", 600)
-          .attr("height", 400);
-
-        data = chartData.data;
+        var data = chartData.data;
 
         /* edit these settings freely */
         var w = 600,
           h = 400,
           topMargin = 15,
-          labelSpace = 40,
+          labelSpace = 60,
           innerMargin = w / 2 + labelSpace,
           outerMargin = 15,
           gap = 2;
+
+        mySvg.attr("width", w)
+          .attr("height", h);
 
         var dataRange = d3.max(data.map(function (d) {
           return Math.max(d.metric1, d.metric2)
