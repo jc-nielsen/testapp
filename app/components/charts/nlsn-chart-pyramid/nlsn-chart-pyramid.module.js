@@ -38,7 +38,9 @@ angular.module('nlsnChart.Pyramid.module', [])
           labelSpace = 60,
           innerMargin = w / 2 + labelSpace,
           outerMargin = 15,
-          gap = 2;
+          gap = 8,
+          metric1BarColor = '#41a6f4',
+          metric2BarColor = '#42f4e8';
 
         mySvg.attr("width", w)
           .attr("height", h);
@@ -106,9 +108,11 @@ angular.module('nlsnChart.Pyramid.module', [])
         //   .on("mouseover", highlight("highlight bar"))
         //   .on("mouseout", highlight("bar"));
 
+        // Left value bar
         bar.append("rect")
           .attr("class", "femalebar")
-          .attr("height", barWidth - gap);
+          .attr("height", barWidth - gap)
+          .attr("fill", metric1BarColor);
 
         bar.append("text")
           .attr("class", "femalebar")
@@ -116,10 +120,12 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("dy", "1em")
           .attr("text-anchor", "end");
 
+        // Right value bar
         bar.append("rect")
           .attr("class", "malebar")
           .attr("height", barWidth - gap)
-          .attr("x", innerMargin);
+          .attr("x", innerMargin)
+          .attr("fill", metric2BarColor);
 
         bar.append("text")
           .attr("class", "malebar")
