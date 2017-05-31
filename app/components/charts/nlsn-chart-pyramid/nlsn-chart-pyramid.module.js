@@ -63,7 +63,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         var chartWidth = w - innerMargin - outerMargin,
           barWidth = h / data.length,
           yScale = d3.scale.linear().domain([0, data.length]).range([0, h - topMargin]),
-          total = d3.scale.linear().domain([0, dataRange]).range([0, chartWidth - labelSpace]),
+          xScale = d3.scale.linear().domain([0, dataRange]).range([0, chartWidth - labelSpace]),
+          xScale1 = d3.scale.linear().domain([0, dataRange1]).range([0, chartWidth - labelSpace]),
+          xScale2 = d3.scale.linear().domain([0, dataRange2]).range([0, chartWidth - labelSpace]),
           commas = d3.format(",.0f");
 
         /* metric1 label */
@@ -158,15 +160,15 @@ angular.module('nlsnChart.Pyramid.module', [])
           bars.selectAll("rect.malebar")
             .transition()
             .attr("width", function (d) {
-              return total(d.metric1);
+              return xScale1(d.metric1);
             });
           bars.selectAll("rect.femalebar")
             .transition()
             .attr("x", function (d) {
-              return innerMargin - total(d.metric2) - 2 * labelSpace;
+              return innerMargin - xScale2(d.metric2) - 2 * labelSpace;
             })
             .attr("width", function (d) {
-              return total(d.metric2);
+              return xScale2(d.metric2);
             });
 
           bars.selectAll("text.malebar")
@@ -175,7 +177,7 @@ angular.module('nlsnChart.Pyramid.module', [])
             })
             .transition()
             .attr("x", function (d) {
-              return innerMargin + total(d.metric1);
+              return innerMargin + xScale1(d.metric1);
             });
           bars.selectAll("text.femalebar")
             .text(function (d) {
@@ -183,7 +185,7 @@ angular.module('nlsnChart.Pyramid.module', [])
             })
             .transition()
             .attr("x", function (d) {
-              return innerMargin - total(d.metric2) - 2 * labelSpace;
+              return innerMargin - xScale2(d.metric2) - 2 * labelSpace;
             });
         }
       }
