@@ -28,10 +28,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         }
 
         var chartData = newValue;
-
         var data = chartData.data;
-
-        /* edit these settings freely */
         var w = 600,
           h = 400,
           topMargin = 15,
@@ -41,13 +38,6 @@ angular.module('nlsnChart.Pyramid.module', [])
           gap = 8,
           metric1BarColor = '#41a6f4',
           metric2BarColor = '#42f4e8';
-
-        mySvg.attr("width", w)
-          .attr("height", h);
-
-        var dataRange = d3.max(data.map(function (d) {
-          return Math.max(d.metric1, d.metric2)
-        }));
 
         var dataRange1 = d3.max(data, function (d) {
           return d.metric1;
@@ -59,16 +49,18 @@ angular.module('nlsnChart.Pyramid.module', [])
         var leftLabel = chartData.metric1Label,
           rightLabel = chartData.metric2Label;
 
-        /* edit with care */
         var chartWidth = w - innerMargin - outerMargin,
           barWidth = h / data.length,
           yScale = d3.scale.linear().domain([0, data.length]).range([0, h - topMargin]),
-          xScale = d3.scale.linear().domain([0, dataRange]).range([0, chartWidth - labelSpace]),
           xScale1 = d3.scale.linear().domain([0, dataRange1]).range([0, chartWidth - labelSpace]),
           xScale2 = d3.scale.linear().domain([0, dataRange2]).range([0, chartWidth - labelSpace]),
           commas = d3.format(",.0f");
 
-        /* metric1 label */
+        // Set chart size
+        mySvg.attr("width", w)
+          .attr("height", h);
+
+        // metric1 label
         mySvg.append("text")
           .attr("class", "label")
           .text(leftLabel)
@@ -76,7 +68,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("y", topMargin - 3)
           .attr("text-anchor", "end");
 
-        /* metric2 label */
+        // metric2 label
         mySvg.append("text")
           .attr("class", "label")
           .text(rightLabel)
@@ -96,19 +88,6 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("width", w)
           .attr("height", barWidth - gap)
           .attr("fill", "none");
-//          .attr("pointer-events", "all");
-
-        // var highlight = function (c) {
-        //   return function (d, i) {
-        //     bar.filter(function (d, j) {
-        //       return i === j;
-        //     }).attr("class", c);
-        //   };
-        // };
-
-        // bar
-        //   .on("mouseover", highlight("highlight bar"))
-        //   .on("mouseout", highlight("bar"));
 
         // Left value bar
         bar.append("rect")
@@ -134,7 +113,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("dx", 3)
           .attr("dy", "1em");
 
-        /* sharedLabels */
+        // SharedLabels
         bar.append("text")
           .attr("class", "shared")
           .attr("x", w / 2)
@@ -143,14 +122,6 @@ angular.module('nlsnChart.Pyramid.module', [])
           .text(function (d) {
             return d.sharedLabel;
           });
-
-        // d3.select("#generate").on("click", function () {
-        //   for (var i = 0; i < data.length; i++) {
-        //     data[i].metric1 = Math.random() * dataRange;
-        //     data[i].metric2 = Math.random() * dataRange;
-        //   }
-        //   refresh(data);
-        // });
 
         refresh(data);
 
