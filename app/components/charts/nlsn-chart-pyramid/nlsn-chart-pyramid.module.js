@@ -15,7 +15,6 @@ angular.module('nlsnChart.Pyramid.module', [])
         //controllerAs: 'vm',
         restrict: 'E',
         scope: {},
-        templateUrl: 'components/charts/nlsn-chart-pyramid/nlsn-chart-pyramid.html',
         link: function (scope, element) {
           mySvg = d3.select(element[0]).append("svg");
           scope.$watch("chartData", renderChart, true);
