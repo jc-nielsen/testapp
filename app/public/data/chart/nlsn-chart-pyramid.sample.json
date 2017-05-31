@@ -21,77 +21,77 @@
   ],
   "data": [
     {
-      "rowLabel": "Private Label",
+      "sharedLabel": "Private Label",
       "metric1": 581232,
       "metric2": 40852
     },
     {
-      "rowLabel": "Andretti's",
+      "sharedLabel": "Andretti's",
       "metric1": 453867,
       "metric2": 36296
     },
     {
-      "rowLabel": "Dr Moffatt",
+      "sharedLabel": "Dr Moffatt",
       "metric1": 341748,
       "metric2": 40757
     },
     {
-      "rowLabel": "Citrello",
+      "sharedLabel": "Citrello",
       "metric1": 324831,
       "metric2": 23624
     },
     {
-      "rowLabel": "Galaxia",
+      "sharedLabel": "Galaxia",
       "metric1": 152764,
       "metric2": 15299
     },
     {
-      "rowLabel": "Astro",
+      "sharedLabel": "Astro",
       "metric1": 174006,
       "metric2": 16071
     },
     {
-      "rowLabel": "Brave",
+      "sharedLabel": "Brave",
       "metric1": 246309,
       "metric2": 23235
     },
     {
-      "rowLabel": "Black Cow",
+      "sharedLabel": "Black Cow",
       "metric1": 468756,
       "metric2": 46065
     },
     {
-      "rowLabel": "Emerge",
+      "sharedLabel": "Emerge",
       "metric1": 415923,
       "metric2": 41704
     },
     {
-      "rowLabel": "Vamteo",
+      "sharedLabel": "Vamteo",
       "metric1": 342565,
       "metric2": 42159
     },
     {
-      "rowLabel": "Mountain Spring",
+      "sharedLabel": "Mountain Spring",
       "metric1": 644316,
       "metric2": 45468
     },
     {
-      "rowLabel": "Fever Tree",
+      "sharedLabel": "Fever Tree",
       "metric1": 242975,
       "metric2": 44223
     },
     {
-      "rowLabel": "BPM",
+      "sharedLabel": "BPM",
       "metric1": 136755,
       "metric2": 39452
     },
     {
-      "rowLabel": "Sunmagic",
+      "sharedLabel": "Sunmagic",
       "metric1": 231578,
       "metric2": 34063
     },
     {
-      "rowLabel": "Sparkla",
+      "sharedLabel": "Sparkla",
       "metric1": 110328,
       "metric2": 11799
     }
