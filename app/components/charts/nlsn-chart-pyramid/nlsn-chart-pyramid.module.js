@@ -15,6 +15,9 @@ angular.module('nlsnChart.Pyramid.module', [])
       function renderChart(){
         console.log('renderChart');
 
+        mySvg.attr("width", 600)
+          .attr("height", 400);
+
         /* edit/input your data */
         var data = [
           {"sharedLabel": "Category 1", "barData1": 43041, "barData2": 40852},
@@ -177,10 +180,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         templateUrl: 'components/charts/nlsn-chart-pyramid/nlsn-chart-pyramid.html',
         link: function(scope, element) {
 
-          mySvg = d3.select(element[0])
-            .append("svg")
-            .attr("width", 600)
-            .attr("height", 400);
+          mySvg = d3.select(element[0]).append("svg");
 
           scope.$watch("chartData", renderChart, true);
         }
