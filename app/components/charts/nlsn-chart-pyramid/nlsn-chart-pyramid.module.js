@@ -74,22 +74,27 @@ angular.module('nlsnChart.Pyramid.module', [])
           return d.metric2;
         });
 
+        // Create a panel for the record labels
+        chart.config.recordLabelPanel = {};
 
         switch (chart.config.RecordLabelPosition) {
           case 'left':
             chart.dataPanel.width = chart.config.width - (chart.config.recordLabelWidth);
             chart.dataPanel.x = chart.config.recordLabelWidth;
             chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.config.recordLabelPanel.x = 0;
             break;
           case 'center':
             chart.dataPanel.width = chart.config.width;
             chart.dataPanel.x = 0;
             chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.recordLabelWidth;
+            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2;
             break;
           case 'right':
             chart.dataPanel.width = chart.config.width - (chart.config.recordLabelWidth);
             chart.dataPanel.x = 0;
             chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.config.recordLabelPanel.x = chart.dataPanel.width;
             break;
         }
 
@@ -102,8 +107,8 @@ angular.module('nlsnChart.Pyramid.module', [])
         var chartWidth = chart.config.width - innerMargin;
 
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
-        var xScale1 = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - chart.config.recordLabelWidth]);
-        var xScale2 = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - chart.config.recordLabelWidth]);
+        chart.dataPanel.metrics[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - chart.config.recordLabelWidth]);
+        chart.dataPanel.metrics[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - chart.config.recordLabelWidth]);
         var commas = d3.format(",.0f");
 
         // Rendering starts here.
@@ -135,7 +140,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .enter().append("g")
           .attr("class", "bar")
           .attr("transform", function (d, i) {
-            return "translate(" + chart.dataPanel.x +"," + (chart.dataPanel.yScale(i) + chart.config.marginTop) + ")";
+            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.marginTop) + ")";
           });
 
         var wholebar = bar.append("rect")
@@ -175,7 +180,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // SharedLabels
         bar.append("text")
           .attr("class", "shared")
-          .attr("x", chart.config.width / 2)
+          .attr("x", chart.config.recordLabelPanel.x)
           .attr("dy", "1em")
           .attr("text-anchor", "middle")
           .text(function (d) {
@@ -192,17 +197,17 @@ angular.module('nlsnChart.Pyramid.module', [])
           bars.selectAll("rect.metric2bar")
             .transition()
             .attr("width", function (d) {
-              return xScale1(d.metric1);
+              return chart.dataPanel.metrics[0].xScale(d.metric1);
             });
 
           // Bar metric2
           bars.selectAll("rect.metric1bar")
             .transition()
             .attr("x", function (d) {
-              return innerMargin - xScale2(d.metric2) - 2 * chart.config.recordLabelWidth;
+              return innerMargin - chart.dataPanel.metrics[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
             })
             .attr("width", function (d) {
-              return xScale2(d.metric2);
+              return chart.dataPanel.metrics[1].xScale(d.metric2);
             });
 
           // Text metric1
@@ -213,7 +218,7 @@ angular.module('nlsnChart.Pyramid.module', [])
               })
               .transition()
               .attr("x", function (d) {
-                return innerMargin + xScale1(d.metric1);
+                return innerMargin + chart.dataPanel.metrics[0].xScale(d.metric1);
               });
           }
 
@@ -225,7 +230,7 @@ angular.module('nlsnChart.Pyramid.module', [])
               })
               .transition()
               .attr("x", function (d) {
-                return innerMargin - xScale2(d.metric2) - 2 * chart.config.recordLabelWidth;
+                return innerMargin - chart.dataPanel.metrics[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
               });
           }
         }
