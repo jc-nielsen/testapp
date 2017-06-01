@@ -159,7 +159,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         // Left bar for metric1
         bar.append("rect")
-          .attr("class", "metric1bar")
+          .attr("class", "nlsn-chart-metric-1-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("fill", chart.config.metric1BarColor);
 
@@ -167,7 +167,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Left side metric value text
         if (chart.config.isShowMetrics) {
           bar.append("text")
-            .attr("class", "metric1bar")
+            .attr("class", "nlsn-chart-metric-1-bar")
             .attr("dx", -3)
             .attr("dy", "1em")
             .attr("text-anchor", "end");
@@ -176,21 +176,22 @@ angular.module('nlsnChart.Pyramid.module', [])
         //TODO
         // Right bar for metric2
         bar.append("rect")
-          .attr("class", "metric2bar")
+          .attr("class", "nlsn-chart-metric-2-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("x", innerMargin)
           .attr("fill", chart.config.metric2BarColor);
 
+        //TODO
         if (chart.config.isShowMetrics) {
           bar.append("text")
-            .attr("class", "metric2bar")
+            .attr("class", "nlsn-chart-metric-2-bar")
             .attr("dx", 3)
             .attr("dy", "1em");
         }
 
-        // SharedLabels
+        // Record labels
         bar.append("text")
-          .attr("class", "shared")
+          .attr("class", "nlsn-chart-record-label")
           .attr("x", chart.config.recordLabelPanel.x)
           .attr("dy", "1em")
           .attr("text-anchor", "middle")
@@ -205,14 +206,14 @@ angular.module('nlsnChart.Pyramid.module', [])
             .data(data);
 
           // Bar metric1
-          bars.selectAll("rect.metric2bar")
+          bars.selectAll("rect.nlsn-chart-metric-2-bar")
             .transition()
             .attr("width", function (d) {
               return chart.dataPanel.metricsPanel[0].xScale(d.metric1);
             });
 
           // Bar metric2
-          bars.selectAll("rect.metric1bar")
+          bars.selectAll("rect.nlsn-chart-metric-1-bar")
             .transition()
             .attr("x", function (d) {
               return innerMargin - chart.dataPanel.metricsPanel[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
@@ -223,7 +224,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
           // Text metric1
           if (chart.config.isShowMetrics) {
-            bars.selectAll("text.metric2bar")
+            bars.selectAll("text.nlsn-chart-metric-2-bar")
               .text(function (d) {
                 return commas(d.metric1);
               })
@@ -235,7 +236,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
           // Text metric2
           if (chart.config.isShowMetrics) {
-            bars.selectAll("text.metric1bar")
+            bars.selectAll("text.nlsn-chart-metric-1-bar")
               .text(function (d) {
                 return commas(d.metric2);
               })
