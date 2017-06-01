@@ -55,9 +55,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.dataPanel = {};
 
         // Create a metrics panel for each metric.
-        chart.dataPanel.metrics = [];
-        chart.dataPanel.metrics[0] = {};
-        chart.dataPanel.metrics[1] = {};
+        chart.dataPanel.metricsPanel = [];
+        chart.dataPanel.metricsPanel[0] = {};
+        chart.dataPanel.metricsPanel[1] = {};
 
         // Maximum data value is used for scale. Needed for each of the metrics.
         var maxMetric1 = d3.max(chart.data, function (d) {
@@ -81,24 +81,30 @@ angular.module('nlsnChart.Pyramid.module', [])
           case 'left':
             chart.dataPanel.width = chart.config.width - (chart.config.recordLabelWidth);
             chart.dataPanel.x = chart.config.recordLabelWidth;
-            chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.dataPanel.metricsPanel[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.dataPanel.metricsPanel[0].width = (chart.dataPanel.width - chart.config.centerDividerWidth) / 2;
+            chart.dataPanel.metricsPanel[1].width = (chart.dataPanel.width - chart.config.centerDividerWidth) / 2;
             chart.config.recordLabelPanel.x = 0;
             break;
           case 'center':
             chart.dataPanel.width = chart.config.width;
             chart.dataPanel.x = 0;
-            chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.recordLabelWidth;
-            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2;
+            chart.dataPanel.metricsPanel[0].width = (chart.dataPanel.width - chart.config.recordLabelWidth) / 2;
+            chart.dataPanel.metricsPanel[1].x = chart.dataPanel.x + chart.dataPanel.metricsPanel[0].width + chart.config.recordLabelWidth;
+            chart.dataPanel.metricsPanel[1].width = (chart.dataPanel.width - chart.config.recordLabelWidth) / 2;
+            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2; // For center align
             break;
           case 'right':
             chart.dataPanel.width = chart.config.width - (chart.config.recordLabelWidth);
             chart.dataPanel.x = 0;
-            chart.dataPanel.metrics[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.dataPanel.metricsPanel[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
+            chart.dataPanel.metricsPanel[0].width = (chart.dataPanel.width - chart.config.centerDividerWidth) / 2;
+            chart.dataPanel.metricsPanel[1].width = (chart.dataPanel.width - chart.config.centerDividerWidth) / 2;
             chart.config.recordLabelPanel.x = chart.dataPanel.width;
             break;
         }
 
-        chart.dataPanel.metrics[0].x = chart.dataPanel.x;
+        chart.dataPanel.metricsPanel[0].x = chart.dataPanel.x;
         chart.dataPanel.height = chart.config.height - chart.config.marginTop;
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
 
@@ -107,8 +113,8 @@ angular.module('nlsnChart.Pyramid.module', [])
         var chartWidth = chart.config.width - innerMargin;
 
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
-        chart.dataPanel.metrics[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - chart.config.recordLabelWidth]);
-        chart.dataPanel.metrics[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - chart.config.recordLabelWidth]);
+        chart.dataPanel.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - chart.config.recordLabelWidth]);
+        chart.dataPanel.metricsPanel[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - chart.config.recordLabelWidth]);
         var commas = d3.format(",.0f");
 
         // Rendering starts here.
@@ -120,19 +126,22 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("height", chart.config.height);
 
         // Heading metric1 label
+        // X is set to center of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "label")
           .text(chartData.metric1Label)
-          .attr("x", chart.dataPanel.metrics[0].x)
+          .attr("x", chart.dataPanel.metricsPanel[0].x + (chart.dataPanel.metricsPanel[0].width / 2))
           .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
-          .attr("text-anchor", "end");
+          .attr("text-anchor", "middle");
 
         // Heading metric2 label
+        // X is set to center of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "label")
           .text(chartData.metric2Label)
-          .attr("x", chart.dataPanel.metrics[1].x)
-          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom);
+          .attr("x", chart.dataPanel.metricsPanel[1].x + (chart.dataPanel.metricsPanel[1].width / 2))
+          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
+          .attr("text-anchor", "middle");
 
         // Position the data panel
         var bar = mySvg.selectAll("g.bar")
@@ -154,6 +163,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("fill", chart.config.metric1BarColor);
 
+        //TODO
         // Left side metric value text
         if (chart.config.isShowMetrics) {
           bar.append("text")
@@ -163,6 +173,7 @@ angular.module('nlsnChart.Pyramid.module', [])
             .attr("text-anchor", "end");
         }
 
+        //TODO
         // Right bar for metric2
         bar.append("rect")
           .attr("class", "metric2bar")
@@ -197,17 +208,17 @@ angular.module('nlsnChart.Pyramid.module', [])
           bars.selectAll("rect.metric2bar")
             .transition()
             .attr("width", function (d) {
-              return chart.dataPanel.metrics[0].xScale(d.metric1);
+              return chart.dataPanel.metricsPanel[0].xScale(d.metric1);
             });
 
           // Bar metric2
           bars.selectAll("rect.metric1bar")
             .transition()
             .attr("x", function (d) {
-              return innerMargin - chart.dataPanel.metrics[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
+              return innerMargin - chart.dataPanel.metricsPanel[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
             })
             .attr("width", function (d) {
-              return chart.dataPanel.metrics[1].xScale(d.metric2);
+              return chart.dataPanel.metricsPanel[1].xScale(d.metric2);
             });
 
           // Text metric1
@@ -218,7 +229,7 @@ angular.module('nlsnChart.Pyramid.module', [])
               })
               .transition()
               .attr("x", function (d) {
-                return innerMargin + chart.dataPanel.metrics[0].xScale(d.metric1);
+                return innerMargin + chart.dataPanel.metricsPanel[0].xScale(d.metric1);
               });
           }
 
@@ -230,7 +241,7 @@ angular.module('nlsnChart.Pyramid.module', [])
               })
               .transition()
               .attr("x", function (d) {
-                return innerMargin - chart.dataPanel.metrics[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
+                return innerMargin - chart.dataPanel.metricsPanel[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
               });
           }
         }
