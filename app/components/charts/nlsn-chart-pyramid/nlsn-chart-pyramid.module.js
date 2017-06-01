@@ -42,10 +42,10 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config.rowSpacerHeight = 4;
         chart.config.marginTop = 40;
         chart.config.headingMarginBottom = 8;
-        // Position of label for each row, left/center/right
-        chart.config.RecordLabelPosition = 'center';
-        // Alignment of label for each row, left/center/right
-        chart.config.RecordLabelAlign = 'center';
+        // Position of label for each row, left/middle/right
+        chart.config.RecordLabelPosition = 'middle';
+        // Alignment of label for each row, left/middle/right
+        chart.config.RecordLabelAlign = 'middle';
         chart.config.centerDividerWidth = 2;
 
         //TODO calculate text width
@@ -86,13 +86,13 @@ angular.module('nlsnChart.Pyramid.module', [])
             chart.dataPanel.metricsPanel[1].width = (chart.dataPanel.width - chart.config.centerDividerWidth) / 2;
             chart.config.recordLabelPanel.x = 0;
             break;
-          case 'center':
+          case 'middle':
             chart.dataPanel.width = chart.config.width;
             chart.dataPanel.x = 0;
             chart.dataPanel.metricsPanel[0].width = (chart.dataPanel.width - chart.config.recordLabelWidth) / 2;
             chart.dataPanel.metricsPanel[1].x = chart.dataPanel.x + chart.dataPanel.metricsPanel[0].width + chart.config.recordLabelWidth;
             chart.dataPanel.metricsPanel[1].width = (chart.dataPanel.width - chart.config.recordLabelWidth) / 2;
-            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2; // For center align
+            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2; // For middle align
             break;
           case 'right':
             chart.dataPanel.width = chart.config.width - (chart.config.recordLabelWidth);
@@ -110,11 +110,10 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         //TODO refactor this
         var innerMargin = chart.config.width / 2 + chart.config.recordLabelWidth;
-        var chartWidth = chart.config.width - innerMargin;
 
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
-        chart.dataPanel.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - chart.config.recordLabelWidth]);
-        chart.dataPanel.metricsPanel[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - chart.config.recordLabelWidth]);
+        chart.dataPanel.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chart.dataPanel.metricsPanel[0].width]);
+        chart.dataPanel.metricsPanel[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chart.dataPanel.metricsPanel[1].width]);
         var commas = d3.format(",.0f");
 
         // Rendering starts here.
@@ -126,7 +125,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("height", chart.config.height);
 
         // Heading metric1 label
-        // X is set to center of column to use with text anchor middle
+        // X is set to middle of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "label")
           .text(chartData.metric1Label)
@@ -135,7 +134,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("text-anchor", "middle");
 
         // Heading metric2 label
-        // X is set to center of column to use with text anchor middle
+        // X is set to middle of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "label")
           .text(chartData.metric2Label)
