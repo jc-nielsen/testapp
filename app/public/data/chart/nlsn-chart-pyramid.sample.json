@@ -3,22 +3,6 @@
   "headingLabel": "Arvo",
   "metric1Label": "$ Sales per Point of Distribution",
   "metric2Label": "# of SKU's",
-  "axis1Labels": [
-    "$750",
-    "$600",
-    "$450",
-    "$300",
-    "$150",
-    "0"
-  ],
-  "axis2Labels": [
-    "50",
-    "40",
-    "30",
-    "20",
-    "10",
-    "0"
-  ],
   "data": [
     {
       "sharedLabel": "Private Label",

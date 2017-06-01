@@ -26,30 +26,48 @@ angular.module('nlsnChart.Pyramid.module', [])
           return;
         }
 
-        var chartData = newValue;
-        var data = chartData.data;
-        var w = 600,
-          h = 400,
-          topMargin = 15,
-          labelSpace = 60,
-          innerMargin = w / 2 + labelSpace,
-          outerMargin = 15,
-          gap = 8,
-          metric1BarColor = '#41a6f4',
-          metric2BarColor = '#42f4e8';
+        var chartData = newValue; //temp
+
+        var chart = {};
+        chart.data = newValue.data;
+        chart.config = {};
+
+        // Configurable properties
+        chart.config.width = 600;
+        chart.config.height = 400;
+
+        var marginTop = 15;
+        var marginRight = 15;
+        var marginLeft = 15;
+        var marginBottom = 15;
+        var labelSpace = 60;
+        var rowSpaceHeight = 8;
+        chart.metric1BarColor = '#41a6f4';
+        chart.metric2BarColor = '#42f4e8';
+
+        chart.titleRowHeight = 30;
+        chart.isShowMetrics = false;
+
 
         // Maximum data value is used for scale. Needed for each of the metrics.
-        // Minimum is not required when scaled to zero minimum.
-        var maxMetric1 = d3.max(data, function (d) {
+        var maxMetric1 = d3.max(chart.data, function (d) {
           return d.metric1;
         });
-        var maxMetric2 = d3.max(data, function (d) {
+        var maxMetric2 = d3.max(chart.data, function (d) {
+          return d.metric2;
+        });
+        // Minimum is not required when scaled to zero minimum.
+        var minMetric1 = d3.min(chart.data, function (d) {
+          return d.metric1;
+        });
+        var minMetric2 = d3.min(chart.data, function (d) {
           return d.metric2;
         });
 
-        var chartWidth = w - innerMargin - outerMargin;
-        var barWidth = h / data.length;
-        var yScale = d3.scale.linear().domain([0, data.length]).range([0, h - topMargin]);
+        var innerMargin = chart.config.width / 2 + labelSpace;
+        var chartWidth = chart.config.width - innerMargin - marginRight;
+        var barWidth = chart.config.height / chart.data.length;
+        var yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.config.height - marginTop]);
         var xScale1 = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - labelSpace]);
         var xScale2 = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - labelSpace]);
         var commas = d3.format(",.0f");
@@ -59,15 +77,15 @@ angular.module('nlsnChart.Pyramid.module', [])
         mySvg.selectAll("*").remove();
 
         // Set chart size
-        mySvg.attr("width", w)
-          .attr("height", h);
+        mySvg.attr("width", chart.config.width)
+          .attr("height", chart.config.height);
 
         // metric1 label
         mySvg.append("text")
           .attr("class", "label")
           .text(chartData.metric1Label)
-          .attr("x", w - innerMargin)
-          .attr("y", topMargin - 3)
+          .attr("x", chart.config.width - innerMargin)
+          .attr("y", marginTop - 3)
           .attr("text-anchor", "end");
 
         // metric2 label
@@ -75,57 +93,62 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("class", "label")
           .text(chartData.metric2Label)
           .attr("x", innerMargin)
-          .attr("y", topMargin - 3);
+          .attr("y", marginTop - 3);
 
         /* metric1 bars and data labels */
         var bar = mySvg.selectAll("g.bar")
-          .data(data)
+          .data(chart.data)
           .enter().append("g")
           .attr("class", "bar")
           .attr("transform", function (d, i) {
-            return "translate(0," + (yScale(i) + topMargin) + ")";
+            return "translate(0," + (yScale(i) + marginTop) + ")";
           });
 
         var wholebar = bar.append("rect")
-          .attr("width", w)
-          .attr("height", barWidth - gap)
+          .attr("width", chart.config.width)
+          .attr("height", barWidth - rowSpaceHeight)
           .attr("fill", "none");
 
         // Left bar for metric1
         bar.append("rect")
           .attr("class", "metric1bar")
-          .attr("height", barWidth - gap)
-          .attr("fill", metric1BarColor);
+          .attr("height", barWidth - rowSpaceHeight)
+          .attr("fill", chart.metric1BarColor);
 
-        bar.append("text")
-          .attr("class", "metric1bar")
-          .attr("dx", -3)
-          .attr("dy", "1em")
-          .attr("text-anchor", "end");
+        // Left side metric value text
+        if (chart.isShowMetrics) {
+          bar.append("text")
+            .attr("class", "metric1bar")
+            .attr("dx", -3)
+            .attr("dy", "1em")
+            .attr("text-anchor", "end");
+        }
 
         // Right bar for metric2
         bar.append("rect")
           .attr("class", "metric2bar")
-          .attr("height", barWidth - gap)
+          .attr("height", barWidth - rowSpaceHeight)
           .attr("x", innerMargin)
-          .attr("fill", metric2BarColor);
+          .attr("fill", chart.metric2BarColor);
 
-        bar.append("text")
-          .attr("class", "metric2bar")
-          .attr("dx", 3)
-          .attr("dy", "1em");
+        if (chart.isShowMetrics) {
+          bar.append("text")
+            .attr("class", "metric2bar")
+            .attr("dx", 3)
+            .attr("dy", "1em");
+        }
 
         // SharedLabels
         bar.append("text")
           .attr("class", "shared")
-          .attr("x", w / 2)
+          .attr("x", chart.config.width / 2)
           .attr("dy", "1em")
           .attr("text-anchor", "middle")
           .text(function (d) {
             return d.sharedLabel;
           });
 
-        refresh(data);
+        refresh(chart.data);
 
         function refresh(data) {
           var bars = d3.selectAll("g.bar")
