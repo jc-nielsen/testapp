@@ -35,7 +35,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Configurable properties
         chart.config.width = 600;
         chart.config.height = 400;
-        chart.config.isShowMetrics = true;
+        chart.config.isShowMetrics = false;
         //chart.config.isShowMetrics = true;
         chart.config.metric1BarColor = '#41a6f4';
         chart.config.metric2BarColor = '#42f4e8';
@@ -205,26 +205,26 @@ angular.module('nlsnChart.Pyramid.module', [])
           var bars = d3.selectAll("g.nlsn-chart-data-panel")
             .data(data);
 
-          // Bar metric1
+          // Bar metric2
           bars.selectAll("rect.nlsn-chart-metric-2-bar")
             .transition()
-            .attr("width", function (d) {
-              return chart.dataPanel.metricsPanel[0].xScale(d.metric1);
-            });
-
-          // Bar metric2
-          bars.selectAll("rect.nlsn-chart-metric-1-bar")
-            .transition()
-            .attr("x", function (d) {
-              return innerMargin - chart.dataPanel.metricsPanel[1].xScale(d.metric2) - 2 * chart.config.recordLabelWidth;
-            })
             .attr("width", function (d) {
               return chart.dataPanel.metricsPanel[1].xScale(d.metric2);
             });
 
+          // Bar metric1
+          bars.selectAll("rect.nlsn-chart-metric-1-bar")
+            .transition()
+            .attr("x", function (d) {
+              return innerMargin - chart.dataPanel.metricsPanel[0].xScale(d.metric1) - 2 * chart.config.recordLabelWidth;
+            })
+            .attr("width", function (d) {
+              return chart.dataPanel.metricsPanel[0].xScale(d.metric1);
+            });
+
           // Text metric1
           if (chart.config.isShowMetrics) {
-            bars.selectAll("text.nlsn-chart-metric-2-bar")
+            bars.selectAll("text.nlsn-chart-metric-1-bar")
               .text(function (d) {
                 return commas(d.metric1);
               })
@@ -236,7 +236,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
           // Text metric2
           if (chart.config.isShowMetrics) {
-            bars.selectAll("text.nlsn-chart-metric-1-bar")
+            bars.selectAll("text.nlsn-chart-metric-2-bar")
               .text(function (d) {
                 return commas(d.metric2);
               })
