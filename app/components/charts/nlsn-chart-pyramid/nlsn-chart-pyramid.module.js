@@ -144,10 +144,10 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("text-anchor", "middle");
 
         // Position the data panel
-        var bar = mySvg.selectAll("g.bar")
+        var bar = mySvg.selectAll("g.nlsn-chart-data-panel")
           .data(chart.data)
           .enter().append("g")
-          .attr("class", "bar")
+          .attr("class", "nlsn-chart-data-panel")
           .attr("transform", function (d, i) {
             return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.marginTop) + ")";
           });
@@ -202,7 +202,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         refresh(chart.data);
 
         function refresh(data) {
-          var bars = d3.selectAll("g.bar")
+          var bars = d3.selectAll("g.nlsn-chart-data-panel")
             .data(data);
 
           // Bar metric1
