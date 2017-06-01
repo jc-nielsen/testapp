@@ -35,18 +35,19 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Configurable properties
         chart.config.width = 600;
         chart.config.height = 400;
+        chart.config.isShowMetrics = true;
+        chart.config.metric1BarColor = '#41a6f4';
+        chart.config.metric2BarColor = '#42f4e8';
+        chart.config.rowSpacerHeight = 8;
+        chart.config.marginTop = 40;
+        chart.config.headingMarginBottom = 8;
 
-        var marginTop = 15;
         var marginRight = 15;
         var marginLeft = 15;
         var marginBottom = 15;
         var labelSpace = 60;
-        var rowSpaceHeight = 8;
-        chart.metric1BarColor = '#41a6f4';
-        chart.metric2BarColor = '#42f4e8';
 
         chart.titleRowHeight = 30;
-        chart.isShowMetrics = false;
 
 
         // Maximum data value is used for scale. Needed for each of the metrics.
@@ -67,7 +68,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         var innerMargin = chart.config.width / 2 + labelSpace;
         var chartWidth = chart.config.width - innerMargin - marginRight;
         var barWidth = chart.config.height / chart.data.length;
-        var yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.config.height - marginTop]);
+        var yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.config.height - chart.config.marginTop]);
         var xScale1 = d3.scale.linear().domain([0, maxMetric1]).range([0, chartWidth - labelSpace]);
         var xScale2 = d3.scale.linear().domain([0, maxMetric2]).range([0, chartWidth - labelSpace]);
         var commas = d3.format(",.0f");
@@ -85,7 +86,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("class", "label")
           .text(chartData.metric1Label)
           .attr("x", chart.config.width - innerMargin)
-          .attr("y", marginTop - 3)
+          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
           .attr("text-anchor", "end");
 
         // metric2 label
@@ -93,7 +94,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("class", "label")
           .text(chartData.metric2Label)
           .attr("x", innerMargin)
-          .attr("y", marginTop - 3);
+          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom);
 
         /* metric1 bars and data labels */
         var bar = mySvg.selectAll("g.bar")
@@ -101,22 +102,22 @@ angular.module('nlsnChart.Pyramid.module', [])
           .enter().append("g")
           .attr("class", "bar")
           .attr("transform", function (d, i) {
-            return "translate(0," + (yScale(i) + marginTop) + ")";
+            return "translate(0," + (yScale(i) + chart.config.marginTop) + ")";
           });
 
         var wholebar = bar.append("rect")
           .attr("width", chart.config.width)
-          .attr("height", barWidth - rowSpaceHeight)
+          .attr("height", barWidth - chart.config.rowSpacerHeight)
           .attr("fill", "none");
 
         // Left bar for metric1
         bar.append("rect")
           .attr("class", "metric1bar")
-          .attr("height", barWidth - rowSpaceHeight)
-          .attr("fill", chart.metric1BarColor);
+          .attr("height", barWidth - chart.config.rowSpacerHeight)
+          .attr("fill", chart.config.metric1BarColor);
 
         // Left side metric value text
-        if (chart.isShowMetrics) {
+        if (chart.config.isShowMetrics) {
           bar.append("text")
             .attr("class", "metric1bar")
             .attr("dx", -3)
@@ -127,11 +128,11 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Right bar for metric2
         bar.append("rect")
           .attr("class", "metric2bar")
-          .attr("height", barWidth - rowSpaceHeight)
+          .attr("height", barWidth - chart.config.rowSpacerHeight)
           .attr("x", innerMargin)
-          .attr("fill", chart.metric2BarColor);
+          .attr("fill", chart.config.metric2BarColor);
 
-        if (chart.isShowMetrics) {
+        if (chart.config.isShowMetrics) {
           bar.append("text")
             .attr("class", "metric2bar")
             .attr("dx", 3)
@@ -172,24 +173,28 @@ angular.module('nlsnChart.Pyramid.module', [])
             });
 
           // Text metric1
-          bars.selectAll("text.metric2bar")
-            .text(function (d) {
-              return commas(d.metric1);
-            })
-            .transition()
-            .attr("x", function (d) {
-              return innerMargin + xScale1(d.metric1);
-            });
+          if (chart.config.isShowMetrics) {
+            bars.selectAll("text.metric2bar")
+              .text(function (d) {
+                return commas(d.metric1);
+              })
+              .transition()
+              .attr("x", function (d) {
+                return innerMargin + xScale1(d.metric1);
+              });
+          }
 
           // Text metric2
-          bars.selectAll("text.metric1bar")
-            .text(function (d) {
-              return commas(d.metric2);
-            })
-            .transition()
-            .attr("x", function (d) {
-              return innerMargin - xScale2(d.metric2) - 2 * labelSpace;
-            });
+          if (chart.config.isShowMetrics) {
+            bars.selectAll("text.metric1bar")
+              .text(function (d) {
+                return commas(d.metric2);
+              })
+              .transition()
+              .attr("x", function (d) {
+                return innerMargin - xScale2(d.metric2) - 2 * labelSpace;
+              });
+          }
         }
       }
 
