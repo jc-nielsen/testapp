@@ -37,6 +37,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         drawMetricsPanels(chart);
         drawRecordLabels(chart);
         drawMetricsData(chart);
+        drawTooltips(chart);
         drawGrid(chart);
       }
 
@@ -255,6 +256,34 @@ angular.module('nlsnChart.Pyramid.module', [])
               return chart.metricsPanel[1].xScale(d.metric2);
             });
         }
+      }
+
+      function drawTooltips(chart) {
+        chart.tipMetric1 = d3.tip()
+          .attr('class', 'nlsn-chart-tip')
+          .html(function (d) {
+          return d.metric1;
+        });
+
+        chart.tipMetric2 = d3.tip()
+          .attr('class', 'nlsn-chart-tip')
+          .html(function (d) {
+          return d.metric2;
+        });
+
+        mySvg.call(chart.tipMetric1);
+        mySvg.call(chart.tipMetric2);
+
+        // Bar metric1
+        chart.dataPanel.baseElement.selectAll("rect.nlsn-chart-metric-1-bar")
+          .on('mouseover', chart.tipMetric1.show)
+          .on('mouseout', chart.tipMetric1.hide);
+
+        // Bar metric2
+        chart.dataPanel.baseElement.selectAll("rect.nlsn-chart-metric-2-bar")
+          .on('mouseover', chart.tipMetric2.show)
+          .on('mouseout', chart.tipMetric2.hide);
+
       }
 
       function drawGrid(chart) {
