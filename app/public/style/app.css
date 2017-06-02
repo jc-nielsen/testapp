@@ -32,7 +32,7 @@
   stroke-width: 2px;
 }
 
-.nlsn-chart-tip {
+.nlsn-chart-tip span{
   position: absolute;
   text-align: center;
   width: 60px;

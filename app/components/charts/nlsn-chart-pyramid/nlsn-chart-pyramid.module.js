@@ -12,7 +12,6 @@ angular.module('nlsnChart.Pyramid.module', [])
       return {
         bindToController: true,
         controller: theController,
-        //controllerAs: 'vm',
         restrict: 'E',
         scope: {},
         link: function (scope, element) {
