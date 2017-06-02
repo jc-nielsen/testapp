@@ -43,9 +43,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config.marginTop = 40;
         chart.config.headingMarginBottom = 8;
         // Position of label for each row, left/center/right
-        chart.config.recordLabelPosition = 'right';
+        chart.config.recordLabelPosition = 'left';
         // Alignment of label for each row, start/middle/end
-        chart.config.recordLabelAlign = 'end';
+        chart.config.recordLabelAlign = 'start';
         chart.config.centerDividerWidth = 2;
         chart.config.recordLabelWidth = 120;
 
