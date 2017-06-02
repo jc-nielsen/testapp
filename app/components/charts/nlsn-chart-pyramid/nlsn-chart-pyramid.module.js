@@ -22,14 +22,25 @@ angular.module('nlsnChart.Pyramid.module', [])
       };
 
       function renderChart(newValue, oldValue, scope) {
+        var chart = {};
+
         if (!(newValue && newValue.data && newValue.data.length)) {
           return;
         }
-
-        var chartData = newValue; //temp
-
-        var chart = {};
         chart.data = newValue.data;
+        chart.heading = newValue.heading;
+
+        configureChart(chart);
+        drawBaseElement(chart);
+        drawHeadings(chart);
+        drawDataPanel(chart);
+        drawMetricsPanels(chart);
+        drawRecordLabels(chart);
+        drawMetricsData(chart);
+        drawGrid(chart);
+      }
+
+      function configureChart(chart) {
         chart.config = {};
 
         // Configurable properties
@@ -104,20 +115,23 @@ angular.module('nlsnChart.Pyramid.module', [])
             chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
             break;
         }
+      }
 
-        // Rendering starts here.
+      function drawBaseElement(chart) {
         // Remove any existing chart elements.
         mySvg.selectAll("*").remove();
 
         // Set chart size
         mySvg.attr("width", chart.config.width)
           .attr("height", chart.config.height);
+      }
 
+      function drawHeadings(chart) {
         // Heading metric1 label
         // X is set to middle of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "nlsn-chart-metric-label")
-          .text(chartData.metric1Label)
+          .text(chart.heading.metric1Label)
           .attr("x", chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
           .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
           .attr("text-anchor", "middle");
@@ -126,13 +140,14 @@ angular.module('nlsnChart.Pyramid.module', [])
         // X is set to middle of column to use with text anchor middle
         mySvg.append("text")
           .attr("class", "nlsn-chart-metric-label")
-          .text(chartData.metric2Label)
+          .text(chart.heading.metric2Label)
           .attr("x", chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
           .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
           .attr("text-anchor", "middle");
+      }
 
-        // Position the data panel
-        var bar = mySvg.selectAll("g.nlsn-chart-data-panel")
+      function drawDataPanel(chart) {
+        chart.dataPanel.baseElement = mySvg.selectAll("g.nlsn-chart-data-panel")
           .data(chart.data)
           .enter().append("g")
           .attr("class", "nlsn-chart-data-panel")
@@ -140,13 +155,15 @@ angular.module('nlsnChart.Pyramid.module', [])
             return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.marginTop) + ")";
           });
 
-        var wholebar = bar.append("rect")
+        chart.dataPanel.row = chart.dataPanel.baseElement.append("rect")
           .attr("width", chart.config.width)
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("fill", "none");
+      }
 
+      function drawMetricsPanels(chart) {
         // Left bar for metric1
-        bar.append("rect")
+        chart.dataPanel.baseElement.append("rect")
           .attr("class", "nlsn-chart-metric-1-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("x", chart.metricsPanel[0].x)
@@ -155,7 +172,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         //TODO
         // Left side metric value text
         if (chart.config.isShowMetrics) {
-          bar.append("text")
+          chart.dataPanel.baseElement.append("text")
             .attr("class", "nlsn-chart-metric-1-bar")
             .attr("dx", -3)
             .attr("dy", "1em")
@@ -164,7 +181,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         //TODO
         // Right bar for metric2
-        bar.append("rect")
+        chart.dataPanel.baseElement.append("rect")
           .attr("class", "nlsn-chart-metric-2-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("x", chart.metricsPanel[1].x)
@@ -172,14 +189,16 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         //TODO
         if (chart.config.isShowMetrics) {
-          bar.append("text")
+          chart.dataPanel.baseElement.append("text")
             .attr("class", "nlsn-chart-metric-2-bar")
             .attr("dx", 3)
             .attr("dy", "1em");
         }
+      }
 
+      function drawRecordLabels(chart) {
         // Record labels
-        bar.append("text")
+        chart.dataPanel.baseElement.append("text")
           .attr("class", "nlsn-chart-record-label")
           .attr("x", chart.recordLabelPanel.x)
           .attr("dy", "1em")
@@ -187,7 +206,9 @@ angular.module('nlsnChart.Pyramid.module', [])
           .text(function (d) {
             return d.sharedLabel;
           });
+      }
 
+      function drawMetricsData(chart) {
         var bars = d3.selectAll("g.nlsn-chart-data-panel")
           .data(chart.data);
 
@@ -235,5 +256,9 @@ angular.module('nlsnChart.Pyramid.module', [])
             });
         }
       }
+
+      function drawGrid(chart) {
+      }
+
     }])
 ;

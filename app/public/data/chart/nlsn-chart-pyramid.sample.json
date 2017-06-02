@@ -1,8 +1,9 @@
 {
-  "titleLabel": "Carbonated Beverages Assortment & Distribution by Brand",
-  "headingLabel": "Arvo",
-  "metric1Label": "$ Sales per Point of Distribution",
-  "metric2Label": "# of SKU's",
+  "heading":{
+    "headingLabel": "Arvo",
+    "metric1Label": "$ Sales per Point of Distribution",
+    "metric2Label": "# of SKU's"
+  },
   "data": [
     {
       "sharedLabel": "Private Label",
