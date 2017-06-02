@@ -43,9 +43,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config.marginTop = 40;
         chart.config.headingMarginBottom = 8;
         // Position of label for each row, left/center/right
-        chart.config.recordLabelPosition = 'left';
+        chart.config.recordLabelPosition = 'right';
         // Alignment of label for each row, start/middle/end
-        chart.config.recordLabelAlign = 'start';
+        chart.config.recordLabelAlign = 'end';
         chart.config.centerDividerWidth = 2;
         chart.config.recordLabelWidth = 120;
 
@@ -73,7 +73,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         });
 
         // Create a panel for the record labels
-        chart.config.recordLabelPanel = {};
+        chart.recordLabelPanel = {};
 
         chart.dataPanel.width = chart.config.width;
         chart.dataPanel.x = 0;
@@ -91,17 +91,17 @@ angular.module('nlsnChart.Pyramid.module', [])
           case 'left':
             chart.metricsPanel[0].x = chart.config.recordLabelWidth;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
-            chart.config.recordLabelPanel.x = 0; // For start anchor
+            chart.recordLabelPanel.x = 0; // For start anchor
             break;
-          case 'middle':
+          case 'center':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
-            chart.config.recordLabelPanel.x = chart.dataPanel.width / 2; // For middle anchor
+            chart.recordLabelPanel.x = chart.dataPanel.width / 2; // For middle anchor
             break;
           case 'right':
             chart.metricsPanel[0].x = chart.dataPanel.x;
-            chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.centerDividerWidth;
-            chart.config.recordLabelPanel.x = chart.dataPanel.width; // For end anchor
+            chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
+            chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
             break;
         }
 
@@ -181,7 +181,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Record labels
         bar.append("text")
           .attr("class", "nlsn-chart-record-label")
-          .attr("x", 0)
+          .attr("x", chart.recordLabelPanel.x)
           .attr("dy", "1em")
           .attr("text-anchor", chart.config.recordLabelAlign)
           .text(function (d) {
