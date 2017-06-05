@@ -88,7 +88,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
         chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
         chart.dataPanel.x = 0 + chart.config.margin.left;
-        chart.dataPanel.y = 0 + chart.config.margin.bottom;
+        chart.dataPanel.y = 0 + chart.config.margin.top;
         chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
@@ -104,12 +104,12 @@ angular.module('nlsnChart.Pyramid.module', [])
           case 'left':
             chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
-            chart.recordLabelPanel.x = 0; // For start anchor
+            chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
             break;
           case 'center':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
-            chart.recordLabelPanel.x = chart.dataPanel.width / 2; // For middle anchor
+            chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
             break;
           case 'right':
             chart.metricsPanel[0].x = chart.dataPanel.x;
@@ -154,7 +154,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .enter().append("g")
           .attr("class", "nlsn-chart-data-panel")
           .attr("transform", function (d, i) {
-            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.margin.top) + ")";
+            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ")";
           });
 
         chart.dataPanel.row = chart.dataPanel.baseElement.append("rect")
