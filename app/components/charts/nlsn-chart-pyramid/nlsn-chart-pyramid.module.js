@@ -46,6 +46,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Configurable properties
         chart.config.width = 600;
         chart.config.height = 400;
+        chart.config.margin = {top: 40, right: 30, bottom: 30, left: 40};
         chart.config.isShowMetrics = false;
         //chart.config.isShowMetrics = true;
         chart.config.metric1BarColor = '#41a6f4';
@@ -86,11 +87,11 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Create a panel for the record labels
         chart.recordLabelPanel = {};
 
-        chart.dataPanel.width = chart.config.width;
-        chart.dataPanel.x = 0;
+        chart.dataPanel.width = chart.config.width - (chart.config.margin.left);
+        chart.dataPanel.x = 0 + chart.config.margin.left;
         chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
-        chart.dataPanel.height = chart.config.height - chart.config.marginTop;
+        chart.dataPanel.height = chart.config.height - chart.config.margin.top;
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
         chart.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chart.metricsPanel[0].width]);
@@ -100,7 +101,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Do the conditional calculations
         switch (chart.config.recordLabelPosition) {
           case 'left':
-            chart.metricsPanel[0].x = chart.config.recordLabelWidth;
+            chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
             chart.recordLabelPanel.x = 0; // For start anchor
             break;
@@ -133,7 +134,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("class", "nlsn-chart-metric-label")
           .text(chart.heading.metric1Label)
           .attr("x", chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
-          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
+          .attr("y", chart.config.margin.top - chart.config.headingMarginBottom)
           .attr("text-anchor", "middle");
 
         // Heading metric2 label
@@ -142,7 +143,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("class", "nlsn-chart-metric-label")
           .text(chart.heading.metric2Label)
           .attr("x", chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
-          .attr("y", chart.config.marginTop - chart.config.headingMarginBottom)
+          .attr("y", chart.config.margin.top - chart.config.headingMarginBottom)
           .attr("text-anchor", "middle");
       }
 
@@ -152,7 +153,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .enter().append("g")
           .attr("class", "nlsn-chart-data-panel")
           .attr("transform", function (d, i) {
-            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.marginTop) + ")";
+            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.yScale(i) + chart.config.margin.top) + ")";
           });
 
         chart.dataPanel.row = chart.dataPanel.baseElement.append("rect")
@@ -261,14 +262,14 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.tipMetric1 = d3.tip()
           .attr('class', 'nlsn-chart-tip')
           .html(function (d) {
-          return d.metric1;
-        });
+            return d.metric1;
+          });
 
         chart.tipMetric2 = d3.tip()
           .attr('class', 'nlsn-chart-tip')
           .html(function (d) {
-          return d.metric2;
-        });
+            return d.metric2;
+          });
 
         mySvg.call(chart.tipMetric1);
         mySvg.call(chart.tipMetric2);
