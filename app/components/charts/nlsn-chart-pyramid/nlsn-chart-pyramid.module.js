@@ -53,9 +53,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config.rowSpacerHeight = 4;
         chart.config.headingMarginBottom = 8;
         // Position of label for each row, left/center/right
-        chart.config.recordLabelPosition = 'left';
+        chart.config.recordLabelPosition = 'center';
         // Alignment of label for each row, start/middle/end
-        chart.config.recordLabelAlign = 'start';
+        chart.config.recordLabelAlign = 'middle';
         chart.config.centerDividerWidth = 2;
         chart.config.recordLabelWidth = 120;
 
@@ -171,7 +171,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("x", chart.metricsPanel[0].x)
           .attr("fill", chart.config.metric1BarColor);
 
-        //TODO
+        //TODO needs margin
         // Left side metric value text
         if (chart.config.isShowMetrics) {
           chart.dataPanel.baseElement.append("text")
@@ -181,7 +181,6 @@ angular.module('nlsnChart.Pyramid.module', [])
             .attr("text-anchor", "end");
         }
 
-        //TODO
         // Right bar for metric2
         chart.dataPanel.baseElement.append("rect")
           .attr("class", "nlsn-chart-metric-2-bar")
@@ -189,7 +188,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr("x", chart.metricsPanel[1].x)
           .attr("fill", chart.config.metric2BarColor);
 
-        //TODO
+        //TODO needs margin
         if (chart.config.isShowMetrics) {
           chart.dataPanel.baseElement.append("text")
             .attr("class", "nlsn-chart-metric-2-bar")
@@ -289,13 +288,13 @@ angular.module('nlsnChart.Pyramid.module', [])
 
       function drawAxes(chart) {
 
-        chart.dataPanel.xAxis=[];
+        chart.dataPanel.xAxis = [];
 
-        chart.dataPanel.xAxis[0] = d3.svg.axis()
+        chart.metricsPanel[0].xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale[0])
           .orient("bottom");
 
-        chart.dataPanel.xAxis[1] = d3.svg.axis()
+        chart.metricsPanel[1].xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[1].xScale[1])
           .orient("bottom");
 
@@ -304,14 +303,26 @@ angular.module('nlsnChart.Pyramid.module', [])
         //   .orient("left");
 
         // chart.dataPanel.baseElement.append("g")
+        //    .call(chart.metricsPanel[0].xAxis);
+
+        // mySvg.call(chart.metricsPanel[0].xAxis);
+        // mySvg.call(chart.metricsPanel[1].xAxis);
+
+        // chart.dataPanel.baseElement.append("g")
+        //   .call(xAxis);
+
+        // chart.dataPanel.baseElement.append("g")
+        //   .call(chart.dataPanel.xAxis[1]);
+
+        // chart.dataPanel.baseElement.append("g")
         //   .attr("class", "nlsn-chart-axis")
-        //   .attr("transform", "translate(0," + chart.dataPanel.height + ")")
+        //   .attr("transform", "translate(" + chart.metricsPanel[1].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
         //   .call(chart.dataPanel.xAxis[0]);
 
-      //   chart.dataPanel.baseElement.append("g")
-      //     .attr("class", "nlsn-chart-axis")
-      //     .attr("transform", "translate(0," + chart.dataPanel.height + ")")
-      //     .call(chart.dataPanel.xAxis[1]);
+        //   chart.dataPanel.baseElement.append("g")
+        //     .attr("class", "nlsn-chart-axis")
+        //     .attr("transform", "translate(0," + chart.dataPanel.height + ")")
+        //     .call(chart.dataPanel.xAxis[1]);
       }
 
     }])
