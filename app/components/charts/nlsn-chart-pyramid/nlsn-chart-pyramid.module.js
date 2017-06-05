@@ -37,7 +37,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         drawRecordLabels(chart);
         drawMetricsData(chart);
         drawTooltips(chart);
-        drawGrid(chart);
+        drawAxes(chart);
       }
 
       function configureChart(chart) {
@@ -287,7 +287,31 @@ angular.module('nlsnChart.Pyramid.module', [])
 
       }
 
-      function drawGrid(chart) {
+      function drawAxes(chart) {
+
+        chart.dataPanel.xAxis=[];
+
+        chart.dataPanel.xAxis[0] = d3.svg.axis()
+          .scale(chart.metricsPanel[0].xScale[0])
+          .orient("bottom");
+
+        chart.dataPanel.xAxis[1] = d3.svg.axis()
+          .scale(chart.metricsPanel[1].xScale[1])
+          .orient("bottom");
+
+        // chart.dataPanel.yAxis = d3.svg.axis()
+        //   .scale(chart.dataPanel.yScale)
+        //   .orient("left");
+
+        // chart.dataPanel.baseElement.append("g")
+        //   .attr("class", "nlsn-chart-axis")
+        //   .attr("transform", "translate(0," + chart.dataPanel.height + ")")
+        //   .call(chart.dataPanel.xAxis[0]);
+
+      //   chart.dataPanel.baseElement.append("g")
+      //     .attr("class", "nlsn-chart-axis")
+      //     .attr("transform", "translate(0," + chart.dataPanel.height + ")")
+      //     .call(chart.dataPanel.xAxis[1]);
       }
 
     }])
