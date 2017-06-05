@@ -44,15 +44,13 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config = {};
 
         // Configurable properties
-        chart.config.width = 600;
-        chart.config.height = 400;
+        chart.config.width = 690;
+        chart.config.height = 500;
         chart.config.margin = {top: 40, right: 30, bottom: 30, left: 40};
         chart.config.isShowMetrics = false;
-        //chart.config.isShowMetrics = true;
         chart.config.metric1BarColor = '#41a6f4';
         chart.config.metric2BarColor = '#42f4e8';
         chart.config.rowSpacerHeight = 4;
-        chart.config.marginTop = 40;
         chart.config.headingMarginBottom = 8;
         // Position of label for each row, left/center/right
         chart.config.recordLabelPosition = 'left';
@@ -87,15 +85,18 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Create a panel for the record labels
         chart.recordLabelPanel = {};
 
-        chart.dataPanel.width = chart.config.width - (chart.config.margin.left);
+        chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
+        chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
         chart.dataPanel.x = 0 + chart.config.margin.left;
+        chart.dataPanel.y = 0 + chart.config.margin.bottom;
         chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
-        chart.dataPanel.height = chart.config.height - chart.config.margin.top;
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
         chart.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chart.metricsPanel[0].width]);
         chart.metricsPanel[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chart.metricsPanel[1].width]);
+        chart.metricsPanel[0].y = chart.dataPanel.y;
+        chart.metricsPanel[1].y = chart.dataPanel.y;
         var commas = d3.format(",.0f");
 
         // Do the conditional calculations
