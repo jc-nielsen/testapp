@@ -156,31 +156,21 @@ angular.module('nlsnChart.Pyramid.module', [])
       }
 
       function drawDataPanel(chart) {
-        // chart.dataPanel.baseElement = mySvg.selectAll("g.nlsn-chart-data-panel")
-        //   .data(chart.data)
-        //   .enter().append("g")
-        //   .attr("class", "nlsn-chart-data-panel")
-        //   .attr("transform", function (d, i) {
-        //     return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ")";
-        //   });
+        chart.dataPanel.baseElement = chart.baseElement.append("g")
+          .attr("class", "nlsn-chart-data-panel");
 
-        chart.dataPanel.baseElement = chart.baseElement.selectAll("g.nlsn-chart-data-panel")
+        chart.dataPanel.records = chart.dataPanel.baseElement.selectAll("g.nlsn-chart-data-panel-record")
           .data(chart.data)
           .enter().append("g")
-          .attr("class", "nlsn-chart-data-panel")
+          .attr("class", "nlsn-chart-data-panel-record")
           .attr("transform", function (d, i) {
             return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ")";
           });
-
-        chart.dataPanel.row = chart.dataPanel.baseElement.append("rect")
-          .attr("width", chart.config.width)
-          .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
-          .attr("fill", "none");
       }
 
       function drawMetricsPanels(chart) {
         // Left bar for metric1
-        chart.dataPanel.baseElement.append("rect")
+        chart.dataPanel.records.append("rect")
           .attr("class", "nlsn-chart-metric-1-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("x", chart.metricsPanel[0].x)
@@ -189,7 +179,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         //TODO needs margin
         // Left side metric value text
         if (chart.config.isShowMetrics) {
-          chart.dataPanel.baseElement.append("text")
+          chart.dataPanel.records.append("text")
             .attr("class", "nlsn-chart-metric-1-bar")
             .attr("dx", -3)
             .attr("dy", "1em")
@@ -197,7 +187,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         }
 
         // Right bar for metric2
-        chart.dataPanel.baseElement.append("rect")
+        chart.dataPanel.records.append("rect")
           .attr("class", "nlsn-chart-metric-2-bar")
           .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
           .attr("x", chart.metricsPanel[1].x)
@@ -205,7 +195,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         //TODO needs margin
         if (chart.config.isShowMetrics) {
-          chart.dataPanel.baseElement.append("text")
+          chart.dataPanel.records.append("text")
             .attr("class", "nlsn-chart-metric-2-bar")
             .attr("dx", 3)
             .attr("dy", "1em");
@@ -214,7 +204,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
       function drawRecordLabels(chart) {
         // Record labels
-        chart.dataPanel.baseElement.append("text")
+        chart.dataPanel.records.append("text")
           .attr("class", "nlsn-chart-record-label")
           .attr("x", chart.recordLabelPanel.x)
           .attr("dy", "1em")
@@ -225,16 +215,17 @@ angular.module('nlsnChart.Pyramid.module', [])
       }
 
       function drawMetricsData(chart) {
-        var bars = d3.selectAll("g.nlsn-chart-data-panel")
+        var formatMetric = d3.format(",.0f");
+
+        var bars = d3.selectAll("g.nlsn-chart-data-panel-record")
           .data(chart.data);
 
         // Text metric1
         if (chart.config.isShowMetrics) {
           bars.selectAll("text.nlsn-chart-metric-1-bar")
             .text(function (d) {
-              return commas(d.metric1);
+              return formatMetric(d.metric1);
             })
-            //.transition()
             .attr("x", function (d) {
               return chart.metricsPanel[0].xScale(d.metric1);
             });
@@ -242,7 +233,6 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         // Bar metric1
         bars.selectAll("rect.nlsn-chart-metric-1-bar")
-        //.transition()
           .attr("x", function (d) {
             return (chart.metricsPanel[0].x + chart.metricsPanel[0].width) - chart.metricsPanel[0].xScale(d.metric1);
           })
@@ -252,7 +242,6 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         // Bar metric2
         bars.selectAll("rect.nlsn-chart-metric-2-bar")
-        //          .transition()
           .attr("x", function (d) {
             return chart.metricsPanel[1].x;
           })
@@ -264,9 +253,8 @@ angular.module('nlsnChart.Pyramid.module', [])
         if (chart.config.isShowMetrics) {
           bars.selectAll("text.nlsn-chart-metric-2-bar")
             .text(function (d) {
-              return commas(d.metric2);
+              return formatMetric(d.metric2);
             })
-            //            .transition()
             .attr("x", function (d) {
               return chart.metricsPanel[1].xScale(d.metric2);
             });
@@ -290,12 +278,12 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.baseElement.call(chart.tipMetric2);
 
         // Bar metric1
-        chart.dataPanel.baseElement.selectAll("rect.nlsn-chart-metric-1-bar")
+        chart.dataPanel.records.selectAll("rect.nlsn-chart-metric-1-bar")
           .on('mouseover', chart.tipMetric1.show)
           .on('mouseout', chart.tipMetric1.hide);
 
         // Bar metric2
-        chart.dataPanel.baseElement.selectAll("rect.nlsn-chart-metric-2-bar")
+        chart.dataPanel.records.selectAll("rect.nlsn-chart-metric-2-bar")
           .on('mouseover', chart.tipMetric2.show)
           .on('mouseout', chart.tipMetric2.hide);
 
@@ -324,18 +312,20 @@ angular.module('nlsnChart.Pyramid.module', [])
         // chart.baseElement.call(chart.metricsPanel[0].xAxis);
         // chart.baseElement.call(chart.metricsPanel[1].xAxis);
 
-        // chart.dataPanel.baseElement.append("g")
-        //   .call(xAxis);
-
-        // chart.dataPanel.baseElement.append("g")
-        //   .call(chart.dataPanel.xAxis[1]);
-
         chart.dataPanel.baseElement.append("g")
-          .attr("class", "nlsn-chart-axis")
-          //.attr("transform", "translate(" + chart.metricsPanel[0].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
+          .attr('x',chart.metricsPanel[0].x)
+          .attr('y',chart.metricsPanel[0].y)
           .call(chart.metricsPanel[0].xAxis);
 
-        //   chart.dataPanel.baseElement.append("g")
+        // chart.dataPanel.records.append("g")
+        //   .call(chart.dataPanel.xAxis[1]);
+
+        // chart.dataPanel.records.append("g")
+        //   .attr("class", "nlsn-chart-axis")
+        //   //.attr("transform", "translate(" + chart.metricsPanel[0].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
+        //   .call(chart.metricsPanel[0].xAxis);
+
+        //   chart.dataPanel.records.append("g")
         //     .attr("class", "nlsn-chart-axis")
         //     .attr("transform", "translate(0," + chart.dataPanel.height + ")")
         //     .call(chart.dataPanel.xAxis[1]);
