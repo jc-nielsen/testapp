@@ -47,7 +47,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config = {};
 
         // Configurable properties
-        chart.config.width = 690;
+        chart.config.width = 1200;
         chart.config.height = 500;
         chart.config.margin = {top: 40, right: 30, bottom: 30, left: 40};
         chart.config.isShowMetrics = false;
@@ -290,10 +290,6 @@ angular.module('nlsnChart.Pyramid.module', [])
       }
 
       function drawAxes(chart) {
-        return;
-
-        chart.dataPanel.xAxis = [];
-
         chart.metricsPanel[0].xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale)
           .orient("bottom");
@@ -306,29 +302,15 @@ angular.module('nlsnChart.Pyramid.module', [])
         //   .scale(chart.dataPanel.yScale)
         //   .orient("left");
 
-        // chart.dataPanel.baseElement.append("g")
-        //    .call(chart.metricsPanel[0].xAxis);
-
-        // chart.baseElement.call(chart.metricsPanel[0].xAxis);
-        // chart.baseElement.call(chart.metricsPanel[1].xAxis);
-
         chart.dataPanel.baseElement.append("g")
-          .attr('x',chart.metricsPanel[0].x)
-          .attr('y',chart.metricsPanel[0].y)
+          .attr("class", "nlsn-chart-axis")
+          .attr("transform", "translate(" + chart.metricsPanel[0].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
           .call(chart.metricsPanel[0].xAxis);
 
-        // chart.dataPanel.records.append("g")
-        //   .call(chart.dataPanel.xAxis[1]);
-
-        // chart.dataPanel.records.append("g")
-        //   .attr("class", "nlsn-chart-axis")
-        //   //.attr("transform", "translate(" + chart.metricsPanel[0].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
-        //   .call(chart.metricsPanel[0].xAxis);
-
-        //   chart.dataPanel.records.append("g")
-        //     .attr("class", "nlsn-chart-axis")
-        //     .attr("transform", "translate(0," + chart.dataPanel.height + ")")
-        //     .call(chart.dataPanel.xAxis[1]);
+        chart.dataPanel.baseElement.append("g")
+          .attr("class", "nlsn-chart-axis")
+          .attr("transform", "translate(" + chart.metricsPanel[1].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
+          .call(chart.metricsPanel[1].xAxis);
       }
 
     }])
