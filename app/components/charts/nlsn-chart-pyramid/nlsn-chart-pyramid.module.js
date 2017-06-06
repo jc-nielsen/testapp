@@ -139,6 +139,8 @@ angular.module('nlsnChart.Pyramid.module', [])
         //TODO axis x not getting the data panel margin added?
         chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
         chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
+
+        chart.metricsPanel[0].axisPanel.xScale = d3.scale.linear().domain([chart.metricsPanel[0].max, 0]).range([0, chart.metricsPanel[0].width]);
       }
 
       function drawBaseElement(chart) {
@@ -306,7 +308,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
       function drawAxes(chart) {
         chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
-          .scale(chart.metricsPanel[0].xScale)
+          .scale(chart.metricsPanel[0].axisPanel.xScale)
           .orient("bottom");
 
         chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
