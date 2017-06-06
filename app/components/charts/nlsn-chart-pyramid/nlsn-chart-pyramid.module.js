@@ -49,7 +49,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Configurable properties
         chart.config.width = 1200;
         chart.config.height = 500;
-        chart.config.margin = {top: 40, right: 30, bottom: 30, left: 40};
+        chart.config.margin = {top: 40, right: 30, bottom: 30, left: 20};
         chart.config.isShowMetrics = false;
         chart.config.metric1BarColor = '#41a6f4';
         chart.config.metric2BarColor = '#42f4e8';
@@ -72,25 +72,15 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.metricsPanel[0] = {};
         chart.metricsPanel[1] = {};
 
+        //Create an axis panel for each metric.
+        chart.metricsPanel[0].axisPanel = {};
+        chart.metricsPanel[1].axisPanel = {};
+
         // Create a panel for the record labels
         chart.recordLabelPanel = {};
       }
 
       function calculateSettings(chart) {
-        // Maximum data value is used for scale. Needed for each of the metrics.
-        var maxMetric1 = d3.max(chart.data, function (d) {
-          return d.metric1;
-        });
-        var maxMetric2 = d3.max(chart.data, function (d) {
-          return d.metric2;
-        });
-        // Minimum is not required when scaled to zero minimum.
-        var minMetric1 = d3.min(chart.data, function (d) {
-          return d.metric1;
-        });
-        var minMetric2 = d3.min(chart.data, function (d) {
-          return d.metric2;
-        });
 
         chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
         chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
@@ -99,14 +89,29 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
         chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
 
+        // Maximum data value is used for scale. Needed for each of the metrics.
+        chart.metricsPanel[0].max = d3.max(chart.data, function (d) {
+          return d.metric1;
+        });
+        chart.metricsPanel[1].max = d3.max(chart.data, function (d) {
+          return d.metric2;
+        });
+        // Minimum is not required when scaled to zero minimum.
+        chart.metricsPanel[0].min = d3.min(chart.data, function (d) {
+          return d.metric1;
+        });
+        chart.metricsPanel[1].min = d3.min(chart.data, function (d) {
+          return d.metric2;
+        });
+
         chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
-        chart.metricsPanel[0].xScale = d3.scale.linear().domain([0, maxMetric1]).range([0, chart.metricsPanel[0].width]);
-        chart.metricsPanel[1].xScale = d3.scale.linear().domain([0, maxMetric2]).range([0, chart.metricsPanel[1].width]);
+        chart.metricsPanel[0].xScale = d3.scale.linear().domain([0, chart.metricsPanel[0].max]).range([0, chart.metricsPanel[0].width]);
+        chart.metricsPanel[1].xScale = d3.scale.linear().domain([0, chart.metricsPanel[1].max]).range([0, chart.metricsPanel[1].width]);
         chart.metricsPanel[0].y = chart.dataPanel.y;
         chart.metricsPanel[1].y = chart.dataPanel.y;
 
-        // Do the conditional calculations
+        // Do the config conditional calculations
         switch (chart.config.recordLabelPosition) {
           case 'left':
             chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth;
@@ -124,6 +129,16 @@ angular.module('nlsnChart.Pyramid.module', [])
             chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
             break;
         }
+
+        // Position the metrics panels for each metric.
+        // chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x;
+        // chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x;
+        chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
+        chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
+
+        //TODO axis x not getting the data panel margin added?
+        chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
+        chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
       }
 
       function drawBaseElement(chart) {
@@ -290,11 +305,11 @@ angular.module('nlsnChart.Pyramid.module', [])
       }
 
       function drawAxes(chart) {
-        chart.metricsPanel[0].xAxis = d3.svg.axis()
+        chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale)
           .orient("bottom");
 
-        chart.metricsPanel[1].xAxis = d3.svg.axis()
+        chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[1].xScale)
           .orient("bottom");
 
@@ -304,13 +319,13 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         chart.dataPanel.baseElement.append("g")
           .attr("class", "nlsn-chart-axis")
-          .attr("transform", "translate(" + chart.metricsPanel[0].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
-          .call(chart.metricsPanel[0].xAxis);
+          .attr("transform", "translate(" + chart.metricsPanel[0].axisPanel.x + "," + chart.metricsPanel[0].axisPanel.y + ")")
+          .call(chart.metricsPanel[0].axisPanel.xAxis);
 
         chart.dataPanel.baseElement.append("g")
           .attr("class", "nlsn-chart-axis")
-          .attr("transform", "translate(" + chart.metricsPanel[1].x + "," + (chart.dataPanel.y + chart.dataPanel.height) + ")")
-          .call(chart.metricsPanel[1].xAxis);
+          .attr("transform", "translate(" + chart.metricsPanel[1].axisPanel.x + "," + chart.metricsPanel[1].axisPanel.y + ")")
+          .call(chart.metricsPanel[1].axisPanel.xAxis);
       }
 
     }])
