@@ -6,7 +6,9 @@ angular.module('myApp', [
   'ngRoute',
   'nlsnHomePage.module',
   'nlsnChartPage.module',
+  'nlsnChart2Page.module',
   'nlsnChart.Pyramid.module',
+  'nlsnChart.Pyramid2.module',
   'nlsnDataSvc.module'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
