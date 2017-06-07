@@ -81,7 +81,6 @@ angular.module('nlsnChart.Pyramid.module', [])
       }
 
       function calculateSettings(chart) {
-
         chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
         chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
         chart.dataPanel.x = 0 + chart.config.margin.left;
@@ -106,7 +105,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
         chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
         chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
-        chart.metricsPanel[0].xScale = d3.scale.linear().domain([0, chart.metricsPanel[0].max]).range([0, chart.metricsPanel[0].width]);
+        chart.metricsPanel[0].xScale = d3.scale.linear().domain([chart.metricsPanel[0].max, 0]).range([0, chart.metricsPanel[0].width]);
         chart.metricsPanel[1].xScale = d3.scale.linear().domain([0, chart.metricsPanel[1].max]).range([0, chart.metricsPanel[1].width]);
         chart.metricsPanel[0].y = chart.dataPanel.y;
         chart.metricsPanel[1].y = chart.dataPanel.y;
@@ -131,16 +130,12 @@ angular.module('nlsnChart.Pyramid.module', [])
         }
 
         // Position the metrics panels for each metric.
-        // chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x;
-        // chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x;
         chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
         chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
 
         //TODO axis x not getting the data panel margin added?
         chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
         chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
-
-        chart.metricsPanel[0].axisPanel.xScale = d3.scale.linear().domain([chart.metricsPanel[0].max, 0]).range([0, chart.metricsPanel[0].width]);
       }
 
       function drawBaseElement(chart) {
@@ -249,12 +244,13 @@ angular.module('nlsnChart.Pyramid.module', [])
         }
 
         // Bar metric1
+        //TODO xscale
         bars.selectAll("rect.nlsn-chart-metric-1-bar")
           .attr("x", function (d) {
-            return (chart.metricsPanel[0].x + chart.metricsPanel[0].width) - chart.metricsPanel[0].xScale(d.metric1);
+            return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric1));
           })
           .attr("width", function (d) {
-            return chart.metricsPanel[0].xScale(d.metric1);
+            return (chart.metricsPanel[0].width - chart.metricsPanel[0].xScale(d.metric1));
           });
 
         // Bar metric2
@@ -308,7 +304,7 @@ angular.module('nlsnChart.Pyramid.module', [])
 
       function drawAxes(chart) {
         chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
-          .scale(chart.metricsPanel[0].axisPanel.xScale)
+          .scale(chart.metricsPanel[0].xScale)
           .orient("bottom");
 
         chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
