@@ -326,12 +326,14 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale)
           .orient('bottom')
-          .tickFormat(d3.format("s"));
+          .ticks(5)
+          .tickFormat(d3.format('s'));
 
         chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[1].xScale)
           .orient('bottom')
-          .tickFormat(d3.format("s"));
+          .ticks(5)
+          .tickFormat(d3.format('s'));
 
         chart.dataPanel.baseElement.append('g')
           .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
@@ -351,22 +353,22 @@ angular.module('nlsnChart.Pyramid.module', [])
             .remove();
         }
 
-        // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append("line")
+        // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
         //   .attr(
         //     {
-        //       "class": "nlsn-chart-grid",
-        //       "y1": chart.dataPanel.y,
-        //       "y2": chart.dataPanel.height,
-        //       "x1": function (d) {
+        //       'class': 'nlsn-chart-grid',
+        //       'y1': chart.dataPanel.y,
+        //       'y2': chart.dataPanel.height,
+        //       'x1': function (d) {
         //         return chart.metricsPanel[0].xScale(d);
         //       },
-        //       "x2": function (d) {
+        //       'x2': function (d) {
         //         return chart.metricsPanel[0].xScale(d);
         //       },
-        //       "fill": "none",
-        //       "shape-rendering": "crispEdges",
-        //       "stroke": "black",
-        //       "stroke-width": "1px"
+        //       'fill': 'none',
+        //       'shape-rendering': 'crispEdges',
+        //       'stroke': 'black',
+        //       'stroke-width': '1px'
         //     });
       }
 
