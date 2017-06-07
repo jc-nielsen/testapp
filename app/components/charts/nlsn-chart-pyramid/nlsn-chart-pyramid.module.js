@@ -82,7 +82,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.recordLabelPanel = {};
 
         // Create a panel for the center divider
-        chart.recordLabelPanel = {};
+        chart.centerDividerPanel = {};
       }
 
       function calculateSettings(chart) {
@@ -149,7 +149,6 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
 
         // Position the center divider.
-        chart.centerDividerPanel = {};
         chart.centerDividerPanel.x = chart.metricsPanel[0].x + chart.metricsPanel[0].width + chart.dataPanel.x;
         chart.centerDividerPanel.y = chart.dataPanel.y;
         chart.centerDividerPanel.height = chart.dataPanel.height;
@@ -195,6 +194,10 @@ angular.module('nlsnChart.Pyramid.module', [])
           .attr('transform', function (d, i) {
             return 'translate(' + chart.dataPanel.x + ',' + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ')';
           });
+      }
+
+      function drawGrid(chart){
+
       }
 
       function drawMetricsPanels(chart) {
@@ -351,6 +354,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         if (!chart.isCenterDivider) {
           return;
         }
+
         chart.dataPanel.baseElement.append('rect')
           .attr('class', 'nlsn-chart-center-divider')
           .attr('x', chart.centerDividerPanel.x)
