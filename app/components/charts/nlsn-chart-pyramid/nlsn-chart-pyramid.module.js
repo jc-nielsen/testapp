@@ -48,9 +48,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.config = {};
 
         // Configurable properties
-        chart.config.width = 1200;
+        chart.config.width = 800;
         chart.config.height = 500;
-        chart.config.margin = {top: 40, right: 30, bottom: 30, left: 20};
+        chart.config.margin = {top: 30, right: 20, bottom: 30, left: 6};
         chart.config.isShowMetrics = false;
         chart.config.metric1BarColor = '#41a6f4';
         chart.config.metric2BarColor = '#42f4e8';
@@ -196,7 +196,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           });
       }
 
-      function drawGrid(chart){
+      function drawGrid(chart) {
 
       }
 
@@ -325,11 +325,13 @@ angular.module('nlsnChart.Pyramid.module', [])
       function drawAxes(chart) {
         chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale)
-          .orient('bottom');
+          .orient('bottom')
+          .tickFormat(d3.format("s"));
 
         chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[1].xScale)
-          .orient('bottom');
+          .orient('bottom')
+          .tickFormat(d3.format("s"));
 
         chart.dataPanel.baseElement.append('g')
           .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
@@ -348,6 +350,24 @@ angular.module('nlsnChart.Pyramid.module', [])
             })
             .remove();
         }
+
+        // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append("line")
+        //   .attr(
+        //     {
+        //       "class": "nlsn-chart-grid",
+        //       "y1": chart.dataPanel.y,
+        //       "y2": chart.dataPanel.height,
+        //       "x1": function (d) {
+        //         return chart.metricsPanel[0].xScale(d);
+        //       },
+        //       "x2": function (d) {
+        //         return chart.metricsPanel[0].xScale(d);
+        //       },
+        //       "fill": "none",
+        //       "shape-rendering": "crispEdges",
+        //       "stroke": "black",
+        //       "stroke-width": "1px"
+        //     });
       }
 
       function drawCenterDivider(chart) {
