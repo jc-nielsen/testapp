@@ -15,8 +15,8 @@ angular.module('nlsnChart.Pyramid.module', [])
         restrict: 'E',
         scope: {},
         link: function (scope, element) {
-          baseElement = d3.select(element[0]).append("svg");
-          scope.$watch("chartData", renderChart, true);
+          baseElement = d3.select(element[0]).append('svg');
+          scope.$watch('chartData', renderChart, true);
         }
       };
 
@@ -41,6 +41,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         drawMetricsData(chart);
         drawTooltips(chart);
         drawAxes(chart);
+        drawCenterDivider(chart);
       }
 
       function configureChart(chart) {
@@ -60,6 +61,7 @@ angular.module('nlsnChart.Pyramid.module', [])
         // Alignment of label for each row, start/middle/end
         chart.config.recordLabelAlign = 'start';
         chart.config.centerDividerWidth = 2;
+        chart.config.centerDividerColor = '#000000';
         chart.config.recordLabelWidth = 120;
       }
 
@@ -77,6 +79,9 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.metricsPanel[1].axisPanel = {};
 
         // Create a panel for the record labels
+        chart.recordLabelPanel = {};
+
+        // Create a panel for the center divider
         chart.recordLabelPanel = {};
       }
 
@@ -117,18 +122,21 @@ angular.module('nlsnChart.Pyramid.module', [])
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
             chart.metricsPanel[0].isHideTickZero = true;
+            chart.isCenterDivider = true;
             break;
           case 'center':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
             chart.metricsPanel[0].isHideTickZero = false;
+            chart.isCenterDivider = false;
             break;
           case 'right':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
             chart.metricsPanel[0].isHideTickZero = true;
+            chart.isCenterDivider = true;
             break;
         }
 
@@ -139,139 +147,145 @@ angular.module('nlsnChart.Pyramid.module', [])
         //TODO axis x not getting the data panel margin added?
         chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
         chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
+
+        // Position the center divider.
+        chart.centerDividerPanel = {};
+        chart.centerDividerPanel.x = chart.metricsPanel[0].x + chart.metricsPanel[0].width + chart.dataPanel.x;
+        chart.centerDividerPanel.y = chart.dataPanel.y;
+        chart.centerDividerPanel.height = chart.dataPanel.height;
       }
 
       function drawBaseElement(chart) {
         // Remove any existing chart elements.
-        chart.baseElement.selectAll("*").remove();
+        chart.baseElement.selectAll('*').remove();
 
         // Set chart size
-        chart.baseElement.attr("width", chart.config.width)
-          .attr("height", chart.config.height);
+        chart.baseElement.attr('width', chart.config.width)
+          .attr('height', chart.config.height);
       }
 
       function drawHeadings(chart) {
         // Heading metric1 label
         // X is set to middle of column to use with text anchor middle
-        chart.baseElement.append("text")
-          .attr("class", "nlsn-chart-metric-label")
+        chart.baseElement.append('text')
+          .attr('class', 'nlsn-chart-metric-label')
           .text(chart.heading.metric1Label)
-          .attr("x", chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
-          .attr("y", chart.config.margin.top - chart.config.headingMarginBottom)
-          .attr("text-anchor", "middle");
+          .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
+          .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
+          .attr('text-anchor', 'middle');
 
         // Heading metric2 label
         // X is set to middle of column to use with text anchor middle
-        chart.baseElement.append("text")
-          .attr("class", "nlsn-chart-metric-label")
+        chart.baseElement.append('text')
+          .attr('class', 'nlsn-chart-metric-label')
           .text(chart.heading.metric2Label)
-          .attr("x", chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
-          .attr("y", chart.config.margin.top - chart.config.headingMarginBottom)
-          .attr("text-anchor", "middle");
+          .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
+          .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
+          .attr('text-anchor', 'middle');
       }
 
       function drawDataPanel(chart) {
-        chart.dataPanel.baseElement = chart.baseElement.append("g")
-          .attr("class", "nlsn-chart-data-panel");
+        chart.dataPanel.baseElement = chart.baseElement.append('g')
+          .attr('class', 'nlsn-chart-data-panel');
 
-        chart.dataPanel.records = chart.dataPanel.baseElement.selectAll("g.nlsn-chart-data-panel-record")
+        chart.dataPanel.records = chart.dataPanel.baseElement.selectAll('g.nlsn-chart-data-panel-record')
           .data(chart.data)
-          .enter().append("g")
-          .attr("class", "nlsn-chart-data-panel-record")
-          .attr("transform", function (d, i) {
-            return "translate(" + chart.dataPanel.x + "," + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ")";
+          .enter().append('g')
+          .attr('class', 'nlsn-chart-data-panel-record')
+          .attr('transform', function (d, i) {
+            return 'translate(' + chart.dataPanel.x + ',' + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ')';
           });
       }
 
       function drawMetricsPanels(chart) {
         // Left bar for metric1
-        chart.dataPanel.records.append("rect")
-          .attr("class", "nlsn-chart-metric-1-bar")
-          .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
-          .attr("x", chart.metricsPanel[0].x)
-          .attr("fill", chart.config.metric1BarColor);
+        chart.dataPanel.records.append('rect')
+          .attr('class', 'nlsn-chart-metric-1-bar')
+          .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
+          .attr('x', chart.metricsPanel[0].x)
+          .attr('fill', chart.config.metric1BarColor);
 
         //TODO needs margin
         // Left side metric value text
         if (chart.config.isShowMetrics) {
-          chart.dataPanel.records.append("text")
-            .attr("class", "nlsn-chart-metric-1-bar")
-            .attr("dx", -3)
-            .attr("dy", "1em")
-            .attr("text-anchor", "end");
+          chart.dataPanel.records.append('text')
+            .attr('class', 'nlsn-chart-metric-1-bar')
+            .attr('dx', -3)
+            .attr('dy', '1em')
+            .attr('text-anchor', 'end');
         }
 
         // Right bar for metric2
-        chart.dataPanel.records.append("rect")
-          .attr("class", "nlsn-chart-metric-2-bar")
-          .attr("height", chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
-          .attr("x", chart.metricsPanel[1].x)
-          .attr("fill", chart.config.metric2BarColor);
+        chart.dataPanel.records.append('rect')
+          .attr('class', 'nlsn-chart-metric-2-bar')
+          .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
+          .attr('x', chart.metricsPanel[1].x)
+          .attr('fill', chart.config.metric2BarColor);
 
         //TODO needs margin
         if (chart.config.isShowMetrics) {
-          chart.dataPanel.records.append("text")
-            .attr("class", "nlsn-chart-metric-2-bar")
-            .attr("dx", 3)
-            .attr("dy", "1em");
+          chart.dataPanel.records.append('text')
+            .attr('class', 'nlsn-chart-metric-2-bar')
+            .attr('dx', 3)
+            .attr('dy', '1em');
         }
       }
 
       function drawRecordLabels(chart) {
         // Record labels
-        chart.dataPanel.records.append("text")
-          .attr("class", "nlsn-chart-record-label")
-          .attr("x", chart.recordLabelPanel.x)
-          .attr("dy", "1em")
-          .attr("text-anchor", chart.config.recordLabelAlign)
+        chart.dataPanel.records.append('text')
+          .attr('class', 'nlsn-chart-record-label')
+          .attr('x', chart.recordLabelPanel.x)
+          .attr('dy', '1em')
+          .attr('text-anchor', chart.config.recordLabelAlign)
           .text(function (d) {
             return d.sharedLabel;
           });
       }
 
       function drawMetricsData(chart) {
-        var formatMetric = d3.format(",.0f");
+        var formatMetric = d3.format(',.0f');
 
-        var bars = d3.selectAll("g.nlsn-chart-data-panel-record")
+        var bars = d3.selectAll('g.nlsn-chart-data-panel-record')
           .data(chart.data);
 
         // Text metric1
         if (chart.config.isShowMetrics) {
-          bars.selectAll("text.nlsn-chart-metric-1-bar")
+          bars.selectAll('text.nlsn-chart-metric-1-bar')
             .text(function (d) {
               return formatMetric(d.metric1);
             })
-            .attr("x", function (d) {
+            .attr('x', function (d) {
               return chart.metricsPanel[0].xScale(d.metric1);
             });
         }
 
         // Bar metric1
         //TODO xscale
-        bars.selectAll("rect.nlsn-chart-metric-1-bar")
-          .attr("x", function (d) {
+        bars.selectAll('rect.nlsn-chart-metric-1-bar')
+          .attr('x', function (d) {
             return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric1));
           })
-          .attr("width", function (d) {
+          .attr('width', function (d) {
             return (chart.metricsPanel[0].width - chart.metricsPanel[0].xScale(d.metric1));
           });
 
         // Bar metric2
-        bars.selectAll("rect.nlsn-chart-metric-2-bar")
-          .attr("x", function (d) {
+        bars.selectAll('rect.nlsn-chart-metric-2-bar')
+          .attr('x', function (d) {
             return chart.metricsPanel[1].x;
           })
-          .attr("width", function (d) {
+          .attr('width', function (d) {
             return chart.metricsPanel[1].xScale(d.metric2);
           });
 
         // Text metric2
         if (chart.config.isShowMetrics) {
-          bars.selectAll("text.nlsn-chart-metric-2-bar")
+          bars.selectAll('text.nlsn-chart-metric-2-bar')
             .text(function (d) {
               return formatMetric(d.metric2);
             })
-            .attr("x", function (d) {
+            .attr('x', function (d) {
               return chart.metricsPanel[1].xScale(d.metric2);
             });
         }
@@ -294,12 +308,12 @@ angular.module('nlsnChart.Pyramid.module', [])
         chart.baseElement.call(chart.tipMetric2);
 
         // Bar metric1
-        chart.dataPanel.records.selectAll("rect.nlsn-chart-metric-1-bar")
+        chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
           .on('mouseover', chart.tipMetric1.show)
           .on('mouseout', chart.tipMetric1.hide);
 
         // Bar metric2
-        chart.dataPanel.records.selectAll("rect.nlsn-chart-metric-2-bar")
+        chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-2-bar')
           .on('mouseover', chart.tipMetric2.show)
           .on('mouseout', chart.tipMetric2.hide);
 
@@ -308,33 +322,42 @@ angular.module('nlsnChart.Pyramid.module', [])
       function drawAxes(chart) {
         chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[0].xScale)
-          .orient("bottom");
+          .orient('bottom');
 
         chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
           .scale(chart.metricsPanel[1].xScale)
-          .orient("bottom");
+          .orient('bottom');
 
-        // chart.dataPanel.yAxis = d3.svg.axis()
-        //   .scale(chart.dataPanel.yScale)
-        //   .orient("left");
-
-        chart.dataPanel.baseElement.append("g")
-          .attr("class", "nlsn-chart-axis nlsn-chart-axis-0")
-          .attr("transform", "translate(" + chart.metricsPanel[0].axisPanel.x + "," + chart.metricsPanel[0].axisPanel.y + ")")
+        chart.dataPanel.baseElement.append('g')
+          .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
+          .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
           .call(chart.metricsPanel[0].axisPanel.xAxis);
 
-        chart.dataPanel.baseElement.append("g")
-          .attr("class", "nlsn-chart-axis nlsn-chart-axis-1")
-          .attr("transform", "translate(" + chart.metricsPanel[1].axisPanel.x + "," + chart.metricsPanel[1].axisPanel.y + ")")
+        chart.dataPanel.baseElement.append('g')
+          .attr('class', 'nlsn-chart-axis nlsn-chart-axis-1')
+          .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
           .call(chart.metricsPanel[1].axisPanel.xAxis);
 
         if (chart.metricsPanel[0].isHideTickZero) {
-          chart.dataPanel.baseElement.selectAll(".nlsn-chart-axis-0 .tick")
+          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick')
             .filter(function (d) {
               return d === 0;
             })
             .remove();
         }
+      }
+
+      function drawCenterDivider(chart) {
+        if (!chart.isCenterDivider) {
+          return;
+        }
+        chart.dataPanel.baseElement.append('rect')
+          .attr('class', 'nlsn-chart-center-divider')
+          .attr('x', chart.centerDividerPanel.x)
+          .attr('y', chart.centerDividerPanel.y)
+          .attr('height', chart.centerDividerPanel.height)
+          .attr('width', chart.config.centerDividerWidth)
+          .attr('fill', chart.config.centerDividerColor);
       }
 
     }])
