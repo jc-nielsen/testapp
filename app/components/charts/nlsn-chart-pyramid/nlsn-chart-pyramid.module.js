@@ -116,20 +116,23 @@ angular.module('nlsnChart.Pyramid.module', [])
             chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
+            chart.metricsPanel[0].isHideTickZero = true;
             break;
           case 'center':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
+            chart.metricsPanel[0].isHideTickZero = false;
             break;
           case 'right':
             chart.metricsPanel[0].x = chart.dataPanel.x;
             chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
             chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
+            chart.metricsPanel[0].isHideTickZero = true;
             break;
         }
 
-        // Position the metrics panels for each metric.
+        // Position the axis panels for each metric.
         chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
         chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
 
@@ -316,14 +319,22 @@ angular.module('nlsnChart.Pyramid.module', [])
         //   .orient("left");
 
         chart.dataPanel.baseElement.append("g")
-          .attr("class", "nlsn-chart-axis")
+          .attr("class", "nlsn-chart-axis nlsn-chart-axis-0")
           .attr("transform", "translate(" + chart.metricsPanel[0].axisPanel.x + "," + chart.metricsPanel[0].axisPanel.y + ")")
           .call(chart.metricsPanel[0].axisPanel.xAxis);
 
         chart.dataPanel.baseElement.append("g")
-          .attr("class", "nlsn-chart-axis")
+          .attr("class", "nlsn-chart-axis nlsn-chart-axis-1")
           .attr("transform", "translate(" + chart.metricsPanel[1].axisPanel.x + "," + chart.metricsPanel[1].axisPanel.y + ")")
           .call(chart.metricsPanel[1].axisPanel.xAxis);
+
+        if (chart.metricsPanel[0].isHideTickZero) {
+          chart.dataPanel.baseElement.selectAll(".nlsn-chart-axis-0 .tick")
+            .filter(function (d) {
+              return d === 0;
+            })
+            .remove();
+        }
       }
 
     }])
