@@ -29,6 +29,13 @@ angular.module('nlsnChart.Pyramid2.module', [])
         chart.baseElement = baseElement;
         chart.data = newValue.data;
         chart.heading = newValue.heading;
+        chart.update=chartUpdate;
+
+        nv.utils.windowResize(chart.update);
+
+        function chartUpdate(){
+          console.log('chartUpdate');
+        }
 
         configureChart(chart);
         createPanels(chart);
