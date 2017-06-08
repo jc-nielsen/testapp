@@ -59,13 +59,14 @@ angular.module('nlsnChart.Pyramid2.module', [])
           drawMetricsData(chart);
           drawTooltips(chart);
           drawAxes(chart);
-          drawCenterDivider(chart);
+          //drawCenterDivider(chart);
         }
 
         function calculateWidth(width) {
           //console.log('availableWidth=' + width);
           //console.log('width=' + chart.width);
-          chart.width = width;
+          var windowXMargin = 100;
+          chart.width = width - windowXMargin;
 
           chart.dataPanel.width = chart.width - (chart.config.margin.left + chart.config.margin.right);
 
@@ -97,7 +98,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
         function calculateHeight(height) {
           //console.log('availableHeight=' + height);
           //console.log('height=' + chart.height);
-          chart.height = height;
+          var windowYMargin = 100;
+          chart.height = height - windowYMargin;
 
           chart.dataPanel.height = chart.height - (chart.config.margin.top + chart.config.margin.bottom);
           chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
@@ -119,7 +121,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
         drawMetricsData(chart);
         drawTooltips(chart);
         drawAxes(chart);
-        drawCenterDivider(chart);
+        //drawCenterDivider(chart);
       }
 
       function configureChart(chart) {
