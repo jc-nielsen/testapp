@@ -59,7 +59,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           drawMetricsData(chart);
           drawTooltips(chart);
           drawAxes(chart);
-          //drawCenterDivider(chart);
+          drawCenterDivider(chart);
         }
 
         function calculateWidth(width) {
@@ -93,6 +93,9 @@ angular.module('nlsnChart.Pyramid2.module', [])
           // Position the axis panels for each metric.
           chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
           chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
+
+          // Position the center divider. X.
+          chart.centerDividerPanel.x = chart.metricsPanel[0].x + chart.metricsPanel[0].width + chart.dataPanel.x;
         }
 
         function calculateHeight(height) {
@@ -108,6 +111,10 @@ angular.module('nlsnChart.Pyramid2.module', [])
           // Position the axis panels for each metric.
           chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
           chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
+
+          // Position the center divider. Y.
+          chart.centerDividerPanel.y = chart.dataPanel.y;
+          chart.centerDividerPanel.height = chart.dataPanel.height;
         }
 
         configureChart(chart);
@@ -121,7 +128,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
         drawMetricsData(chart);
         drawTooltips(chart);
         drawAxes(chart);
-        //drawCenterDivider(chart);
+        drawCenterDivider(chart);
       }
 
       function configureChart(chart) {
