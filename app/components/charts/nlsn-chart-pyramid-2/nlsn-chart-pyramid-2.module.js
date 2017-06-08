@@ -2,8 +2,9 @@
 
 angular.module('nlsnChart.Pyramid2.module', [])
   .directive('nlsnChartPyramid2', [
+    '$window',
     'nlsnDataSvc',
-    function (nlsnDataSvc) {
+    function ($window, nlsnDataSvc) {
       var baseElement;
       var theController = function ($scope) {
         $scope.chartData = nlsnDataSvc.getChartDataPyramid();
@@ -29,12 +30,82 @@ angular.module('nlsnChart.Pyramid2.module', [])
         chart.baseElement = baseElement;
         chart.data = newValue.data;
         chart.heading = newValue.heading;
-        chart.update=chartUpdate;
 
-        nv.utils.windowResize(chart.update);
+        nv.utils.windowResize(onResize);
 
-        function chartUpdate(){
-          console.log('chartUpdate');
+        function onResize() {
+          //get window size
+          var availableWidth = $window.innerWidth;
+          var availableHeight = $window.innerHeight;
+          var isUpdate = false;
+          if ((availableWidth !== chart.width) && (availableWidth >= chart.config.minWidth) && (availableWidth <= chart.config.maxWidth)) {
+            isUpdate = true;
+            calculateWidth(availableWidth);
+          }
+          if ((availableHeight !== chart.height) && (availableHeight >= chart.config.minHeight) && (availableHeight <= chart.config.maxHeight)) {
+            isUpdate = true;
+            calculateHeight(availableHeight);
+          }
+          if (!isUpdate) {
+            return;
+          }
+
+          // Redraw chart
+          drawBaseElement(chart);
+          drawHeadings(chart);
+          drawDataPanel(chart);
+          drawMetricsPanels(chart);
+          drawRecordLabels(chart);
+          drawMetricsData(chart);
+          drawTooltips(chart);
+          drawAxes(chart);
+          drawCenterDivider(chart);
+        }
+
+        function calculateWidth(width) {
+          //console.log('availableWidth=' + width);
+          //console.log('width=' + chart.width);
+          chart.width = width;
+
+          chart.dataPanel.width = chart.width - (chart.config.margin.left + chart.config.margin.right);
+
+          chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
+          chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
+          chart.metricsPanel[0].xScale = d3.scale.linear().domain([chart.metricsPanel[0].max, 0]).range([0, chart.metricsPanel[0].width]);
+          chart.metricsPanel[1].xScale = d3.scale.linear().domain([0, chart.metricsPanel[1].max]).range([0, chart.metricsPanel[1].width]);
+
+          // Do the config conditional calculations
+          switch (chart.config.recordLabelPosition) {
+            case 'left':
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
+              break;
+            case 'center':
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
+              chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
+              break;
+            case 'right':
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
+              chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
+              break;
+          }
+
+          // Position the axis panels for each metric.
+          chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
+          chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
+        }
+
+        function calculateHeight(height) {
+          //console.log('availableHeight=' + height);
+          //console.log('height=' + chart.height);
+          chart.height = height;
+
+          chart.dataPanel.height = chart.height - (chart.config.margin.top + chart.config.margin.bottom);
+          chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
+          chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
+
+          // Position the axis panels for each metric.
+          chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
+          chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
         }
 
         configureChart(chart);
@@ -57,6 +128,10 @@ angular.module('nlsnChart.Pyramid2.module', [])
         // Configurable properties
         chart.config.width = 800;
         chart.config.height = 500;
+        chart.config.minWidth = 400;
+        chart.config.minHeight = 300;
+        chart.config.maxWidth = 1200;
+        chart.config.maxHeight = 800;
         chart.config.margin = {top: 30, right: 20, bottom: 30, left: 6};
         chart.config.isShowMetrics = false;
         chart.config.metric1BarColor = '#41a6f4';
@@ -93,8 +168,11 @@ angular.module('nlsnChart.Pyramid2.module', [])
       }
 
       function calculateSettings(chart) {
-        chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
-        chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
+        chart.width = chart.config.width;
+        chart.height = chart.config.height;
+
+        chart.dataPanel.width = chart.width - (chart.config.margin.left + chart.config.margin.right);
+        chart.dataPanel.height = chart.height - (chart.config.margin.top + chart.config.margin.bottom);
         chart.dataPanel.x = 0 + chart.config.margin.left;
         chart.dataPanel.y = 0 + chart.config.margin.top;
         chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
@@ -150,8 +228,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
         // Position the axis panels for each metric.
         chart.metricsPanel[0].axisPanel.y = chart.metricsPanel[0].y + chart.dataPanel.height;
         chart.metricsPanel[1].axisPanel.y = chart.metricsPanel[1].y + chart.dataPanel.height;
-
-        //TODO axis x not getting the data panel margin added?
         chart.metricsPanel[0].axisPanel.x = chart.metricsPanel[0].x + chart.dataPanel.x;
         chart.metricsPanel[1].axisPanel.x = chart.metricsPanel[1].x + chart.dataPanel.x;
 
