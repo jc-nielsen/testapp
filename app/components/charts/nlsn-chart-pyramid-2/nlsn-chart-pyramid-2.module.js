@@ -105,11 +105,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
         }
 
         function calculateSettings(chart) {
-          chart.width = chart.config.width;
-          chart.height = chart.config.height;
-
-          chart.dataPanel.width = chart.width - (chart.config.margin.left + chart.config.margin.right);
-          chart.dataPanel.height = chart.height - (chart.config.margin.top + chart.config.margin.bottom);
+          chart.dataPanel.width = chart.config.width - (chart.config.margin.left + chart.config.margin.right);
+          chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
           chart.dataPanel.x = 0 + chart.config.margin.left;
           chart.dataPanel.y = 0 + chart.config.margin.top;
           chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
@@ -180,9 +177,9 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           // Set chart size
           chart.baseElement
-              .attr("viewBox", "0 0 800 600")
-              .attr('width', chart.config.width)
-              .attr('height', chart.config.height)
+              .attr("viewBox", "0 0 " + chart.config.width + " " + chart.config.height)
+              .attr('width', "100%")
+              .attr('height', "100%")
               .attr("preserveAspectRatio", "none");
         }
 
