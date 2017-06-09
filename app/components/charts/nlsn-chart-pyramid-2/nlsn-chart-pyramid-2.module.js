@@ -272,21 +272,19 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
 
         function drawGrid(chart) {
+
+          // Grid lines - verticle
           chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis .tick').append('line')
               .attr(
                   {
                     'class': 'nlsn-chart-grid',
-                    'y1': chart.dataPanel.y,
-                    'y2': chart.dataPanel.y - chart.dataPanel.height,
-                    'x1': function (d) {
-                      return chart.metricsPanel[0].xScale(d);
-                    },
-                    'x2': function (d) {
-                      return chart.metricsPanel[0].xScale(d);
-                    },
+                    'y1': 0-chart.dataPanel.height,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': 0,
                     'fill': 'none',
                     'shape-rendering': 'crispEdges',
-                    'stroke': 'black',
+                    'stroke': chart.config.gridColor,
                     'stroke-width': '1px'
                   });
         }

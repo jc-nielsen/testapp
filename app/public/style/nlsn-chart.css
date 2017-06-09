@@ -25,33 +25,16 @@ body {
 }
 
 .nlsn-chart-axis path {
-  display: none;
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
 }
 
-.nlsn-chart-axis line {
-  display: none;
-}
-
-/*.nlsn-chart-axis line :not(.nlsn-chart-grid) {*/
-  /*display: none;*/
-/*}*/
-
-/* Moved to config */
-/*.nlsn-chart-axis {*/
-/*stroke: steelblue;*/
-/*}*/
-
-/* Moved to config */
-/*.nlsn-chart-record-label {*/
-/*stroke: steelblue;*/
-/*}*/
-
-/* responsive stuff */
 .nlsn-chart-svg-container {
   display: inline-block;
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* aspect ratio */
+  padding-bottom: 100%;
   vertical-align: top;
   overflow: hidden;
 }
