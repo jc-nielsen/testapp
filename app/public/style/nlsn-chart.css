@@ -5,12 +5,6 @@ body {
 
 /* chart styles */
 
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 2px;
-}
-
 .nlsn-chart-tip span {
   position: absolute;
   text-align: center;
@@ -26,7 +20,7 @@ body {
 
 .nlsn-chart-axis path {
   fill: none;
-  stroke: steelblue;
+  stroke: #989ea7;
   stroke-width: 2px;
 }
 
