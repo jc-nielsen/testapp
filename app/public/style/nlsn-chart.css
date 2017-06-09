@@ -26,14 +26,21 @@ body {
 
 .nlsn-chart-axis path,
 .nlsn-chart-axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+  display: none;
+  /*fill: none;*/
+  /*stroke: #000;*/
+  /*shape-rendering: crispEdges;*/
 }
 
-.x.nlsn-chart-axis path {
-  display: none;
-}
+/* Moved to config */
+/*.nlsn-chart-axis {*/
+  /*stroke: steelblue;*/
+/*}*/
+
+/* Moved to config */
+/*.nlsn-chart-record-label {*/
+  /*stroke: steelblue;*/
+/*}*/
 
 /* responsive stuff */
 .nlsn-chart-svg-container {
@@ -44,6 +51,7 @@ body {
   vertical-align: top;
   overflow: hidden;
 }
+
 .nlsn-chart-svg-content-responsive {
   display: inline-block;
   position: absolute;

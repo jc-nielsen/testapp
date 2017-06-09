@@ -35,7 +35,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           nv.utils.windowResize(onResize);
 
           function onResize() {
-            var element=chart.containerElement[0][0];
+            var element = chart.containerElement[0][0];
 
             // Extract the width and height that was computed by CSS.
             var width = element.clientWidth;
@@ -58,13 +58,13 @@ angular.module('nlsnChart.Pyramid2.module', [])
           drawBaseElement(chart);
           drawHeadings(chart);
           drawDataPanel(chart);
+          drawAxis(chart);
           drawGrid(chart);
+          drawCenterDivider(chart);
           drawMetricsPanels(chart);
           drawRecordLabels(chart);
           drawMetricsData(chart);
           drawTooltips(chart);
-          drawAxes(chart);
-          drawCenterDivider(chart);
         }
 
         function configureChart(chart) {
@@ -85,9 +85,15 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.headingMarginBottom = 8;
           // Position of label for each row, left/center/right
           chart.config.recordLabelPosition = 'left';
+          // Alignment of label for each row, start/middle/end
+          chart.config.recordLabelAlign = 'start';
           chart.config.centerDividerWidth = 2;
           chart.config.centerDividerColor = '#000000';
           chart.config.recordLabelWidth = 120;
+          chart.config.axisColor = 'steelblue';
+          chart.config.recordLabelColor = 'steelblue';
+          chart.config.headingLabelColor = 'steelblue';
+          chart.config.gridColor = 'steelblue';
         }
 
         function createPanels(chart) {
@@ -148,7 +154,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
               chart.metricsPanel[0].isHideTickZero = true;
               chart.isCenterDivider = true;
-              chart.config.recordLabelAlign = 'start';
               break;
             case 'center':
               chart.metricsPanel[0].x = chart.dataPanel.x;
@@ -156,7 +161,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
               chart.metricsPanel[0].isHideTickZero = false;
               chart.isCenterDivider = false;
-              chart.config.recordLabelAlign = 'middle';
               break;
             case 'right':
               chart.metricsPanel[0].x = chart.dataPanel.x;
@@ -164,7 +168,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
               chart.metricsPanel[0].isHideTickZero = true;
               chart.isCenterDivider = true;
-              chart.config.recordLabelAlign = 'end';
               break;
           }
 
@@ -206,7 +209,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .text(chart.heading.metric1Label)
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
-              .attr('text-anchor', 'middle');
+              .attr('text-anchor', 'middle')
+              .attr('stroke', chart.config.headingLabelColor);
 
           // Heading metric2 label
           // X is set to middle of column to use with text anchor middle
@@ -215,7 +219,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .text(chart.heading.metric2Label)
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
-              .attr('text-anchor', 'middle');
+              .attr('text-anchor', 'middle')
+              .attr('stroke', chart.config.headingLabelColor);
         }
 
         function drawDataPanel(chart) {
@@ -231,8 +236,75 @@ angular.module('nlsnChart.Pyramid2.module', [])
               });
         }
 
+        function drawAxis(chart) {
+          chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
+              .scale(chart.metricsPanel[0].xScale)
+              .orient('bottom')
+              .ticks(5)
+              .tickFormat(d3.format('s'));
+
+          chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
+              .scale(chart.metricsPanel[1].xScale)
+              .orient('bottom')
+              .ticks(5)
+              .tickFormat(d3.format('s'));
+
+          chart.dataPanel.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
+              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
+              .attr('stroke', chart.config.axisColor)
+              .call(chart.metricsPanel[0].axisPanel.xAxis);
+
+          chart.dataPanel.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-1')
+              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
+              .attr('stroke', chart.config.axisColor)
+              .call(chart.metricsPanel[1].axisPanel.xAxis);
+
+          if (chart.metricsPanel[0].isHideTickZero) {
+            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick')
+                .filter(function (d) {
+                  return d === 0;
+                })
+                .remove();
+          }
+
+          // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
+          //   .attr(
+          //     {
+          //       'class': 'nlsn-chart-grid',
+          //       'y1': chart.dataPanel.y,
+          //       'y2': chart.dataPanel.height,
+          //       'x1': function (d) {
+          //         return chart.metricsPanel[0].xScale(d);
+          //       },
+          //       'x2': function (d) {
+          //         return chart.metricsPanel[0].xScale(d);
+          //       },
+          //       'fill': 'none',
+          //       'shape-rendering': 'crispEdges',
+          //       'stroke': 'black',
+          //       'stroke-width': '1px'
+          //     });
+        }
+
+
         function drawGrid(chart) {
 
+        }
+
+        function drawCenterDivider(chart) {
+          if (!chart.isCenterDivider) {
+            return;
+          }
+
+          chart.dataPanel.baseElement.append('rect')
+              .attr('class', 'nlsn-chart-center-divider')
+              .attr('x', chart.centerDividerPanel.x)
+              .attr('y', chart.centerDividerPanel.y)
+              .attr('height', chart.centerDividerPanel.height)
+              .attr('width', chart.config.centerDividerWidth)
+              .attr('fill', chart.config.centerDividerColor);
         }
 
         function drawMetricsPanels(chart) {
@@ -276,6 +348,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('x', chart.recordLabelPanel.x)
               .attr('dy', '1em')
               .attr('text-anchor', chart.config.recordLabelAlign)
+              .attr('stroke', chart.config.recordLabelColor)
               .text(function (d) {
                 return d.sharedLabel;
               });
@@ -355,70 +428,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .on('mouseover', chart.tipMetric2.show)
               .on('mouseout', chart.tipMetric2.hide);
 
-        }
-
-        function drawAxes(chart) {
-          chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
-              .scale(chart.metricsPanel[0].xScale)
-              .orient('bottom')
-              .ticks(5)
-              .tickFormat(d3.format('s'));
-
-          chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
-              .scale(chart.metricsPanel[1].xScale)
-              .orient('bottom')
-              .ticks(5)
-              .tickFormat(d3.format('s'));
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
-              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
-              .call(chart.metricsPanel[0].axisPanel.xAxis);
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-1')
-              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
-              .call(chart.metricsPanel[1].axisPanel.xAxis);
-
-          if (chart.metricsPanel[0].isHideTickZero) {
-            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick')
-                .filter(function (d) {
-                  return d === 0;
-                })
-                .remove();
-          }
-
-          // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
-          //   .attr(
-          //     {
-          //       'class': 'nlsn-chart-grid',
-          //       'y1': chart.dataPanel.y,
-          //       'y2': chart.dataPanel.height,
-          //       'x1': function (d) {
-          //         return chart.metricsPanel[0].xScale(d);
-          //       },
-          //       'x2': function (d) {
-          //         return chart.metricsPanel[0].xScale(d);
-          //       },
-          //       'fill': 'none',
-          //       'shape-rendering': 'crispEdges',
-          //       'stroke': 'black',
-          //       'stroke-width': '1px'
-          //     });
-        }
-
-        function drawCenterDivider(chart) {
-          if (!chart.isCenterDivider) {
-            return;
-          }
-
-          chart.dataPanel.baseElement.append('rect')
-              .attr('class', 'nlsn-chart-center-divider')
-              .attr('x', chart.centerDividerPanel.x)
-              .attr('y', chart.centerDividerPanel.y)
-              .attr('height', chart.centerDividerPanel.height)
-              .attr('width', chart.config.centerDividerWidth)
-              .attr('fill', chart.config.centerDividerColor);
         }
 
       }])
