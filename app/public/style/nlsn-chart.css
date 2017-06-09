@@ -1,11 +1,6 @@
-body {
-  font: 12px sans-serif;
-  margin: 0;
-}
-
 /* chart styles */
 
-.nlsn-chart-tip span {
+nlsn-chart-tip span {
   position: absolute;
   text-align: center;
   width: 60px;
@@ -20,7 +15,6 @@ body {
 
 .nlsn-chart-axis path {
   fill: none;
-  stroke: #989ea7;
   stroke-width: 2px;
 }
 
@@ -31,6 +25,8 @@ body {
   padding-bottom: 100%;
   vertical-align: top;
   overflow: hidden;
+  font: 14px sans-serif;
+  margin: 0;
 }
 
 .nlsn-chart-svg-content-responsive {
