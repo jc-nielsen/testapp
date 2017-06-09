@@ -1,6 +1,6 @@
 /* chart styles */
 
-nlsn-chart-tip span {
+.nlsn-chart-tip span {
   position: absolute;
   text-align: center;
   width: 60px;
