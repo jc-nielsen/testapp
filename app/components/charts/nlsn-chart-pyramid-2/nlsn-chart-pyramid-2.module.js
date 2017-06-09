@@ -2,9 +2,10 @@
 
 angular.module('nlsnChart.Pyramid2.module', [])
     .directive('nlsnChartPyramid2', [
+      '$document',
       '$window',
       'nlsnDataSvc',
-      function ($window, nlsnDataSvc) {
+      function ($document, $window, nlsnDataSvc) {
         var containerElement;
         var theController = function ($scope) {
           $scope.chartData = nlsnDataSvc.getChartDataPyramid();
@@ -31,19 +32,25 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.data = newValue.data;
           chart.heading = newValue.heading;
 
-          //nv.utils.windowResize(onResize);
+          nv.utils.windowResize(onResize);
 
-          //function onResize() {
-          //  //get window size
-          //  var availableWidth = $window.innerWidth;
-          //  var availableHeight = $window.innerHeight;
-          //  var chartWidth = availableWidth - 100;
-          //  var chartHeight = availableHeight - 100;
-          //
-          //  chart.containerElement
-          //      .attr('width', chartWidth)
-          //      .attr('height', chartHeight);
-          //}
+          function onResize() {
+            var element=chart.containerElement[0][0];
+
+            // Extract the width and height that was computed by CSS.
+            var width = element.clientWidth;
+            var height = element.clientHeight;
+            console.log('width =' + width);
+            console.log('height =' + height);
+
+            //get window size
+            //var availableWidth = $window.innerWidth;
+            //var availableHeight = $window.innerHeight;
+
+            //chart.svgElement
+            //    .attr('width', width)
+            //    .attr('height', height);
+          }
 
           configureChart(chart);
           createPanels(chart);
