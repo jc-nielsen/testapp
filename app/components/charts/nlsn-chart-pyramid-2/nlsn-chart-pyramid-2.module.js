@@ -91,10 +91,11 @@ angular.module('nlsnChart.Pyramid2.module', [])
         chart.config.centerDividerColor = '#000000';
         chart.config.recordLabelWidth = 120;
         chart.config.defaultColor1 = '#999999';
-        chart.config.axisColor = chart.config.defaultColor1;
+        chart.config.defaultColor2 = 'lightgray';
         chart.config.recordLabelColor = chart.config.defaultColor1;
         chart.config.headingLabelColor = chart.config.defaultColor1;
-        chart.config.gridColor = chart.config.defaultColor1;
+        chart.config.axisColor = chart.config.defaultColor2;
+        chart.config.gridColor = chart.config.defaultColor2;
       }
 
       function createPanels(chart) {
