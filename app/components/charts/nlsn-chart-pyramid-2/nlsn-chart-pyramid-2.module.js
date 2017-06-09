@@ -71,7 +71,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config = {};
 
           // Configurable properties
-          chart.config.width = 600;
+          chart.config.width = 400;
           chart.config.height = 300;
           chart.config.minWidth = 400;
           chart.config.minHeight = 200;
@@ -89,7 +89,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.recordLabelAlign = 'start';
           chart.config.centerDividerWidth = 2;
           chart.config.centerDividerColor = '#000000';
-          chart.config.recordLabelWidth = 120;
+          chart.config.recordLabelWidth = 80;
           chart.config.defaultColor1 = '#999999';
           chart.config.defaultColor2 = 'lightgray';
           chart.config.recordLabelColor = chart.config.defaultColor1;
@@ -123,8 +123,11 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.dataPanel.height = chart.config.height - (chart.config.margin.top + chart.config.margin.bottom);
           chart.dataPanel.x = 0 + chart.config.margin.left;
           chart.dataPanel.y = 0 + chart.config.margin.top;
-          chart.dataPanel.yScale = d3.scale.linear().domain([0, chart.data.length]).range([0, chart.dataPanel.height]);
           chart.dataPanel.rowHeight = chart.dataPanel.height / chart.data.length;
+
+          chart.dataPanel.yScale = d3.scale.linear()
+              .domain([0, chart.data.length])
+              .range([0, chart.dataPanel.height]);
 
           // Maximum data value is used for scale. Needed for each of the metrics.
           chart.metricsPanel[0].max = d3.max(chart.data, function (d) {
@@ -143,14 +146,17 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
           chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
+
           chart.metricsPanel[0].xScale = d3.scale.linear()
-              .domain([chart.metricsPanel[0].max, 0])
+              .domain([(chart.metricsPanel[0].max), 0])
               .range([0, chart.metricsPanel[0].width])
               .nice();
+
           chart.metricsPanel[1].xScale = d3.scale.linear()
               .domain([0, chart.metricsPanel[1].max])
               .range([0, chart.metricsPanel[1].width])
               .nice();
+
           chart.metricsPanel[0].y = chart.dataPanel.y;
           chart.metricsPanel[1].y = chart.dataPanel.y;
 
@@ -255,7 +261,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
               .scale(chart.metricsPanel[1].xScale)
               .orient('bottom')
-              .ticks(5)
+              .ticks(6)
               .tickSize(0)
               .tickFormat(d3.format('s'));
 
@@ -354,6 +360,14 @@ angular.module('nlsnChart.Pyramid2.module', [])
                     'stroke': chart.config.gridColor,
                     'stroke-width': '2px'
                   });
+
+          if (chart.metricsPanel[0].isHideTickZero) {
+            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x.nlsn-chart-axis-1 line')
+                .filter(function (d) {
+                  return d === 0;
+                })
+                .remove();
+          }
         }
 
         function drawCenterDivider(chart) {

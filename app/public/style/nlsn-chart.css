@@ -14,22 +14,12 @@
 }
 
 .nlsn-chart-axis path {
-  stroke-width: 0;
   display: none;
 }
-
-/*.nlsn-chart-axis :not(.nlsn-chart-grid)  line {*/
-/*stroke-width: 0;*/
-/*display: none;*/
-/*}*/
 
 .nlsn-chart-grid {
   opacity: 0.7;
 }
-
-/*.nlsn-chart-grid path {*/
-/*stroke-width: 0;*/
-/*}*/
 
 .nlsn-chart-svg-container {
   display: inline-block;
@@ -38,7 +28,7 @@
   padding-bottom: 100%;
   vertical-align: top;
   overflow: hidden;
-  font: 14px sans-serif;
+  font: 10px sans-serif;
   margin: 0;
 }
 
