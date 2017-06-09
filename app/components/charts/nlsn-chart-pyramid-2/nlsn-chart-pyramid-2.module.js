@@ -5,7 +5,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
       '$window',
       'nlsnDataSvc',
       function ($window, nlsnDataSvc) {
-        var baseElement;
+        var containerElement;
         var theController = function ($scope) {
           $scope.chartData = nlsnDataSvc.getChartDataPyramid();
         };
@@ -16,7 +16,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           restrict: 'E',
           scope: {},
           link: function (scope, element) {
-            baseElement = d3.select(element[0]).append('svg');
+            containerElement = d3.select(element[0]).append('div');
             scope.$watch('chartData', renderChart, true);
           }
         };
@@ -27,7 +27,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           }
 
           var chart = {};
-          chart.baseElement = baseElement;
+          chart.containerElement = containerElement;
           chart.data = newValue.data;
           chart.heading = newValue.heading;
 
@@ -40,7 +40,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           //  var chartWidth = availableWidth - 100;
           //  var chartHeight = availableHeight - 100;
           //
-          //  chart.baseElement
+          //  chart.containerElement
           //      .attr('width', chartWidth)
           //      .attr('height', chartHeight);
           //}
@@ -51,6 +51,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           drawBaseElement(chart);
           drawHeadings(chart);
           drawDataPanel(chart);
+          drawGrid(chart);
           drawMetricsPanels(chart);
           drawRecordLabels(chart);
           drawMetricsData(chart);
@@ -77,8 +78,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.headingMarginBottom = 8;
           // Position of label for each row, left/center/right
           chart.config.recordLabelPosition = 'left';
-          // Alignment of label for each row, start/middle/end
-          chart.config.recordLabelAlign = 'start';
           chart.config.centerDividerWidth = 2;
           chart.config.centerDividerColor = '#000000';
           chart.config.recordLabelWidth = 120;
@@ -142,6 +141,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
               chart.metricsPanel[0].isHideTickZero = true;
               chart.isCenterDivider = true;
+              chart.config.recordLabelAlign = 'start';
               break;
             case 'center':
               chart.metricsPanel[0].x = chart.dataPanel.x;
@@ -149,6 +149,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
               chart.metricsPanel[0].isHideTickZero = false;
               chart.isCenterDivider = false;
+              chart.config.recordLabelAlign = 'middle';
               break;
             case 'right':
               chart.metricsPanel[0].x = chart.dataPanel.x;
@@ -156,6 +157,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
               chart.metricsPanel[0].isHideTickZero = true;
               chart.isCenterDivider = true;
+              chart.config.recordLabelAlign = 'end';
               break;
           }
 
@@ -173,10 +175,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
         function drawBaseElement(chart) {
           // Remove any existing chart elements.
-          chart.baseElement.selectAll('*').remove();
+          chart.containerElement.selectAll('*').remove();
+
+          chart.svgElement=chart.containerElement.append('svg');
 
           // Set chart size
-          chart.baseElement
+          chart.svgElement
               .attr("viewBox", "0 0 " + chart.config.width + " " + chart.config.height)
               .attr('width', "100%")
               .attr('height', "100%")
@@ -186,7 +190,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
         function drawHeadings(chart) {
           // Heading metric1 label
           // X is set to middle of column to use with text anchor middle
-          chart.baseElement.append('text')
+          chart.svgElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
               .text(chart.heading.metric1Label)
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
@@ -195,7 +199,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           // Heading metric2 label
           // X is set to middle of column to use with text anchor middle
-          chart.baseElement.append('text')
+          chart.svgElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
               .text(chart.heading.metric2Label)
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
@@ -204,7 +208,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
         }
 
         function drawDataPanel(chart) {
-          chart.dataPanel.baseElement = chart.baseElement.append('g')
+          chart.dataPanel.baseElement = chart.svgElement.append('g')
               .attr('class', 'nlsn-chart-data-panel');
 
           chart.dataPanel.records = chart.dataPanel.baseElement.selectAll('g.nlsn-chart-data-panel-record')
@@ -327,8 +331,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
                 return d.metric2;
               });
 
-          chart.baseElement.call(chart.tipMetric1);
-          chart.baseElement.call(chart.tipMetric2);
+          chart.svgElement.call(chart.tipMetric1);
+          chart.svgElement.call(chart.tipMetric2);
 
           // Bar metric1
           chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
