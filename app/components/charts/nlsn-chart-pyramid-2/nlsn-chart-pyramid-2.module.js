@@ -260,31 +260,58 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .tickFormat(d3.format('s'));
 
           chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-0')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-0')
               .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
               .attr('stroke', chart.config.axisColor)
               .call(chart.metricsPanel[0].axisPanel.xAxis);
 
           chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-1')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-1')
               .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
               .attr('stroke', chart.config.axisColor)
               .call(chart.metricsPanel[1].axisPanel.xAxis);
 
           if (chart.metricsPanel[0].isHideTickZero) {
-            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick')
+            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x.nlsn-chart-axis-0 .tick')
                 .filter(function (d) {
                   return d === 0;
                 })
                 .remove();
           }
+
+          // Y axis
+          chart.metricsPanel[0].axisPanel.yAxis = d3.svg.axis()
+              .scale(chart.dataPanel.yScale)
+              .orient('left')
+              .ticks(3)
+              .tickSize(0)
+              .tickFormat('')
+              .tickValues([0, chart.data.length]);
+
+          chart.metricsPanel[1].axisPanel.yAxis = d3.svg.axis()
+              .scale(chart.dataPanel.yScale)
+              .orient('left')
+              .ticks(3)
+              .tickSize(0)
+              .tickFormat('')
+              .tickValues([0, chart.data.length]);
+
+          chart.dataPanel.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-y nlsn-chart-axis-0')
+              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + (chart.metricsPanel[0].axisPanel.y - chart.dataPanel.height) + ')')
+              .call(chart.metricsPanel[0].axisPanel.yAxis);
+
+          chart.dataPanel.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-y nlsn-chart-axis-1')
+              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + (chart.metricsPanel[1].axisPanel.y - chart.dataPanel.height) + ')')
+              .call(chart.metricsPanel[1].axisPanel.yAxis);
         }
 
 
         function drawGrid(chart) {
 
-          // Grid lines - verticle
-          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis .tick').append('line')
+          // Grid lines - based on X axis
+          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x .tick').append('line')
               .attr(
                   {
                     'class': 'nlsn-chart-grid',
@@ -292,6 +319,36 @@ angular.module('nlsnChart.Pyramid2.module', [])
                     'y2': 0,
                     'x1': 0,
                     'x2': 0,
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': chart.config.gridColor,
+                    'stroke-width': '2px'
+                  });
+
+          // Grid lines - based on Y axis - metric panel 0
+          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-y.nlsn-chart-axis-0 .tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': 0,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': chart.metricsPanel[0].width,
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': chart.config.gridColor,
+                    'stroke-width': '2px'
+                  });
+
+          // Grid lines - based on Y axis - metric panel 1
+          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-y.nlsn-chart-axis-1 .tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': 0,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': chart.metricsPanel[1].width,
                     'fill': 'none',
                     'shape-rendering': 'crispEdges',
                     'stroke': chart.config.gridColor,
