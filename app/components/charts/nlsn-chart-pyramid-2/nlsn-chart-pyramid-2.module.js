@@ -177,14 +177,18 @@ angular.module('nlsnChart.Pyramid2.module', [])
           // Remove any existing chart elements.
           chart.containerElement.selectAll('*').remove();
 
-          chart.svgElement=chart.containerElement.append('svg');
+          chart.containerElement
+              .attr('class', 'nlsn-chart-svg-container');
+
+          chart.svgElement = chart.containerElement.append('svg');
 
           // Set chart size
           chart.svgElement
+              .attr('class', 'nlsn-chart-svg-content-responsive')
               .attr("viewBox", "0 0 " + chart.config.width + " " + chart.config.height)
               .attr('width', "100%")
               .attr('height', "100%")
-              .attr("preserveAspectRatio", "none");
+              .attr("preserveAspectRatio", "xMinYMin meet");
         }
 
         function drawHeadings(chart) {
