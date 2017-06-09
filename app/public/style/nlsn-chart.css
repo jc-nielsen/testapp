@@ -24,22 +24,26 @@ body {
   pointer-events: none;
 }
 
-.nlsn-chart-axis path,
+.nlsn-chart-axis path {
+  display: none;
+}
+
 .nlsn-chart-axis line {
   display: none;
-  /*fill: none;*/
-  /*stroke: #000;*/
-  /*shape-rendering: crispEdges;*/
 }
+
+/*.nlsn-chart-axis line :not(.nlsn-chart-grid) {*/
+  /*display: none;*/
+/*}*/
 
 /* Moved to config */
 /*.nlsn-chart-axis {*/
-  /*stroke: steelblue;*/
+/*stroke: steelblue;*/
 /*}*/
 
 /* Moved to config */
 /*.nlsn-chart-record-label {*/
-  /*stroke: steelblue;*/
+/*stroke: steelblue;*/
 /*}*/
 
 /* responsive stuff */

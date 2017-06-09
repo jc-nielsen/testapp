@@ -268,29 +268,27 @@ angular.module('nlsnChart.Pyramid2.module', [])
                 })
                 .remove();
           }
-
-          // chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
-          //   .attr(
-          //     {
-          //       'class': 'nlsn-chart-grid',
-          //       'y1': chart.dataPanel.y,
-          //       'y2': chart.dataPanel.height,
-          //       'x1': function (d) {
-          //         return chart.metricsPanel[0].xScale(d);
-          //       },
-          //       'x2': function (d) {
-          //         return chart.metricsPanel[0].xScale(d);
-          //       },
-          //       'fill': 'none',
-          //       'shape-rendering': 'crispEdges',
-          //       'stroke': 'black',
-          //       'stroke-width': '1px'
-          //     });
         }
 
 
         function drawGrid(chart) {
-
+          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis .tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': chart.dataPanel.y,
+                    'y2': chart.dataPanel.y - chart.dataPanel.height,
+                    'x1': function (d) {
+                      return chart.metricsPanel[0].xScale(d);
+                    },
+                    'x2': function (d) {
+                      return chart.metricsPanel[0].xScale(d);
+                    },
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': 'black',
+                    'stroke-width': '1px'
+                  });
         }
 
         function drawCenterDivider(chart) {
