@@ -3,6 +3,27 @@ body {
   margin: 0;
 }
 
+/* chart styles */
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.nlsn-chart-tip span {
+  position: absolute;
+  text-align: center;
+  width: 60px;
+  height: 28px;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
 .nlsn-chart-axis path,
 .nlsn-chart-axis line {
   fill: none;
@@ -12,10 +33,4 @@ body {
 
 .x.nlsn-chart-axis path {
   display: none;
-}
-
-.line {
-  fill: none;
-  stroke: steelblue;
-  stroke-width: 1.5px;
 }
