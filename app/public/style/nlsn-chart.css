@@ -14,9 +14,22 @@
 }
 
 .nlsn-chart-axis path {
-  fill: none;
-  stroke-width: 2px;
+  stroke-width: 0;
+  display: none;
 }
+
+/*.nlsn-chart-axis :not(.nlsn-chart-grid)  line {*/
+/*stroke-width: 0;*/
+/*display: none;*/
+/*}*/
+
+.nlsn-chart-grid {
+  opacity: 0.7;
+}
+
+/*.nlsn-chart-grid path {*/
+/*stroke-width: 0;*/
+/*}*/
 
 .nlsn-chart-svg-container {
   display: inline-block;
