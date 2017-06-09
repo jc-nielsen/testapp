@@ -1,0 +1,21 @@
+body {
+  font: 12px sans-serif;
+  margin: 0;
+}
+
+.nlsn-chart-axis path,
+.nlsn-chart-axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.nlsn-chart-axis path {
+  display: none;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}

@@ -31,19 +31,19 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.data = newValue.data;
           chart.heading = newValue.heading;
 
-          nv.utils.windowResize(onResize);
+          //nv.utils.windowResize(onResize);
 
-          function onResize() {
-            //get window size
-            var availableWidth = $window.innerWidth;
-            var availableHeight = $window.innerHeight;
-            var chartWidth = availableWidth - 100;
-            var chartHeight = availableHeight - 100;
-
-            chart.baseElement
-                .attr('width', chartWidth)
-                .attr('height', chartHeight);
-          }
+          //function onResize() {
+          //  //get window size
+          //  var availableWidth = $window.innerWidth;
+          //  var availableHeight = $window.innerHeight;
+          //  var chartWidth = availableWidth - 100;
+          //  var chartHeight = availableHeight - 100;
+          //
+          //  chart.baseElement
+          //      .attr('width', chartWidth)
+          //      .attr('height', chartHeight);
+          //}
 
           configureChart(chart);
           createPanels(chart);
