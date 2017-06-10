@@ -1,84 +1,84 @@
 {
   "heading":{
     "headingLabel": "Arvo",
-    "metric1Label": "$ Sales per Point of Distribution",
-    "metric2Label": "# of SKU's"
+    "metric0Label": "$ Sales per Point of Distribution",
+    "metric1Label": "# of SKU's"
   },
   "data": [
     {
       "sharedLabel": "Private Label",
-      "metric1": 781232,
-      "metric2": 40852
+      "metric0": 781232,
+      "metric1": 40852
     },
     {
       "sharedLabel": "Andretti's",
-      "metric1": 53867,
-      "metric2": 36296
+      "metric0": 53867,
+      "metric1": 36296
     },
     {
       "sharedLabel": "Dr Moffatt",
-      "metric1": 341748,
-      "metric2": 80757
+      "metric0": 341748,
+      "metric1": 80757
     },
     {
       "sharedLabel": "Citrello",
-      "metric1": 324831,
-      "metric2": 3624
+      "metric0": 324831,
+      "metric1": 3624
     },
     {
       "sharedLabel": "Galaxia",
-      "metric1": 152764,
-      "metric2": 15299
+      "metric0": 152764,
+      "metric1": 15299
     },
     {
       "sharedLabel": "Astro",
-      "metric1": 174006,
-      "metric2": 16071
+      "metric0": 174006,
+      "metric1": 16071
     },
     {
       "sharedLabel": "Brave",
-      "metric1": 246309,
-      "metric2": 23235
+      "metric0": 246309,
+      "metric1": 23235
     },
     {
       "sharedLabel": "Black Cow",
-      "metric1": 468756,
-      "metric2": 46065
+      "metric0": 468756,
+      "metric1": 46065
     },
     {
       "sharedLabel": "Emerge",
-      "metric1": 415923,
-      "metric2": 41704
+      "metric0": 415923,
+      "metric1": 41704
     },
     {
       "sharedLabel": "Vamteo",
-      "metric1": 342565,
-      "metric2": 42159
+      "metric0": 342565,
+      "metric1": 42159
     },
     {
       "sharedLabel": "Mountain Spring",
-      "metric1": 644316,
-      "metric2": 45468
+      "metric0": 644316,
+      "metric1": 45468
     },
     {
       "sharedLabel": "Fever Tree",
-      "metric1": 242975,
-      "metric2": 44223
+      "metric0": 242975,
+      "metric1": 44223
     },
     {
       "sharedLabel": "BPM",
-      "metric1": 136755,
-      "metric2": 39452
+      "metric0": 136755,
+      "metric1": 39452
     },
     {
       "sharedLabel": "Sunmagic",
-      "metric1": 231578,
-      "metric2": 34063
+      "metric0": 231578,
+      "metric1": 34063
     },
     {
       "sharedLabel": "Sparkla",
-      "metric1": 110328,
-      "metric2": 11799
+      "metric0": 110328,
+      "metric1": 11799
     }
   ]
 }

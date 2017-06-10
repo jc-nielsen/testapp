@@ -40,8 +40,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
             // Extract the width and height that was computed by CSS.
             var width = element.clientWidth;
             var height = element.clientHeight;
-            console.log('width =' + width);
-            console.log('height =' + height);
+            //console.log('width =' + width);
+            //console.log('height =' + height);
 
             //get window size
             //var availableWidth = $window.innerWidth;
@@ -57,10 +57,10 @@ angular.module('nlsnChart.Pyramid2.module', [])
           calculateSettings(chart);
           drawBaseElement(chart);
           drawHeadings(chart);
-          drawDataPanel(chart);
           drawAxis(chart);
           drawGrid(chart);
           drawCenterDivider(chart);
+          drawDataPanel(chart);
           drawMetricsPanels(chart);
           drawRecordLabels(chart);
           drawMetricsData(chart);
@@ -79,8 +79,8 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.maxHeight = 800;
           chart.config.margin = {top: 30, right: 20, bottom: 30, left: 6};
           chart.config.isShowMetrics = false;
-          chart.config.metric1BarColor = '#006699';
-          chart.config.metric2BarColor = '#44aaaa';
+          chart.config.metric0BarColor = '#006699';
+          chart.config.metric1BarColor = '#44aaaa';
           chart.config.rowSpacerHeight = 2;
           chart.config.headingMarginBottom = 8;
           // Position of label for each row, left/center/right
@@ -99,7 +99,11 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.axisTopMargin = 4;
         }
 
+        // Panels are virtual objects that need to move or transform.
         function createPanels(chart) {
+          // Create a panel for the center divider
+          chart.centerDividerPanel = {};
+
           // The dataPanel is the box containing the data graph area, includes record labels.
           chart.dataPanel = {};
 
@@ -114,9 +118,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           // Create a panel for the record labels
           chart.recordLabelPanel = {};
-
-          // Create a panel for the center divider
-          chart.centerDividerPanel = {};
         }
 
         function calculateSettings(chart) {
@@ -132,17 +133,17 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           // Maximum data value is used for scale. Needed for each of the metrics.
           chart.metricsPanel[0].max = d3.max(chart.data, function (d) {
-            return d.metric1;
+            return d.metric0;
           });
           chart.metricsPanel[1].max = d3.max(chart.data, function (d) {
-            return d.metric2;
+            return d.metric1;
           });
           // Minimum is not required when scaled to zero minimum.
           chart.metricsPanel[0].min = d3.min(chart.data, function (d) {
-            return d.metric1;
+            return d.metric0;
           });
           chart.metricsPanel[1].min = d3.min(chart.data, function (d) {
-            return d.metric2;
+            return d.metric1;
           });
 
           chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
@@ -216,22 +217,175 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr("preserveAspectRatio", "xMinYMin meet");
         }
 
+        function drawAxis(chart) {
+          // Create a virtual axis group.
+          chart.axisGroup = {};
+
+          // Method axis() for metric 0
+          chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
+              .scale(chart.metricsPanel[0].xScale)
+              .orient('bottom')
+              .ticks(6)
+              .tickSize(chart.config.axisTopMargin)
+              .tickFormat(d3.format('s'));
+
+          // Method axis() for metric 1
+          chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
+              .scale(chart.metricsPanel[1].xScale)
+              .orient('bottom')
+              .ticks(6)
+              .tickSize(chart.config.axisTopMargin)
+              .tickFormat(d3.format('s'));
+
+          chart.axisGroup.baseElement = chart.svgElement.append('g')
+              .attr('class', 'nlsn-chart-axis');
+
+          chart.axisGroup.xBaseElement = chart.axisGroup.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-x');
+
+          chart.axisGroup.xBaseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-0')
+              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
+              .attr('fill', chart.config.axisColor)
+              .call(chart.metricsPanel[0].axisPanel.xAxis);
+
+          chart.axisGroup.xBaseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-1')
+              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
+              .attr('fill', chart.config.axisColor)
+              .call(chart.metricsPanel[1].axisPanel.xAxis);
+
+          if (chart.metricsPanel[0].isHideTickZero) {
+            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart-axis-0 .tick')
+                .filter(function (d) {
+                  return d === 0;
+                })
+                .remove();
+          }
+
+          // Y axis
+          chart.axisGroup.yBaseElement = chart.axisGroup.baseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-y');
+
+          chart.metricsPanel[0].axisPanel.yAxis = d3.svg.axis()
+              .scale(chart.dataPanel.yScale)
+              .orient('left')
+              .ticks(3)
+              .tickSize(0)
+              .tickFormat('')
+              .tickValues([0, chart.data.length]);
+
+          chart.metricsPanel[1].axisPanel.yAxis = d3.svg.axis()
+              .scale(chart.dataPanel.yScale)
+              .orient('left')
+              .ticks(3)
+              .tickSize(0)
+              .tickFormat('')
+              .tickValues([0, chart.data.length]);
+
+          chart.axisGroup.yBaseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-0')
+              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + (chart.metricsPanel[0].axisPanel.y - chart.dataPanel.height) + ')')
+              .call(chart.metricsPanel[0].axisPanel.yAxis);
+
+          chart.axisGroup.yBaseElement.append('g')
+              .attr('class', 'nlsn-chart-axis-1')
+              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + (chart.metricsPanel[1].axisPanel.y - chart.dataPanel.height) + ')')
+              .call(chart.metricsPanel[1].axisPanel.yAxis);
+        }
+
+        function drawGrid(chart) {
+
+          // Grid lines - based on X axis
+          chart.axisGroup.xBaseElement.selectAll('.tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': 0 - chart.dataPanel.height,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': 0,
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': chart.config.gridColor,
+                    'stroke-width': '2px'
+                  });
+
+          // Grid lines - based on Y axis - metric panel 0
+          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': 0,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': chart.metricsPanel[0].width,
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': chart.config.gridColor,
+                    'stroke-width': '2px'
+                  });
+
+          // Grid lines - based on Y axis - metric panel 1
+          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart-axis-1 .tick').append('line')
+              .attr(
+                  {
+                    'class': 'nlsn-chart-grid',
+                    'y1': 0,
+                    'y2': 0,
+                    'x1': 0,
+                    'x2': chart.metricsPanel[1].width,
+                    'fill': 'none',
+                    'shape-rendering': 'crispEdges',
+                    'stroke': chart.config.gridColor,
+                    'stroke-width': '2px'
+                  });
+
+          if (chart.metricsPanel[0].isHideTickZero) {
+            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart-axis-1 line')
+                .filter(function (d) {
+                  return d === 0;
+                })
+                .remove();
+          }
+        }
+
+        function drawCenterDivider(chart) {
+          if (!chart.isCenterDivider) {
+            return;
+          }
+
+          chart.axisGroup.baseElement.append('rect')
+              .attr('class', 'nlsn-chart-center-divider')
+              .attr('x', chart.centerDividerPanel.x)
+              .attr('y', chart.centerDividerPanel.y)
+              .attr('height', chart.centerDividerPanel.height)
+              .attr('width', chart.config.centerDividerWidth)
+              .attr('fill', chart.config.centerDividerColor);
+        }
+
         function drawHeadings(chart) {
-          // Heading metric1 label
+          // Create a virtual group.
+          chart.headingGroup = {};
+
+          chart.headingGroup.baseElement = chart.svgElement.append('g')
+              .attr('class', 'nlsn-chart-heading');
+
+          // Heading metric0 label
           // X is set to middle of column to use with text anchor middle
-          chart.svgElement.append('text')
+          chart.headingGroup.baseElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
-              .text(chart.heading.metric1Label)
+              .text(chart.heading.metric0Label)
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
               .attr('fill', chart.config.headingLabelColor);
 
-          // Heading metric2 label
+          // Heading metric0 label
           // X is set to middle of column to use with text anchor middle
-          chart.svgElement.append('text')
+          chart.headingGroup.baseElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
-              .text(chart.heading.metric2Label)
+              .text(chart.heading.metric1Label)
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
@@ -251,169 +405,35 @@ angular.module('nlsnChart.Pyramid2.module', [])
               });
         }
 
-        function drawAxis(chart) {
-          chart.metricsPanel[0].axisPanel.xAxis = d3.svg.axis()
-              .scale(chart.metricsPanel[0].xScale)
-              .orient('bottom')
-              .ticks(6)
-              .tickSize(chart.config.axisTopMargin)
-              .tickFormat(d3.format('s'));
-
-          chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
-              .scale(chart.metricsPanel[1].xScale)
-              .orient('bottom')
-              .ticks(6)
-              .tickSize(chart.config.axisTopMargin)
-              .tickFormat(d3.format('s'));
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-0')
-              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
-              .attr('fill', chart.config.axisColor)
-              .call(chart.metricsPanel[0].axisPanel.xAxis);
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-1')
-              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
-              .attr('fill', chart.config.axisColor)
-              .call(chart.metricsPanel[1].axisPanel.xAxis);
-
-          if (chart.metricsPanel[0].isHideTickZero) {
-            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x.nlsn-chart-axis-0 .tick')
-                .filter(function (d) {
-                  return d === 0;
-                })
-                .remove();
-          }
-
-          // Y axis
-          chart.metricsPanel[0].axisPanel.yAxis = d3.svg.axis()
-              .scale(chart.dataPanel.yScale)
-              .orient('left')
-              .ticks(3)
-              .tickSize(0)
-              .tickFormat('')
-              .tickValues([0, chart.data.length]);
-
-          chart.metricsPanel[1].axisPanel.yAxis = d3.svg.axis()
-              .scale(chart.dataPanel.yScale)
-              .orient('left')
-              .ticks(3)
-              .tickSize(0)
-              .tickFormat('')
-              .tickValues([0, chart.data.length]);
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-y nlsn-chart-axis-0')
-              .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + (chart.metricsPanel[0].axisPanel.y - chart.dataPanel.height) + ')')
-              .call(chart.metricsPanel[0].axisPanel.yAxis);
-
-          chart.dataPanel.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis nlsn-chart-axis-y nlsn-chart-axis-1')
-              .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + (chart.metricsPanel[1].axisPanel.y - chart.dataPanel.height) + ')')
-              .call(chart.metricsPanel[1].axisPanel.yAxis);
-        }
-
-
-        function drawGrid(chart) {
-
-          // Grid lines - based on X axis
-          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x .tick').append('line')
-              .attr(
-                  {
-                    'class': 'nlsn-chart-grid',
-                    'y1': 0 - chart.dataPanel.height,
-                    'y2': 0,
-                    'x1': 0,
-                    'x2': 0,
-                    'fill': 'none',
-                    'shape-rendering': 'crispEdges',
-                    'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
-                  });
-
-          // Grid lines - based on Y axis - metric panel 0
-          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-y.nlsn-chart-axis-0 .tick').append('line')
-              .attr(
-                  {
-                    'class': 'nlsn-chart-grid',
-                    'y1': 0,
-                    'y2': 0,
-                    'x1': 0,
-                    'x2': chart.metricsPanel[0].width,
-                    'fill': 'none',
-                    'shape-rendering': 'crispEdges',
-                    'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
-                  });
-
-          // Grid lines - based on Y axis - metric panel 1
-          chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-y.nlsn-chart-axis-1 .tick').append('line')
-              .attr(
-                  {
-                    'class': 'nlsn-chart-grid',
-                    'y1': 0,
-                    'y2': 0,
-                    'x1': 0,
-                    'x2': chart.metricsPanel[1].width,
-                    'fill': 'none',
-                    'shape-rendering': 'crispEdges',
-                    'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
-                  });
-
-          if (chart.metricsPanel[0].isHideTickZero) {
-            chart.dataPanel.baseElement.selectAll('.nlsn-chart-axis-x.nlsn-chart-axis-1 line')
-                .filter(function (d) {
-                  return d === 0;
-                })
-                .remove();
-          }
-        }
-
-        function drawCenterDivider(chart) {
-          if (!chart.isCenterDivider) {
-            return;
-          }
-
-          chart.dataPanel.baseElement.append('rect')
-              .attr('class', 'nlsn-chart-center-divider')
-              .attr('x', chart.centerDividerPanel.x)
-              .attr('y', chart.centerDividerPanel.y)
-              .attr('height', chart.centerDividerPanel.height)
-              .attr('width', chart.config.centerDividerWidth)
-              .attr('fill', chart.config.centerDividerColor);
-        }
-
         function drawMetricsPanels(chart) {
-          // Left bar for metric1
+          // Left bar for metric0
           chart.dataPanel.records.append('rect')
-              .attr('class', 'nlsn-chart-metric-1-bar')
+              .attr('class', 'nlsn-chart-metric-0-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[0].x)
-              .attr('fill', chart.config.metric1BarColor);
+              .attr('fill', chart.config.metric0BarColor);
 
           //TODO needs margin
           // Left side metric value text
           if (chart.config.isShowMetrics) {
             chart.dataPanel.records.append('text')
-                .attr('class', 'nlsn-chart-metric-1-bar')
+                .attr('class', 'nlsn-chart-metric-0-bar')
                 .attr('dx', -3)
                 .attr('dy', '1em')
                 .attr('text-anchor', 'end');
           }
 
-          // Right bar for metric2
+          // Right bar for metric1
           chart.dataPanel.records.append('rect')
-              .attr('class', 'nlsn-chart-metric-2-bar')
+              .attr('class', 'nlsn-chart-metric-1-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[1].x)
-              .attr('fill', chart.config.metric2BarColor);
+              .attr('fill', chart.config.metric1BarColor);
 
           //TODO needs margin
           if (chart.config.isShowMetrics) {
             chart.dataPanel.records.append('text')
-                .attr('class', 'nlsn-chart-metric-2-bar')
+                .attr('class', 'nlsn-chart-metric-1-bar')
                 .attr('dx', 3)
                 .attr('dy', '1em');
           }
@@ -438,6 +458,35 @@ angular.module('nlsnChart.Pyramid2.module', [])
           var bars = d3.selectAll('g.nlsn-chart-data-panel-record')
               .data(chart.data);
 
+          // Text metric0
+          if (chart.config.isShowMetrics) {
+            bars.selectAll('text.nlsn-chart-metric-0-bar')
+                .text(function (d) {
+                  return formatMetric(d.metric0);
+                })
+                .attr('x', function (d) {
+                  return chart.metricsPanel[0].xScale(d.metric0);
+                });
+          }
+
+          // Bar metric0
+          bars.selectAll('rect.nlsn-chart-metric-0-bar')
+              .attr('x', function (d) {
+                return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric0));
+              })
+              .attr('width', function (d) {
+                return (chart.metricsPanel[0].width - chart.metricsPanel[0].xScale(d.metric0));
+              });
+
+          // Bar metric1
+          bars.selectAll('rect.nlsn-chart-metric-1-bar')
+              .attr('x', function (d) {
+                return chart.metricsPanel[1].x;
+              })
+              .attr('width', function (d) {
+                return chart.metricsPanel[1].xScale(d.metric1);
+              });
+
           // Text metric1
           if (chart.config.isShowMetrics) {
             bars.selectAll('text.nlsn-chart-metric-1-bar')
@@ -445,65 +494,36 @@ angular.module('nlsnChart.Pyramid2.module', [])
                   return formatMetric(d.metric1);
                 })
                 .attr('x', function (d) {
-                  return chart.metricsPanel[0].xScale(d.metric1);
-                });
-          }
-
-          // Bar metric1
-          bars.selectAll('rect.nlsn-chart-metric-1-bar')
-              .attr('x', function (d) {
-                return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric1));
-              })
-              .attr('width', function (d) {
-                return (chart.metricsPanel[0].width - chart.metricsPanel[0].xScale(d.metric1));
-              });
-
-          // Bar metric2
-          bars.selectAll('rect.nlsn-chart-metric-2-bar')
-              .attr('x', function (d) {
-                return chart.metricsPanel[1].x;
-              })
-              .attr('width', function (d) {
-                return chart.metricsPanel[1].xScale(d.metric2);
-              });
-
-          // Text metric2
-          if (chart.config.isShowMetrics) {
-            bars.selectAll('text.nlsn-chart-metric-2-bar')
-                .text(function (d) {
-                  return formatMetric(d.metric2);
-                })
-                .attr('x', function (d) {
-                  return chart.metricsPanel[1].xScale(d.metric2);
+                  return chart.metricsPanel[1].xScale(d.metric1);
                 });
           }
         }
 
         function drawTooltips(chart) {
-          chart.tipMetric1 = d3.tip()
+          chart.tipmetric0 = d3.tip()
+              .attr('class', 'nlsn-chart-tip')
+              .html(function (d) {
+                return d.metric0;
+              });
+
+          chart.tipmetric1 = d3.tip()
               .attr('class', 'nlsn-chart-tip')
               .html(function (d) {
                 return d.metric1;
               });
 
-          chart.tipMetric2 = d3.tip()
-              .attr('class', 'nlsn-chart-tip')
-              .html(function (d) {
-                return d.metric2;
-              });
+          chart.svgElement.call(chart.tipmetric0);
+          chart.svgElement.call(chart.tipmetric1);
 
-          chart.svgElement.call(chart.tipMetric1);
-          chart.svgElement.call(chart.tipMetric2);
+          // Bar metric0
+          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
+              .on('mouseover', chart.tipmetric0.show)
+              .on('mouseout', chart.tipmetric0.hide);
 
           // Bar metric1
-          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
-              .on('mouseover', chart.tipMetric1.show)
-              .on('mouseout', chart.tipMetric1.hide);
-
-          // Bar metric2
           chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-2-bar')
-              .on('mouseover', chart.tipMetric2.show)
-              .on('mouseout', chart.tipMetric2.hide);
+              .on('mouseover', chart.tipmetric1.show)
+              .on('mouseout', chart.tipmetric1.hide);
 
         }
 
