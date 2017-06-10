@@ -21,6 +21,10 @@
   opacity: 0.7;
 }
 
+.tick line:not(.nlsn-chart-grid) {
+  display: none;
+}
+
 .nlsn-chart-svg-container {
   display: inline-block;
   position: relative;

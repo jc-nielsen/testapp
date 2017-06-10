@@ -96,6 +96,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.headingLabelColor = chart.config.defaultColor1;
           chart.config.axisColor = chart.config.defaultColor2;
           chart.config.gridColor = chart.config.defaultColor2;
+          chart.config.axisTopMargin = 4;
         }
 
         function createPanels(chart) {
@@ -221,7 +222,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.svgElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
               .text(chart.heading.metric1Label)
-              .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2))
+              .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
               .attr('stroke', chart.config.headingLabelColor);
@@ -231,7 +232,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.svgElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
               .text(chart.heading.metric2Label)
-              .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2))
+              .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
               .attr('stroke', chart.config.headingLabelColor);
@@ -255,14 +256,14 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .scale(chart.metricsPanel[0].xScale)
               .orient('bottom')
               .ticks(6)
-              .tickSize(0)
+              .tickSize(chart.config.axisTopMargin)
               .tickFormat(d3.format('s'));
 
           chart.metricsPanel[1].axisPanel.xAxis = d3.svg.axis()
               .scale(chart.metricsPanel[1].xScale)
               .orient('bottom')
               .ticks(6)
-              .tickSize(0)
+              .tickSize(chart.config.axisTopMargin)
               .tickFormat(d3.format('s'));
 
           chart.dataPanel.baseElement.append('g')
