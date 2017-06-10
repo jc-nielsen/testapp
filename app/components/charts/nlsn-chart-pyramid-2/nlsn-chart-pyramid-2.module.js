@@ -78,7 +78,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.maxWidth = 1200;
           chart.config.maxHeight = 800;
           chart.config.margin = {top: 30, right: 20, bottom: 30, left: 6};
-          chart.config.isShowMetrics = false;
           chart.config.metric0BarColor = '#006699';
           chart.config.metric1BarColor = '#44aaaa';
           chart.config.rowSpacerHeight = 2;
@@ -136,13 +135,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
             return d.metric0;
           });
           chart.metricsPanel[1].max = d3.max(chart.data, function (d) {
-            return d.metric1;
-          });
-          // Minimum is not required when scaled to zero minimum.
-          chart.metricsPanel[0].min = d3.min(chart.data, function (d) {
-            return d.metric0;
-          });
-          chart.metricsPanel[1].min = d3.min(chart.data, function (d) {
             return d.metric1;
           });
 
@@ -413,30 +405,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('x', chart.metricsPanel[0].x)
               .attr('fill', chart.config.metric0BarColor);
 
-          //TODO needs margin
-          // Left side metric value text
-          if (chart.config.isShowMetrics) {
-            chart.dataPanel.records.append('text')
-                .attr('class', 'nlsn-chart-metric-0-bar')
-                .attr('dx', -3)
-                .attr('dy', '1em')
-                .attr('text-anchor', 'end');
-          }
-
           // Right bar for metric1
           chart.dataPanel.records.append('rect')
               .attr('class', 'nlsn-chart-metric-1-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[1].x)
               .attr('fill', chart.config.metric1BarColor);
-
-          //TODO needs margin
-          if (chart.config.isShowMetrics) {
-            chart.dataPanel.records.append('text')
-                .attr('class', 'nlsn-chart-metric-1-bar')
-                .attr('dx', 3)
-                .attr('dy', '1em');
-          }
         }
 
         function drawRecordLabels(chart) {
@@ -458,17 +432,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
           var bars = d3.selectAll('g.nlsn-chart-data-panel-record')
               .data(chart.data);
 
-          // Text metric0
-          if (chart.config.isShowMetrics) {
-            bars.selectAll('text.nlsn-chart-metric-0-bar')
-                .text(function (d) {
-                  return formatMetric(d.metric0);
-                })
-                .attr('x', function (d) {
-                  return chart.metricsPanel[0].xScale(d.metric0);
-                });
-          }
-
           // Bar metric0
           bars.selectAll('rect.nlsn-chart-metric-0-bar')
               .attr('x', function (d) {
@@ -486,46 +449,34 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('width', function (d) {
                 return chart.metricsPanel[1].xScale(d.metric1);
               });
-
-          // Text metric1
-          if (chart.config.isShowMetrics) {
-            bars.selectAll('text.nlsn-chart-metric-1-bar')
-                .text(function (d) {
-                  return formatMetric(d.metric1);
-                })
-                .attr('x', function (d) {
-                  return chart.metricsPanel[1].xScale(d.metric1);
-                });
-          }
         }
 
         function drawTooltips(chart) {
-          chart.tipmetric0 = d3.tip()
+          chart.tipMetric0 = d3.tip()
               .attr('class', 'nlsn-chart-tip')
               .html(function (d) {
                 return d.metric0;
               });
 
-          chart.tipmetric1 = d3.tip()
+          chart.tipMetric1 = d3.tip()
               .attr('class', 'nlsn-chart-tip')
               .html(function (d) {
                 return d.metric1;
               });
 
-          chart.svgElement.call(chart.tipmetric0);
-          chart.svgElement.call(chart.tipmetric1);
+          chart.svgElement.call(chart.tipMetric0);
+          chart.svgElement.call(chart.tipMetric1);
 
           // Bar metric0
-          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
-              .on('mouseover', chart.tipmetric0.show)
-              .on('mouseout', chart.tipmetric0.hide);
+          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-0-bar')
+              .on('mouseover', chart.tipMetric0.show)
+              .on('mouseout', chart.tipMetric0.hide);
 
           // Bar metric1
-          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-2-bar')
-              .on('mouseover', chart.tipmetric1.show)
-              .on('mouseout', chart.tipmetric1.hide);
+          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
+              .on('mouseover', chart.tipMetric1.show)
+              .on('mouseout', chart.tipMetric1.hide);
 
         }
-
       }])
 ;
