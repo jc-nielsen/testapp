@@ -21,7 +21,7 @@
   opacity: 0.7;
 }
 
-.tick line:not(.nlsn-chart-grid) {
+.nlsn-chart-axis.tick line:not(.nlsn-chart-grid) {
   display: none;
 }
 

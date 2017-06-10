@@ -94,7 +94,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.config.defaultColor2 = 'lightgray';
           chart.config.recordLabelColor = chart.config.defaultColor1;
           chart.config.headingLabelColor = chart.config.defaultColor1;
-          chart.config.axisColor = chart.config.defaultColor2;
+          chart.config.axisColor = chart.config.defaultColor1;
           chart.config.gridColor = chart.config.defaultColor2;
           chart.config.axisTopMargin = 4;
         }
@@ -225,7 +225,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
-              .attr('stroke', chart.config.headingLabelColor);
+              .attr('fill', chart.config.headingLabelColor);
 
           // Heading metric2 label
           // X is set to middle of column to use with text anchor middle
@@ -235,7 +235,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
-              .attr('stroke', chart.config.headingLabelColor);
+              .attr('fill', chart.config.headingLabelColor);
         }
 
         function drawDataPanel(chart) {
@@ -269,13 +269,13 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.dataPanel.baseElement.append('g')
               .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-0')
               .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
-              .attr('stroke', chart.config.axisColor)
+              .attr('fill', chart.config.axisColor)
               .call(chart.metricsPanel[0].axisPanel.xAxis);
 
           chart.dataPanel.baseElement.append('g')
               .attr('class', 'nlsn-chart-axis nlsn-chart-axis-x nlsn-chart-axis-1')
               .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
-              .attr('stroke', chart.config.axisColor)
+              .attr('fill', chart.config.axisColor)
               .call(chart.metricsPanel[1].axisPanel.xAxis);
 
           if (chart.metricsPanel[0].isHideTickZero) {
@@ -426,7 +426,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .attr('x', chart.recordLabelPanel.x)
               .attr('dy', '1em')
               .attr('text-anchor', chart.config.recordLabelAlign)
-              .attr('stroke', chart.config.recordLabelColor)
+              .attr('fill', chart.config.recordLabelColor)
               .text(function (d) {
                 return d.sharedLabel;
               });
@@ -450,7 +450,6 @@ angular.module('nlsnChart.Pyramid2.module', [])
           }
 
           // Bar metric1
-          //TODO xscale
           bars.selectAll('rect.nlsn-chart-metric-1-bar')
               .attr('x', function (d) {
                 return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric1));
