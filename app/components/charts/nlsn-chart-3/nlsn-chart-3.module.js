@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('nlsnChart.Pyramid3.module', [])
-  .directive('nlsnChartPyramid3', [
+angular.module('nlsnChart.3.module', [])
+  .directive('nlsnChart3', [
     'nlsnDataSvc',
     function (nlsnDataSvc) {
       var baseElement;
@@ -25,10 +25,10 @@ angular.module('nlsnChart.Pyramid3.module', [])
           return;
         }
 
-        // var chart = {};
-        // chart.baseElement = baseElement;
-        // chart.data = newValue.data;
-        // chart.heading = newValue.heading;
+        // var chart1 = {};
+        // chart1.baseElement = baseElement;
+        // chart1.data = newValue.data;
+        // chart1.heading = newValue.heading;
         nv.addGraph(function() {
           var chart = nv.models.multiBarHorizontalChart()
             .x(function(d) { return d.sharedLabel })

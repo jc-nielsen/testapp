@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('nlsnChart.Pyramid2.module', [])
-    .directive('nlsnChartPyramid2', [
+angular.module('nlsnChart.2.module', [])
+    .directive('nlsnChart2', [
       '$document',
       '$window',
       'nlsnDataSvc',
@@ -47,7 +47,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
             //var availableWidth = $window.innerWidth;
             //var availableHeight = $window.innerHeight;
 
-            //chart.svgElement
+            //chart1.svgElement
             //    .attr('width', width)
             //    .attr('height', height);
           }
@@ -192,17 +192,17 @@ angular.module('nlsnChart.Pyramid2.module', [])
         }
 
         function drawBaseElement(chart) {
-          // Remove any existing chart elements.
+          // Remove any existing chart1 elements.
           chart.containerElement.selectAll('*').remove();
 
           chart.containerElement
-              .attr('class', 'nlsn-chart-svg-container');
+              .attr('class', 'nlsn-chart1-svg-container');
 
           chart.svgElement = chart.containerElement.append('svg');
 
-          // Set chart size
+          // Set chart1 size
           chart.svgElement
-              .attr('class', 'nlsn-chart-svg-content-responsive')
+              .attr('class', 'nlsn-chart1-svg-content-responsive')
               .attr("viewBox", "0 0 " + chart.config.width + " " + chart.config.height)
               .attr('width', "100%")
               .attr('height', "100%")
@@ -230,25 +230,25 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .tickFormat(d3.format('s'));
 
           chart.axisGroup.baseElement = chart.svgElement.append('g')
-              .attr('class', 'nlsn-chart-axis');
+              .attr('class', 'nlsn-chart1-axis');
 
           chart.axisGroup.xBaseElement = chart.axisGroup.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-x');
+              .attr('class', 'nlsn-chart1-axis-x');
 
           chart.axisGroup.xBaseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-0')
+              .attr('class', 'nlsn-chart1-axis-0')
               .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + chart.metricsPanel[0].axisPanel.y + ')')
               .attr('fill', chart.config.axisColor)
               .call(chart.metricsPanel[0].axisPanel.xAxis);
 
           chart.axisGroup.xBaseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-1')
+              .attr('class', 'nlsn-chart1-axis-1')
               .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + chart.metricsPanel[1].axisPanel.y + ')')
               .attr('fill', chart.config.axisColor)
               .call(chart.metricsPanel[1].axisPanel.xAxis);
 
           if (chart.metricsPanel[0].isHideTickZero) {
-            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart-axis-0 .tick')
+            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart1-axis-0 .tick')
                 .filter(function (d) {
                   return d === 0;
                 })
@@ -257,7 +257,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
           // Y axis
           chart.axisGroup.yBaseElement = chart.axisGroup.baseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-y');
+              .attr('class', 'nlsn-chart1-axis-y');
 
           chart.metricsPanel[0].axisPanel.yAxis = d3.svg.axis()
               .scale(chart.dataPanel.yScale)
@@ -276,12 +276,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
               .tickValues([0, chart.data.length]);
 
           chart.axisGroup.yBaseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-0')
+              .attr('class', 'nlsn-chart1-axis-0')
               .attr('transform', 'translate(' + chart.metricsPanel[0].axisPanel.x + ',' + (chart.metricsPanel[0].axisPanel.y - chart.dataPanel.height) + ')')
               .call(chart.metricsPanel[0].axisPanel.yAxis);
 
           chart.axisGroup.yBaseElement.append('g')
-              .attr('class', 'nlsn-chart-axis-1')
+              .attr('class', 'nlsn-chart1-axis-1')
               .attr('transform', 'translate(' + chart.metricsPanel[1].axisPanel.x + ',' + (chart.metricsPanel[1].axisPanel.y - chart.dataPanel.height) + ')')
               .call(chart.metricsPanel[1].axisPanel.yAxis);
         }
@@ -292,7 +292,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.axisGroup.xBaseElement.selectAll('.tick').append('line')
               .attr(
                   {
-                    'class': 'nlsn-chart-grid',
+                    'class': 'nlsn-chart1-grid',
                     'y1': 0 - chart.dataPanel.height,
                     'y2': 0,
                     'x1': 0,
@@ -304,10 +304,10 @@ angular.module('nlsnChart.Pyramid2.module', [])
                   });
 
           // Grid lines - based on Y axis - metric panel 0
-          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart-axis-0 .tick').append('line')
+          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart1-axis-0 .tick').append('line')
               .attr(
                   {
-                    'class': 'nlsn-chart-grid',
+                    'class': 'nlsn-chart1-grid',
                     'y1': 0,
                     'y2': 0,
                     'x1': 0,
@@ -319,10 +319,10 @@ angular.module('nlsnChart.Pyramid2.module', [])
                   });
 
           // Grid lines - based on Y axis - metric panel 1
-          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart-axis-1 .tick').append('line')
+          chart.axisGroup.yBaseElement.selectAll('.nlsn-chart1-axis-1 .tick').append('line')
               .attr(
                   {
-                    'class': 'nlsn-chart-grid',
+                    'class': 'nlsn-chart1-grid',
                     'y1': 0,
                     'y2': 0,
                     'x1': 0,
@@ -334,7 +334,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
                   });
 
           if (chart.metricsPanel[0].isHideTickZero) {
-            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart-axis-1 line')
+            chart.axisGroup.xBaseElement.selectAll('.nlsn-chart1-axis-1 line')
                 .filter(function (d) {
                   return d === 0;
                 })
@@ -348,7 +348,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           }
 
           chart.axisGroup.baseElement.append('rect')
-              .attr('class', 'nlsn-chart-center-divider')
+              .attr('class', 'nlsn-chart1-center-divider')
               .attr('x', chart.centerDividerPanel.x)
               .attr('y', chart.centerDividerPanel.y)
               .attr('height', chart.centerDividerPanel.height)
@@ -361,12 +361,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.headingGroup = {};
 
           chart.headingGroup.baseElement = chart.svgElement.append('g')
-              .attr('class', 'nlsn-chart-heading');
+              .attr('class', 'nlsn-chart1-heading');
 
           // Heading metric0 label
           // X is set to middle of column to use with text anchor middle
           chart.headingGroup.baseElement.append('text')
-              .attr('class', 'nlsn-chart-metric-label')
+              .attr('class', 'nlsn-chart1-metric-label')
               .text(chart.heading.metric0Label)
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
@@ -376,7 +376,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
           // Heading metric0 label
           // X is set to middle of column to use with text anchor middle
           chart.headingGroup.baseElement.append('text')
-              .attr('class', 'nlsn-chart-metric-label')
+              .attr('class', 'nlsn-chart1-metric-label')
               .text(chart.heading.metric1Label)
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
@@ -386,12 +386,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
         function drawDataPanel(chart) {
           chart.dataPanel.baseElement = chart.svgElement.append('g')
-              .attr('class', 'nlsn-chart-data-panel');
+              .attr('class', 'nlsn-chart1-data-panel');
 
-          chart.dataPanel.records = chart.dataPanel.baseElement.selectAll('g.nlsn-chart-data-panel-record')
+          chart.dataPanel.records = chart.dataPanel.baseElement.selectAll('g.nlsn-chart1-data-panel-record')
               .data(chart.data)
               .enter().append('g')
-              .attr('class', 'nlsn-chart-data-panel-record')
+              .attr('class', 'nlsn-chart1-data-panel-record')
               .attr('transform', function (d, i) {
                 return 'translate(' + chart.dataPanel.x + ',' + (chart.dataPanel.y + chart.dataPanel.yScale(i)) + ')';
               });
@@ -400,14 +400,14 @@ angular.module('nlsnChart.Pyramid2.module', [])
         function drawMetricsPanels(chart) {
           // Left bar for metric0
           chart.dataPanel.records.append('rect')
-              .attr('class', 'nlsn-chart-metric-0-bar')
+              .attr('class', 'nlsn-chart1-metric-0-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[0].x)
               .attr('fill', chart.config.metric0BarColor);
 
           // Right bar for metric1
           chart.dataPanel.records.append('rect')
-              .attr('class', 'nlsn-chart-metric-1-bar')
+              .attr('class', 'nlsn-chart1-metric-1-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[1].x)
               .attr('fill', chart.config.metric1BarColor);
@@ -416,7 +416,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
         function drawRecordLabels(chart) {
           // Record labels
           chart.dataPanel.records.append('text')
-              .attr('class', 'nlsn-chart-record-label')
+              .attr('class', 'nlsn-chart1-record-label')
               .attr('x', chart.recordLabelPanel.x)
               .attr('dy', '1em')
               .attr('text-anchor', chart.config.recordLabelAlign)
@@ -429,11 +429,11 @@ angular.module('nlsnChart.Pyramid2.module', [])
         function drawMetricsData(chart) {
           var formatMetric = d3.format(',.0f');
 
-          var bars = d3.selectAll('g.nlsn-chart-data-panel-record')
+          var bars = d3.selectAll('g.nlsn-chart1-data-panel-record')
               .data(chart.data);
 
           // Bar metric0
-          bars.selectAll('rect.nlsn-chart-metric-0-bar')
+          bars.selectAll('rect.nlsn-chart1-metric-0-bar')
               .attr('x', function (d) {
                 return (chart.metricsPanel[0].x + chart.metricsPanel[0].xScale(d.metric0));
               })
@@ -442,7 +442,7 @@ angular.module('nlsnChart.Pyramid2.module', [])
               });
 
           // Bar metric1
-          bars.selectAll('rect.nlsn-chart-metric-1-bar')
+          bars.selectAll('rect.nlsn-chart1-metric-1-bar')
               .attr('x', function (d) {
                 return chart.metricsPanel[1].x;
               })
@@ -453,13 +453,13 @@ angular.module('nlsnChart.Pyramid2.module', [])
 
         function drawTooltips(chart) {
           chart.tipMetric0 = d3.tip()
-              .attr('class', 'nlsn-chart-tip')
+              .attr('class', 'nlsn-chart1-tip')
               .html(function (d) {
                 return d.metric0;
               });
 
           chart.tipMetric1 = d3.tip()
-              .attr('class', 'nlsn-chart-tip')
+              .attr('class', 'nlsn-chart1-tip')
               .html(function (d) {
                 return d.metric1;
               });
@@ -468,12 +468,12 @@ angular.module('nlsnChart.Pyramid2.module', [])
           chart.svgElement.call(chart.tipMetric1);
 
           // Bar metric0
-          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-0-bar')
+          chart.dataPanel.records.selectAll('rect.nlsn-chart1-metric-0-bar')
               .on('mouseover', chart.tipMetric0.show)
               .on('mouseout', chart.tipMetric0.hide);
 
           // Bar metric1
-          chart.dataPanel.records.selectAll('rect.nlsn-chart-metric-1-bar')
+          chart.dataPanel.records.selectAll('rect.nlsn-chart1-metric-1-bar')
               .on('mouseover', chart.tipMetric1.show)
               .on('mouseout', chart.tipMetric1.hide);
 
