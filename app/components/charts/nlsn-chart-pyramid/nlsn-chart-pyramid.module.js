@@ -457,7 +457,8 @@ angular.module('nlsnChart.Pyramid.module', [])
               .html(function (d) {
                 var theHtml = '<div class="nlsn-chart-tooltip">';
                 theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
-                theHtml += '<span class="nlsn-chart-tooltip-metric0-color">&nbsp;</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric-color" style="background-color:';
+                theHtml += chart.config.metric0BarColor + '">&nbsp;</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric0Label + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric0 + '</span>';
                 theHtml += '</div>';
@@ -469,7 +470,8 @@ angular.module('nlsnChart.Pyramid.module', [])
               .html(function (d) {
                 var theHtml = '<div class="nlsn-chart-tooltip">';
                 theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
-                theHtml += '<span class="nlsn-chart-tooltip-metric1-color">&nbsp;</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric-color" style="background-color:';
+                theHtml += chart.config.metric1BarColor + '">&nbsp;</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric1Label + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric1 + '</span>';
                 theHtml += '</div>';
