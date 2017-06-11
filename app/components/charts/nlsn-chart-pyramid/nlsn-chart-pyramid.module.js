@@ -455,13 +455,25 @@ angular.module('nlsnChart.Pyramid.module', [])
           chart.tipMetric0 = d3.tip()
               .attr('class', 'nlsn-chart-tip')
               .html(function (d) {
-                return d.metric0;
+                var theHtml = '<div class="nlsn-chart-tooltip">';
+                theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric0-color">&nbsp;</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric0Label + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric0 + '</span>';
+                theHtml += '</div>';
+                return theHtml;
               });
 
           chart.tipMetric1 = d3.tip()
               .attr('class', 'nlsn-chart-tip')
               .html(function (d) {
-                return d.metric1;
+                var theHtml = '<div class="nlsn-chart-tooltip">';
+                theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric1-color">&nbsp;</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric1Label + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric1 + '</span>';
+                theHtml += '</div>';
+                return theHtml;
               });
 
           chart.svgElement.call(chart.tipMetric0);

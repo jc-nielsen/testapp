@@ -1,18 +1,58 @@
 /* chart styles */
 
-.nlsn-chart-tip span {
+/* tooltips */
+.nlsn-chart-tooltip {
+  background: whitesmoke;
+  border-color: black;
+  border-radius: 8px;
+  border-style: solid;
+  border-width: 1px;
+  font: 12px sans-serif;
+  min-height: 40px;
+  padding: 2px;
+  pointer-events: none;
   position: absolute;
   text-align: center;
-  width: 60px;
-  height: 28px;
-  padding: 2px;
-  font: 12px sans-serif;
-  background: lightsteelblue;
-  border: 0;
-  border-radius: 8px;
-  pointer-events: none;
+  width: 120px;
 }
 
+.nlsn-chart-tooltip-dimension {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.nlsn-chart-tooltip-metric0-color {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: #006699;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.nlsn-chart-tooltip-metric1-color {
+  border-style: solid;
+  border-width: 1px;
+  background-color: #44aaaa;
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+}
+
+.nlsn-chart-tooltip-heading {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.nlsn-chart-tooltip-metric {
+  display: block;
+  font-size: 10px;
+}
+
+/* axis */
 .nlsn-chart-axis path {
   display: none;
 }
