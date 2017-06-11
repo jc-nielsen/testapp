@@ -86,7 +86,7 @@ angular.module('nlsnChart.Pyramid.module', [])
           chart.config.recordLabelPosition = 'left';
           // Alignment of label for each row, start/middle/end
           chart.config.recordLabelAlign = 'start';
-          chart.config.centerDividerWidth = 2;
+          chart.config.centerDividerWidth = 1;
           chart.config.centerDividerColor = '#000000';
           chart.config.recordLabelWidth = 80;
           chart.config.defaultColor1 = '#999999';
