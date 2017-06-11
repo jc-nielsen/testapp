@@ -144,12 +144,12 @@ angular.module('nlsnChart.Pyramid.module', [])
           chart.metricsPanel[0].xScale = d3.scale.linear()
               .domain([(chart.metricsPanel[0].max), 0])
               .range([0, chart.metricsPanel[0].width])
-              .nice();
+              .nice(6);
 
           chart.metricsPanel[1].xScale = d3.scale.linear()
               .domain([0, chart.metricsPanel[1].max])
               .range([0, chart.metricsPanel[1].width])
-              .nice();
+              .nice(6);
 
           chart.metricsPanel[0].y = chart.dataPanel.y;
           chart.metricsPanel[1].y = chart.dataPanel.y;
@@ -300,7 +300,7 @@ angular.module('nlsnChart.Pyramid.module', [])
                     'fill': 'none',
                     'shape-rendering': 'crispEdges',
                     'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
+                    'stroke-width': '1px'
                   });
 
           // Grid lines - based on Y axis - metric panel 0
@@ -315,7 +315,7 @@ angular.module('nlsnChart.Pyramid.module', [])
                     'fill': 'none',
                     'shape-rendering': 'crispEdges',
                     'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
+                    'stroke-width': '1px'
                   });
 
           // Grid lines - based on Y axis - metric panel 1
@@ -330,7 +330,7 @@ angular.module('nlsnChart.Pyramid.module', [])
                     'fill': 'none',
                     'shape-rendering': 'crispEdges',
                     'stroke': chart.config.gridColor,
-                    'stroke-width': '2px'
+                    'stroke-width': '1px'
                   });
 
           if (chart.metricsPanel[0].isHideTickZero) {
@@ -353,7 +353,8 @@ angular.module('nlsnChart.Pyramid.module', [])
               .attr('y', chart.centerDividerPanel.y)
               .attr('height', chart.centerDividerPanel.height)
               .attr('width', chart.config.centerDividerWidth)
-              .attr('fill', chart.config.centerDividerColor);
+              .attr('fill', chart.config.centerDividerColor)
+              .attr('shape-rendering', 'crispEdges');
         }
 
         function drawHeadings(chart) {
@@ -403,14 +404,16 @@ angular.module('nlsnChart.Pyramid.module', [])
               .attr('class', 'nlsn-chart-metric-0-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[0].x)
-              .attr('fill', chart.config.metric0BarColor);
+              .attr('fill', chart.config.metric0BarColor)
+              .attr('shape-rendering', 'crispEdges');
 
           // Right bar for metric1
           chart.dataPanel.records.append('rect')
               .attr('class', 'nlsn-chart-metric-1-bar')
               .attr('height', chart.dataPanel.rowHeight - chart.config.rowSpacerHeight)
               .attr('x', chart.metricsPanel[1].x)
-              .attr('fill', chart.config.metric1BarColor);
+              .attr('fill', chart.config.metric1BarColor)
+              .attr('shape-rendering', 'crispEdges');
         }
 
         function drawRecordLabels(chart) {
