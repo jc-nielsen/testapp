@@ -82,13 +82,14 @@ angular.module('nlsnChart.Pyramid.module', [])
           chart.config.metric1BarColor = '#44aaaa';
           chart.config.rowSpacerHeight = 2;
           chart.config.headingMarginBottom = 8;
-          // Position of label for each row, left/center/right
+          // Position of label for each row, left/middle/right
           chart.config.recordLabelPosition = 'left';
-          // Alignment of label for each row, start/middle/end
-          chart.config.recordLabelAlign = 'start';
+          // Alignment of label for each row, left/middle/right
+          chart.config.recordLabelAlign = 'right';
           chart.config.centerDividerWidth = 1;
           chart.config.centerDividerColor = '#000000';
           chart.config.recordLabelWidth = 80;
+          chart.config.recordLabelMargin = 4;
           chart.config.defaultColor1 = '#999999';
           chart.config.defaultColor2 = 'lightgray';
           chart.config.recordLabelColor = chart.config.defaultColor1;
@@ -138,8 +139,39 @@ angular.module('nlsnChart.Pyramid.module', [])
             return d.metric1;
           });
 
-          chart.metricsPanel[0].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
-          chart.metricsPanel[1].width = ((chart.dataPanel.width - chart.config.recordLabelWidth) - chart.config.centerDividerWidth) / 2;
+          chart.metricsPanel[0].y = chart.dataPanel.y;
+          chart.metricsPanel[1].y = chart.dataPanel.y;
+
+          // Do the config conditional calculations
+          switch (chart.config.recordLabelPosition) {
+            case 'left':
+              chart.metricsPanel[0].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + chart.config.recordLabelMargin)) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[1].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + chart.config.recordLabelMargin)) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.config.recordLabelMargin;
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.config.recordLabelMargin + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
+              chart.recordLabelPanel.x = chart.dataPanel.x;
+              chart.metricsPanel[0].isHideTickZero = true;
+              chart.isCenterDivider = true;
+              break;
+            case 'middle':
+              chart.metricsPanel[0].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + (chart.config.recordLabelMargin * 2))) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[1].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + (chart.config.recordLabelMargin * 2))) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[0].x = chart.dataPanel.x;
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth + (chart.config.recordLabelMargin * 2);
+              chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelMargin;
+              chart.metricsPanel[0].isHideTickZero = false;
+              chart.isCenterDivider = false;
+              break;
+            case 'right':
+              chart.metricsPanel[0].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + chart.config.recordLabelMargin)) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[1].width = ((chart.dataPanel.width - (chart.config.recordLabelWidth + chart.config.recordLabelMargin)) - chart.config.centerDividerWidth) / 2;
+              chart.metricsPanel[0].x = chart.dataPanel.x;
+              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
+              chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth + chart.metricsPanel[1].width + chart.config.recordLabelMargin;
+              chart.metricsPanel[0].isHideTickZero = true;
+              chart.isCenterDivider = true;
+              break;
+          }
 
           chart.metricsPanel[0].xScale = d3.scale.linear()
               .domain([(chart.metricsPanel[0].max), 0])
@@ -151,31 +183,17 @@ angular.module('nlsnChart.Pyramid.module', [])
               .range([0, chart.metricsPanel[1].width])
               .nice(6);
 
-          chart.metricsPanel[0].y = chart.dataPanel.y;
-          chart.metricsPanel[1].y = chart.dataPanel.y;
-
-          // Do the config conditional calculations
-          switch (chart.config.recordLabelPosition) {
+          switch (chart.config.recordLabelAlign) {
             case 'left':
-              chart.metricsPanel[0].x = chart.dataPanel.x + chart.config.recordLabelWidth;
-              chart.metricsPanel[1].x = chart.dataPanel.x + chart.config.recordLabelWidth + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
-              chart.recordLabelPanel.x = chart.dataPanel.x; // For start anchor
-              chart.metricsPanel[0].isHideTickZero = true;
-              chart.isCenterDivider = true;
+              chart.recordLabelPanel.textAnchor = 'start';
               break;
-            case 'center':
-              chart.metricsPanel[0].x = chart.dataPanel.x;
-              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.recordLabelWidth;
-              chart.recordLabelPanel.x = chart.dataPanel.x + (chart.dataPanel.width / 2); // For middle anchor
-              chart.metricsPanel[0].isHideTickZero = false;
-              chart.isCenterDivider = false;
+            case 'middle':
+              chart.recordLabelPanel.textAnchor = 'middle';
+              chart.recordLabelPanel.x += chart.config.recordLabelWidth / 2;
               break;
             case 'right':
-              chart.metricsPanel[0].x = chart.dataPanel.x;
-              chart.metricsPanel[1].x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.config.centerDividerWidth;
-              chart.recordLabelPanel.x = chart.dataPanel.x + chart.metricsPanel[0].width + chart.metricsPanel[1].width + chart.config.centerDividerWidth + chart.config.recordLabelWidth; // For end anchor
-              chart.metricsPanel[0].isHideTickZero = true;
-              chart.isCenterDivider = true;
+              chart.recordLabelPanel.textAnchor = 'end';
+              chart.recordLabelPanel.x += chart.config.recordLabelWidth;
               break;
           }
 
@@ -422,7 +440,7 @@ angular.module('nlsnChart.Pyramid.module', [])
               .attr('class', 'nlsn-chart-record-label')
               .attr('x', chart.recordLabelPanel.x)
               .attr('dy', '1em')
-              .attr('text-anchor', chart.config.recordLabelAlign)
+              .attr('text-anchor', chart.recordLabelPanel.textAnchor)
               .attr('fill', chart.config.recordLabelColor)
               .text(function (d) {
                 return d.sharedLabel;
