@@ -9,7 +9,7 @@ angular.module('myApp', [
   'nlsnChart2Page.module',
   'nlsnChart3Page.module',
   'nlsnChart.pyramid.module',
-  'nlsnChart.donut.module',
+  'nlsnChart.donut-example.module',
   'nlsnChart.3.module',
   'nlsnDataSvc.module'
 ]).
