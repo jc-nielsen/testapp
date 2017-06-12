@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('nlsnChart.2.module', [])
-    .directive('nlsnChart2', [
+angular.module('nlsnChart.donut.module', [])
+    .directive('nlsnChartDonut', [
       '$document',
       '$window',
       'nlsnDataSvc',
@@ -70,13 +70,23 @@ angular.module('nlsnChart.2.module', [])
         function configureChart(chart) {
           chart.config = {};
 
-          // Configurable properties
-          chart.config.width = 400;
-          chart.config.height = 300;
-          chart.config.minWidth = 400;
-          chart.config.minHeight = 200;
-          chart.config.maxWidth = 1200;
-          chart.config.maxHeight = 800;
+          //"axisColor": "#D4D4D4",
+          //    "chartHeight": "300",
+          //    "chartTitle": "The chart title goes here",
+          //    "chartWidth": "300",
+          //    "labelColor": "gray",
+          //    "metric0Color": "#09578D",
+          //    "metric0TextColor": "#89548A",
+          //    "metric1TextColor": "#10447A",
+          //    "metricNegativeTextColor": "#8B091E",
+
+
+            // Configurable properties
+              chart.config.axisColor =chart.options.axisColor;
+
+
+          chart.config.width = chart.options.width;
+          chart.config.height = chart.options.heght;
           chart.config.margin = {top: 30, right: 20, bottom: 30, left: 6};
           chart.config.metric0BarColor = '#006699';
           chart.config.metric1BarColor = '#44aaaa';

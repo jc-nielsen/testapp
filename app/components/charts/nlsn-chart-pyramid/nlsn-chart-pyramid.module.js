@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('nlsnChart.Pyramid.module', [])
+angular.module('nlsnChart.pyramid.module', [])
     .directive('nlsnChartPyramid', [
       '$document',
       '$window',

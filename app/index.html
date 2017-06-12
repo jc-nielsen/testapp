@@ -1,43 +1,53 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>AngularJS 1 Test App</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--library styles-->
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
+  <!--app styles-->
   <link rel="stylesheet" href="public/style/app.css">
   <link rel="stylesheet" href="public/style/nlsn-chart.css">
-  <link rel="stylesheet" href="bower_components/nvd3/build/nv.d3.css">
-  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#!/home">Home</a></li>
-    <li><a href="#!/chart1">Chart 1</a></li>
-    <li><a href="#!/chart2">Chart 2</a></li>
-    <li><a href="#!/chart3">Chart 3</a></li>
-  </ul>
-  <div ng-view></div>
-  <script src="bower_components/angular/angular.js"></script>
-  <script src="bower_components/angular-resource/angular-resource.js"></script>
-  <script src="bower_components/angular-route/angular-route.js"></script>
-  <script src="app.js"></script>
-  <script src="pages/home/home-page.module.js"></script>
-  <script src="pages/chart1/chart1-page.module.js"></script>
-  <script src="pages/chart2/chart2-page.module.js"></script>
-  <script src="pages/chart3/chart3-page.module.js"></script>
-  <script src="services/nlsn-data-svc.module.js"></script>
-  <script src="components/charts/nlsn-chart-pyramid/nlsn-chart-pyramid.module.js"></script>
-  <script src="components/charts/nlsn-chart-2/nlsn-chart-2.module.js"></script>
-  <script src="components/charts/nlsn-chart-3/nlsn-chart-3.module.js"></script>
-  <script src="bower_components/d3/d3.min.js"></script>
-  <script src="bower_components/d3-tip/index.js"></script>
-  <script src="bower_components/nvd3/build/nv.d3.js"></script>
+<!--top nav-->
+<ul class="menu">
+  <li><a href="#!/home">Home</a></li>
+  <li><a href="#!/chart1">Chart 1</a></li>
+  <li><a href="#!/chart2">Chart 2</a></li>
+  <li><a href="#!/chart3">Chart 3</a></li>
+</ul>
+<!--view-->
+<div ng-view></div>
+<!--library scripts-->
+<script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-resource/angular-resource.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="bower_components/d3/d3.min.js"></script>
+<script src="bower_components/d3-tip/index.js"></script>
+<script src="bower_components/nvd3/build/nv.d3.js"></script>
+<!--app scripts-->
+<script src="app.js"></script>
+<script src="pages/home/home-page.module.js"></script>
+<script src="pages/chart1/chart1-page.module.js"></script>
+<script src="pages/chart2/chart2-page.module.js"></script>
+<script src="pages/chart3/chart3-page.module.js"></script>
+<script src="services/nlsn-data-svc.module.js"></script>
+<script src="components/charts/nlsn-chart-pyramid/nlsn-chart-pyramid.module.js"></script>
+<script src="components/charts/nlsn-chart-donut/nlsn-chart-donut.module.js"></script>
+<script src="components/charts/nlsn-chart-3/nlsn-chart-3.module.js"></script>
 </body>
 </html>

@@ -8,8 +8,8 @@ angular.module('myApp', [
   'nlsnChart1Page.module',
   'nlsnChart2Page.module',
   'nlsnChart3Page.module',
-  'nlsnChart.Pyramid.module',
-  'nlsnChart.2.module',
+  'nlsnChart.pyramid.module',
+  'nlsnChart.donut.module',
   'nlsnChart.3.module',
   'nlsnDataSvc.module'
 ]).
