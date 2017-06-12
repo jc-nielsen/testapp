@@ -1,52 +1,66 @@
 'use strict';
 
+'use strict';
+
 angular.module('nlsnChart.3.module', [])
-  .directive('nlsnChart3', [
-    'nlsnDataSvc',
-    function (nlsnDataSvc) {
-      var baseElement;
-      var theController = function ($scope) {
-        $scope.chartData = nlsnDataSvc.getChartDataPyramid();
-      };
+    .directive('nlsnChart3', [
+      'nlsnDataSvc',
+      function (nlsnDataSvc) {
+        var containerElement;
+        var svgElement;
+        var theController = function ($scope) {
+          $scope.chartData = nlsnDataSvc.getChartDataDonut();
+        };
 
-      return {
-        bindToController: true,
-        controller: theController,
-        restrict: 'E',
-        scope: {},
-        link: function (scope, element) {
-          baseElement = d3.select(element[0]).append('svg');
-          scope.$watch('chartData', renderChart, true);
+        return {
+          bindToController: true,
+          controller: theController,
+          restrict: 'E',
+          scope: {},
+          link: function (scope, element) {
+            containerElement = d3.select(element[0]).append('div');
+            svgElement = containerElement.append('svg');
+            scope.$watch('chartData', renderChart, true);
+          }
+        };
+
+        function renderChart(newValue, oldValue, scope) {
+          if (!(newValue && newValue.data && newValue.data.length)) {
+            return;
+          }
+
+          var chartData = newValue;
+          var chart;
+
+          nv.utils.windowResize(onResize);
+
+          function onResize() {
+            chart.update();
+          }
+
+          nv.addGraph(function () {
+            chart = nv.models.pieChart()
+                .x(function (d) {
+                  return d.label
+                })
+                .y(function (d) {
+                  return d.value
+                })
+                .showLabels(true)     //Display pie labels
+                .labelThreshold(.05)  //Configure the minimum slice size for labels to show up
+                .labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
+                .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
+                .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+            ;
+
+            d3.select("svg")
+                .datum(chartData.data)
+                .transition().duration(350)
+                .call(chart);
+
+            return chart;
+          });
         }
-      };
 
-      function renderChart(newValue, oldValue, scope) {
-        if (!(newValue && newValue.data && newValue.data.length)) {
-          return;
-        }
-
-        //nv.addGraph(function() {
-        //  var chart = nv.models.multiBarHorizontalChart()
-        //    .x(function(d) { return d.sharedLabel })
-        //    .y(function(d) { return d.metric1 })
-        //    .margin({top: 30, right: 30, bottom: 50, left: 175})
-        //    .showValues(true)           //Show bar value next to each bar.
-        //    .tooltips(true)             //Show tooltips on hover.
-        //    .transitionDuration(350)
-        //    .showControls(true);        //Allow user to switch between "Grouped" and "Stacked" mode.
-        //
-        //  chart.yAxis
-        //    .tickFormat(d3.format(',.3f'));
-        //
-        //  d3.select('#chart1 svg')
-        //    .datum(newValue.data)
-        //    .call(chart);
-        //
-        //  nv.utils.windowResize(chart.update);
-        //
-        //  return chart;
-        //});
-      }
-
-    }])
+      }])
 ;

@@ -1,7 +1,7 @@
 'use strict';
 
-angular.module('nlsnChart.donut-example.module', [])
-    .directive('nlsnChartDonutExample', [
+angular.module('nlsnChart.donut.module', [])
+    .directive('nlsnChartDonut', [
       'nlsnDataSvc',
       function (nlsnDataSvc) {
         var containerElement;
@@ -28,9 +28,16 @@ angular.module('nlsnChart.donut-example.module', [])
           }
 
           var chartData = newValue;
+          var chart;
+
+          nv.utils.windowResize(onResize);
+
+          function onResize() {
+            //chart.update();
+          }
 
           nv.addGraph(function () {
-            var chart = nv.models.pieChart()
+            chart = nv.models.pieChart()
                 .x(function (d) {
                   return d.label
                 })
@@ -42,7 +49,7 @@ angular.module('nlsnChart.donut-example.module', [])
                 .labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
                 .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
                 .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
-                ;
+            ;
 
             d3.select("svg")
                 .datum(chartData.data)
