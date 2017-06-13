@@ -62,7 +62,7 @@ angular.module('nlsnChart.pyramid.module', [])
           chart.config.rowSpacerHeight = 2;
           chart.config.headingMarginBottom = 8;
           // Position of label for each row, left/middle/right
-          chart.config.recordLabelPosition = 'right';
+          chart.config.recordLabelPosition = 'left';
           // Alignment of label for each row, left/middle/right
           chart.config.recordLabelAlign = 'right';
           chart.config.centerDividerWidth = 1;
