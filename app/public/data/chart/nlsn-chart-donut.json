@@ -1,40 +1,31 @@
 {
+  "options": {
+    "height": 400,
+    "width": 400,
+    "donutRatio": 0.5,
+    "metricColor": "#09578D",
+    "oppositeMetricColor": "#D3D3D3",
+    "textColor": "#777777",
+    "negativeValueColor": "#8B091E",
+    "centerDividerColor": "#E5E5E5",
+    "valueFontSize": "12pt",
+    "subValueFontSize": "10pt"
+  },
   "data": [
     {
-      "key": "Series 1",
-      "color": "red",
-      "values": [
-        {
-          "x": 0,
-          "y": 10
-        },
-        {
-          "x": 1,
-          "y": 20
-        },
-        {
-          "x": 2,
-          "y": 30
-        }
-      ]
+      "id": 1,
+      "label": "Share",
+      "value": "27.3%"
     },
     {
-      "key": "Series 2",
-      "color": "blue",
-      "values": [
-        {
-          "x": 0,
-          "y": 10
-        },
-        {
-          "x": 1,
-          "y": 20
-        },
-        {
-          "x": 2,
-          "y": 30
-        }
-      ]
+      "id": 2,
+      "label": "Growth",
+      "value": "0.4%"
+    },
+    {
+      "id": 3,
+      "label": "Change",
+      "value": "-0.4%"
     }
   ]
 }
