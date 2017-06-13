@@ -1,0 +1,174 @@
+[{
+    "tabHeading": "Data",
+    "tabData": [{
+        "groupHeading": "Retailer Markets",
+        "groupData": [{
+            "id": 101,
+            "selector": "Market Breakdown",
+            "selectorData": [{
+                "id": 101,
+                "selector": "Arvo (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 102,
+                "selector": "Total Coverage (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 103,
+                "selector": "Grocery Multiples minus Arvo (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 104,
+                "selector": "Total Coverage/Total Impulse (FULL TSR)",
+                "selectorData": []
+            }]
+        }]
+    }, {
+        "groupHeading": "Comparison Markets",
+        "groupData": [{
+            "id": 102,
+            "selector": "Market Breakdown",
+            "selectorData": [{
+                "id": 201,
+                "selector": "Arvo (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 202,
+                "selector": "Total Coverage (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 203,
+                "selector": "Grocery Multiples minus Arvo (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 204,
+                "selector": "Total Coverage/Total Impulse (FULL TSR)",
+                "selectorData": []
+            }, {
+                "id": 205,
+                "selector": "Aldi",
+                "selectorData": []
+            }, {
+                "id": 206,
+                "selector": "Boots",
+                "selectorData": []
+            }, {
+                "id": 207,
+                "selector": "Wilkinson",
+                "selectorData": []
+            }, {
+                "id": 208,
+                "selector": "Morrisons",
+                "selectorData": []
+            }]
+        }]
+    }, {
+        "groupHeading": "Products",
+        "groupData": [{
+            "id": 103,
+            "selector": "Hierarchies",
+            "selectorData": [{
+                "id": 301,
+                "selector": "Super Category",
+                "selectorData": [{
+                    "id": 3011,
+                    "selector": "Electrical",
+                    "selectorData": [{
+                            "params": null,
+                            "label": "Total Coverage/Grocery Multiples (Full TSR)",
+                            "value": 22952158848,
+                            "share": "1.0%",
+                            "change": "0.0%",
+                            "color": "#DADEE0"
+},
+                        {
+                            "params": null,
+                            "label": "ARVO (Full TSR)",
+                            "value": 222825931,
+                            "share": "1.0%",
+                            "change": "2.0%",
+                            "color": "#0098F3"
+}]
+				}, {
+                    "id": 3012,
+                    "selector": "Grocery Staples & Non Food",
+                    "selectorData": []
+				}, {
+                    "id": 3013,
+                    "selector": "Impulse Grocery & BWS",
+                    "selectorData": []
+				}, {
+                    "id": 3014,
+                    "selector": "Fresh & Frozen",
+                    "selectorData": []
+				}, {
+                    "id": 3015,
+                    "selector": "Supsense/Other/Contingency",
+                    "selectorData": []
+				}]
+			}, {
+                "id": 302,
+                "selector": "Category",
+                "selectorData": []
+			}, {
+                "id": 303,
+                "selector": "Sub Category",
+                "selectorData": []
+			}]
+		}]
+    }, {
+        "groupHeading": "Periods",
+        "groupData": [{
+            "id": 104,
+            "selector": "Period Groups",
+            "selectorData": [{
+                "id": 101,
+                "selector": "Latest week",
+                "selectorData": []
+            }, {
+                "id": 401,
+                "selector": "Latest 4 weeks",
+                "selectorData": []
+            }, {
+                "id": 402,
+                "selector": "Latest 12 weeks",
+                "selectorData": []
+            }, {
+                "id": 403,
+                "selector": "Latest 52 weeks",
+                "selectorData": []
+            }, {
+                "id": 404,
+                "selector": "Latest YTD",
+                "selectorData": []
+            }, {
+                "id": 405,
+                "selector": "Latest FYTD",
+                "selectorData": []
+            }]
+        }]
+    }, {
+        "groupHeading": "Facts",
+        "groupData": [{
+            "id": 105,
+            "selector": "Fact Groups",
+            "selectorData": [{
+                "id": 501,
+                "selector": "Sales Value",
+                "selectorData": []
+            }, {
+                "id": 502,
+                "selector": "Share",
+                "selectorData": []
+            }, {
+                "id": 503,
+                "selector": "Change",
+                "selectorData": []
+            }, {
+                "id": 504,
+                "selector": "Share Change",
+                "selectorData": []
+            }]
+        }]
+    }]
+}]

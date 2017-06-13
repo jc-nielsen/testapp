@@ -1,0 +1,40 @@
+    [{
+      "name": "ONEVIEW.DASHBOARD.MENU.FILE",
+      "pageid": "dashboard",
+      "type": "Menu",
+      "counter": false,
+      "submenu": [{
+        
+          "name": "ONEVIEW.DASHBOARD.MENU.DASHBOARD.ADD",
+          "actionid": "addDashboard"
+        }, {
+          "name": "ONEVIEW.DASHBOARD.MENU.EXPORT",
+          "actionid": "export"
+        }, {
+          "name": "ONEVIEW.DASHBOARD.MENU.SHARE",
+          "actionid": "share"
+        }
+      ]
+    }, {
+      "name": "ONEVIEW.DASHBOARD.MENU.EDIT",
+      "pageid": "dashboard",
+      "type": "Menu",
+      "counter": false,
+      "submenu": [{
+      
+          "name": "ONEVIEW.DASHBOARD.MENU.DASHBOARD.EDIT",
+          "actionid": "editDashboard"
+        }]
+   
+    }, {
+      "name": "ONEVIEW.DASHBOARD.MENU.INSERT",
+      "pageid": "dashboard",
+      "type": "Menu",
+      "counter": false,
+      "submenu": [{
+        
+          "name": "ONEVIEW.DASHBOARD.MENU.CARD.ADD",
+          "actionid": "addCard"
+        
+      }]
+    }]

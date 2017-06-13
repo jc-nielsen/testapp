@@ -1,0 +1,38 @@
+[
+    {
+        "category": "general settings",
+        "id": "general",
+        "link_list": [
+            {
+                "link": "Contact Us"
+			},
+            {
+                "link": "Notification"
+			},
+            {
+                "link": "Legal"
+			},
+            {
+                "link": "Privacy"
+			},
+            {
+                "link": "About"
+			}
+		]
+	},
+    {
+        "category": "display settings",
+        "id": "display",
+        "link_list": [
+            {
+                "link": "Dark"
+			},
+            {
+                "link": "Light"
+			},
+            {
+                "link": "Default"
+			}
+		]
+	}
+]

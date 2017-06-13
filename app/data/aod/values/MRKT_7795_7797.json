@@ -1,0 +1,1208 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4391203",
+		"description": "A&P Banner xAOC Rem_MCM"
+	}, {
+		"ID": "4391210",
+		"description": "A&P Corp New York Metro xAOC Rem_MCM"
+	}, {
+		"ID": "4391217",
+		"description": "A&P Corp Philadelphia xAOC Rem"
+	}, {
+		"ID": "4391224",
+		"description": "A&P Corp Total US All Ban xAOC Rem"
+	}, {
+		"ID": "4380279",
+		"description": "Acme Fresh Market Total Rem"
+	}, {
+		"ID": "4137470",
+		"description": "Acme Fresh Market Total TA"
+	}, {
+		"ID": "4457513",
+		"description": "Acme Fresh Market Total xAOC Rem"
+	}, {
+		"ID": "4380281",
+		"description": "Ahold USA Corp Total Rem"
+	}, {
+		"ID": "4136882",
+		"description": "Ahold USA Corp Total TA"
+	}, {
+		"ID": "4442604",
+		"description": "Ahold USA Corp Total xAOC Rem"
+	}, {
+		"ID": "4524274",
+		"description": "Allegiance Retail Services Rem"
+	}, {
+		"ID": "4518635",
+		"description": "Allegiance Retail Services TA"
+	}, {
+		"ID": "4579599",
+		"description": "B & B Foods TA"
+	}, {
+		"ID": "4543916",
+		"description": "BI-LO Central xAOC Rem"
+	}, {
+		"ID": "4543917",
+		"description": "BI-LO Eastern xAOC Rem"
+	}, {
+		"ID": "4543918",
+		"description": "BI-LO Foothills xAOC Rem"
+	}, {
+		"ID": "4442845",
+		"description": "BI-LO Total xAOC Rem"
+	}, {
+		"ID": "4378374",
+		"description": "Baltimore Food"
+	}, {
+		"ID": "4547488",
+		"description": "Berkots Total Rem"
+	}, {
+		"ID": "4484041",
+		"description": "Berkots Total TA"
+	}, {
+		"ID": "4379575",
+		"description": "Big Y Total Rem"
+	}, {
+		"ID": "4066557",
+		"description": "Big Y Total TA"
+	}, {
+		"ID": "4457816",
+		"description": "Big Y Total xAOC Rem"
+	}, {
+		"ID": "4378093",
+		"description": "Birmingham Food"
+	}, {
+		"ID": "4378388",
+		"description": "Boston Food"
+	}, {
+		"ID": "4579598",
+		"description": "Brookshire Brothers Banner TA"
+	}, {
+		"ID": "4584170",
+		"description": "Brookshire Brothers Total Rem"
+	}, {
+		"ID": "4579600",
+		"description": "Brookshire Brothers Total TA"
+	}, {
+		"ID": "4584179",
+		"description": "Brookshire Brothers Total xAOC Rem"
+	}, {
+		"ID": "4380323",
+		"description": "Brookshires Total Rem"
+	}, {
+		"ID": "4066559",
+		"description": "Brookshires Total TA"
+	}, {
+		"ID": "4442619",
+		"description": "Brookshires Total xAOC Rem"
+	}, {
+		"ID": "4378100",
+		"description": "Buffalo Rochester Food"
+	}, {
+		"ID": "4552838",
+		"description": "Cashwise Total Banner TA"
+	}, {
+		"ID": "4424080",
+		"description": "Central Grocers Total Rem"
+	}, {
+		"ID": "4424074",
+		"description": "Central Grocers Total TA"
+	}, {
+		"ID": "4457541",
+		"description": "Central Grocers Total xAOC Rem"
+	}, {
+		"ID": "4378103",
+		"description": "Charlotte Food"
+	}, {
+		"ID": "4373740",
+		"description": "Chicago Food"
+	}, {
+		"ID": "4378107",
+		"description": "Cincinnati Food"
+	}, {
+		"ID": "4378111",
+		"description": "Cleveland Food"
+	}, {
+		"ID": "4556696",
+		"description": "Coborns Cashwise Total Corp Rem"
+	}, {
+		"ID": "4552835",
+		"description": "Coborns Cashwise Total Corp TA"
+	}, {
+		"ID": "4556793",
+		"description": "Coborns Cashwise Total Corp xAOC Rem"
+	}, {
+		"ID": "4552837",
+		"description": "Coborns Total Banner TA"
+	}, {
+		"ID": "4378405",
+		"description": "Columbus Food"
+	}, {
+		"ID": "4389508",
+		"description": "Copps xAOC Rem"
+	}, {
+		"ID": "4466572",
+		"description": "Cub Minneapolis Rem"
+	}, {
+		"ID": "4474689",
+		"description": "Cub Minneapolis TA"
+	}, {
+		"ID": "4457544",
+		"description": "Cub Minneapolis xAOC Rem"
+	}, {
+		"ID": "4379359",
+		"description": "Dallas/Ft. Worth Food"
+	}, {
+		"ID": "4520673",
+		"description": "DeMoulas Total Rem"
+	}, {
+		"ID": "4066319",
+		"description": "DeMoulas Total TA"
+	}, {
+		"ID": "4457548",
+		"description": "DeMoulas Total xAOC Rem"
+	}, {
+		"ID": "4379364",
+		"description": "Denver Food"
+	}, {
+		"ID": "4378126",
+		"description": "Des Moines Food"
+	}, {
+		"ID": "4378418",
+		"description": "Detroit Food"
+	}, {
+		"ID": "4066669",
+		"description": "Dillons Incl Bakers TA"
+	}, {
+		"ID": "4391417",
+		"description": "Dillons Incl Bakers xAOC Rem"
+	}, {
+		"ID": "4378693",
+		"description": "East North Central Division Food"
+	}, {
+		"ID": "4378720",
+		"description": "East South Central Division Food"
+	}, {
+		"ID": "4549973",
+		"description": "El Super Total Rem"
+	}, {
+		"ID": "4545675",
+		"description": "El Super Total TA"
+	}, {
+		"ID": "4556738",
+		"description": "Fareway Des Moines Rem"
+	}, {
+		"ID": "4548729",
+		"description": "Fareway Des Moines TA"
+	}, {
+		"ID": "4556739",
+		"description": "Fareway Omaha Rem"
+	}, {
+		"ID": "4548730",
+		"description": "Fareway Omaha TA"
+	}, {
+		"ID": "4556740",
+		"description": "Fareway Total Rem"
+	}, {
+		"ID": "4548731",
+		"description": "Fareway Total TA"
+	}, {
+		"ID": "4556700",
+		"description": "Fareway Total xAOC Rem"
+	}, {
+		"ID": "4457555",
+		"description": "Farm Fresh Total xAOC Rem"
+	}, {
+		"ID": "4379697",
+		"description": "Fiesta Dal & Ft Worth Rem"
+	}, {
+		"ID": "4071141",
+		"description": "Fiesta Dal & Ft Worth TA"
+	}, {
+		"ID": "4379699",
+		"description": "Fiesta Houston Rem"
+	}, {
+		"ID": "4071280",
+		"description": "Fiesta Houston TA"
+	}, {
+		"ID": "4379701",
+		"description": "Fiesta Total Rem"
+	}, {
+		"ID": "4066334",
+		"description": "Fiesta Total TA"
+	}, {
+		"ID": "4442633",
+		"description": "Fiesta Total xAOC Rem"
+	}, {
+		"ID": "4507684",
+		"description": "Food 4 Less Las Vegas Rem"
+	}, {
+		"ID": "4508099",
+		"description": "Food 4 Less Las Vegas TA"
+	}, {
+		"ID": "4380371",
+		"description": "Food 4 Less Midwest Rem"
+	}, {
+		"ID": "4066505",
+		"description": "Food 4 Less Midwest TA"
+	}, {
+		"ID": "4507724",
+		"description": "Food 4 Less North Rem"
+	}, {
+		"ID": "4508101",
+		"description": "Food 4 Less North TA"
+	}, {
+		"ID": "4507688",
+		"description": "Food 4 Less South Rem"
+	}, {
+		"ID": "4508102",
+		"description": "Food 4 Less South TA"
+	}, {
+		"ID": "4508100",
+		"description": "Food 4 Less Total Incl MW TA"
+	}, {
+		"ID": "4391479",
+		"description": "Food 4 Less Total Incl MW xAOC Rem"
+	}, {
+		"ID": "4508103",
+		"description": "Food 4 Less Total ex MW TA"
+	}, {
+		"ID": "4597277",
+		"description": "Food Lion Baltimore TA"
+	}, {
+		"ID": "4597278",
+		"description": "Food Lion Charlotte TA"
+	}, {
+		"ID": "4597275",
+		"description": "Food Lion DC 20 TA"
+	}, {
+		"ID": "4597273",
+		"description": "Food Lion DC 7 TA"
+	}, {
+		"ID": "4493372",
+		"description": "Food Lion Norfolk TA"
+	}, {
+		"ID": "4493374",
+		"description": "Food Lion Richmond TA"
+	}, {
+		"ID": "4597281",
+		"description": "Food Lion Washington TA"
+	}, {
+		"ID": "4066567",
+		"description": "Fred Meyer Alaska Cluster"
+	}, {
+		"ID": "4377680",
+		"description": "Fred Meyer Portland Rem"
+	}, {
+		"ID": "4066509",
+		"description": "Fred Meyer Portland TA"
+	}, {
+		"ID": "4377944",
+		"description": "Fred Meyer Seattle Rem"
+	}, {
+		"ID": "4066510",
+		"description": "Fred Meyer Seattle TA"
+	}, {
+		"ID": "4377678",
+		"description": "Fred Meyer Total ex Alaska Rem"
+	}, {
+		"ID": "4507666",
+		"description": "Fred Meyer Total ex Alaska TA"
+	}, {
+		"ID": "4389767",
+		"description": "Fred Meyer Total ex Alaska xAOC Rem"
+	}, {
+		"ID": "4507794",
+		"description": "Frys Total Rem"
+	}, {
+		"ID": "4508074",
+		"description": "Frys Total TA"
+	}, {
+		"ID": "4389774",
+		"description": "Frys Total xAOC Rem"
+	}, {
+		"ID": "4373748",
+		"description": "Giant Carlisle South Total Rem"
+	}, {
+		"ID": "4066616",
+		"description": "Giant Carlisle South Total TA"
+	}, {
+		"ID": "4373756",
+		"description": "Giant Carlisle Total Rem"
+	}, {
+		"ID": "4066351",
+		"description": "Giant Carlisle Total TA"
+	}, {
+		"ID": "4373802",
+		"description": "Giant Carlisle Total xAOC Rem"
+	}, {
+		"ID": "4377949",
+		"description": "Giant Eagle Cleveland Rem"
+	}, {
+		"ID": "4066356",
+		"description": "Giant Eagle Cleveland TA"
+	}, {
+		"ID": "4379988",
+		"description": "Giant Eagle Columbus Rem"
+	}, {
+		"ID": "4081965",
+		"description": "Giant Eagle Columbus TA"
+	}, {
+		"ID": "4377688",
+		"description": "Giant Eagle Pittsburgh Rem"
+	}, {
+		"ID": "4066154",
+		"description": "Giant Eagle Pittsburgh TA"
+	}, {
+		"ID": "4377686",
+		"description": "Giant Eagle Total Rem"
+	}, {
+		"ID": "4066357",
+		"description": "Giant Eagle Total TA"
+	}, {
+		"ID": "4391507",
+		"description": "Giant Eagle Total xAOC Rem"
+	}, {
+		"ID": "4377691",
+		"description": "Giant Landover Total Rem"
+	}, {
+		"ID": "4066355",
+		"description": "Giant Landover Total TA"
+	}, {
+		"ID": "4391514",
+		"description": "Giant Landover Total xAOC Rem"
+	}, {
+		"ID": "4378426",
+		"description": "Grand Rapids Food"
+	}, {
+		"ID": "4378525",
+		"description": "Greenville Food"
+	}, {
+		"ID": "4379585",
+		"description": "HAC Total Rem"
+	}, {
+		"ID": "4066613",
+		"description": "HAC Total TA"
+	}, {
+		"ID": "4458058",
+		"description": "HAC Total xAOC Rem"
+	}, {
+		"ID": "4597282",
+		"description": "Hannaford ME & NH TA"
+	}, {
+		"ID": "4597283",
+		"description": "Hannaford NY & VT TA"
+	}, {
+		"ID": "4379582",
+		"description": "Harps Total Rem"
+	}, {
+		"ID": "4066586",
+		"description": "Harps Total TA"
+	}, {
+		"ID": "4458061",
+		"description": "Harps Total xAOC Rem"
+	}, {
+		"ID": "4391528",
+		"description": "Harris Teeter Total xAOC Rem"
+	}, {
+		"ID": "4378139",
+		"description": "Hartford New Haven Food"
+	}, {
+		"ID": "4442176",
+		"description": "Heinen's Total Rem"
+	}, {
+		"ID": "4439247",
+		"description": "Heinen's Total TA"
+	}, {
+		"ID": "4066741",
+		"description": "Hornbachers Total TA"
+	}, {
+		"ID": "4378429",
+		"description": "Houston Food"
+	}, {
+		"ID": "4377696",
+		"description": "Hy-Vee Total Rem"
+	}, {
+		"ID": "4066473",
+		"description": "Hy-Vee Total TA"
+	}, {
+		"ID": "4389811",
+		"description": "Hy-Vee Total xAOC Rem"
+	}, {
+		"ID": "4379589",
+		"description": "IGA Central Mideast Rem"
+	}, {
+		"ID": "4137624",
+		"description": "IGA Central Mideast TA"
+	}, {
+		"ID": "4379593",
+		"description": "IGA Nash Finch Rem"
+	}, {
+		"ID": "4137625",
+		"description": "IGA Nash Finch TA"
+	}, {
+		"ID": "4379711",
+		"description": "IGA SUPERVALU Rem"
+	}, {
+		"ID": "4071003",
+		"description": "IGA SUPERVALU TA"
+	}, {
+		"ID": "4137626",
+		"description": "IGA Supermarket Total TA"
+	}, {
+		"ID": "4442880",
+		"description": "IGA Supermarket Total xAOC Rem"
+	}, {
+		"ID": "4379373",
+		"description": "Indianapolis Food"
+	}, {
+		"ID": "4556704",
+		"description": "Ingles Total Rem"
+	}, {
+		"ID": "4556803",
+		"description": "Ingles Total TA"
+	}, {
+		"ID": "4556804",
+		"description": "Ingles Total xAOC Rem"
+	}, {
+		"ID": "4378150",
+		"description": "Jacksonville Food"
+	}, {
+		"ID": "4597284",
+		"description": "Jewel Chicago TA"
+	}, {
+		"ID": "4597137",
+		"description": "Jewel Div TA"
+	}, {
+		"ID": "4379618",
+		"description": "KVAT Food City Rem"
+	}, {
+		"ID": "4066580",
+		"description": "KVAT Food City TA"
+	}, {
+		"ID": "4442661",
+		"description": "KVAT Food City xAOC Rem"
+	}, {
+		"ID": "4379380",
+		"description": "Kansas City Food"
+	}, {
+		"ID": "4379717",
+		"description": "King Kullen Total Rem"
+	}, {
+		"ID": "4066366",
+		"description": "King Kullen Total TA"
+	}, {
+		"ID": "4457854",
+		"description": "King Kullen Total xAOC Rem"
+	}, {
+		"ID": "4508109",
+		"description": "King Soopers incl City Market TA"
+	}, {
+		"ID": "4391553",
+		"description": "King Soopers incl City Market xAOC Rem"
+	}, {
+		"ID": "4153059",
+		"description": "Kings Super Market Total TA"
+	}, {
+		"ID": "4507729",
+		"description": "Kroger Central Rem"
+	}, {
+		"ID": "4508105",
+		"description": "Kroger Central TA"
+	}, {
+		"ID": "4391612",
+		"description": "Kroger Central xAOC Rem"
+	}, {
+		"ID": "4507692",
+		"description": "Kroger Cincinnati Rem"
+	}, {
+		"ID": "4508106",
+		"description": "Kroger Cincinnati TA"
+	}, {
+		"ID": "4391616",
+		"description": "Kroger Cincinnati xAOC Rem"
+	}, {
+		"ID": "4507767",
+		"description": "Kroger Columbus Rem"
+	}, {
+		"ID": "4508107",
+		"description": "Kroger Columbus TA"
+	}, {
+		"ID": "4391620",
+		"description": "Kroger Columbus xAOC Rem"
+	}, {
+		"ID": "4511371",
+		"description": "Kroger Corp Total TA"
+	}, {
+		"ID": "4391656",
+		"description": "Kroger Corp Total xAOC Rem"
+	}, {
+		"ID": "4511369",
+		"description": "Kroger Corp ex F4L FM TA"
+	}, {
+		"ID": "4560772",
+		"description": "Kroger Corp ex F4L FM xAOC Rem"
+	}, {
+		"ID": "4511370",
+		"description": "Kroger Corp ex F4L TA"
+	}, {
+		"ID": "4432662",
+		"description": "Kroger Corp ex F4L xAOC Rem"
+	}, {
+		"ID": "4507726",
+		"description": "Kroger Dallas TA"
+	}, {
+		"ID": "4391624",
+		"description": "Kroger Dallas xAOC Rem"
+	}, {
+		"ID": "4507732",
+		"description": "Kroger Delta Rem"
+	}, {
+		"ID": "4508108",
+		"description": "Kroger Delta TA"
+	}, {
+		"ID": "4391627",
+		"description": "Kroger Delta xAOC Rem"
+	}, {
+		"ID": "4507695",
+		"description": "Kroger Houston Rem"
+	}, {
+		"ID": "4507749",
+		"description": "Kroger Houston TA"
+	}, {
+		"ID": "4391631",
+		"description": "Kroger Houston xAOC Rem"
+	}, {
+		"ID": "4507754",
+		"description": "Kroger Michigan Rem"
+	}, {
+		"ID": "4508111",
+		"description": "Kroger Michigan TA"
+	}, {
+		"ID": "4391634",
+		"description": "Kroger Michigan xAOC Rem"
+	}, {
+		"ID": "4508110",
+		"description": "Kroger Mid-Atlantic TA"
+	}, {
+		"ID": "4391641",
+		"description": "Kroger Mid-Atlantic xAOC Rem"
+	}, {
+		"ID": "4066749",
+		"description": "Kroger Southwest TA"
+	}, {
+		"ID": "4391646",
+		"description": "Kroger Southwest xAOC Rem"
+	}, {
+		"ID": "4378156",
+		"description": "Las Vegas Food"
+	}, {
+		"ID": "4378160",
+		"description": "Little Rock Food"
+	}, {
+		"ID": "4378438",
+		"description": "Los Angeles Food"
+	}, {
+		"ID": "4378167",
+		"description": "Louisville Food"
+	}, {
+		"ID": "4442667",
+		"description": "Lowes Food Total xAOC Rem"
+	}, {
+		"ID": "4379626",
+		"description": "Lunds & Byerlys Total Rem"
+	}, {
+		"ID": "4068068",
+		"description": "Lunds & Byerlys Total TA"
+	}, {
+		"ID": "4457860",
+		"description": "Lunds & Byerlys Total xAOC Rem"
+	}, {
+		"ID": "4547509",
+		"description": "Marianos Total Rem"
+	}, {
+		"ID": "4496228",
+		"description": "Marianos Total TA"
+	}, {
+		"ID": "4547504",
+		"description": "Marianos Total xAOC Rem"
+	}, {
+		"ID": "4380406",
+		"description": "Marsh Total Corp Rem"
+	}, {
+		"ID": "4066753",
+		"description": "Marsh Total Corp TA"
+	}, {
+		"ID": "4457863",
+		"description": "Marsh Total Corp xAOC Rem"
+	}, {
+		"ID": "4140231",
+		"description": "Martins Total TA"
+	}, {
+		"ID": "4602365",
+		"description": "Meijer Central Rem"
+	}, {
+		"ID": "4596865",
+		"description": "Meijer Central TA"
+	}, {
+		"ID": "4602552",
+		"description": "Meijer Central xAOC Rem"
+	}, {
+		"ID": "4602373",
+		"description": "Meijer Eastern Rem"
+	}, {
+		"ID": "4596869",
+		"description": "Meijer Eastern TA"
+	}, {
+		"ID": "4602506",
+		"description": "Meijer Eastern xAOC Rem"
+	}, {
+		"ID": "4602463",
+		"description": "Meijer Mid Michigan Rem"
+	}, {
+		"ID": "4596871",
+		"description": "Meijer Mid Michigan TA"
+	}, {
+		"ID": "4602448",
+		"description": "Meijer Mid Michigan xAOC Rem"
+	}, {
+		"ID": "4602451",
+		"description": "Meijer Northern Rem"
+	}, {
+		"ID": "4596861",
+		"description": "Meijer Northern TA"
+	}, {
+		"ID": "4602380",
+		"description": "Meijer Northern xAOC Rem"
+	}, {
+		"ID": "4602384",
+		"description": "Meijer Southern Rem"
+	}, {
+		"ID": "4596866",
+		"description": "Meijer Southern TA"
+	}, {
+		"ID": "4602555",
+		"description": "Meijer Southern xAOC Rem"
+	}, {
+		"ID": "4602462",
+		"description": "Meijer Total Rem"
+	}, {
+		"ID": "4136859",
+		"description": "Meijer Total TA"
+	}, {
+		"ID": "4602461",
+		"description": "Meijer Total xAOC Rem"
+	}, {
+		"ID": "4602392",
+		"description": "Meijer Western Rem"
+	}, {
+		"ID": "4596870",
+		"description": "Meijer Western TA"
+	}, {
+		"ID": "4602513",
+		"description": "Meijer Western xAOC Rem"
+	}, {
+		"ID": "4378170",
+		"description": "Memphis Food"
+	}, {
+		"ID": "4378448",
+		"description": "Miami Food"
+	}, {
+		"ID": "4378770",
+		"description": "Middle Atlantic Division Food"
+	}, {
+		"ID": "4379521",
+		"description": "Midwest Region Food"
+	}, {
+		"ID": "4378453",
+		"description": "Milwaukee Food"
+	}, {
+		"ID": "4378457",
+		"description": "Minneapolis Food"
+	}, {
+		"ID": "4378756",
+		"description": "Mountain Division Food"
+	}, {
+		"ID": "4378460",
+		"description": "Nashville Food"
+	}, {
+		"ID": "4378672",
+		"description": "New England Division Food"
+	}, {
+		"ID": "4378186",
+		"description": "New Orleans Mobile Food"
+	}, {
+		"ID": "4378189",
+		"description": "New York Food"
+	}, {
+		"ID": "4556807",
+		"description": "Niemann Foods Total Rem"
+	}, {
+		"ID": "4550975",
+		"description": "Niemann Foods Total TA"
+	}, {
+		"ID": "4556781",
+		"description": "Niemann Foods Total xAOC Rem"
+	}, {
+		"ID": "4378670",
+		"description": "Northeast Region Food"
+	}, {
+		"ID": "4138237",
+		"description": "Oahu Food"
+	}, {
+		"ID": "4378476",
+		"description": "Oklahoma City Tulsa Food"
+	}, {
+		"ID": "4378197",
+		"description": "Omaha Food"
+	}, {
+		"ID": "4378482",
+		"description": "Orlando Food"
+	}, {
+		"ID": "4378751",
+		"description": "Pacific Division Food"
+	}, {
+		"ID": "4391745",
+		"description": "Pathmark Northern xAOC Rem"
+	}, {
+		"ID": "4391748",
+		"description": "Pathmark Southern xAOC Rem"
+	}, {
+		"ID": "4391753",
+		"description": "Pathmark Total xAOC Rem"
+	}, {
+		"ID": "4378490",
+		"description": "Philadelphia Food"
+	}, {
+		"ID": "4378207",
+		"description": "Phoenix Food"
+	}, {
+		"ID": "4066600",
+		"description": "Pick n Save Corp Total TA"
+	}, {
+		"ID": "4390144",
+		"description": "Pick n Save Corp Total xAOC Rem"
+	}, {
+		"ID": "4556712",
+		"description": "Piggly Wiggly Carolina Total Rem"
+	}, {
+		"ID": "4552841",
+		"description": "Piggly Wiggly Carolina Total TA"
+	}, {
+		"ID": "4379727",
+		"description": "Piggly Wiggly Midwest Rem"
+	}, {
+		"ID": "4171107",
+		"description": "Piggly Wiggly Midwest TA"
+	}, {
+		"ID": "4457867",
+		"description": "Piggly Wiggly Midwest xAOC Rem"
+	}, {
+		"ID": "4378211",
+		"description": "Pittsburgh Food"
+	}, {
+		"ID": "4378215",
+		"description": "Portland Food"
+	}, {
+		"ID": "4591065",
+		"description": "Price Chopper Enterprises Total Rem"
+	}, {
+		"ID": "4587584",
+		"description": "Price Chopper Enterprises Total TA"
+	}, {
+		"ID": "4380020",
+		"description": "Price Chopper Total Rem"
+	}, {
+		"ID": "4066374",
+		"description": "Price Chopper Total TA"
+	}, {
+		"ID": "4457870",
+		"description": "Price Chopper Total xAOC Rem"
+	}, {
+		"ID": "4391766",
+		"description": "Publix Lakeland xAOC Rem"
+	}, {
+		"ID": "4391771",
+		"description": "Publix Miami xAOC Rem"
+	}, {
+		"ID": "4507893",
+		"description": "QFC Total Rem"
+	}, {
+		"ID": "4508075",
+		"description": "QFC Total TA"
+	}, {
+		"ID": "4390193",
+		"description": "QFC Total xAOC Rem"
+	}, {
+		"ID": "4379402",
+		"description": "Raleigh Durham Food"
+	}, {
+		"ID": "4507820",
+		"description": "Ralphs Total Rem"
+	}, {
+		"ID": "4508115",
+		"description": "Ralphs Total TA"
+	}, {
+		"ID": "4390206",
+		"description": "Ralphs Total xAOC Rem"
+	}, {
+		"ID": "4378563",
+		"description": "Remaining US Food"
+	}, {
+		"ID": "4378311",
+		"description": "Richmond Norfolk Food"
+	}, {
+		"ID": "4390280",
+		"description": "Roundys Corp Total xAOC Rem"
+	}, {
+		"ID": "4486950",
+		"description": "Rouses Total Rem"
+	}, {
+		"ID": "4484042",
+		"description": "Rouses Total TA"
+	}, {
+		"ID": "4487021",
+		"description": "Rouses Total xAOC Rem"
+	}, {
+		"ID": "4591433",
+		"description": "SUPERVALU Eastern Region Indep xAOC Rem"
+	}, {
+		"ID": "4524829",
+		"description": "SUPERVALU Retail Total xAOC Rem"
+	}, {
+		"ID": "4378518",
+		"description": "Sacramento Food"
+	}, {
+		"ID": "4378318",
+		"description": "Salt Lake City Boise Food"
+	}, {
+		"ID": "4379414",
+		"description": "San Diego Food"
+	}, {
+		"ID": "4378325",
+		"description": "San Francisco Food"
+	}, {
+		"ID": "4380048",
+		"description": "Schnucks Core Rem"
+	}, {
+		"ID": "4066468",
+		"description": "Schnucks Core TA"
+	}, {
+		"ID": "4066469",
+		"description": "Schnucks Total TA"
+	}, {
+		"ID": "4380052",
+		"description": "Schnucks Total TA Rem"
+	}, {
+		"ID": "4457873",
+		"description": "Schnucks Total xAOC Rem"
+	}, {
+		"ID": "4379418",
+		"description": "Seattle Food"
+	}, {
+		"ID": "4311032",
+		"description": "Shaws Div TA"
+	}, {
+		"ID": "4597287",
+		"description": "Shaws Mass/Rhode Island TA"
+	}, {
+		"ID": "4597286",
+		"description": "Shaws New England TA"
+	}, {
+		"ID": "4380438",
+		"description": "Shop n Save St Louis Rem"
+	}, {
+		"ID": "4066618",
+		"description": "Shop n Save St Louis TA"
+	}, {
+		"ID": "4457877",
+		"description": "Shop n Save St Louis xAOC Rem"
+	}, {
+		"ID": "4377779",
+		"description": "ShopRite Connecticut Z3 Rem"
+	}, {
+		"ID": "4066425",
+		"description": "ShopRite Connecticut Z3 TA"
+	}, {
+		"ID": "4541655",
+		"description": "ShopRite Hudson Valley Z4 Rem"
+	}, {
+		"ID": "4541952",
+		"description": "ShopRite Hudson Valley Z4 TA"
+	}, {
+		"ID": "4377782",
+		"description": "ShopRite Long & Staten Isl Z5 Rem"
+	}, {
+		"ID": "4066421",
+		"description": "ShopRite Long & Staten Isl Z5 TA"
+	}, {
+		"ID": "4541665",
+		"description": "ShopRite New York Z1 Rem"
+	}, {
+		"ID": "4541953",
+		"description": "ShopRite New York Z1 TA"
+	}, {
+		"ID": "4541658",
+		"description": "ShopRite Philadelphia Z2 Rem"
+	}, {
+		"ID": "4541954",
+		"description": "ShopRite Philadelphia Z2 TA"
+	}, {
+		"ID": "4541670",
+		"description": "ShopRite Total Rem"
+	}, {
+		"ID": "4541955",
+		"description": "ShopRite Total TA"
+	}, {
+		"ID": "4391909",
+		"description": "ShopRite Total xAOC Rem"
+	}, {
+		"ID": "4466328",
+		"description": "Shoppers Food Warehouse TA"
+	}, {
+		"ID": "4457881",
+		"description": "Shoppers Food Warehouse xAOC Rem"
+	}, {
+		"ID": "4507701",
+		"description": "Smiths Intermountain Rem"
+	}, {
+		"ID": "4508116",
+		"description": "Smiths Intermountain TA"
+	}, {
+		"ID": "4380059",
+		"description": "Smiths Las Vegas Rem"
+	}, {
+		"ID": "4066524",
+		"description": "Smiths Las Vegas TA"
+	}, {
+		"ID": "4507774",
+		"description": "Smiths New Mexico Rem"
+	}, {
+		"ID": "4508117",
+		"description": "Smiths New Mexico TA"
+	}, {
+		"ID": "4508118",
+		"description": "Smiths Southwest TA"
+	}, {
+		"ID": "4508076",
+		"description": "Smiths Total TA"
+	}, {
+		"ID": "4390441",
+		"description": "Smiths Total xAOC Rem"
+	}, {
+		"ID": "4378791",
+		"description": "South Atlantic Division Food"
+	}, {
+		"ID": "4379533",
+		"description": "South Region Food"
+	}, {
+		"ID": "4378332",
+		"description": "St Louis Food"
+	}, {
+		"ID": "4379636",
+		"description": "Stater Bros Total Rem"
+	}, {
+		"ID": "4066401",
+		"description": "Stater Bros Total TA"
+	}, {
+		"ID": "4442689",
+		"description": "Stater Bros Total xAOC Rem"
+	}, {
+		"ID": "4567113",
+		"description": "Stop & Shop New England Rem"
+	}, {
+		"ID": "4567118",
+		"description": "Stop & Shop New England TA"
+	}, {
+		"ID": "4391922",
+		"description": "Stop & Shop New England xAOC Rem"
+	}, {
+		"ID": "4377785",
+		"description": "Stop & Shop New York Rem"
+	}, {
+		"ID": "4066321",
+		"description": "Stop & Shop New York TA"
+	}, {
+		"ID": "4391925",
+		"description": "Stop & Shop New York xAOC Rem"
+	}, {
+		"ID": "4379905",
+		"description": "Stop & Shop Total Rem"
+	}, {
+		"ID": "4066217",
+		"description": "Stop & Shop Total TA"
+	}, {
+		"ID": "4391931",
+		"description": "Stop & Shop Total xAOC Rem"
+	}, {
+		"ID": "4458109",
+		"description": "Strack & Van Til Total Rem"
+	}, {
+		"ID": "4093253",
+		"description": "Strack & Van Til Total TA"
+	}, {
+		"ID": "4457889",
+		"description": "Strack & Van Til Total xAOC Rem"
+	}, {
+		"ID": "4391936",
+		"description": "Superfresh Philadelphia xAOC Rem"
+	}, {
+		"ID": "4378541",
+		"description": "Syracuse Food"
+	}, {
+		"ID": "4378339",
+		"description": "Tampa Food"
+	}, {
+		"ID": "4380484",
+		"description": "Tops Central NY Rem"
+	}, {
+		"ID": "4282171",
+		"description": "Tops Central NY TA"
+	}, {
+		"ID": "4380119",
+		"description": "Tops Eastern NY Rem"
+	}, {
+		"ID": "4282172",
+		"description": "Tops Eastern NY TA"
+	}, {
+		"ID": "4387753",
+		"description": "Tops Total Rem"
+	}, {
+		"ID": "4282173",
+		"description": "Tops Total TA"
+	}, {
+		"ID": "4458124",
+		"description": "Tops Total xAOC Rem"
+	}, {
+		"ID": "4380121",
+		"description": "Tops Western NY Rem"
+	}, {
+		"ID": "4282174",
+		"description": "Tops Western NY TA"
+	}, {
+		"ID": "4378083",
+		"description": "Total US Food"
+	}, {
+		"ID": "4390510",
+		"description": "Waldbaums xAOC Rem"
+	}, {
+		"ID": "4378554",
+		"description": "Washington DC Food"
+	}, {
+		"ID": "4066434",
+		"description": "Wegmans Buffalo TA"
+	}, {
+		"ID": "4066435",
+		"description": "Wegmans Rochester TA"
+	}, {
+		"ID": "4066436",
+		"description": "Wegmans Syracuse TA"
+	}, {
+		"ID": "4066795",
+		"description": "Wegmans Total TA"
+	}, {
+		"ID": "4379751",
+		"description": "Weis Total Rem"
+	}, {
+		"ID": "4066225",
+		"description": "Weis Total TA"
+	}, {
+		"ID": "4458285",
+		"description": "Weis Total xAOC Rem"
+	}, {
+		"ID": "4378780",
+		"description": "West North Central Division Food"
+	}, {
+		"ID": "4378749",
+		"description": "West Region Food"
+	}, {
+		"ID": "4378725",
+		"description": "West South Central Division Food"
+	}, {
+		"ID": "4379422",
+		"description": "West Texas Food"
+	}, {
+		"ID": "4524348",
+		"description": "Winco Intermountain Rem"
+	}, {
+		"ID": "4521675",
+		"description": "Winco Intermountain TA"
+	}, {
+		"ID": "4524330",
+		"description": "Winco Intermountain xAOC Rem"
+	}, {
+		"ID": "4524298",
+		"description": "Winco N California Rem"
+	}, {
+		"ID": "4521676",
+		"description": "Winco N California TA"
+	}, {
+		"ID": "4524334",
+		"description": "Winco N California xAOC Rem"
+	}, {
+		"ID": "4524344",
+		"description": "Winco Northwest Rem"
+	}, {
+		"ID": "4521677",
+		"description": "Winco Northwest TA"
+	}, {
+		"ID": "4524336",
+		"description": "Winco Northwest xAOC Rem"
+	}, {
+		"ID": "4524292",
+		"description": "Winco Southwest Rem"
+	}, {
+		"ID": "4521678",
+		"description": "Winco Southwest TA"
+	}, {
+		"ID": "4524340",
+		"description": "Winco Southwest xAOC Rem"
+	}, {
+		"ID": "4524297",
+		"description": "Winco Total Rem"
+	}, {
+		"ID": "4521679",
+		"description": "Winco Total TA"
+	}, {
+		"ID": "4524391",
+		"description": "Winco Total xAOC Rem"
+	}, {
+		"ID": "4544017",
+		"description": "Winn-Dixie Jacksonville Region xAOC Rem"
+	}, {
+		"ID": "4543943",
+		"description": "Winn-Dixie Miami Region Rem"
+	}, {
+		"ID": "4541958",
+		"description": "Winn-Dixie Miami Region TA"
+	}, {
+		"ID": "4544020",
+		"description": "Winn-Dixie Miami Region xAOC Rem"
+	}, {
+		"ID": "4543757",
+		"description": "Winn-Dixie Montgomery Region TA"
+	}, {
+		"ID": "4544024",
+		"description": "Winn-Dixie Montgomery Region xAOC Rem"
+	}, {
+		"ID": "4544027",
+		"description": "Winn-Dixie New Orleans Region Rem"
+	}, {
+		"ID": "4543758",
+		"description": "Winn-Dixie New Orleans Region TA"
+	}, {
+		"ID": "4544028",
+		"description": "Winn-Dixie New Orleans Region xAOC Rem"
+	}, {
+		"ID": "4544033",
+		"description": "Winn-Dixie Tampa Region xAOC Rem"
+	}]
+}

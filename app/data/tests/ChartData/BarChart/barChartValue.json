@@ -1,0 +1,110 @@
+"use strict";
+angular.module('oneview.barChartValue', []).value('barValue', {
+    "cardType": "CHART",
+    "createdBy": "2d9169d9fcc1a51b6280c240965072a0",
+    "createdDate": 1472572125408,
+    "favorite": false,
+    "focusTags": ["NEW_PRODUCTS", "MARKETS", "PROMOTIONS", "BRAND_LOYALTY", "MARKET_SHARE"],
+    "id": "57c5aadda4abff5db7f95d38",
+    "status": "COMPLETED",
+    "title": "Ad Channel Performance",
+    "updatedBy": "2d9169d9fcc1a51b6280c240965072a0",
+    "updatedDate": 1472572127700,
+    "userTags": ["Unileaver Shampoo", "Profiles Luke", "Smith Trackers", "Global Trackers"],
+    "dataSelection": {
+        "dataContext": {
+            "url": "data/AdChannelPerformance.json"
+        },
+        "prompts": [{
+            "id": "market",
+            "name": "market",
+            "value": "Total US xAOC"
+        }, {
+            "id": "category",
+            "name": "category",
+            "value": "HERBAL TEA"
+        }, {
+            "id": "rank",
+            "name": "rank",
+            "value": 5
+        }]
+    },
+    "legend": true,
+    "placement": {
+        "maxSize": {
+            "height": 2,
+            "width": 2
+        },
+        "minSize": {
+            "height": 1,
+            "width": 1
+        },
+        "position": {
+            "x": 2,
+            "y": 0
+        },
+        "resizable": true,
+        "size": {
+            "height": 1,
+            "width": 2
+        }
+    },
+    "reportSpecification": {
+        "objects": [{
+            "type": "BAR"
+        }]
+    },
+    "options": [{
+        "title": "Opportunities",
+        "submenu": [{
+            "title": "Category Performance",
+            "id": "oppo_cat_perf"
+        }, {
+            "title": "Carbonated Soft Drinks vlaue & share decline"
+        }, {
+            "title": "Contact Account Manager"
+        }, {
+            "title": "Innovation Opprtunity"
+        }]
+    }, {
+        "title": "Recommended for You",
+        "submenu": [{
+            "title": "Business Drives"
+        }, {
+            "title": "Insight Studio"
+        }]
+    }, {
+        "title": "Add Story",
+        "submenu": [{
+            "title": "New Story",
+            "id": "open_newstory_prompt"
+        }, {
+            "title": "Communication with Evaluate 2015 Sales & Marketing",
+            "id": "open_addtostory_prompt"
+        }, {
+            "title": "Headquarters presentation"
+        }, {
+            "title": "Sales & Marketting Meeting"
+        }]
+    }, {
+        "title": "Download As",
+        "submenu": [{
+            "title": "Excel"
+        }, {
+            "title": "Image"
+        }, {
+            "title": "PDF"
+        }, {
+            "title": "PowerPoint"
+        }]
+    }, {
+        "title": "Edit",
+        "id": "action_edit_card"
+    }, {
+        "title": "Remove",
+        "id": "action_remove_card"
+    }, {
+        "title": "Send",
+        "id": "action_send_card"
+    }]
+});

@@ -1,0 +1,404 @@
+{
+      "accessedDate": "10 May 2017, 11:58 AM",
+      "createdBy": "Arthi Kasturirangan",
+      "createdDate": "28 Apr 2017, 10:43 PM",
+      "description": "Sales Change, Share & Share Change",
+      "favorite": false,
+      "status": "COMPLETED",
+      "title": "Sales Change, Share & Share Change",
+      "updatedBy": "Darlene Mueller",
+      "updatedDate": "10 May 2017, 11:58 AM",
+      "userTags": [
+        "Performance Overview"
+      ],
+      "previewUrl": "data/CategoryAssessment/preview/Report-9.png",
+      "components": [
+        {
+          "type": "CHART",
+          "chartConfigs": [
+            {
+              "chartType": "MULTIBAR_HORIZONTAL",
+              "dataDefinition": {
+                "xaxis": [
+                  {
+                    "value": "groupId",
+                    "valueType": "COLUMN",
+                    "displayValueType": "COLUMN",
+                    "displayValue": "groupName"
+                  },
+                  {
+                    "value": "name",
+                    "valueType": "COLUMN"
+                  }
+                ],
+                "series": [
+                  {
+                    "value": "metric1"
+                  },
+                  {
+                    "value": "metric2"
+                  },
+                  {
+                    "value": "metric3"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "displayFormat": ",.1%",
+                  "font": {
+                    "size": 10
+                  },
+                  "majorTickMarkType": "NONE",
+                  "minorTickMarkType": "NONE",
+                  "reversePlotOrder": false,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "LOW",
+                  "noOfTick": 5
+                },
+                "yAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "font": {
+                    "size": 10
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "LOW"
+                }
+              },
+              "seriesConfig": {
+                "showValues": true,
+                "showMarker": true
+              },
+              "seriesConfigs": {
+                "metric3": {
+                  "color": "#1b6d1b",
+                  "showValues": false,
+                  "showMarker": false
+                },
+                "metric2": {
+                  "color": "#1fc1b4",
+                  "showValues": false,
+                  "showMarker": false
+                },
+                "metric1": {
+                  "color": "#12597c",
+                  "showValues": false,
+                  "showMarker": false
+                }
+              },
+              "colorPalette": [
+                "#0d117c",
+                "#bab6b6"
+              ],
+              "distinctColors": false
+            }
+          ],
+          "chartProperty": {
+            "legend": {
+              "align": "BOTTOM",
+              "justified": "LEFT",
+              "font": {
+                "name": "Open Sans",
+                "color": "#172730",
+                "size": 12
+              },
+              "shape": "square",
+              "maxKeyLength": 100
+            },
+            "margin": {
+              "bottom": 120,
+              "left": 0,
+              "right": 30,
+              "top": 40
+            },
+            "showControls": false,
+            "showLegend": true,
+            "showTitle": true,
+            "showValues": false,
+            "showXaxis": true,
+            "showYaxis": true,
+            "enableLocalAction": false,
+            "showMarker": false,
+            "gapWidth": 10,
+            "showDataTable": false,
+            "showTable": true
+          },
+          "dataService": "reporting/report/58d23836d9c9e00dc80a89ea"
+        },
+        {
+          "type": "CHART",
+          "chartConfigs": [
+            {
+              "chartType": "MULTIBAR_VERTICAL",
+              "dataDefinition": {
+                "xaxis": [
+                  {
+                    "value": "id",
+                    "valueType": "COLUMN",
+                    "displayValueType": "COLUMN",
+                    "displayValue": "product_sdesc"
+                  }
+                ],
+                "series": [
+                  {
+                    "value": "metric1"
+                  },
+                  {
+                    "value": "metric2"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "font": {
+                    "size": 10
+                  },
+                  "majorTickMarkType": "NONE",
+                  "minorTickMarkType": "NONE",
+                  "reversePlotOrder": false,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "LOW"
+                },
+                "yAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "displayFormat": ",.1%",
+                  "font": {
+                    "size": 10
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "LOW",
+                  "noOfTick": 5
+                }
+              },
+              "seriesConfig": {
+                "showValues": true,
+                "showMarker": true
+              },
+              "seriesConfigs": {
+                "metric2": {
+                  "color": "#bab6b6",
+                  "showValues": false,
+                  "showMarker": false
+                },
+                "metric1": {
+                  "color": "#0d117c",
+                  "showValues": false,
+                  "showMarker": false
+                }
+              },
+              "colorPalette": [
+                "#0d117c",
+                "#bab6b6"
+              ],
+              "distinctColors": false
+            },
+            {
+              "chartType": "LABELS",
+              "dataDefinition": {
+                "series": [
+                  {
+                    "value": "metric3"
+                  },
+                  {
+                    "value": "metric4"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "crossAt": 0,
+                  "displayFormat": "+,.1f",
+                  "font": {
+                    "size": 15
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": true,
+                  "showMaxMin": false
+                }
+              },
+              "distinctColors": false
+            }
+          ],
+          "chartProperty": {
+            "legend": {
+              "align": "BOTTOM",
+              "justified": "LEFT",
+              "font": {
+                "name": "Open Sans",
+                "color": "#172730",
+                "size": 12
+              },
+              "shape": "square",
+              "maxKeyLength": 100
+            },
+            "margin": {
+              "bottom": 120,
+              "left": 100,
+              "right": 20,
+              "top": 100
+            },
+            "showControls": false,
+            "showLegend": true,
+            "showTitle": true,
+            "showValues": false,
+            "showXaxis": true,
+            "showYaxis": true,
+            "enableLocalAction": true,
+            "showMarker": false,
+            "showDataTable": false,
+            "showTable": false
+          },
+          "dataService": "reporting/report/58d23a6dd9c9e01d9c56524c"
+        },
+        {
+          "type": "HEADER",
+          "id": "COMP_HEADER",
+          "content": "[Retailer Markets] Sales Change,  Market Share and Share Change"
+        }
+      ],
+      "reportLayout": {
+        "type": "CARD",
+        "columns": 2,
+        "tiles": [
+          {
+            "row": 0,
+            "column": 0,
+            "columnSpan": 1,
+            "rowSpan": 1
+          },
+          {
+            "row": 0,
+            "column": 0,
+            "columnSpan": 1,
+            "rowSpan": 1
+          }
+        ]
+      },
+      "prompts": [
+        {
+          "type": "HIERARCHY",
+          "dimension": "product",
+          "promptId": "Product Hierarchy Selector",
+          "promptName": "Product",
+          "readOnly": false,
+          "order": 1,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Retailer Markets",
+          "promptName": "Primary Retailer",
+          "readOnly": false,
+          "order": 4,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Comparison Markets",
+          "promptName": "Multiple Comparison Markets",
+          "readOnly": false,
+          "order": 8,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "multiple": true,
+          "maxSelection": 2,
+          "minSelection": 2,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "No of Weeks",
+          "promptName": "Time Period",
+          "readOnly": false,
+          "order": 10,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "Period Date",
+          "promptName": "Time Period End Date",
+          "readOnly": false,
+          "order": 11,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "Year Ago / Previous Period",
+          "promptName": "Comparison Time Period",
+          "readOnly": false,
+          "order": 12,
+          "collectionTooltip": "sdfsdf",
+          "reportTooltip": "sdfsdf",
+          "multiple": false,
+          "metric": false
+        }
+      ],
+      "promptLayout": {
+        "type": "FLOW",
+        "elements": [
+          {
+            "componentId": "Product Hierarchy Selector",
+            "seperator": true
+          },
+          {
+            "componentId": "Retailer Markets",
+            "seperator": false
+          },
+          {
+            "componentId": "Comparison Markets",
+            "seperator": true
+          },
+          {
+            "componentId": "No of Weeks",
+            "seperator": false
+          },
+          {
+            "componentId": "Period Date",
+            "seperator": false
+          },
+          {
+            "componentId": "Year Ago / Previous Period",
+            "seperator": false
+          }
+        ]
+      },
+      "header": "COMP_HEADER"
+    }

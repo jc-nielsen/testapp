@@ -1,0 +1,77 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Attribute/Values"
+	},
+	"catalogueAttributeValue": [{
+		"ID": "NOT APPLICABLE",
+		"description": "NOT APPLICABLE"
+	}, {
+		"ID": "AMJ 2015",
+		"description": "AMJ 2015"
+	}, {
+		"ID": "JFM 2015",
+		"description": "JFM 2015"
+	}, {
+		"ID": "OND 2014",
+		"description": "OND 2014"
+	}, {
+		"ID": "JAS 2014",
+		"description": "JAS 2014"
+	}, {
+		"ID": "AMJ 2014",
+		"description": "AMJ 2014"
+	}, {
+		"ID": "JFM 2014",
+		"description": "JFM 2014"
+	}, {
+		"ID": "OND 2013",
+		"description": "OND 2013"
+	}, {
+		"ID": "JAS 2013",
+		"description": "JAS 2013"
+	}, {
+		"ID": "AMJ 2013",
+		"description": "AMJ 2013"
+	}, {
+		"ID": "JFM 2013",
+		"description": "JFM 2013"
+	}, {
+		"ID": "OND 2012",
+		"description": "OND 2012"
+	}, {
+		"ID": "JAS 2012",
+		"description": "JAS 2012"
+	}, {
+		"ID": "AMJ 2012",
+		"description": "AMJ 2012"
+	}, {
+		"ID": "JFM 2012",
+		"description": "JFM 2012"
+	}, {
+		"ID": "OND 2011",
+		"description": "OND 2011"
+	}, {
+		"ID": "JAS 2011",
+		"description": "JAS 2011"
+	}, {
+		"ID": "AMJ 2011",
+		"description": "AMJ 2011"
+	}, {
+		"ID": "JFM 2011",
+		"description": "JFM 2011"
+	}, {
+		"ID": "OND 2010",
+		"description": "OND 2010"
+	}, {
+		"ID": "JAS 2010",
+		"description": "JAS 2010"
+	}, {
+		"ID": "AMJ 2010",
+		"description": "AMJ 2010"
+	}]
+}

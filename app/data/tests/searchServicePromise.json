@@ -1,0 +1,304 @@
+"use strict";angular.module('oneview.test',
+[]).value('searchServicePromise',
+{
+    $promise: {
+        then: function(){
+            arguments[
+                0
+            ]({
+                "data": {
+                    "assets": null,
+                    "filters": [
+                        {
+                            "ajax": false,
+                            "childKeys": [
+                                "AST.FOLDER"
+                            ],
+                            "collapsed": true,
+                            "common": true,
+                            "defaultValue": false,
+                            "displayOrder": 1,
+                            "elements": [
+                                {
+                                    "collapsed": true,
+                                    "count": null,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": null,
+                                    "selected": false,
+                                    "title": "All Apps",
+                                    "typeKey": "allApp",
+                                    "typeValue": "true",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": false,
+                                    "count": 12,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 19779,
+                                    "selected": false,
+                                    "title": "BIC Discovery",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": 26,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 20819,
+                                    "selected": false,
+                                    "title": "Coop Discovery",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": false,
+                                    "count": 20,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 19644,
+                                    "selected": false,
+                                    "title": "Dashboard Manager",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": false,
+                                    "count": 16,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 20975,
+                                    "selected": false,
+                                    "title": "NDX BI Manufacturer MVP",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": false,
+                                    "count": 56,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 20476,
+                                    "selected": false,
+                                    "title": "NDX BI Retailer MVP",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": 8,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 22182,
+                                    "selected": true,
+                                    "title": "NES_Cloud_Proj_02",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": 6,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 19645,
+                                    "selected": false,
+                                    "title": "Story Manager",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": 32,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": 19646,
+                                    "selected": false,
+                                    "title": "Supervalu Discovery",
+                                    "typeKey": "AST",
+                                    "typeValue": "APP",
+                                    "imageUrl": ""
+                                }
+                            ],
+                            "id": null,
+                            "maxSelection": null,
+                            "multiple": false,
+                            "parentKeys": [],
+                            "section": false,
+                            "selected": false,
+                            "selectedItemCount": 1,
+                            "title": "Applications",
+                            "typeKey": "AST",
+                            "typeValue": "APP",
+                            "imageUrl": ""
+                        },
+                        {
+                            "ajax": false,
+                            "childKeys": null,
+                            "collapsed": true,
+                            "common": true,
+                            "defaultValue": false,
+                            "displayOrder": 2,
+                            "elements": [
+                                {
+                                    "collapsed": true,
+                                    "count": null,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": null,
+                                    "selected": true,
+                                    "title": "Created any time",
+                                    "typeKey": "anyTime",
+                                    "typeValue": "true",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": null,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": null,
+                                    "selected": false,
+                                    "title": "Accessed in the last 30 days",
+                                    "typeKey": "startAccessedDate",
+                                    "typeValue": "-30",
+                                    "imageUrl": ""
+                                },
+                                {
+                                    "collapsed": true,
+                                    "count": null,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": null,
+                                    "selected": false,
+                                    "title": "Created in the last 30 days",
+                                    "typeKey": "startCreationDate",
+                                    "typeValue": "-30",
+                                    "imageUrl": ""
+                                }
+                            ],
+                            "id": null,
+                            "maxSelection": null,
+                            "multiple": false,
+                            "parentKeys": [],
+                            "section": false,
+                            "selected": false,
+                            "selectedItemCount": 1,
+                            "title": "Created any time",
+                            "typeKey": "AST",
+                            "typeValue": "OPTION",
+                            "imageUrl": ""
+                        },
+                        {
+                            "ajax": false,
+                            "childKeys": null,
+                            "collapsed": false,
+                            "common": true,
+                            "defaultValue": false,
+                            "displayOrder": 3,
+                            "elements": [
+                                {
+                                    "collapsed": true,
+                                    "count": null,
+                                    "defaultValue": false,
+                                    "elements": null,
+                                    "id": null,
+                                    "selected": false,
+                                    "title": "New Products",
+                                    "typeKey": "FCS",
+                                    "typeValue": "NEW_PRODUCTS",
+                                    "imageUrl": ""
+                                }
+                            ],
+                            "id": null,
+                            "maxSelection": null,
+                            "multiple": true,
+                            "parentKeys": [],
+                            "section": false,
+                            "selected": false,
+                            "selectedItemCount": 0,
+                            "title": "Focus",
+                            "typeKey": "TGP",
+                            "typeValue": "FCS",
+                            "imageUrl": ""
+                        },
+                        {
+                            "ajax": true,
+                            "childKeys": null,
+                            "collapsed": false,
+                            "common": false,
+                            "defaultValue": false,
+                            "displayOrder": 1005,
+                            "elements": [
+                                {
+                                    "collapsed": true,
+                                    "count": 2,
+                                    "defaultValue": false,
+                                    "elements": [
+                                        {
+                                            "collapsed": true,
+                                            "count": 2,
+                                            "defaultValue": false,
+                                            "elements": [],
+                                            "id": 22184,
+                                            "selected": false,
+                                            "title": "Ad-hoc Templates",
+                                            "typeKey": "AST",
+                                            "typeValue": "FOLDER",
+                                            "imageUrl": ""
+                                        }
+                                    ],
+                                    "id": 22183,
+                                    "selected": false,
+                                    "title": "Shared",
+                                    "typeKey": "AST",
+                                    "typeValue": "FOLDER",
+                                    "imageUrl": ""
+                                }
+                            ],
+                            "id": null,
+                            "maxSelection": null,
+                            "multiple": false,
+                            "parentKeys": [
+                                "AST.APP"
+                            ],
+                            "section": true,
+                            "selected": false,
+                            "selectedItemCount": 0,
+                            "title": "Folders",
+                            "typeKey": "AST",
+                            "typeValue": "FOLDER",
+                            "imageUrl": ""
+                        }
+                    ],
+                    "properties": {
+                        "associatedAssets": false,
+                        "pageCount": 50,
+                        "focusTags": false,
+                        "pageNumber": 1,
+                        "totalAssets": 2,
+                        "relatedAssets": false,
+                        "userTags": true
+                    },
+                    "assetTypes": [
+                        {
+                            "id": "TEMPLATE",
+                            "value": "Templates",
+                            "selected": false
+                        }
+                    ]
+                },
+                "status": "success",
+                "message": "No Records Found"
+            });
+        }
+    }
+});

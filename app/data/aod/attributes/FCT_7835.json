@@ -1,0 +1,298 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Levels"
+    },
+    "catalogueGroupLevel": [{
+        "ID": "7836",
+        "description": "Sales Volume",
+        "level": [{
+            "ID": "7848",
+            "description": "Dollars"
+        }, {
+            "ID": "7849",
+            "description": "Units"
+        }, {
+            "ID": "7850",
+            "description": "EQ"
+        }]
+    }, {
+        "ID": "7837",
+        "description": "Pricing",
+        "level": [{
+            "ID": "7851",
+            "description": "Unit"
+        }, {
+            "ID": "7852",
+            "description": "EQ"
+        }, {
+            "ID": "7853",
+            "description": "Any Promo"
+        }, {
+            "ID": "7854",
+            "description": "No Promo"
+        }, {
+            "ID": "7855",
+            "description": "Disp w/o Feat"
+        }, {
+            "ID": "7856",
+            "description": "Feat w/o Disp"
+        }, {
+            "ID": "7857",
+            "description": "Feat & Disp"
+        }, {
+            "ID": "7858",
+            "description": "Quality"
+        }, {
+            "ID": "7859",
+            "description": "Price Decrease"
+        }, {
+            "ID": "7860",
+            "description": "Any Display"
+        }, {
+            "ID": "7861",
+            "description": "Any Feature"
+        }, {
+            "ID": "7862",
+            "description": "Any Price Decrease"
+        }]
+    }, {
+        "ID": "7838",
+        "description": "Distribution",
+        "level": [{
+            "ID": "7863",
+            "description": "ACV"
+        }, {
+            "ID": "7864",
+            "description": "TDP"
+        }, {
+            "ID": "7865",
+            "description": "Avg # Items"
+        }, {
+            "ID": "7866",
+            "description": "Dollars"
+        }, {
+            "ID": "7867",
+            "description": "Units"
+        }, {
+            "ID": "7868",
+            "description": "EQ"
+        }]
+    }, {
+        "ID": "7840",
+        "description": "Promotion Dollars",
+        "level": [{
+            "ID": "7869",
+            "description": "Any Promo"
+        }, {
+            "ID": "7870",
+            "description": "No Promo"
+        }, {
+            "ID": "7871",
+            "description": "Disp w/o Feat"
+        }, {
+            "ID": "7872",
+            "description": "Feat w/o Disp"
+        }, {
+            "ID": "7873",
+            "description": "Feat & Disp"
+        }, {
+            "ID": "7874",
+            "description": "Quality"
+        }, {
+            "ID": "7875",
+            "description": "Price Decrease"
+        }, {
+            "ID": "7876",
+            "description": "Any Display"
+        }, {
+            "ID": "7877",
+            "description": "Any Feature"
+        }, {
+            "ID": "7878",
+            "description": "Any Price Decrease"
+        }]
+    }, {
+        "ID": "7841",
+        "description": "Promotion Units",
+        "level": [{
+            "ID": "7879",
+            "description": "Any Promo"
+        }, {
+            "ID": "7880",
+            "description": "No Promo"
+        }, {
+            "ID": "7881",
+            "description": "Disp w/o Feat"
+        }, {
+            "ID": "7882",
+            "description": "Feat w/o Disp"
+        }, {
+            "ID": "7883",
+            "description": "Feat & Disp"
+        }, {
+            "ID": "7884",
+            "description": "Quality"
+        }, {
+            "ID": "7885",
+            "description": "Price Decrease"
+        }, {
+            "ID": "7886",
+            "description": "Any Display"
+        }, {
+            "ID": "7887",
+            "description": "Any Feature"
+        }, {
+            "ID": "7888",
+            "description": "Any Price Decrease"
+        }]
+    }, {
+        "ID": "7842",
+        "description": "Promotion EQ",
+        "level": [{
+            "ID": "7892",
+            "description": "Any Promo"
+        }, {
+            "ID": "7893",
+            "description": "No Promo"
+        }, {
+            "ID": "7894",
+            "description": "Disp w/o Feat"
+        }, {
+            "ID": "7895",
+            "description": "Feat w/o Disp"
+        }, {
+            "ID": "7896",
+            "description": "Feat & Disp"
+        }, {
+            "ID": "7897",
+            "description": "Quality"
+        }, {
+            "ID": "7898",
+            "description": "Price Decrease"
+        }, {
+            "ID": "7889",
+            "description": "Any Display"
+        }, {
+            "ID": "7890",
+            "description": "Any Feature"
+        }, {
+            "ID": "7891",
+            "description": "Any Price Decrease"
+        }]
+    }, {
+        "ID": "7843",
+        "description": "Promotion Distribution",
+        "level": [{
+            "ID": "7899",
+            "description": "Any Promo"
+        }, {
+            "ID": "7900",
+            "description": "No Promo"
+        }, {
+            "ID": "7901",
+            "description": "Disp w/o Feat"
+        }, {
+            "ID": "7902",
+            "description": "Feat w/o Disp"
+        }, {
+            "ID": "7903",
+            "description": "Feat & Disp"
+        }, {
+            "ID": "7904",
+            "description": "Quality"
+        }, {
+            "ID": "7905",
+            "description": "Price Decrease"
+        }, {
+            "ID": "7906",
+            "description": "Any Display"
+        }, {
+            "ID": "7907",
+            "description": "Any Feature"
+        }, {
+            "ID": "7908",
+            "description": "Any Price Decrease"
+        }]
+    }, {
+        "ID": "7844",
+        "description": "Dollar Share",
+        "level": [{
+            "ID": "7909",
+            "description": "Category"
+        }, {
+            "ID": "7910",
+            "description": "Subcategory"
+        }, {
+            "ID": "7911",
+            "description": "Segment"
+        }, {
+            "ID": "7912",
+            "description": "Prompt"
+        }, {
+            "ID": "7913",
+            "description": "Context"
+        }]
+    }, {
+        "ID": "7845",
+        "description": "Units Share",
+        "level": [{
+            "ID": "7914",
+            "description": "Category"
+        }, {
+            "ID": "7915",
+            "description": "Subcategory"
+        }, {
+            "ID": "7916",
+            "description": "Segment"
+        }, {
+            "ID": "7917",
+            "description": "Prompt"
+        }, {
+            "ID": "7918",
+            "description": "Context"
+        }]
+    }, {
+        "ID": "7846",
+        "description": "EQ Share",
+        "level": [{
+            "ID": "1025899",
+            "description": "Category"
+        }, {
+            "ID": "1025900",
+            "description": "Subcategory"
+        }, {
+            "ID": "1025901",
+            "description": "Segment"
+        }, {
+            "ID": "7919",
+            "description": "Prompt"
+        }, {
+            "ID": "1025902",
+            "description": "Context"
+        }]
+    }, {
+        "ID": "7847",
+        "description": "Distribution Share",
+        "level": [{
+            "ID": "7920",
+            "description": "Category"
+        }, {
+            "ID": "7921",
+            "description": "Subcategory"
+        }, {
+            "ID": "7922",
+            "description": "Segment"
+        }, {
+            "ID": "7923",
+            "description": "Prompt"
+        }, {
+            "ID": "7924",
+            "description": "Context"
+        }]
+    }]
+}

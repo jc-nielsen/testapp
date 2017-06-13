@@ -1,0 +1,48 @@
+{
+  "data": [{
+    "title": "Open",
+    "iconClass": "nlsn-icon-arrow-all",
+    "seprator": "true",
+    "disabled": true
+  }, {
+    "title": "Share...",
+    "iconClass": "nlsn-icon-account",
+    "seprator": "false",
+    "disabled": true
+  }, {
+    "title": "Move to...",
+    "iconClass": "",
+    "seprator": "false",
+    "disabled": true
+  }, {
+    "title": "Favorite",
+    "iconClass": "nlsn-icon-star",
+    "seprator": "false",
+    "disabled": true
+  }, {
+    "title": "Rename...",
+    "iconClass": "",
+    "seprator": "true",
+    "disabled": true
+  },
+   {
+    "title": "View Details",
+    "iconClass": "fa fa-info-circle",
+    "seprator": "false",
+    "disabled": true
+  },
+   {
+    "title": "Copy",
+    "iconClass": "nlsn-icon-content-copy",
+    "seprator": "true",
+    "disabled": true
+  },
+
+   {
+    "title": "Remove",
+    "iconClass": "nlsn-icon-delete",
+    "seprator": "false",
+    "disabled": true
+  }]
+}
+

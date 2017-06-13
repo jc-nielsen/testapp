@@ -1,0 +1,184 @@
+[{
+	"name": "ONEVIEW.DASHBOARD.MENU.FILE",
+	"pageid": "stories",
+	"type": "Menu",
+	"Role":["CREATOR","EDITOR","VIEWER"],
+	"counter": false,
+	"submenu": [
+    {
+            "name": "ONEVIEW.STORY.SHARE",
+            "pageid": "stories",
+            "Role": ["CREATOR", "EDITOR"],
+            "actionid": "ShareWithPeople",
+            "iconClass": "nlsn-icon-account",
+            "type": "Link",
+            "counter": false,
+            "seprator":true
+     },
+    {
+	  "name": "ONEVIEW.GENERIC.STORY.NEW",
+		"Role":["CREATOR","EDITOR","VIEWER"],
+		"actionid": "",
+		"seprator":false,
+		"submenu": [{
+			"name": "ONEVIEW.GENERIC.STORY.NEWSTORY",
+			"Role":["CREATOR","EDITOR","VIEWER"],
+			"actionid": "newStory"
+		}, {
+		"name": "ONEVIEW.GENERIC.STORY.NEWSLIDE",
+		"Role":["CREATOR","EDITOR"],
+		"actionid": "newSlide"
+	   }]
+	}, {
+		"name": "ONEVIEW.STORY.CREATECOPY",
+		"iconClass": "fa fa-clone",
+		"Role":["CREATOR","EDITOR"],
+		"actionid": "saveAs",
+		"seprator":false
+	}, {
+		"name": "ONEVIEW.STORY.DELETESTORY.MENU",
+		"iconClass": "nlsn-icon-delete",
+		"Role":["CREATOR"],
+		"actionid": "deleteStory",
+		 "seprator":true
+	}, {
+		"name": "ONEVIEW.STORY.TEMPLATE.MENUNAME",
+		"Role":["CREATOR","EDITOR"],
+		"actionid": "template",
+		 "seprator":true
+	},
+	
+	{
+		"name": "ONEVIEW.GENERIC.PROPERTIES.LINK",
+		"Role":["CREATOR","EDITOR","VIEWER"],
+		"actionid": "storyProps",
+		"seprator":false
+	}]
+}, {
+	"name": "ONEVIEW.DASHBOARD.MENU.EDIT",
+	"pageid": "stories",
+	"type": "Menu",
+	"Role":["CREATOR","EDITOR"],
+    "counter": false,
+   
+	"submenu": [{
+		"name": "ONEVIEW.STORY.REFRESHALLDATA",
+	  "iconClass": "nlsn-icon-action_refresh",
+		"actionid": "refreshAllData",
+		"Role":["CREATOR","EDITOR"],
+		"minSlides": 1,
+    "seprator":false
+	}, {
+		"name": "ONEVIEW.STORY.DELETEALLCOMMENTS",
+	  "iconClass": "nlsn-icon-delete",
+		"actionid": "deleteAllComments",
+		"Role":["CREATOR","EDITOR"],
+		"minSlides": 1,
+    "seprator":false
+	}]
+},{
+	"name": "ONEVIEW.STORY.MENU.SLIDE",
+	"pageid": "stories",
+	"subcat": "slide",
+	"Role":["CREATOR","EDITOR","VIEWER"],
+    "type": "Menu",
+	"counter": false,
+	"submenu": [
+    {
+          "name": "Change Layout",
+          "actionid": "changeLayout",
+          "Role": ["CREATOR", "EDITOR"],
+          "iconClass": "nlsn-icon-view-grid"
+
+    },
+    {
+		"name": "ONEVIEW.STORY.MOVE.TO",
+		"actionid": "MoveSlide",
+		"Role":["CREATOR","EDITOR"],
+		"minSlides": 1,
+		"seprator":false
+	},{
+		"name": "ONEVIEW.STORY.COPY.TO",
+		"subMenuAction": "getStories",
+		"Role":["CREATOR","EDITOR"],
+		"submenu": [],
+		"minSlides": 1,
+    "seprator":false
+	}, {
+		"name": "ONEVIEW.STORY.COPY.SLIDE",
+		"actionid": "CopySlide",
+		"Role":["CREATOR","EDITOR"],
+		"minSlides": 1,
+    "seprator":false
+	},  {
+		"name": "ONEVIEW.STORY.DELETE.SLIDE",
+		"actionid": "DeleteSlide",
+    "iconClass": "nlsn-icon-delete",
+		"Role":["CREATOR","EDITOR"],
+		"minSlides": 1,
+    "seprator":true
+	},
+  {
+          "name": "Chart Mode",
+          "actionid": "defaultView",
+          "Role": ["CREATOR", "EDITOR"],
+          "iconClass": "nlsn-icon-chart-bar",
+           "seprator":false
+
+  },
+	{
+            "name": "Title Mode",
+          "actionid": "titleOverlay",
+          "Role": ["CREATOR", "EDITOR"],
+          "iconClass": "nlsn-icon-text-mode",
+            "seprator":false
+           
+        },
+		{
+            "name": "Attachment",
+            "actionid": "attachmentPanel",
+            "Role":["CREATOR","EDITOR","VIEWER"],
+            "iconClass": "nlsn-icon-paperclip",
+           "seprator":false
+        },
+		{
+            "name": "Comments",
+            "actionid": "commentsPanel",
+            "Role":["CREATOR","EDITOR","VIEWER"],
+            "iconClass": "nlsn-icon-comment-outline",
+            "seprator":false
+          
+        },
+		{
+            "name": "Notes",
+            "actionid": "showNotes",
+            "Role":["CREATOR","EDITOR","VIEWER"],
+            "iconClass": "nlsn-icon-pin",
+            "seprator":false
+            
+        }]
+}, {
+	"name": "ONEVIEW.STORY.DOWNLOAD.MENU",
+	"pageid": "stories",
+	"type": "Menu",
+	"Role":["CREATOR","EDITOR","VIEWER"],
+    "counter": false,
+	"submenu": [{
+		"name": "ONEVIEW.GENERIC.PPT.LINK",
+		"Role":["CREATOR","EDITOR","VIEWER"],
+		"actionid": "dowloadPowerpoint",
+    "iconClass": "nlsn-icon-file-powerpoint",
+		"type": "Menu",
+		"counter": false,
+    "seprator":false,
+		"submenu": [{
+			"name": "New Powerpoint",
+			"Role":["CREATOR","EDITOR","VIEWER"],
+			"actionid": "newppt"
+		}, {
+			"name": "ONEVIEW.STORY.ADDTOPPT",
+			"Role":["CREATOR","EDITOR","VIEWER"],
+			"actionid": "addppt"
+		}]
+	}]
+}]

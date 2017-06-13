@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Reports",
+        "image": "assets/images/userpersona.png",
+        "base": "reports",
+        "searchKey": "REPORT:",
+        "cls": "violet",
+        "description": "Nielsen reports provides you with an easy and convenient way to obtain detailed demographic reports and maps that offer insight into your market and allow you to better engage your customers and prospects."
+     },
+    {
+        "id": 2,
+        "name": "Datasets",
+        "image": "assets/images/userpersona.png",
+        "base": "datasets",
+        "searchKey": "DATASET:",
+        "cls": "blue",
+        "description": "Nielsen MarketPlace is a single, comprehensive online resource offering a number of datasets for every market. Additionally, you'll find tools to establish a unique User Defined dataset for your marketing analysis needs."
+    },
+    {
+        "id": 3,
+        "name": "Studies",
+        "image": "assets/images/userpersona.png",
+        "base": "studies",
+        "searchKey": "STUDIES:",
+        "cls": "teal",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 4,
+        "name": "Market News",
+        "image": "assets/images/userpersona.png",
+        "base": "market news",
+        "searchKey": "MARKETNEWS:",
+        "cls": "orange",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    {
+        "id": 5,
+        "name": "APIs",
+        "image": "assets/images/userpersona.png",
+        "base": "apis",
+        "searchKey": "API:",
+        "cls": "green",
+        "description": "Nielsen's APIs unlock a range of new benefits for clients providing a direct pipeline into their internal systems. Clients can leverage these APIs to conduct powerful ad-hoc analyses that involve large volumes of data."
+    },
+    {
+        "id": 6,
+        "name": "Projects",
+        "image": "assets/images/userpersona.png",
+        "base": "projects",
+        "searchKey": "PROJECTS:",
+        "cls": "yellow",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    }
+
+]

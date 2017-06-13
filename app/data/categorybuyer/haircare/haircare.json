@@ -1,0 +1,130 @@
+[{
+    "tags": ["Value Share", "Total Europe", "52 weeks to 03-Dec-15", "vs. Year Ago"],
+    "note": "Data marked with * have different parameters",
+    "title1": "Total Hair Care",
+    "profit": "$12.2B",
+    "gain": "0.2%",
+    "gainComparison": "vs Year Ago",
+    "title2": "Perfeksjon",
+    "details": [{
+        "title": "Share",
+        "shareDetails": [{
+            "title": "Product Preference",
+            "measure": [{
+                "value": "-0.2 %",
+                "title": "$ Share (US$)",
+                "type": "negative"
+                }, {
+                "value": "+1.2 %",
+                "title": "Sales(US$)",
+                "type": "positive"
+            }],
+            "subMeasure": {
+                "unit": "$ Share",
+                "value": "18.3"
+            },
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 0]
+        }]
+    }, {
+        "title": "Share Drivers",
+        "driverDetails": [{
+            "title": "Competitor Velocity",
+            "type": "positive",
+            "measure": [{
+                "value": "+3.4 %"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 0]
+        }, {
+            "title": "Brand Equity *",
+            "type": "neutral",
+            "measure": [{
+                "value": "+0.1 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 1]
+        }, {
+            "title": "Concept Score",
+            "type": "neutral",
+            "measure": [{
+                "value": "-0.1 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 2]
+        }, {
+            "title": "Trial Rate",
+            "type": "positive",
+            "measure": [{
+                "value": "22.6%"
+            }, {
+                "value": "+0.6 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 3]
+        }, {
+            "title": "Repeat Rate",
+            "type": "neutral",
+            "measure": [{
+                "value": "22.9%"
+            }, {
+                "value": "-0.2 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [1, 0]
+        }, {
+            "title": "Product Preference*",
+            "type": "negative",
+            "measure": [{
+                "value": "30.3%"
+            }, {
+                "value": "-4.4 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [1, 1]
+        }, {
+            "title": "Price Index",
+            "type": "neutral",
+            "measure": [{
+                "value": "+0.4%"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [1, 2]
+        }, {
+            "title": "Share of Voice *",
+            "type": "positive",
+            "measure": [{
+                "value": "+6 pts"
+            }],
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [1, 3]
+        }]
+    }]
+}]

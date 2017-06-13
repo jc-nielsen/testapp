@@ -1,0 +1,1722 @@
+{
+  "status": "success",
+  "data": [
+    {
+      "email": "divya.booravalli@nielsen.com",
+      "organizationId": "NIELSEN MANUFACTURER",
+      "personaId": 10003,
+      "assetId": 0,
+      "isFavorite": true,
+      "assetType": "DASHBOARD",
+      "title": "Category Performance",
+      "description": "",
+      "initialCreation": "03/18/2016",
+      "lastModified": "03/18/2016",
+      "lastAccessed": "03/18/2016",
+      "status": "PUBLIC",
+      "imageUrl": "fa fa-tachometer orange",
+      "launchUrl": "http://launch.url",
+      "relationships": [
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10000,
+          "isFavorite": true,
+          "placement": {
+            "cardType": "scorecard",
+            "size": {
+              "x": 2,
+              "y": 2
+            },
+            "position": [
+              0,
+              0
+            ],
+            "xsize": {
+              "min": 2,
+              "max": 2
+            },
+            "ysize": {
+              "min": 2,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Scorecard - WBA Latest 13 weeks",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "http://launch.url",
+          "relationships": [
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10001,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "$ Sales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-1.3 %",
+                "subValue": "$5,718 MM",
+                "color": "nlsnRed",
+                "categoryName": "SOFT DRINKS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "PEPSI",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 3,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10002,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "U Sales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-4.3 %",
+                "subValue": "1,250 MM",
+                "color": "nlsnRed",
+                "categoryName": "ICE CREAM",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "BREYERS",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 4,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10003,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "$ Market Share",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-0.1",
+                "subValue": "3.32",
+                "color": "nlsnGrey",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "IT STAYS!",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "U Market Share",
+              "assetId": 10004,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "U Market Share",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-0.1",
+                "subValue": "2.36",
+                "color": "nlsnGrey",
+                "categoryName": "MAGAZINES",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "BETTER HOMES AND GARDENS",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "L4LSales",
+              "assetId": 10005,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "L4LSales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "-1.4%",
+                "subValue": "$5,432 MM",
+                "color": "nlsnRed",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "COGHLAN'S",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10006,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "AVG Basket",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "0.83",
+                "subValue": "$19.58",
+                "color": "nlsnGreen",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "COLEMAN",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10007,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Share of Wallet",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "0.2",
+                "subValue": "3.4",
+                "color": "nlsnGreen",
+                "categoryName": "MAGAZINES",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "PEOPLE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10008,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Loyalty Sales $",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "-1.25 %",
+                "subValue": "$4,575 MM",
+                "color": "nlsnRed",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "UNCLE BEN'S",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Best Customer $",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "1%",
+                "subValue": "$3,111 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Gross Margin",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "0.2",
+                "subValue": "$921 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Trade Funds",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "-0.50 %",
+                "subValue": "$1450 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "OOS (out of stocks)",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "-61 bpt",
+                "subValue": "7.1 %",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10015,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "multiBarChart",
+            "size": {
+              "x": 1,
+              "y": 2
+            },
+            "position": [
+              0,
+              2
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Segment KPIs",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "data/LoyaltyChartData.json",
+          "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+          }
+        },
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10020,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "linePlusBarChart",
+            "size": {
+              "x": 1,
+              "y": 2
+            },
+            "position": [
+              2,
+              0
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Trended Sales View",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "/oneview/services/chart/topNCategory",
+          "parameters": {
+            "ManufacturerName": "KRAFT FOODS, INC.",
+            "period": "Latest 4 Wks - W/E 02/21/15",
+            "rank": 5
+          }
+        },
+        {
+          "email": "sandeep.rathi.ap@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10003,
+          "personaTitle": "Global Insights Manager",
+          "assetId": 11495,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "barchart",
+            "size": {
+              "x": 1,
+              "y": 1
+            },
+            "position": [
+              2,
+              2
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Ad Channel Performance",
+          "description": "",
+          "initialCreation": "03/10/2016",
+          "lastModified": "03/10/2016",
+          "lastAccessed": "03/10/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "data/AdChannelPerformance.json",
+          "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+          }
+        },
+        {
+          "email": "sandeep.rathi.ap@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10003,
+          "personaTitle": "Global Insights Manager",
+          "assetId": 11021,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "scatterChart",
+            "size": {
+              "x": 1,
+              "y": 2
+            },
+            "position": [
+              2,
+              1
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Haircare KPIs",
+          "description": "",
+          "initialCreation": "03/10/2016",
+          "lastModified": "03/10/2016",
+          "lastAccessed": "03/10/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "/oneview/services/chart/categoryPerformance",
+          "parameters": {
+            "market": "Total US xAOC",
+            "category": "HAIRCARE"
+          }
+        },
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10025,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "quickaccess",
+            "size": {
+              "x": 1,
+              "y": 1
+            },
+            "position": [
+              3,
+              2
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 1
+            },
+            "ysize": {
+              "min": 1,
+              "max": 1
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Quick Access",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "",
+          "parameters": {
+            "ManufacturerName": "KRAFT FOODS, INC.",
+            "period": "Latest 4 Wks - W/E 02/21/15",
+            "rank": 5
+          }
+        }
+      ]
+    },
+    {
+      "email": "divya.booravalli@nielsen.com",
+      "organizationId": "NIELSEN MANUFACTURER",
+      "personaId": 10003,
+      "assetId": 1,
+      "isFavorite": true,
+      "assetType": "DASHBOARD",
+      "title": "Market Performance",
+      "description": "",
+      "initialCreation": "03/18/2016",
+      "lastModified": "03/18/2016",
+      "lastAccessed": "03/18/2016",
+      "status": "PUBLIC",
+      "imageUrl": "fa fa-tachometer violet",
+      "launchUrl": "http://launch.url",
+      "relationships": [
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10000,
+          "isFavorite": true,
+          "placement": {
+            "cardType": "scorecard",
+            "size": {
+              "x": 2,
+              "y": 2
+            },
+            "position": [
+              0,
+              0
+            ],
+            "xsize": {
+              "min": 2,
+              "max": 2
+            },
+            "ysize": {
+              "min": 2,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Scorecard - WBA Latest 13 weeks",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "http://launch.url",
+          "relationships": [
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10001,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "$ Sales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-1.3 %",
+                "subValue": "$5,718 MM",
+                "color": "nlsnRed",
+                "categoryName": "SOFT DRINKS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "PEPSI",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 3,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10002,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "U Sales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-4.3 %",
+                "subValue": "1,250 MM",
+                "color": "nlsnRed",
+                "categoryName": "ICE CREAM",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "BREYERS",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 4,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10003,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "$ Market Share",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-0.1",
+                "subValue": "3.32",
+                "color": "nlsnGrey",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "IT STAYS!",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "U Market Share",
+              "assetId": 10004,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  0,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "U Market Share",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "https://h1.answersqc.nielsen.com/mstw/servlet/mstrWeb?evt=5005&src=mstrWeb.oivm.5005&evtOrigin=fromWait&mstrWeb=-DAYRHECDXI002*.ENTERPRISENET*.ORG.UAT+ER+TSR+Full+Retailer+Preview.0_&oivm=*-1.*-1.0.0.0&ssb=*-1.*-1.0.0...1.39..1.2.1.1....1.2.1-3.768.769.774.770.773.14081.14080.8.772.775_&results=0.*0.*0.8.0.0.*0.268453447.*-1.1.*0&rwb=0.2668D3DE11E5692802910080EFB5E7BF.*0.*-1.1.1.-8791183711E5C58C57D50080EF850D9A.1.1.0.1.0.*0.0..1.*0.*-1.*0.16.428114243.0.100.2000.2.0.0.*0_0.1..*0.1.0.*0.2.gb.0&5005=1",
+              "parameters": {
+                "value": "-0.1",
+                "subValue": "2.36",
+                "color": "nlsnGrey",
+                "categoryName": "MAGAZINES",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "BETTER HOMES AND GARDENS",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "L4LSales",
+              "assetId": 10005,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "L4LSales",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "-1.4%",
+                "subValue": "$5,432 MM",
+                "color": "nlsnRed",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "COGHLAN'S",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10006,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "AVG Basket",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "0.83",
+                "subValue": "$19.58",
+                "color": "nlsnGreen",
+                "categoryName": "SPORTING GOODS",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "COLEMAN",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10007,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Share of Wallet",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "0.2",
+                "subValue": "3.4",
+                "color": "nlsnGreen",
+                "categoryName": "MAGAZINES",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "PEOPLE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10008,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  1,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Loyalty Sales $",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "#/analysis?title=Loyalty Sales",
+              "parameters": {
+                "value": "-1.25 %",
+                "subValue": "$4,575 MM",
+                "color": "nlsnRed",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "UNCLE BEN'S",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  0
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Best Customer $",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "1%",
+                "subValue": "$3,111 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  1
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Gross Margin",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "0.2",
+                "subValue": "$921 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  2
+                ]
+              },
+              "assetType": "KPI",
+              "title": "Trade Funds",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "-0.50 %",
+                "subValue": "$1450 MM",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            },
+            {
+              "email": "divya.booravalli@nielsen.com",
+              "organizationId": "CLIENT MANUFACTURER",
+              "organizationDescription": "Description associated with MANUFACTURER",
+              "personaId": 10000,
+              "personaTitle": "Retail Analyst",
+              "assetId": 10009,
+              "isFavorite": false,
+              "placement": {
+                "size": {
+                  "x": 1,
+                  "y": 1
+                },
+                "position": [
+                  2,
+                  3
+                ]
+              },
+              "assetType": "KPI",
+              "title": "OOS (out of stocks)",
+              "description": "",
+              "initialCreation": "03/09/2016",
+              "lastModified": "03/09/2016",
+              "lastAccessed": "03/09/2016",
+              "status": "PUBLIC",
+              "imageUrl": "http://image.url",
+              "launchUrl": "",
+              "parameters": {
+                "value": "-61 bpt",
+                "subValue": "7.1 %",
+                "color": "nlsnGrey",
+                "categoryName": "RICE",
+                "period": "Latest 4 Wks - W/E 02/21/15",
+                "brand": "MINUTE",
+                "threshold": [
+                  {
+                    "min": null,
+                    "max": -0.5,
+                    "color": "nlsnRed"
+                  },
+                  {
+                    "min": -0.5,
+                    "max": 0.5,
+                    "color": "nlsnGrey"
+                  },
+                  {
+                    "min": 0.5,
+                    "max": null,
+                    "color": "nlsnGreen"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "email": "divya.booravalli@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10000,
+          "personaTitle": "Retail Analyst",
+          "assetId": 10020,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "linePlusBarChart",
+            "size": {
+              "x": 1,
+              "y": 2
+            },
+            "position": [
+              2,
+              0
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Trended Sales View",
+          "description": "",
+          "initialCreation": "03/09/2016",
+          "lastModified": "03/09/2016",
+          "lastAccessed": "03/09/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "/oneview/services/chart/topNCategory",
+          "parameters": {
+            "ManufacturerName": "KRAFT FOODS, INC.",
+            "period": "Latest 4 Wks - W/E 02/21/15",
+            "rank": 5
+          }
+        },
+        {
+          "email": "sandeep.rathi.ap@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10003,
+          "personaTitle": "Global Insights Manager",
+          "assetId": 11495,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "barchart",
+            "size": {
+              "x": 1,
+              "y": 1
+            },
+            "position": [
+              0,
+              2
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Ad Channel Performance",
+          "description": "",
+          "initialCreation": "03/10/2016",
+          "lastModified": "03/10/2016",
+          "lastAccessed": "03/10/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "data/AdChannelPerformance.json",
+          "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+          }
+        },
+        {
+          "email": "sandeep.rathi.ap@nielsen.com",
+          "organizationId": "CLIENT MANUFACTURER",
+          "organizationDescription": "Description associated with MANUFACTURER",
+          "personaId": 10003,
+          "personaTitle": "Global Insights Manager",
+          "assetId": 11021,
+          "isFavorite": false,
+          "placement": {
+            "cardType": "scatterChart",
+            "size": {
+              "x": 1,
+              "y": 2
+            },
+            "position": [
+              2,
+              1
+            ],
+            "xsize": {
+              "min": 1,
+              "max": 2
+            },
+            "ysize": {
+              "min": 1,
+              "max": 2
+            }
+          },
+          "assetType": "HOMECARD",
+          "title": "Haircare KPIs",
+          "description": "",
+          "initialCreation": "03/10/2016",
+          "lastModified": "03/10/2016",
+          "lastAccessed": "03/10/2016",
+          "status": "PUBLIC",
+          "imageUrl": "http://image.url",
+          "launchUrl": "/oneview/services/chart/categoryPerformance",
+          "parameters": {
+            "market": "Total US xAOC",
+            "category": "HAIRCARE"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+"data":[{
+"group": "What Are The Overall Drivers of My Sales Change?",
+"reports": [{
+     "title": "Business Drivers",
+    "questions": [{"QUE" :"What Are The Overall Drivers of My Sales Change?"}]
+}, {
+     "title": "Consumer Drivers",
+     "questions": [{"QUE" :"How are Changes in Shoppers Behavior Impacts My Sales?"}]
+}]
+},{
+"group": "What Is Driving My Market Share?",
+"reports": [{
+     "title": "Sales Change, Share & Share Change",
+    "questions": [{"QUE" :"How Does My Overall Sales Change Compare to the Market?"},{"QUE" : "What Does That Mean for My Market Share and Share Change?"}]
+}, {
+     "title": "Sales Change, Share & Share Change by Retailer Market",
+     "questions": [{"QUE" :"How Does My Ovearll Sales Change Compare to the Market?"},{"QUE" : "What Does That Mean for My Market Share and Share Change? (across different Banners/Markets)"}]
+},{
+     "title": "Market Share by Product",
+     "questions": [{"QUE" :"What Is My Market Share by Product?"},{"QUE" : "What Is The Value of Share Change?"}]
+},{
+     "title": "Market Share by Retailer Market",
+     "questions": [{"QUE" :"What Is My Market Share Across Different Banners/Markets?"},{"QUE" : "What Is The Value of Share Change?"}]
+}]
+},{
+"group": "What Products Are Driving My Sales Performance Compared to The Market?",
+"reports": [{
+     "title": "Growth Opportunities by Product",
+    "questions": [{"QUE" :"What Products are Growing or Declining?  What Percent of Sales Do They Account For?"}]
+},{
+     "title": "Product Contribution to Sales Change",
+     "questions": [{"QUE" :"How Much Did Each Product Contribute to Sales Change?"}]
+},{
+     "title": "Market Contribution to Sales Change",
+     "questions": [{"QUE" :"How Much Did Each Banner/Market Contribute to Sales Change?"}]
+},{
+     "title": "Product Contribution to Sales",
+    "questions": [{"QUE" :"How Much Does Each Product Contribute to Sales?"}]
+}, {
+     "title": "Product Contribution to Sales by Retailer Market",
+     "questions": [{"QUE" :"How Much Does Each Banner/Market Contribute to Sales?"}]
+},{
+     "title": "Market Contribution to Product Sales",
+     "questions": [{"QUE" :"How Much Does Each Banner/Market Contribute to Sales?"}]
+},{
+     "title": "Sales Change by Product",
+     "questions": [{"QUE" :"What Was the Actual Sales Change by Product?"}]
+},{
+     "title": "Sales Change by Retailer Market",
+     "questions": [{"QUE" :"What Was the Actual Sales Change by Banners/Market?"}]
+}]
+},{
+"group": "How Has My Performance vs. The Market Changed Over Time?",
+"reports": [{
+     "title": "Trended Share & Sales by Product",
+    "questions": [{"QUE" :"How Has My Performance vs. The Market Changed Over Time?"}]
+}]
+},{
+"group": "What Is The Longer Term Growth Trend of My Products In The Market?",
+"reports": [{
+     "title": "Market Multi-year Sales Trend & Change",
+    "questions": [{"QUE" :"What Is The Longer Term Growth Trend of My Products In The Market?"}]
+},{
+     "title": "Multi-year Sales Trend & Change by Retailer Market",
+    "questions": [{"QUE" :"What Is The Longer Term Growth Trend of My Products Across Different Banners/Markets?"}]
+}]
+},{
+"group": "Who Are My Shoppers?",
+"reports": [{
+     "title": "Who is your shopper?",
+    "questions": [{"QUE" :"Who Are My Shoppers?"}]
+},{
+     "title": "Who is your shopper by Retailer Market?",
+    "questions": [{"QUE" :"How Do My Shoppers Vary Across Banners/Markets?"}]
+}]
+},{
+"group": "Where Else Do My Shoppers Purchase My Products?",
+"reports": [{
+     "title": "Competitive Share of Wallet",
+    "questions": [{"QUE" :"Where Else Do My Shoppers Purchase My Products?"}]
+}]
+},{
+"group": "How Do My Shoppers Shop My Stores vs. My Competitiors Stores",
+"reports": [{
+     "title": "Shopper Purchase Dynamics",
+    "questions": [{"QUE" :"How Do My Shoppers Shop My Stores vs. My Competitiors Stores"}]
+},{
+     "title": "Shopper Purchase Dynamics by Retailer Market",
+    "questions": [{"QUE" :"How Do My Shoppers Shop In Different Banners/Marekts vs. My Competitiors Stores"}]
+}]
+},{
+"group": "How Does My Private Brand Contribution & Growth Compare to the Market?",
+"reports": [{
+     "title": "Private vs. National Brand Contribution & Sales Change",
+    "questions": [{"QUE" : "How Much Does Private Brand Contribute to Sales?"}, {"QUE" : "What is Private vs. National Brand Sales Growth?"}]
+}, {
+     "title": "Private vs National Brand Contribution & Sales Change by Retailer Market",
+     "questions": [{"QUE" :"How Much Does Private Brand Contribute to Sales Across Different Banners/Markets?"},{"QUE" :  "What is Private vs. National Brand Sales Growth?"}]
+},{
+     "title": "Private Brand Contribution & Growth vs Competitors",
+     "questions": [{"QUE" :"How Does My Private Brand Contribution & Growth Compare to Specific Competitiors?"}]
+},{
+     "title": "Private Brand Sales Change & Contribution by Product",
+     "questions": [{"QUE" :"Which Private Brand Products are Growing or Declining?  What Percent of Sales Do They Account For?"}]
+}]
+},{
+"group": "What Assortment Opportunities Do I Have?",
+"reports": [{
+     "title": "Assortment & Distribution by Product",
+    "questions": [{"QUE" :"How Efficient Is My Assortment?"}]
+}, {
+     "title": "New Item Contribution to Sales",
+     "questions": [{"QUE" :"How Are New Items Performing?"}]
+},{
+     "title": "Item Ranking",
+     "questions": [{"QUE" :"Which Items Should I Consider Adding To or Removing From My Assortment?"}]
+}]
+},{
+"group": "How Much Do Promotions Impact My Sales?",
+"reports": [{
+     "title": "Base vs. Incremental Sales",
+    "questions": [{"QUE" :"What Additional Sales Did I Generate Due to Promotions?"}]
+}, {
+     "title": "Promo vs. Non-Promo Sales",
+     "questions": [{"QUE" :"What Percentage of My Sales Were Sold On Promotion?"}]
+},{
+     "title": "Product Seasonality",
+     "questions": [{"QUE" :"What Are the Key Promotion Time Periods for My Products?"}]
+}]
+},{
+"group": "Which Types of Promotions Should I Be Using?",
+"reports": [{
+     "title": "Sales Contribution & Change by Promo Type",
+    "questions": [{"QUE" :"Which Types of Promotions are Driving My Promoted Sales?"}]
+}, {
+     "title": "Promo Frequency & Lift by Promo Type",
+     "questions": [{"QUE" :"Which Promotion Types Am I Using Most Often & What Is the Associated Promotion Lift?"}]
+},{
+     "title": "% Lift by Promo Type by Product",
+     "questions": [{"QUE" :"Which Products are Seeing the Greatest Lift by Promotion Type?"}]
+},{
+     "title": "Promo Frequency by Promo Type by Product",
+     "questions": [{"QUE" :"Which Products are Being Promoted Most Frequently by Promotion Type?"}]
+},{
+     "title": "Market Promo vs. Market Share",
+    "questions": [{"QUE" :"Which Products are Contributing the Most to Promoted Sales?"}]
+}]
+},{
+"group": "What Pricing Opportunities Do I Have?",
+"reports": [{
+     "title": "Average Price and Market Share Trend",
+    "questions": [{"QUE" :"How Does My Average Price Compare to the Market?"},{"QUE" :  "Do Pricing Gaps Correlate with Share Changes?"}]
+}, {
+     "title": "Promo & Non-Promo Price Change by Product",
+     "questions": [{"QUE" :"How Much Have Promoted & Non-Promoted Priced Changed by Product?"}]
+},{
+     "title": "Pricing Hi Lo",
+     "questions": [{"QUE" :"What is the Price Band Width of My Products?"}]
+},{
+     "title": "Pricing Tree",
+     "questions": [{"QUE" :"Am I over or under indexing on specific Price Percentiles?"}]
+},{
+     "title": "Price by Promo Type",
+    "questions": [{"QUE" :"Am I over or under indexing on Price by Promotion Types?"}]
+},{
+     "title": "Item Price Gap to Market",
+    "questions": [{"QUE" :"Which Items Am I Priced Higher than the Market On?"}]
+}]
+}]
+}

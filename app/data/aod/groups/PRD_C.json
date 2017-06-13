@@ -1,0 +1,29 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Dimension/Attributes"
+    },
+    "catalogueDimensionAttribute": [
+        {
+            "ID": "MONTH_IN_QUARTER_DSC",
+            "description": "Month"
+            },
+        {
+            "ID": "FQUARTER_IN_YEAR_DSC",
+            "description": "Quarter In Year Description"
+            },
+        {
+            "ID": "WEEK_IN_MONTH_DSC",
+            "description": "Week in Month Description",
+            "isKey": true
+            },
+        {
+            "ID": "YEAR_DSC",
+            "description": "Year"
+            }
+        ]
+}

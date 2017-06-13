@@ -1,0 +1,11 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": []
+}

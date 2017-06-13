@@ -1,0 +1,26 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4486987",
+		"description": "Family Dollar California Rem"
+	}, {
+		"ID": "4541567",
+		"description": "Family Dollar California TA"
+	}, {
+		"ID": "4486981",
+		"description": "Family Dollar California xAOC Rem"
+	}, {
+		"ID": "4066735",
+		"description": "Family Dollar TA"
+	}, {
+		"ID": "4389728",
+		"description": "Family Dollar xAOC Rem_MCM"
+	}]
+}

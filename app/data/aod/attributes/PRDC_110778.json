@@ -1,0 +1,84 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Levels"
+    },
+    "catalogueGroupLevel": [
+        {
+            "ID": "7796",
+            "description": "Total US"
+            },
+        {
+            "ID": "7797",
+            "description": "Food Retailers_MCM"
+            },
+        {
+            "ID": "7798",
+            "description": "Drug Retailers_MCM"
+            },
+        {
+            "ID": "7799",
+            "description": "Mass Retailers_MCM"
+            },
+        {
+            "ID": "7800",
+            "description": "Dollar Retailers_MCM"
+            },
+        {
+            "ID": "7801",
+            "description": "Club Retailers_MCM"
+            },
+        {
+            "ID": "7802",
+            "description": "Convenience Retailers"
+            },
+        {
+            "ID": "7955",
+            "description": "Pet Retailers"
+            },
+        {
+            "ID": "7804",
+            "description": "Syndicated Major Markets"
+            },
+        {
+            "ID": "7805",
+            "description": "Census Regions"
+            },
+        {
+            "ID": "7816",
+            "description": "Census Divisions"
+            },
+        {
+            "ID": "7806",
+            "description": "Census Trading Areas"
+            },
+        {
+            "ID": "7803",
+            "description": "Military Retailers"
+            },
+        {
+            "ID": "10235",
+            "description": "FDM Divisions"
+            },
+        {
+            "ID": "10856",
+            "description": "Target Track US"
+            },
+        {
+            "ID": "1025339",
+            "description": "Target Track SMM"
+            },
+        {
+            "ID": "1025759",
+            "description": "Target Track TA"
+            },
+        {
+            "ID": "1021140",
+            "description": "Conv Bev Syn"
+            }
+        ]
+}

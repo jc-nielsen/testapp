@@ -1,0 +1,73 @@
+{
+    "reportData": {
+        "values": [{
+            "label": "ARVO (Full TSR)",
+            "value": "2",
+            "subValues": [{
+                "id": 1,
+                "label": "Share",
+                "value": "18.3%"
+			}, {
+                "id": 2,
+                "label": "Growth",
+                "value": "-0.1%"
+			}, {
+                "id": 3,
+                "label": "Change",
+                "value": "-0.5%"
+
+			}],
+            "params": [{
+                "id": "1",
+                "label": "Market Breakdown",
+                "value": "Arvo (FULL TSR)"
+			}, {
+                "id": "2",
+                "label": "Super Category",
+                "value": "GROCERY STAPLES & NON FOOD"
+			}, {
+                "id": "3",
+                "label": "Period Group",
+                "value": "Latest 52 Weeks"
+			}, {
+                "id": "4",
+                "label": "Sales Value",
+                "value": "222,825,931"
+			}]
+		}, {
+            "label": "Total Coverage/Grocery Multiples (Full TSR)",
+            "value": "12",
+            "subValues": [{
+                "id": 1,
+                "label": "Share",
+                "value": "12.3%"
+			}, {
+                "id": 2,
+                "label": "Change",
+                "value": "-0.1%"
+			}, {
+                "id": 3,
+                "label": "Growth",
+                "value": "-1.1%"
+			}],
+            "params": [{
+                "id": "1",
+                "label": "Market Breakdown",
+                "value": "Grocery Multiples minus Arvo (FULL TSR)"
+			}, {
+                "id": "2",
+                "label": "Super Category",
+                "value": "GROCERY STAPLES & NON FOOD"
+			}, {
+                "id": "3",
+                "label": "Period Group",
+                "value": "Latest 52 Weeks"
+			}, {
+                "id": "4",
+                "label": "Sales Value",
+                "value": "22,060,855,136"
+			}]
+		}]
+    },
+    "chartType": "PIE"
+}

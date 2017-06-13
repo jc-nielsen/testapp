@@ -1,0 +1,22 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Hierarchy/Levels"
+	},
+	"catalogueHierarchyLevel": [{
+		"ID": "2397",
+		"description": "xAOC All",
+		"level": [{
+			"ID": "2398",
+			"description": "xAOC Comp Market",
+			"level": [{
+				"ID": "2399",
+				"description": "xAOC TA and Remaining"
+			}]
+		}]
+	}]
+}

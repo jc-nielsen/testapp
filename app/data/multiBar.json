@@ -1,0 +1,55 @@
+[
+    {
+        "key": "Sales This Year",
+        "color": "#B42ECE",
+        "values": [
+            {
+                "label": "WOMANS WORLD",
+                "value": 5209660.59
+      },
+            {
+                "label": "NATIONAL ENQUIRER",
+                "value": 4687068.04
+      },
+            {
+                "label": "PEOPLE",
+                "value": 6524064.90
+      },
+            {
+                "label": "STAR",
+                "value": 3148790.90
+      },
+            {
+                "label": "BETTER HOMES AND GARDENS",
+                "value": 3292319.54
+      }
+    ]
+  },
+    {
+        "key": "Sales Previous Year",
+        "color": "#FF921F",
+        "values": [
+
+            {
+                "label": "WOMANS WORLD",
+                "value": 5596536.93
+      },
+            {
+                "label": "NATIONAL ENQUIRER",
+                "value": 4989079.05
+      },
+            {
+                "label": "PEOPLE",
+                "value": 9747409.21
+      },
+            {
+                "label": "STAR",
+                "value": 3396940.94
+      },
+            {
+                "label": "BETTER HOMES AND GARDENS",
+                "value": 2893754.82
+      }
+    ]
+  }
+]

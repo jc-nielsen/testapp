@@ -1,0 +1,965 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4789481",
+		"description": "A&P Banner TA"
+	}, {
+		"ID": "4789484",
+		"description": "A&P Corp Total US All Ban TA"
+	}, {
+		"ID": "4789486",
+		"description": "A&P Food Basics NY & NJ TA"
+	}, {
+		"ID": "4342982",
+		"description": "AAFES All Other CONUS"
+	}, {
+		"ID": "4356646",
+		"description": "AAFES All Other Europe"
+	}, {
+		"ID": "4356640",
+		"description": "AAFES All Other Pacific"
+	}, {
+		"ID": "4356638",
+		"description": "AAFES Contingency CONUS & OCONUS"
+	}, {
+		"ID": "4342980",
+		"description": "AAFES Convenience CONUS"
+	}, {
+		"ID": "4356637",
+		"description": "AAFES Convenience Europe"
+	}, {
+		"ID": "4356644",
+		"description": "AAFES Convenience Pacific"
+	}, {
+		"ID": "4342981",
+		"description": "AAFES Main CONUS"
+	}, {
+		"ID": "4356639",
+		"description": "AAFES Main Europe"
+	}, {
+		"ID": "4356645",
+		"description": "AAFES Main Pacific"
+	}, {
+		"ID": "4156429",
+		"description": "AM-PM Los Angeles TA Conv"
+	}, {
+		"ID": "4156430",
+		"description": "AM-PM Phoenix TA Conv"
+	}, {
+		"ID": "4156431",
+		"description": "AM-PM Portland TA Conv"
+	}, {
+		"ID": "4156432",
+		"description": "AM-PM Remaining West of Rockies TA Conv"
+	}, {
+		"ID": "4156434",
+		"description": "AM-PM San Francisco TA Conv"
+	}, {
+		"ID": "4156433",
+		"description": "AM-PM Seattle TA Conv"
+	}, {
+		"ID": "4156435",
+		"description": "AM-PM Total West of Rockies TA Conv"
+	}, {
+		"ID": "4137470",
+		"description": "Acme Fresh Market Total TA"
+	}, {
+		"ID": "4136882",
+		"description": "Ahold USA Corp Total TA"
+	}, {
+		"ID": "4518635",
+		"description": "Allegiance Retail Services TA"
+	}, {
+		"ID": "4579599",
+		"description": "B & B Foods TA"
+	}, {
+		"ID": "4066474",
+		"description": "BI-LO Total TA"
+	}, {
+		"ID": "4066682",
+		"description": "BJs Atlanta TA_MCM"
+	}, {
+		"ID": "4066684",
+		"description": "BJs Balt & Wash TA_MCM"
+	}, {
+		"ID": "4066685",
+		"description": "BJs Central Region TA_MCM"
+	}, {
+		"ID": "4066683",
+		"description": "BJs Greater Boston TA"
+	}, {
+		"ID": "4066690",
+		"description": "BJs Greater Metro New York TA"
+	}, {
+		"ID": "4066692",
+		"description": "BJs Greater Philadelphia TA"
+	}, {
+		"ID": "4066687",
+		"description": "BJs Miami Dade TA"
+	}, {
+		"ID": "4066689",
+		"description": "BJs North Region TA"
+	}, {
+		"ID": "4066691",
+		"description": "BJs Ohio TA"
+	}, {
+		"ID": "4066688",
+		"description": "BJs Other New England TA"
+	}, {
+		"ID": "4066694",
+		"description": "BJs South Region TA"
+	}, {
+		"ID": "4066693",
+		"description": "BJs Southeast TA"
+	}, {
+		"ID": "4066686",
+		"description": "BJs Total TA"
+	}, {
+		"ID": "4066695",
+		"description": "BJs Upstate New York TA"
+	}, {
+		"ID": "4484041",
+		"description": "Berkots Total TA"
+	}, {
+		"ID": "4066557",
+		"description": "Big Y Total TA"
+	}, {
+		"ID": "4579598",
+		"description": "Brookshire Brothers Banner TA"
+	}, {
+		"ID": "4579600",
+		"description": "Brookshire Brothers Total TA"
+	}, {
+		"ID": "4066559",
+		"description": "Brookshires Total TA"
+	}, {
+		"ID": "4139389",
+		"description": "CVS & Alb & Longs Corp ex HI TA"
+	}, {
+		"ID": "4066713",
+		"description": "CVS & Alb & Longs Southwest TA"
+	}, {
+		"ID": "4066710",
+		"description": "CVS & Alb Midwest TA"
+	}, {
+		"ID": "4066721",
+		"description": "CVS & Alb West TA"
+	}, {
+		"ID": "4066706",
+		"description": "CVS Deep South TA"
+	}, {
+		"ID": "4066716",
+		"description": "CVS Michigan TA"
+	}, {
+		"ID": "4066717",
+		"description": "CVS Mid South TA"
+	}, {
+		"ID": "4066711",
+		"description": "CVS Midwest TA"
+	}, {
+		"ID": "4066726",
+		"description": "CVS Midwest fmr Albertsons TA"
+	}, {
+		"ID": "4066719",
+		"description": "CVS Northeast TA"
+	}, {
+		"ID": "4066714",
+		"description": "CVS Southwest TA"
+	}, {
+		"ID": "4066729",
+		"description": "CVS Southwest fmr Albertsons TA"
+	}, {
+		"ID": "4066668",
+		"description": "CVS Total TA_MCM"
+	}, {
+		"ID": "4066727",
+		"description": "CVS Total fmr Albertsons TA"
+	}, {
+		"ID": "4070323",
+		"description": "CVS West Cluster TA"
+	}, {
+		"ID": "4066728",
+		"description": "CVS West fmr Albertsons TA"
+	}, {
+		"ID": "4552838",
+		"description": "Cashwise Total Banner TA"
+	}, {
+		"ID": "4424074",
+		"description": "Central Grocers Total TA"
+	}, {
+		"ID": "4290182",
+		"description": "Chevron Los Angeles TA Conv"
+	}, {
+		"ID": "4290184",
+		"description": "Chevron Portland TA Conv"
+	}, {
+		"ID": "4290186",
+		"description": "Chevron San Francisco TA Conv"
+	}, {
+		"ID": "4290185",
+		"description": "Chevron Seattle TA Conv"
+	}, {
+		"ID": "4290181",
+		"description": "Chevron Total TA Conv"
+	}, {
+		"ID": "4552835",
+		"description": "Coborns Cashwise Total Corp TA"
+	}, {
+		"ID": "4552837",
+		"description": "Coborns Total Banner TA"
+	}, {
+		"ID": "4110446",
+		"description": "Corner Store California TA Conv"
+	}, {
+		"ID": "4110447",
+		"description": "Corner Store Dallas TA Conv"
+	}, {
+		"ID": "4110448",
+		"description": "Corner Store Denver TA Conv"
+	}, {
+		"ID": "4110449",
+		"description": "Corner Store Houston TA Conv"
+	}, {
+		"ID": "4110450",
+		"description": "Corner Store Phoenix TA Conv"
+	}, {
+		"ID": "4110451",
+		"description": "Corner Store San Antonio TA Conv"
+	}, {
+		"ID": "4067694",
+		"description": "Corner Store Total TA Conv"
+	}, {
+		"ID": "4273264",
+		"description": "Couche Tard Arizona TA Conv"
+	}, {
+		"ID": "4117142",
+		"description": "Couche Tard Florida TA Conv"
+	}, {
+		"ID": "4117143",
+		"description": "Couche Tard Great Lakes TA Conv"
+	}, {
+		"ID": "4117144",
+		"description": "Couche Tard Gulf TA Conv"
+	}, {
+		"ID": "4117145",
+		"description": "Couche Tard Midwest TA Conv"
+	}, {
+		"ID": "4156442",
+		"description": "Couche Tard New England TA Conv"
+	}, {
+		"ID": "4117146",
+		"description": "Couche Tard Southeast TA Conv"
+	}, {
+		"ID": "4117147",
+		"description": "Couche Tard Southwest TA Conv"
+	}, {
+		"ID": "4117148",
+		"description": "Couche Tard Total TA Conv"
+	}, {
+		"ID": "4117149",
+		"description": "Couche Tard West TA Conv"
+	}, {
+		"ID": "4474689",
+		"description": "Cub Minneapolis TA"
+	}, {
+		"ID": "4764312",
+		"description": "Cub Total ex Cub Chicago TA"
+	}, {
+		"ID": "4110440",
+		"description": "Cumberland Farms Boston TA Conv"
+	}, {
+		"ID": "4110441",
+		"description": "Cumberland Farms Miami TA Conv"
+	}, {
+		"ID": "4110442",
+		"description": "Cumberland Farms New York TA Conv"
+	}, {
+		"ID": "4110443",
+		"description": "Cumberland Farms Orlando TA Conv"
+	}, {
+		"ID": "4110445",
+		"description": "Cumberland Farms Tampa TA Conv"
+	}, {
+		"ID": "4103536",
+		"description": "Cumberland Farms Total TA Conv"
+	}, {
+		"ID": "4070816",
+		"description": "DeCA Alaska"
+	}, {
+		"ID": "4159682",
+		"description": "DeCA Alaska & Hawaii"
+	}, {
+		"ID": "4206547",
+		"description": "DeCA CONUS ex AK & HI K1"
+	}, {
+		"ID": "4206555",
+		"description": "DeCA CONUS ex AK & HI K2"
+	}, {
+		"ID": "4206548",
+		"description": "DeCA CONUS ex AK & HI K3"
+	}, {
+		"ID": "4206556",
+		"description": "DeCA CONUS ex AK & HI K4"
+	}, {
+		"ID": "4206549",
+		"description": "DeCA CONUS ex AK & HI K5"
+	}, {
+		"ID": "4502855",
+		"description": "DeCA Central Area"
+	}, {
+		"ID": "4502856",
+		"description": "DeCA East Area"
+	}, {
+		"ID": "4066200",
+		"description": "DeCA East Central"
+	}, {
+		"ID": "4066322",
+		"description": "DeCA East Northeast"
+	}, {
+		"ID": "4066208",
+		"description": "DeCA East Southern"
+	}, {
+		"ID": "4066141",
+		"description": "DeCA East Total"
+	}, {
+		"ID": "4071296",
+		"description": "DeCA Hawaii"
+	}, {
+		"ID": "4071161",
+		"description": "DeCA OCONUS Europe"
+	}, {
+		"ID": "4071297",
+		"description": "DeCA OCONUS Far East"
+	}, {
+		"ID": "4066210",
+		"description": "DeCA West Midwest"
+	}, {
+		"ID": "4066442",
+		"description": "DeCA West Northwest ex AK & HI"
+	}, {
+		"ID": "4066163",
+		"description": "DeCA West Northwest inc AK & HI"
+	}, {
+		"ID": "4066447",
+		"description": "DeCA West Southwest"
+	}, {
+		"ID": "4066418",
+		"description": "DeCA West Total ex AK & HI"
+	}, {
+		"ID": "4066417",
+		"description": "DeCA West Total inc AK & HI"
+	}, {
+		"ID": "4066319",
+		"description": "DeMoulas Total TA"
+	}, {
+		"ID": "4066669",
+		"description": "Dillons Incl Bakers TA"
+	}, {
+		"ID": "4066625",
+		"description": "Duane Reade Burroughs Cluster TA"
+	}, {
+		"ID": "4066626",
+		"description": "Duane Reade Manhattan Cluster TA"
+	}, {
+		"ID": "4066627",
+		"description": "Duane Reade Suburban Cluster TA"
+	}, {
+		"ID": "4066320",
+		"description": "Duane Reade Total TA"
+	}, {
+		"ID": "4545675",
+		"description": "El Super Total TA"
+	}, {
+		"ID": "4541567",
+		"description": "Family Dollar California TA"
+	}, {
+		"ID": "4066735",
+		"description": "Family Dollar TA"
+	}, {
+		"ID": "4548729",
+		"description": "Fareway Des Moines TA"
+	}, {
+		"ID": "4548730",
+		"description": "Fareway Omaha TA"
+	}, {
+		"ID": "4548731",
+		"description": "Fareway Total TA"
+	}, {
+		"ID": "4758045",
+		"description": "Farm Fresh Total TA"
+	}, {
+		"ID": "4071141",
+		"description": "Fiesta Dal & Ft Worth TA"
+	}, {
+		"ID": "4071280",
+		"description": "Fiesta Houston TA"
+	}, {
+		"ID": "4066334",
+		"description": "Fiesta Total TA"
+	}, {
+		"ID": "4508099",
+		"description": "Food 4 Less Las Vegas TA"
+	}, {
+		"ID": "4066505",
+		"description": "Food 4 Less Midwest TA"
+	}, {
+		"ID": "4508101",
+		"description": "Food 4 Less North TA"
+	}, {
+		"ID": "4508102",
+		"description": "Food 4 Less South TA"
+	}, {
+		"ID": "4508100",
+		"description": "Food 4 Less Total Incl MW TA"
+	}, {
+		"ID": "4508103",
+		"description": "Food 4 Less Total ex MW TA"
+	}, {
+		"ID": "4789482",
+		"description": "Food Emporium TA"
+	}, {
+		"ID": "4597277",
+		"description": "Food Lion Baltimore TA"
+	}, {
+		"ID": "4597278",
+		"description": "Food Lion Charlotte TA"
+	}, {
+		"ID": "4597275",
+		"description": "Food Lion DC 20 TA"
+	}, {
+		"ID": "4597273",
+		"description": "Food Lion DC 7 TA"
+	}, {
+		"ID": "4493372",
+		"description": "Food Lion Norfolk TA"
+	}, {
+		"ID": "4493374",
+		"description": "Food Lion Richmond TA"
+	}, {
+		"ID": "4597281",
+		"description": "Food Lion Washington TA"
+	}, {
+		"ID": "4066567",
+		"description": "Fred Meyer Alaska Cluster"
+	}, {
+		"ID": "4066509",
+		"description": "Fred Meyer Portland TA"
+	}, {
+		"ID": "4066510",
+		"description": "Fred Meyer Seattle TA"
+	}, {
+		"ID": "4507666",
+		"description": "Fred Meyer Total ex Alaska TA"
+	}, {
+		"ID": "4508074",
+		"description": "Frys Total TA"
+	}, {
+		"ID": "4066616",
+		"description": "Giant Carlisle South Total TA"
+	}, {
+		"ID": "4066351",
+		"description": "Giant Carlisle Total TA"
+	}, {
+		"ID": "4066356",
+		"description": "Giant Eagle Cleveland TA"
+	}, {
+		"ID": "4081965",
+		"description": "Giant Eagle Columbus TA"
+	}, {
+		"ID": "4066154",
+		"description": "Giant Eagle Pittsburgh TA"
+	}, {
+		"ID": "4066357",
+		"description": "Giant Eagle Total TA"
+	}, {
+		"ID": "4066355",
+		"description": "Giant Landover Total TA"
+	}, {
+		"ID": "4066613",
+		"description": "HAC Total TA"
+	}, {
+		"ID": "4597282",
+		"description": "Hannaford ME & NH TA"
+	}, {
+		"ID": "4597283",
+		"description": "Hannaford NY & VT TA"
+	}, {
+		"ID": "4066586",
+		"description": "Harps Total TA"
+	}, {
+		"ID": "4789487",
+		"description": "Harveys - BLH TA"
+	}, {
+		"ID": "4439247",
+		"description": "Heinen's Total TA"
+	}, {
+		"ID": "4066741",
+		"description": "Hornbachers Total TA"
+	}, {
+		"ID": "4066473",
+		"description": "Hy-Vee Total TA"
+	}, {
+		"ID": "4137624",
+		"description": "IGA Central Mideast TA"
+	}, {
+		"ID": "4137625",
+		"description": "IGA Nash Finch TA"
+	}, {
+		"ID": "4071003",
+		"description": "IGA SUPERVALU TA"
+	}, {
+		"ID": "4137626",
+		"description": "IGA Supermarket Total TA"
+	}, {
+		"ID": "4556803",
+		"description": "Ingles Total TA"
+	}, {
+		"ID": "4597284",
+		"description": "Jewel Chicago TA"
+	}, {
+		"ID": "4597137",
+		"description": "Jewel Div TA"
+	}, {
+		"ID": "4178787",
+		"description": "KUM & Go Denver TA Conv"
+	}, {
+		"ID": "4178788",
+		"description": "KUM & Go Oklahoma City TA Conv"
+	}, {
+		"ID": "4178790",
+		"description": "KUM & Go Total TA Conv"
+	}, {
+		"ID": "4066580",
+		"description": "KVAT Food City TA"
+	}, {
+		"ID": "4066366",
+		"description": "King Kullen Total TA"
+	}, {
+		"ID": "4508109",
+		"description": "King Soopers incl City Market TA"
+	}, {
+		"ID": "4153059",
+		"description": "Kings Super Market Total TA"
+	}, {
+		"ID": "4081980",
+		"description": "Kinney Drugs Total TA"
+	}, {
+		"ID": "4066750",
+		"description": "Kmart Total TA_MCM"
+	}, {
+		"ID": "4136858",
+		"description": "Kroger Banner Total TA"
+	}, {
+		"ID": "4508105",
+		"description": "Kroger Central TA"
+	}, {
+		"ID": "4508106",
+		"description": "Kroger Cincinnati TA"
+	}, {
+		"ID": "4508107",
+		"description": "Kroger Columbus TA"
+	}, {
+		"ID": "4511371",
+		"description": "Kroger Corp Total TA"
+	}, {
+		"ID": "4511369",
+		"description": "Kroger Corp ex F4L FM TA"
+	}, {
+		"ID": "4511370",
+		"description": "Kroger Corp ex F4L TA"
+	}, {
+		"ID": "4507726",
+		"description": "Kroger Dallas TA"
+	}, {
+		"ID": "4508108",
+		"description": "Kroger Delta TA"
+	}, {
+		"ID": "4507749",
+		"description": "Kroger Houston TA"
+	}, {
+		"ID": "4508111",
+		"description": "Kroger Michigan TA"
+	}, {
+		"ID": "4508110",
+		"description": "Kroger Mid-Atlantic TA"
+	}, {
+		"ID": "4738125",
+		"description": "Kroger Nashville TA"
+	}, {
+		"ID": "4066749",
+		"description": "Kroger Southwest TA"
+	}, {
+		"ID": "4066370",
+		"description": "Longs N Calif TA"
+	}, {
+		"ID": "4066411",
+		"description": "Longs S Calif TA"
+	}, {
+		"ID": "4136983",
+		"description": "Longs Southwest Cluster TA"
+	}, {
+		"ID": "4066369",
+		"description": "Longs Total California TA"
+	}, {
+		"ID": "4789488",
+		"description": "Lowes Food Total TA"
+	}, {
+		"ID": "4068068",
+		"description": "Lunds & Byerlys Total TA"
+	}, {
+		"ID": "4146285",
+		"description": "Mapco Atlanta TA Conv"
+	}, {
+		"ID": "4146283",
+		"description": "Mapco Birmingham TA Conv"
+	}, {
+		"ID": "4146286",
+		"description": "Mapco Memphis TA Conv"
+	}, {
+		"ID": "4146284",
+		"description": "Mapco Nashville TA Conv"
+	}, {
+		"ID": "4146337",
+		"description": "Mapco Total TA Conv"
+	}, {
+		"ID": "4496228",
+		"description": "Marianos Total TA"
+	}, {
+		"ID": "4066753",
+		"description": "Marsh Total Corp TA"
+	}, {
+		"ID": "4140231",
+		"description": "Martins Total TA"
+	}, {
+		"ID": "4596865",
+		"description": "Meijer Central TA"
+	}, {
+		"ID": "4596869",
+		"description": "Meijer Eastern TA"
+	}, {
+		"ID": "4596871",
+		"description": "Meijer Mid Michigan TA"
+	}, {
+		"ID": "4596861",
+		"description": "Meijer Northern TA"
+	}, {
+		"ID": "4596866",
+		"description": "Meijer Southern TA"
+	}, {
+		"ID": "4157168",
+		"description": "Meijer Total Convenience TA Conv"
+	}, {
+		"ID": "4136859",
+		"description": "Meijer Total TA"
+	}, {
+		"ID": "4596870",
+		"description": "Meijer Western TA"
+	}, {
+		"ID": "4067567",
+		"description": "Murphy Oil TA Conv"
+	}, {
+		"ID": "4342988",
+		"description": "NEXCOM All Other CONUS"
+	}, {
+		"ID": "4356643",
+		"description": "NEXCOM All Other Europe"
+	}, {
+		"ID": "4356649",
+		"description": "NEXCOM All Other Pacific"
+	}, {
+		"ID": "4342989",
+		"description": "NEXCOM Conv & All Other AK & HI"
+	}, {
+		"ID": "4342986",
+		"description": "NEXCOM Convenience CONUS"
+	}, {
+		"ID": "4356648",
+		"description": "NEXCOM Convenience Europe"
+	}, {
+		"ID": "4356642",
+		"description": "NEXCOM Convenience Pacific"
+	}, {
+		"ID": "4342985",
+		"description": "NEXCOM Main AK & HI"
+	}, {
+		"ID": "4342987",
+		"description": "NEXCOM Main CONUS"
+	}, {
+		"ID": "4356641",
+		"description": "NEXCOM Main Europe"
+	}, {
+		"ID": "4356647",
+		"description": "NEXCOM Main Pacific"
+	}, {
+		"ID": "4452690",
+		"description": "Nice N Easy Total TA"
+	}, {
+		"ID": "4550975",
+		"description": "Niemann Foods Total TA"
+	}, {
+		"ID": "4440747",
+		"description": "PC & F Total TA"
+	}, {
+		"ID": "4789492",
+		"description": "Pathmark Total TA"
+	}, {
+		"ID": "4066600",
+		"description": "Pick n Save Corp Total TA"
+	}, {
+		"ID": "4552841",
+		"description": "Piggly Wiggly Carolina Total TA"
+	}, {
+		"ID": "4171107",
+		"description": "Piggly Wiggly Midwest TA"
+	}, {
+		"ID": "4246927",
+		"description": "Pilot/Flying J Total TA Conv"
+	}, {
+		"ID": "4587584",
+		"description": "Price Chopper Enterprises Total TA"
+	}, {
+		"ID": "4066374",
+		"description": "Price Chopper Total TA"
+	}, {
+		"ID": "4508075",
+		"description": "QFC Total TA"
+	}, {
+		"ID": "4510915",
+		"description": "Quick Chek New York TA"
+	}, {
+		"ID": "4510916",
+		"description": "Quick Chek Total TA"
+	}, {
+		"ID": "4508115",
+		"description": "Ralphs Total TA"
+	}, {
+		"ID": "4442539",
+		"description": "Rite Aid Corp Total TA"
+	}, {
+		"ID": "4442531",
+		"description": "Rite Aid Division 1 - West TA"
+	}, {
+		"ID": "4442540",
+		"description": "Rite Aid Division 2 - North TA"
+	}, {
+		"ID": "4442532",
+		"description": "Rite Aid Division 3 - Mid Atlantic TA"
+	}, {
+		"ID": "4442541",
+		"description": "Rite Aid Division 4 - NY Metro TA"
+	}, {
+		"ID": "4442533",
+		"description": "Rite Aid Division 5 - South TA"
+	}, {
+		"ID": "4484042",
+		"description": "Rouses Total TA"
+	}, {
+		"ID": "4332794",
+		"description": "Sam's Total TA"
+	}, {
+		"ID": "4066468",
+		"description": "Schnucks Core TA"
+	}, {
+		"ID": "4066469",
+		"description": "Schnucks Total TA"
+	}, {
+		"ID": "4311032",
+		"description": "Shaws Div TA"
+	}, {
+		"ID": "4597287",
+		"description": "Shaws Mass/Rhode Island TA"
+	}, {
+		"ID": "4597286",
+		"description": "Shaws New England TA"
+	}, {
+		"ID": "4066618",
+		"description": "Shop n Save St Louis TA"
+	}, {
+		"ID": "4066425",
+		"description": "ShopRite Connecticut Z3 TA"
+	}, {
+		"ID": "4541952",
+		"description": "ShopRite Hudson Valley Z4 TA"
+	}, {
+		"ID": "4066421",
+		"description": "ShopRite Long & Staten Isl Z5 TA"
+	}, {
+		"ID": "4541953",
+		"description": "ShopRite New York Z1 TA"
+	}, {
+		"ID": "4541954",
+		"description": "ShopRite Philadelphia Z2 TA"
+	}, {
+		"ID": "4541955",
+		"description": "ShopRite Total TA"
+	}, {
+		"ID": "4466328",
+		"description": "Shoppers Food Warehouse TA"
+	}, {
+		"ID": "4508116",
+		"description": "Smiths Intermountain TA"
+	}, {
+		"ID": "4066524",
+		"description": "Smiths Las Vegas TA"
+	}, {
+		"ID": "4508117",
+		"description": "Smiths New Mexico TA"
+	}, {
+		"ID": "4508118",
+		"description": "Smiths Southwest TA"
+	}, {
+		"ID": "4508076",
+		"description": "Smiths Total TA"
+	}, {
+		"ID": "4268478",
+		"description": "Speedway Chicago TA Conv"
+	}, {
+		"ID": "4268480",
+		"description": "Speedway Cincinnati TA Conv"
+	}, {
+		"ID": "4268479",
+		"description": "Speedway Cleveland TA Conv"
+	}, {
+		"ID": "4268481",
+		"description": "Speedway Detroit TA Conv"
+	}, {
+		"ID": "4268482",
+		"description": "Speedway Louisville TA Conv"
+	}, {
+		"ID": "4268484",
+		"description": "Speedway Total TA Conv"
+	}, {
+		"ID": "4066401",
+		"description": "Stater Bros Total TA"
+	}, {
+		"ID": "4567118",
+		"description": "Stop & Shop New England TA"
+	}, {
+		"ID": "4066321",
+		"description": "Stop & Shop New York TA"
+	}, {
+		"ID": "4066217",
+		"description": "Stop & Shop Total TA"
+	}, {
+		"ID": "4093253",
+		"description": "Strack & Van Til Total TA"
+	}, {
+		"ID": "4066659",
+		"description": "Super Kmart Total TA"
+	}, {
+		"ID": "4789483",
+		"description": "Superfresh Philadelphia TA"
+	}, {
+		"ID": "4206534",
+		"description": "Target GM Pfresh TA"
+	}, {
+		"ID": "4507775",
+		"description": "Target GM TA"
+	}, {
+		"ID": "4066614",
+		"description": "Target Total TA"
+	}, {
+		"ID": "4432427",
+		"description": "Tedeschi Food Shops Total TA Conv"
+	}, {
+		"ID": "4375227",
+		"description": "The Pantry Total TA"
+	}, {
+		"ID": "4172093",
+		"description": "Thorntons Total TA Conv"
+	}, {
+		"ID": "4282171",
+		"description": "Tops Central NY TA"
+	}, {
+		"ID": "4282172",
+		"description": "Tops Eastern NY TA"
+	}, {
+		"ID": "4282173",
+		"description": "Tops Total TA"
+	}, {
+		"ID": "4282174",
+		"description": "Tops Western NY TA"
+	}, {
+		"ID": "4066224",
+		"description": "Total DeCA CONUS ex AK & HI"
+	}, {
+		"ID": "4066222",
+		"description": "Total DeCA CONUS inc AK & HI"
+	}, {
+		"ID": "4109474",
+		"description": "Total DeCA OCONUS"
+	}, {
+		"ID": "4068165",
+		"description": "United Dairy Farmers  Cincinnati Conv"
+	}, {
+		"ID": "4135901",
+		"description": "United Dairy Farmers Total Conv"
+	}, {
+		"ID": "4507667",
+		"description": "Walgreens Corp Southern Region TA"
+	}, {
+		"ID": "4507671",
+		"description": "Walgreens Corp Western Region TA"
+	}, {
+		"ID": "4068147",
+		"description": "Wawa New York Conv"
+	}, {
+		"ID": "4068148",
+		"description": "Wawa Philadelphia Conv"
+	}, {
+		"ID": "4135936",
+		"description": "Wawa Total Conv"
+	}, {
+		"ID": "4066434",
+		"description": "Wegmans Buffalo TA"
+	}, {
+		"ID": "4066435",
+		"description": "Wegmans Rochester TA"
+	}, {
+		"ID": "4066436",
+		"description": "Wegmans Syracuse TA"
+	}, {
+		"ID": "4066795",
+		"description": "Wegmans Total TA"
+	}, {
+		"ID": "4066225",
+		"description": "Weis Total TA"
+	}, {
+		"ID": "4521675",
+		"description": "Winco Intermountain TA"
+	}, {
+		"ID": "4521676",
+		"description": "Winco N California TA"
+	}, {
+		"ID": "4521677",
+		"description": "Winco Northwest TA"
+	}, {
+		"ID": "4521678",
+		"description": "Winco Southwest TA"
+	}, {
+		"ID": "4521679",
+		"description": "Winco Total TA"
+	}, {
+		"ID": "4541958",
+		"description": "Winn-Dixie Miami Region TA"
+	}, {
+		"ID": "4543757",
+		"description": "Winn-Dixie Montgomery Region TA"
+	}, {
+		"ID": "4543758",
+		"description": "Winn-Dixie New Orleans Region TA"
+	}, {
+		"ID": "4789493",
+		"description": "Winn-Dixie Total Region TA"
+	}, {
+		"ID": "4335686",
+		"description": "Xtra Mart Total TA Conv"
+	}]
+}

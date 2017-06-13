@@ -1,0 +1,132 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "NP_BE_PRC",
+            "description": "No Promo Base EQ Price"
+            },
+        {
+            "ID": "NP_BE_PRC_PCT_CHG_PREV",
+            "description": "No Promo Base EQ Price % Chg Prev"
+            },
+        {
+            "ID": "NP_BE_PRC_PCT_CHG",
+            "description": "No Promo Base EQ Price % Chg YA"
+            },
+        {
+            "ID": "NP_BE_PRC_CHG_PREV",
+            "description": "No Promo Base EQ Price CPP"
+            },
+        {
+            "ID": "NP_BE_PRC_CHG_YAGO",
+            "description": "No Promo Base EQ Price CYA"
+            },
+        {
+            "ID": "NP_BE_PRC_PREV",
+            "description": "No Promo Base EQ Price Prev"
+            },
+        {
+            "ID": "NP_BE_PRC_YAGO",
+            "description": "No Promo Base EQ Price YA"
+            },
+        {
+            "ID": "NP_BU_PRC",
+            "description": "No Promo Base Unit Price"
+            },
+        {
+            "ID": "NP_BU_PRC_PCT_CHG_PREV",
+            "description": "No Promo Base Unit Price % Chg Prev"
+            },
+        {
+            "ID": "NP_BU_PRC_PCT_CHG",
+            "description": "No Promo Base Unit Price % Chg YA"
+            },
+        {
+            "ID": "NP_BU_PRC_CHG_PREV",
+            "description": "No Promo Base Unit Price CPP"
+            },
+        {
+            "ID": "NP_BU_PRC_CHG_YAGO",
+            "description": "No Promo Base Unit Price CYA"
+            },
+        {
+            "ID": "NP_BU_PRC_PREV",
+            "description": "No Promo Base Unit Price Prev"
+            },
+        {
+            "ID": "NP_BU_PRC_YAGO",
+            "description": "No Promo Base Unit Price YA"
+            },
+        {
+            "ID": "NP_E_PRC",
+            "description": "No Promo EQ Price"
+            },
+        {
+            "ID": "NP_E_PRC_PCT_CHG_PREV",
+            "description": "No Promo EQ Price % Chg Prev"
+            },
+        {
+            "ID": "NP_E_PRC_PCT_CHG",
+            "description": "No Promo EQ Price % Chg YA"
+            },
+        {
+            "ID": "NP_E_PRC_CHG_PREV",
+            "description": "No Promo EQ Price CPP"
+            },
+        {
+            "ID": "NP_E_PRC_CHG_YAGO",
+            "description": "No Promo EQ Price CYA"
+            },
+        {
+            "ID": "NP_E_PRC_IYA",
+            "description": "No Promo EQ Price IYA"
+            },
+        {
+            "ID": "NP_E_PRC_PREV",
+            "description": "No Promo EQ Price Prev"
+            },
+        {
+            "ID": "NP_E_PRC_YAGO",
+            "description": "No Promo EQ Price YA"
+            },
+        {
+            "ID": "NP_U_PRC",
+            "description": "No Promo Unit Price"
+            },
+        {
+            "ID": "NP_U_PRC_PCT_CHG_PREV",
+            "description": "No Promo Unit Price % Chg Prev"
+            },
+        {
+            "ID": "NP_U_PRC_PCT_CHG",
+            "description": "No Promo Unit Price % Chg YA"
+            },
+        {
+            "ID": "NP_U_PRC_CHG_PREV",
+            "description": "No Promo Unit Price CPP"
+            },
+        {
+            "ID": "NP_U_PRC_CHG_YAGO",
+            "description": "No Promo Unit Price CYA"
+            },
+        {
+            "ID": "NP_U_PRC_IYA",
+            "description": "No Promo Unit Price IYA"
+            },
+        {
+            "ID": "NP_U_PRC_PREV",
+            "description": "No Promo Unit Price Prev"
+            },
+        {
+            "ID": "NP_U_PRC_YAGO",
+            "description": "No Promo Unit Price YA"
+            }
+        ]
+}

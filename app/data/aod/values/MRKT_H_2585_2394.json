@@ -1,0 +1,23 @@
+{
+	"summary":
+	{
+		"locale":
+		{
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Hierarchy/Level/Values"
+	},
+	"catalogueHierarchyLevelValue":
+	[
+		{
+			"ID": "Comp",
+			"description": "Comp"
+		},
+		{
+			"ID": "NOT APPLICABLE",
+			"description": "NOT APPLICABLE"
+		}
+	]
+}

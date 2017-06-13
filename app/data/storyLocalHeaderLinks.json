@@ -1,0 +1,9 @@
+[
+    {
+        "name": "Share",
+        "icon": "nlsn-icon-story_with_people",
+        "actionid": "shareWithPeople",
+        "publisherId": "actionPanel",
+        "isActive": true
+    }
+]

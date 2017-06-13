@@ -1,0 +1,32 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Attribute/Values"
+	},
+	"catalogueAttributeValue": [{
+		"ID": "NOT APPLICABLE",
+		"description": "NOT APPLICABLE"
+	}, {
+		"ID": "2015",
+		"description": "2015"
+	}, {
+		"ID": "2014",
+		"description": "2014"
+	}, {
+		"ID": "2013",
+		"description": "2013"
+	}, {
+		"ID": "2012",
+		"description": "2012"
+	}, {
+		"ID": "2011",
+		"description": "2011"
+	}, {
+		"ID": "2010",
+		"description": "2010"
+	}]
+}

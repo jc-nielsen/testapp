@@ -1,0 +1,35 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Levels"
+	},
+	"catalogueGroupLevel": [{
+		"ID": "7808",
+		"description": "Current Scan Periods"
+	}, {
+		"ID": "7809",
+		"description": "Weeks"
+	}, {
+		"ID": "7810",
+		"description": "Months"
+	}, {
+		"ID": "7811",
+		"description": "4 Weeks Periods"
+	}, {
+		"ID": "7812",
+		"description": "Quarters"
+	}, {
+		"ID": "7813",
+		"description": "Half Years"
+	}, {
+		"ID": "7814",
+		"description": "Years"
+	}, {
+		"ID": "7815",
+		"description": "Period-to-Date"
+	}]
+}

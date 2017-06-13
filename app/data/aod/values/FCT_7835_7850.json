@@ -1,0 +1,200 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "BE_PCT_DT",
+            "description": "% EQ Base"
+            },
+        {
+            "ID": "BE_PCT_DT_PT_CHG",
+            "description": "% EQ Base CYA"
+            },
+        {
+            "ID": "BE_PCT_DT_YAGO",
+            "description": "% EQ Base YA"
+            },
+        {
+            "ID": "INCR_PCT_E_DT",
+            "description": "% EQ Incr"
+            },
+        {
+            "ID": "INCR_PCT_E_DT_PT_CHG",
+            "description": "% EQ Incr CYA"
+            },
+        {
+            "ID": "INCR_PCT_E_DT_YAGO",
+            "description": "% EQ Incr YA"
+            },
+        {
+            "ID": "BE",
+            "description": "Base EQ"
+            },
+        {
+            "ID": "BE_PCT_CHG_PREV",
+            "description": "Base EQ % Chg Prev"
+            },
+        {
+            "ID": "BE_PCT_CHG",
+            "description": "Base EQ % Chg YA"
+            },
+        {
+            "ID": "BE_000",
+            "description": "Base EQ (000)"
+            },
+        {
+            "ID": "BE_000_CHG_YAGO",
+            "description": "Base EQ (000) CYA"
+            },
+        {
+            "ID": "BE_000_YAGO",
+            "description": "Base EQ (000) YA"
+            },
+        {
+            "ID": "BE_CHG_PREV",
+            "description": "Base EQ CPP"
+            },
+        {
+            "ID": "BE_CHG_YAGO",
+            "description": "Base EQ CYA"
+            },
+        {
+            "ID": "BE_PREV",
+            "description": "Base EQ Prev"
+            },
+        {
+            "ID": "BE_YAGO",
+            "description": "Base EQ YA"
+            },
+        {
+            "ID": "CDI_BY_BDI_E_FOOD",
+            "description": "CDI/BDI EQ - Food"
+            },
+        {
+            "ID": "CDI_BY_BDI_E_FDMX",
+            "description": "CDI/BDI EQ - xAOC"
+            },
+        {
+            "ID": "E",
+            "description": "EQ"
+            },
+        {
+            "ID": "E_PCT_CHG_PREV",
+            "description": "EQ % Chg Prev"
+            },
+        {
+            "ID": "E_PCT_CHG",
+            "description": "EQ % Chg YA"
+            },
+        {
+            "ID": "E_PCT_LIFT",
+            "description": "EQ % Lift"
+            },
+        {
+            "ID": "E_PCT_LIFT_PT_CHG",
+            "description": "EQ % Lift CYA"
+            },
+        {
+            "ID": "E_PCT_LIFT_YAGO",
+            "description": "EQ % Lift YA"
+            },
+        {
+            "ID": "E_000",
+            "description": "EQ (000)"
+            },
+        {
+            "ID": "E_000_CHG_YAGO",
+            "description": "EQ (000) CYA"
+            },
+        {
+            "ID": "E_000_YAGO",
+            "description": "EQ (000) YA"
+            },
+        {
+            "ID": "E_CHG_PREV",
+            "description": "EQ CPP"
+            },
+        {
+            "ID": "E_CHG_YAGO",
+            "description": "EQ CYA"
+            },
+        {
+            "ID": "E_IPP",
+            "description": "EQ IPP"
+            },
+        {
+            "ID": "E_IYA",
+            "description": "EQ IYA"
+            },
+        {
+            "ID": "E_PREV",
+            "description": "EQ Prev"
+            },
+        {
+            "ID": "E_YAGO",
+            "description": "EQ YA"
+            },
+        {
+            "ID": "NUM_WKS_AVG_E",
+            "description": "EQ per Week Selling"
+            },
+        {
+            "ID": "NUM_WKS_AVG_E_CHG_YAGO",
+            "description": "EQ per Week Selling CYA"
+            },
+        {
+            "ID": "NUM_WKS_AVG_E_YAGO",
+            "description": "EQ per Week Selling YA"
+            },
+        {
+            "ID": "INCR_E",
+            "description": "Incr EQ"
+            },
+        {
+            "ID": "INCR_E_PCT_CHG_PREV",
+            "description": "Incr EQ % Chg Prev"
+            },
+        {
+            "ID": "INCR_E_PCT_CHG",
+            "description": "Incr EQ % Chg YA"
+            },
+        {
+            "ID": "INCR_E_000",
+            "description": "Incr EQ (000)"
+            },
+        {
+            "ID": "INCR_E_000_CHG_YAGO",
+            "description": "Incr EQ (000) CYA"
+            },
+        {
+            "ID": "INCR_E_000_YAGO",
+            "description": "Incr EQ (000) YA"
+            },
+        {
+            "ID": "INCR_E_CHG_PREV",
+            "description": "Incr EQ CPP"
+            },
+        {
+            "ID": "INCR_E_CHG_YAGO",
+            "description": "Incr EQ CYA"
+            },
+        {
+            "ID": "INCR_E_PREV",
+            "description": "Incr EQ Prev"
+            },
+        {
+            "ID": "INCR_E_YAGO",
+            "description": "Incr EQ YA"
+            },
+        {
+            "ID": "SUBSIDIZED_E_VOL",
+            "description": "Subsidized EQ"
+            }
+        ]
+}

@@ -1,0 +1,587 @@
+[
+  {
+    "id": "400001",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Brand",
+          "id": "brand_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Drug Channel",
+          "id": "3"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "XAOC Remaining Market",
+          "id": "4"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "CARBONATED BEVERAGES",
+          "id": "7",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "2161231152",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Period Groups Pre-Post": [
+        {
+          "id": "10",
+          "value": "10 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "DG",
+          "id": "110"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-12-31 00:00:00.0",
+          "id": "2016123101"
+        }
+      ],
+      "Reset Date": [
+        {
+          "value": "2016-04-04 00:00:00.000000000",
+          "id": "2016040901",
+          "reference value": "CARBONATED BEVERAGES",
+          "reference id": "7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400002",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Brand",
+          "id": "brand_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Drug Channel",
+          "id": "3"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "XAOC Remaining Market",
+          "id": "4"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "CARBONATED BEVERAGES",
+          "id": "7",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "2161231152",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Period Groups Pre-Post": [
+        {
+          "id": "10",
+          "value": "10 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "DG",
+          "id": "110"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-12-31 00:00:00.0",
+          "id": "2016123101"
+        }
+      ],
+      "Reset Date": [
+        {
+          "value": "2016-04-04 00:00:00.000000000",
+          "id": "2016040901",
+          "reference value": "CARBONATED BEVERAGES",
+          "reference id": "7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400003",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Brand",
+          "id": "brand_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Drug Channel",
+          "id": "3"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "XAOC Remaining Market",
+          "id": "4"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "CARBONATED BEVERAGES",
+          "id": "7",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "2161231152",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Period Groups Pre-Post": [
+        {
+          "id": "10",
+          "value": "10 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "DG",
+          "id": "110"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-12-31 00:00:00.0",
+          "id": "2016123101"
+        }
+      ],
+      "Reset Date": [
+        {
+          "value": "2016-04-04 00:00:00.000000000",
+          "id": "2016040901",
+          "reference value": "CARBONATED BEVERAGES",
+          "reference id": "7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400004",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Brand",
+          "id": "brand_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Drug Channel",
+          "id": "3"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "XAOC Remaining Market",
+          "id": "4"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "CARBONATED BEVERAGES",
+          "id": "7",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "2161231152",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Period Groups Pre-Post": [
+        {
+          "id": "10",
+          "value": "10 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "DG",
+          "id": "110"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-12-31 00:00:00.0",
+          "id": "2016123101"
+        }
+      ],
+      "Reset Date": [
+        {
+          "value": "2016-04-04 00:00:00.000000000",
+          "id": "2016040901",
+          "reference value": "CARBONATED BEVERAGES",
+          "reference id": "7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400005",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Brand",
+          "id": "brand_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Drug Channel",
+          "id": "3"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "XAOC Remaining Market",
+          "id": "4"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "CARBONATED BEVERAGES",
+          "id": "7",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "2161231152",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Period Groups Pre-Post": [
+        {
+          "id": "10",
+          "value": "10 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "DG",
+          "id": "110"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-12-31 00:00:00.0",
+          "id": "2016123101"
+        }
+      ],
+      "Reset Date": [
+        {
+          "value": "2016-04-04 00:00:00.000000000",
+          "id": "2016040901",
+          "reference value": "CARBONATED BEVERAGES",
+          "reference id": "7"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400006",
+    "prompts": {
+      "Drill Down": [
+        {
+          "value": "Segment",
+          "id": "segment_id",
+          "reference group": "category",
+          "reference type": "group"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "value": "Grocery Multiples",
+          "id": "1202792"
+        }
+      ],
+      "Benchmark Markets 2": [
+        {
+          "value": "Total Coverage incl. Discounters",
+          "id": "1206261"
+        }
+      ],
+      "Value / Units": [
+        {
+          "id": "0",
+          "value": "Value"
+        }
+      ],
+      "Product Hierarchy Selector": [
+        {
+          "value": "IMPULSE",
+          "id": "-1162783339",
+          "group": "category"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+      "No of Weeks": [
+        {
+          "id": "52",
+          "value": "52 Weeks"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "value": "tCG",
+          "id": "1208682"
+        }
+      ],
+      "Period Date": [
+        {
+          "value": "2016-07-10 04:00:00.000000000",
+          "id": "916"
+        }
+      ],
+      "Period Groups": [
+        {
+          "id": "4",
+          "value": "Latest 52 Weeks"
+        }
+      ],
+      "Week ending": [
+        {
+          "value": "2016-07-10 04:00:00.000000000",
+          "id": "916"
+        }
+      ]
+    }
+  },
+  {
+    "id": "400007",
+    "prompts": {
+      "Product Hierarchy Selector": [
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "desc": "IMPULSE GROCERY & BWS",
+                      "nodeId": "-960431664",
+                      "objectType": "super_category",
+                      "type": "HIERARCHY_VALUE"
+                    }
+                  ],
+                  "desc": "Super Category",
+                  "nodeId": "super_category_id",
+                  "type": "HIERARCHY_LEVEL"
+                },
+                {
+                  "children": [
+                    {
+                      "desc": "BEERS & SPIRITS",
+                      "nodeId": "-1168208361",
+                      "objectType": "category",
+                      "type": "HIERARCHY_VALUE"
+                    }
+                  ],
+                  "desc": "Category",
+                  "nodeId": "category_id",
+                  "type": "HIERARCHY_LEVEL"
+                }
+              ],
+              "type": "HIERARCHY"
+            }
+          ],
+          "desc": "Hierarchies",
+          "nodeId": "HRCH",
+          "type": "VIEW"
+        }
+      ],
+      "Drill Down": [
+        {
+          "reference prompt": "Product Hierarchy Selector",
+          "reference group": "category",
+          "reference type": "group",
+          "value": "Manufacturer",
+          "id": "manufacturer_id"
+        }
+      ],
+      "Retailer Markets": [
+        {
+          "id": "1208682",
+          "value": "Total Co-operative Group (FULL TSR)"
+        }
+      ],
+      "Benchmark Markets": [
+        {
+          "reference prompt": "Retailer Markets",
+          "reference value": "Total Co-operative Group (FULL TSR)",
+          "display_order": "3",
+          "reference id": "1208682",
+          "id": "1202792",
+          "value": "Total Coverage/Grocery Multiples (FULL TSR)"
+        }
+      ],
+      "Comparison Markets": [
+        {
+          "id": "1",
+          "value": "Grocery Multiples Minus Co-ooperative Group",
+          "boxChecked": true,
+          "disableCheckBox": false
+        },
+        {
+          "id": "2",
+          "value": "Grocery Multiples",
+          "disableCheckBox": false
+        }
+      ],
+      "No of Weeks": [
+        {
+          "id": "12",
+          "value": "12 Weeks"
+        }
+      ],
+      "Period Date": [
+        {
+          "format": "DATE",
+          "id": "944",
+          "value": "22-Jan-2017"
+        }
+      ],
+      "Year Ago / Previous Period": [
+        {
+          "id": "0",
+          "value": "Year Ago"
+        }
+      ],
+	  "Market Type":[ 
+		{
+          "id": "2",
+          "value": "Grocery Multiples"
+        }
+	  ],
+	  "Multiple Retailer Markets":[
+		  {
+          "id": "1208682",
+	      "value": "Total Co-operative Group (FULL TSR)",
+          "boxChecked": true,
+          "disableCheckBox": false			  
+		  }
+	  ],
+      "Drill Up": [
+        {
+          "reference prompt": "Product Hierarchy Selector",
+          "reference group": "category",
+          "reference type": "group",
+          "value": "Super Category",
+          "id": "super_category_id"
+        }
+      ],
+ 	  "drilldown With Upc": [
+       {
+         "id": "item_id",
+         "value": "Upc"
+       }
+     ]
+    }
+  }
+]

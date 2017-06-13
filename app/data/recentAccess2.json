@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Opportunity Targeting",
+    "access_time": "2016-01-21T18:25:43.511Z",
+    "imageURL": "assets/images/recent_opportunity_target.png",
+    "url": "#/insights",
+    "target":"_self"
+  },
+  {
+    "title": "Global Market Evaluator",
+    "access_time": "2016-01-24T18:25:43.511Z",
+    "imageURL": "assets/images/recent_global_mkt_eval.png",
+    "url": "",
+    "target":"_self"
+  },
+  {
+    "title": "Brand Promotions Prioritizations",
+    "access_time": "2016-01-14T08:15:33.211Z",
+    "imageURL": "assets/images/recent_brand_promotions.png",
+    "url": "#/bubbleChart",
+    "target":"_self"
+  },
+  {
+    "title": "Price Explorer – Promotional Lift",
+    "access_time": "2016-01-12T18:25:43.511Z",
+    "imageURL": "assets/images/recent_price_explorer.png",
+    "url": "#/barChart",
+    "target":"_self"
+  },
+  {
+    "title": "Regional Performance",
+    "access_time": "2016-01-01T18:25:43.511Z",
+    "imageURL": "assets/images/recent_regional_performance.png",
+    "url": "",
+    "target":"_self"
+  },
+  {
+    "title": "New Product Introduction",
+    "access_time": "2016-01-20T18:25:43.511Z",
+    "imageURL": "assets/images/recent_product_introductions.png",
+    "url": "",
+    "target":"_self"
+  }
+]

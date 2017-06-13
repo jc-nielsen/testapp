@@ -1,0 +1,181 @@
+[{  
+    "tabs":[
+        {
+            "type":"activity",
+            "name":"Activities"
+        },
+        {
+            "type":"alert",
+            "name":"Alert"
+            
+        },
+        {
+            "type":"recommended",
+            "name":"Recommended"
+        }
+    ],
+    "data":[
+        {
+	"id": "activity_01",
+	"type": "activity",
+	"title": "Promotions Analyzer",
+	"subject": "",
+	"image": "assets/images/analytics.jpg",
+	"imageClass": "fa fa-file-excel-o",
+	"colorClass": "colorDarkGreen",
+	"dateCreated": "2016-03-11T07:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "",
+	"link": "data/52 Week POC Templatev0.22 - 1901.xls"
+}, {
+	"id": "activity_02",
+	"type": "activity",
+	"title": "Fiona Sunderland",
+	"subject": "RE: Italy Perfeksjon Performance",
+	"image": "assets/images/activity/img_01.png",
+	"imageClass": "",
+	"colorClass": "colorBlue",
+	"dateCreated": "2016-03-11T08:05:55.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "The driving factors for the loss of promotional sales are increased competitor promotions in Alvo. A 2-for-1 deal on Formidavel 270ml commenced last week and saw a 260% uplift.The driving factors for the loss of promotional sales are increased competitor promotions in Alvo. A 2-for-1 deal on Formidavel 270ml commenced last week and saw a 260% uplift.The driving factors for the loss of promotional sales are increased competitor promotions in Alvo. A 2-for-1 deal on Formidavel 270ml commenced last week and saw a 260% uplift."
+}, {
+	"id": "activity_03",
+	"type": "activity",
+	"title": "Report complete",
+	"subject": "Perfeksjon NPD Monitor",
+	"image": "assets/images/analytics.jpg",
+	"imageClass": "fa fa-bar-chart",
+	"colorClass": "colorBlue",
+	"dateCreated": "2016-03-11T04:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": ""
+}, {
+	"id": "activity_04",
+	"type": "alert",
+	"title": "Planned Outage",
+	"subject": "21-March 2016 22:30CST for 2 hours",
+	"image": "assets/images/activity_downtime.png",
+	"imageClass": "fa fa-power-off",
+	"colorClass": "colorOrange",
+	"dateCreated": "2016-03-11T05:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "Parts of your service be unavailable during this time, but you can still view your existing repoorts, news and insights."
+}, {
+	"id": "activity_05",
+	"type": "alert",
+	"title": "Paolo Villa",
+	"subject": "RE: Italy Pepsi Performance",
+	"image": "assets/images/activity/img_04.png",
+	"imageClass": "",
+	"colorClass": "colorViolet",
+	"dateCreated": "2016-03-11T06:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "I've asked Elaine to look at this today."
+}, {
+	"id": "activity_06",
+	"type": "activity",
+	"title": "Have your say",
+	"subject": "Sign up for the Answers Forum",
+	"image": "assets/images/activity_forum.png",
+	"imageClass": "fa fa-pencil-square-o",
+	"colorClass": "colorBlue",
+	"dateCreated": "2016-03-09T04:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post.Parts of your service be unavailable during this time, but you can still view your existing repoorts, news and insights.Parts of your service be unavailable during this time, but you can still view your existing repoorts, news and insights."
+}, {
+	"id": "activity_07",
+	"type": "recommended",
+	"title": "Have you tried...",
+	"subject": "Assortment Calculator",
+	"image": "assets/images/recent_brand_promotions.png",
+	"imageClass": "fa fa-calculator",
+	"colorClass": "colorViolet",
+	"dateCreated": "2016-03-11T06:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "Find your optimal range using parameters you control. Live data supports real-time best-fit products for any outlet size. It is included in your package, so try it out!Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post.Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post.Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post.Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post.Love Answers? Hate Answers? Is a feature driving you nuts? Let us know, and help make Answers better for everyone. Prize draw for new members and best post."
+}, {
+	"id": "activity_08",
+	"type": "",
+	"title": "You raised a Case",
+	"subject": "Italy Perfeksjon Performance",
+	"image": "assets/images/activity/img_07.png",
+	"imageClass": "",
+	"colorClass": "colorGreen",
+	"dateCreated": "2016-03-11T08:20:43.511Z",
+	"iconList": [{
+		"iconClass": "fa fa-thumb-tack",
+		"iconName": "pin"
+	}, {
+		"iconClass": "fa fa-clock-o",
+		"iconName": "snooze"
+	}, {
+		"iconClass": "fa fa-check",
+		"iconName": "done"
+	}],
+	"description": "What is driving this decline in promotional effectiveness? We were expecting greater return."
+}
+]
+}]

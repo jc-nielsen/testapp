@@ -1,0 +1,277 @@
+[
+    {
+        "questionSetId": "col1Data",
+        "questionSetTitle": "Data",
+        "options": {
+            "isSingleSelection": false
+        },
+        "sections": [
+        {
+            "sectionId": "section21",
+            "sectionTitle": "Focus",
+            "options": {
+                "isSingleSelection": true,
+                "minNumberOfSelectedAnswers": 1
+            },
+            "answers": []
+        },
+        {
+            "sectionId": "section22",
+            "sectionTitle": "Markets",
+            "options": {
+                "isSingleSelection": true,
+                "minNumberOfSelectedAnswers": 1
+            },
+            "answers": [
+                {
+                    "answerId": "market1",
+                    "answer": "Market Groups",
+                    "questions": [
+                      {
+                        "questionSetId": "col2Markets",
+                        "questionSetTitle": "Market Groups",
+                        "sections": [
+                          {
+                            "sectionId": "section221",
+                            "sectionTitle": "Market Groups",
+                            "answers": [
+                              {
+                                "answerId": "region",
+                                "answer": "Region"
+                              },
+                              {
+                                "answerId": "metro",
+                                "answer": "Metro"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                },
+                {
+                    "answerId": "market2",
+                    "answer": "Hierarchies"
+                },
+                {
+                    "answerId": "market3",
+                    "answer": "Characteristics"
+                }
+            ]
+        },
+        {
+            "sectionId": "section23",
+            "sectionTitle": "Products",
+            "options": {
+              "isSingleSelection": true,
+              "minNumberOfSelectedAnswers": 1
+            },
+            "answers": [
+            {
+                "answerId": "product1",
+                "answer": "Custom Subtotals",
+                "questions": [
+                  {
+                    "questionSetId": "col2Products",
+                    "questionSetTitle": "Custom Subtotals",
+                    "sections": [
+                      {
+                        "sectionId": "section231",
+                        "sectionTitle": "Custom Subtotals",
+                        "answers": [
+                          {
+                            "answerId": "brand",
+                            "answer": "Brand"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+            },
+            {
+                "answerId": "product2",
+                "answer": "Hierarchies"
+            },
+            {
+                "answerId": "product3",
+                "answer": "Characteristics"
+            }
+            ]
+        },
+        {
+            "sectionId": "section24",
+            "sectionTitle": "Periods",
+            "options": {
+              "isSingleSelection": true,
+              "minNumberOfSelectedAnswers": 1
+            },
+            "answers": [
+            {
+                "answerId": "periods1",
+                "answer": "Core 12 Period Groups",
+                "questions": [
+                  {
+                    "questionSetId": "col2Periods",
+                    "questionSetTitle": "Core 12 Period Groups",
+                    "sections": [
+                      {
+                        "sectionId": "section231",
+                        "sectionTitle": "Core 12 Period Groups",
+                        "answers": [
+                          {
+                            "answerId": "last4Weeks",
+                            "answer": "Last 4 Weeks"
+                          },
+                          {
+                            "answerId": "last13Weeks",
+                            "answer": "Last 13 Weeks"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+            },
+            {
+                "answerId": "periods2",
+                "answer": "Hierarchies"
+            },
+            {
+                "answerId": "periods3",
+                "answer": "Characteristics"
+            }
+            ]
+        },
+
+        {
+            "sectionId": "section25",
+            "sectionTitle": "Facts",
+            "options": {
+              "isSingleSelection": true,
+              "minNumberOfSelectedAnswers": 1
+            },
+            "answers": [
+            {
+                "answerId": "facts1",
+                "answer": "Fact Groups",
+                "questions": [
+                  {
+                    "questionSetId": "col2Facts",
+                    "questionSetTitle": "Fact Groups",
+                    "sections": [
+                      {
+                        "sectionId": "section251",
+                        "sectionTitle": "Sales Volume",
+                        "answers": [
+                          {
+                            "answerId": "dollars",
+                            "answer": "Dollars",
+                            "questions": [
+                              {
+                                "questionSetId": "col3Dollars",
+                                "questionSetTitle": "Dollars",
+                                "sections": [
+                                  {
+                                    "sectionId": "section2511",
+                                    "sectionTitle": "Dollars",
+                                    "answers": [
+                                      {
+                                        "answerId": "dollar",
+                                        "answer": "$"
+                                      },
+                                      {
+                                        "answerId": "dollarPercChangePrev",
+                                        "answer": "$ % Chg Prev"
+                                      },
+                                      {
+                                        "answerId": "dollarPercChangeYA",
+                                        "answer": "$ % Chg YA"
+                                      },
+                                      {
+                                        "answerId": "dollarPercLift",
+                                        "answer": "$ % Lift"
+                                      },
+                                      {
+                                        "answerId": "dollarPercLiftCYA",
+                                        "answer": "$ % Lift CYA"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          },
+                          {
+                            "answerId": "units",
+                            "answer": "Units"
+                          },
+                          {
+                            "answerId": "eq",
+                            "answer": "EQ"
+                          }
+                        ]
+                      },
+                      {
+                        "sectionId": "section252",
+                        "sectionTitle": "Pricing",
+                        "answers": [
+                          {
+                            "answerId": "dollars",
+                            "answer": "Dollars"
+                          },
+                          {
+                            "answerId": "units",
+                            "answer": "Units"
+                          },
+                          {
+                            "answerId": "eq",
+                            "answer": "EQ"
+                          }
+                        ]
+                      },
+                      {
+                        "sectionId": "section253",
+                        "sectionTitle": "Distribution",
+                        "answers": [
+                          {
+                            "answerId": "dollars",
+                            "answer": "Dollars"
+                          },
+                          {
+                            "answerId": "units",
+                            "answer": "Units"
+                          },
+                          {
+                            "answerId": "eq",
+                            "answer": "EQ"
+                          }
+                        ]
+                      },
+                      {
+                        "sectionId": "section254",
+                        "sectionTitle": "Promotion Dollars",
+                        "answers": [
+                          {
+                            "answerId": "dollars",
+                            "answer": "Dollars"
+                          },
+                          {
+                            "answerId": "units",
+                            "answer": "Units"
+                          },
+                          {
+                            "answerId": "eq",
+                            "answer": "EQ"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+            }
+            ]
+        }
+        ]
+    }
+]

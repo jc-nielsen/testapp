@@ -1,0 +1,32 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Attribute/Values"
+	},
+	"catalogueAttributeValue": [{
+		"ID": "Division",
+		"description": "Division"
+	}, {
+		"ID": "NOT APPLICABLE",
+		"description": "NOT APPLICABLE"
+	}, {
+		"ID": "Region",
+		"description": "Region"
+	}, {
+		"ID": "Remaining",
+		"description": "Remaining"
+	}, {
+		"ID": "SMM",
+		"description": "SMM"
+	}, {
+		"ID": "TA",
+		"description": "TA"
+	}, {
+		"ID": "US",
+		"description": "US"
+	}]
+}

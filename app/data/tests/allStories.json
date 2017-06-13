@@ -1,0 +1,393 @@
+"use strict";
+angular.module('oneview.allStoriesData',
+[]).value('allStories',
+[
+	{
+		"id": "57d8dcf90cf2034f20cd9152",
+		"title": "Ad Channel Performance",
+		"description": "Ad Channel Performance",
+		"userTags": [
+			"Ad Channel Performance"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/14/2016 01:15:37",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/16/2016 11:37:01",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dcf90cf2034f20cd9152"
+	},
+	{
+		"id": "57d94d8c0cf2034f20cd91ed",
+		"title": "Ad Channel Performance",
+		"description": "Ad Channel Performance",
+		"userTags": [
+			"Ad Channel Performance"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/14/2016 09:15:56",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 04:06:13",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d94d8c0cf2034f20cd91ed"
+	},
+	{
+		"id": "57da624a0cf2a7d92a9d3a99",
+		"title": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 04:56:42",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 04:58:17",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da624a0cf2a7d92a9d3a99"
+	},
+	{
+		"id": "57daa2600cf2a7d92a9d3af5",
+		"title": "Carbonated Soft Drinks",
+		"description": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 09:30:08",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 09:30:36",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57daa2600cf2a7d92a9d3af5"
+	},
+	{
+		"id": "57dfb59ffc73047dc68da47a",
+		"title": "Carbonated Soft Drinks",
+		"description": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/19/2016 05:53:35",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:53:36",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb59ffc73047dc68da47a"
+	},
+	{
+		"id": "57dfb649fc73047dc68da47e",
+		"title": "Carbonated Soft Drinks",
+		"description": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/19/2016 05:56:25",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:56:25",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb649fc73047dc68da47e"
+	},
+	{
+		"id": "57dfb66afc73047dc68da482",
+		"title": "Carbonated Soft Drinks",
+		"description": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/19/2016 05:56:58",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:56:58",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb66afc73047dc68da482"
+	},
+	{
+		"id": "57dfb699fc73047dc68da486",
+		"title": "Carbonated Soft Drinks",
+		"description": "Carbonated Soft Drinks",
+		"userTags": [
+			"Carbonated Soft Drinks"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/19/2016 05:57:45",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:57:51",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb699fc73047dc68da486"
+	},
+	{
+		"id": "57da5bc20cf2a7d92a9d3a87",
+		"title": "Category KPI",
+		"userTags": [
+			"Category KPI"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 04:28:50",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 04:28:50",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da5bc20cf2a7d92a9d3a87"
+	},
+	{
+		"id": "57da63810cf2a7d92a9d3a9f",
+		"title": "Category KPI",
+		"userTags": [
+			"Category KPI"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 05:01:53",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 05:33:49",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da63810cf2a7d92a9d3a9f"
+	},
+	{
+		"id": "57d8dccc0cf2034f20cd914a",
+		"title": "Category Sales Trend",
+		"description": "Category Sales Trend",
+		"userTags": [
+			"Category Sales Trend"
+		],
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 03:43:56",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dccc0cf2034f20cd914a"
+	},
+	{
+		"id": "57d94f580cf2034f20cd9218",
+		"title": "Category Sales Trend",
+		"description": "Category Sales Trend",
+		"userTags": [
+			"Category Sales Trend"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/14/2016 09:23:36",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:45:42",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d94f580cf2034f20cd9218"
+	},
+	{
+		"id": "57da61050cf2a7d92a9d3a8c",
+		"title": "Category Sales Trend",
+		"userTags": [
+			"Category Sales Trend"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 04:51:17",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 04:51:22",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da61050cf2a7d92a9d3a8c"
+	},
+	{
+		"id": "57da61560cf2a7d92a9d3a8f",
+		"title": "Category Sales Trend",
+		"userTags": [
+			"Category Sales Trend"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 04:52:38",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 04:52:42",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da61560cf2a7d92a9d3a8f"
+	},
+	{
+		"id": "57da616e0cf2a7d92a9d3a92",
+		"title": "Category Sales Trend",
+		"userTags": [
+			"Category Sales Trend"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 04:53:02",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 04:53:11",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da616e0cf2a7d92a9d3a92"
+	},
+	{
+		"id": "57da8f270cf2a7d92a9d3add",
+		"title": "Citrello vs Category",
+		"description": "Citrello vs Category",
+		"userTags": [
+			"Citrello vs Category"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 08:08:07",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 09:29:41",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da8f270cf2a7d92a9d3add"
+	},
+	{
+		"id": "57d9441b0cf2034f20cd91e4",
+		"title": "Haircare KPIs",
+		"description": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/14/2016 08:35:39",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 06:09:40",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d9441b0cf2034f20cd91e4"
+	},
+	{
+		"id": "57da4c8b0cf2a7d92a9d3a78",
+		"title": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 03:23:55",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 04:56:55",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da4c8b0cf2a7d92a9d3a78"
+	},
+	{
+		"id": "57da4de90cf2a7d92a9d3a7b",
+		"title": "Haircare KPIs",
+		"description": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 03:29:45",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 03:29:45",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da4de90cf2a7d92a9d3a7b"
+	},
+	{
+		"id": "57da4df80cf2a7d92a9d3a7e",
+		"title": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 03:30:00",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 03:30:00",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da4df80cf2a7d92a9d3a7e"
+	},
+	{
+		"id": "57da64130cf2a7d92a9d3aa2",
+		"title": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 05:04:19",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 05:33:47",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da64130cf2a7d92a9d3aa2"
+	},
+	{
+		"id": "57da649e0cf2a7d92a9d3aa5",
+		"title": "Haircare KPIs",
+		"description": "Haircare KPIs",
+		"userTags": [
+			"Haircare KPIs"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 05:06:38",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 05:06:46",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da649e0cf2a7d92a9d3aa5"
+	},
+	{
+		"id": "57d8dead0cf2034f20cd9159",
+		"title": "KPIs",
+		"description": "Haircare KPIs",
+		"userTags": [
+			"KPIs"
+		],
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:28:08",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dead0cf2034f20cd9159"
+	},
+	{
+		"id": "57da4f680cf2a7d92a9d3a83",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 03:36:08",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 05:13:43",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da4f680cf2a7d92a9d3a83"
+	},
+	{
+		"id": "57da70c70cf2a7d92a9d3ab3",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 05:58:31",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 05:58:36",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da70c70cf2a7d92a9d3ab3"
+	},
+	{
+		"id": "57da79000cf2a7d92a9d3ac7",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 06:33:36",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 06:33:42",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79000cf2a7d92a9d3ac7"
+	},
+	{
+		"id": "57da79ab0cf2a7d92a9d3acb",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 06:36:27",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 06:36:33",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79ab0cf2a7d92a9d3acb"
+	},
+	{
+		"id": "57da79fd0cf2a7d92a9d3acf",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/15/2016 06:37:49",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/15/2016 06:37:55",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79fd0cf2a7d92a9d3acf"
+	},
+	{
+		"id": "57dbf3f80cf2d2066177a21e",
+		"title": "Liquid Beverages",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages"
+		],
+		"createdBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"createdDate": "09/16/2016 09:30:32",
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/16/2016 09:30:50",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dbf3f80cf2d2066177a21e"
+	},
+	{
+		"id": "57da314c0cf2a7d92a9d3a62",
+		"title": "dont delete",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"Liquid Beverages",
+			"testing",
+			"dont delete"
+		],
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/16/2016 08:56:17",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da314c0cf2a7d92a9d3a62"
+	},
+	{
+		"id": "57dbec090cf2d2066177a210",
+		"title": "tamil test",
+		"description": "Liquid Beverages",
+		"userTags": [
+			"tamil test"
+		],
+		"updatedBy": "4a9a9f569a38bb8d32f49ed0865072a0",
+		"updatedDate": "09/19/2016 05:03:10",
+		"launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dbec090cf2d2066177a210"
+	}
+]);

@@ -1,0 +1,226 @@
+"use strict";
+angular.module('oneview.multiChartData', []).value('multiData', {
+    "chartData": [{
+        "values": [{
+            "params": null,
+            "x": 0,
+            "label": "4WE 28.03.15",
+            "y": 2.5
+        }, {
+            "params": null,
+            "x": 1,
+            "label": "4WE 25.04.15",
+            "y": -4.7
+        }, {
+            "params": null,
+            "x": 2,
+            "label": "4WE 23.05.15",
+            "y": -4.8
+        }, {
+            "params": null,
+            "x": 3,
+            "label": "4WE 20.06.15",
+            "y": -4.3
+        }, {
+            "params": null,
+            "x": 4,
+            "label": "4WE 18.07.15",
+            "y": 0.3
+        }, {
+            "params": null,
+            "x": 5,
+            "label": "4WE 15.08.15",
+            "y": -5.9
+        }, {
+            "params": null,
+            "x": 6,
+            "label": "4WE 12.09.15",
+            "y": -5
+        }, {
+            "params": null,
+            "x": 7,
+            "label": "4WE 10.10.15",
+            "y": -6.3
+        }, {
+            "params": null,
+            "x": 8,
+            "label": "4WE 07.11.15",
+            "y": -5.1
+        }, {
+            "params": null,
+            "x": 9,
+            "label": "4WE 05.12.15",
+            "y": -4.8
+        }, {
+            "params": null,
+            "x": 10,
+            "label": "4WE 02.01.16",
+            "y": -3.5
+        }, {
+            "params": null,
+            "x": 11,
+            "label": "4WE 30.01.16",
+            "y": -5.7
+        }, {
+            "params": null,
+            "x": 12,
+            "label": "4WE 27.02.16",
+            "y": -1.4
+        }],
+        "key": "Category Growth",
+        "yAxis": 1,
+        "type": "bar",
+        "color": "#0076A4"
+    }, {
+        "values": [{
+            "params": null,
+            "x": 0,
+            "label": "4WE 28.03.15",
+            "y": 28.2
+        }, {
+            "params": null,
+            "x": 1,
+            "label": "4WE 25.04.15",
+            "y": 15.7
+        }, {
+            "params": null,
+            "x": 2,
+            "label": "4WE 23.05.15",
+            "y": 15.7
+        }, {
+            "params": null,
+            "x": 3,
+            "label": "4WE 20.06.15",
+            "y": 19.8
+        }, {
+            "params": null,
+            "x": 4,
+            "label": "4WE 18.07.15",
+            "y": 22.3
+        }, {
+            "params": null,
+            "x": 5,
+            "label": "4WE 15.08.15",
+            "y": 16.9
+        }, {
+            "params": null,
+            "x": 6,
+            "label": "4WE 12.09.15",
+            "y": 19.7
+        }, {
+            "params": null,
+            "x": 7,
+            "label": "4WE 10.10.15",
+            "y": 20.4
+        }, {
+            "params": null,
+            "x": 8,
+            "label": "4WE 07.11.15",
+            "y": 21
+        }, {
+            "params": null,
+            "x": 9,
+            "label": "4WE 05.12.15",
+            "y": 17.1
+        }, {
+            "params": null,
+            "x": 10,
+            "label": "4WE 02.01.16",
+            "y": 22.8
+        }, {
+            "params": null,
+            "x": 11,
+            "label": "4WE 30.01.16",
+            "y": 21.8
+        }, {
+            "params": null,
+            "x": 12,
+            "label": "4WE 27.02.16",
+            "y": 22.9
+        }],
+        "key": "Benchmark",
+        "type": "bar",
+        "yAxis": 1,
+        "color": "#00B4B3"
+    }, {
+        "values": [{
+            "params": null,
+            "x": 0,
+            "label": "4WE 28.03.15",
+            "y": -0.1
+        }, {
+            "params": null,
+            "x": 1,
+            "label": "4WE 25.04.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 2,
+            "label": "4WE 23.05.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 3,
+            "label": "4WE 20.06.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 4,
+            "label": "4WE 18.07.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 5,
+            "label": "4WE 15.08.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 6,
+            "label": "4WE 12.09.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 7,
+            "label": "4WE 10.10.15",
+            "y": -0.1
+        }, {
+            "params": null,
+            "x": 8,
+            "label": "4WE 07.11.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 9,
+            "label": "4WE 05.12.15",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 10,
+            "label": "4WE 02.01.16",
+            "y": 0
+        }, {
+            "params": null,
+            "x": 11,
+            "label": "4WE 30.01.16",
+            "y": -0.1
+        }, {
+            "params": null,
+            "x": 12,
+            "label": "4WE 27.02.16",
+            "y": 0
+        }],
+        "key": "Share Change",
+        "type": "line",
+        "yAxis": 2,
+        "color": "#CEB253"
+    }],
+    "chartType": "MULTICHART",
+    "chartProperty": null,
+    "chartAttribute": {
+        "labels": {
+            "xaxislabel": "4/5 Weeks",
+            "y1axislabel": "Category Change | Benchmark",
+            "y2axislabel": "Share Change"
+        }
+    }
+});

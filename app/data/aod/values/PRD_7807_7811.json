@@ -1,0 +1,203 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "20391070",
+		"description": "4 W/E 06/13/15"
+	}, {
+		"ID": "20391069",
+		"description": "4 W/E 05/16/15"
+	}, {
+		"ID": "20391068",
+		"description": "4 W/E 04/18/15"
+	}, {
+		"ID": "20391067",
+		"description": "4 W/E 03/21/15"
+	}, {
+		"ID": "20391066",
+		"description": "4 W/E 02/21/15"
+	}, {
+		"ID": "20391065",
+		"description": "4 W/E 01/24/15"
+	}, {
+		"ID": "20389563",
+		"description": "4 W/E 12/27/14"
+	}, {
+		"ID": "20389562",
+		"description": "4 W/E 11/29/14"
+	}, {
+		"ID": "20362738",
+		"description": "4 W/E 11/01/14"
+	}, {
+		"ID": "20362737",
+		"description": "4 W/E 10/04/14"
+	}, {
+		"ID": "20362736",
+		"description": "4 W/E 09/06/14"
+	}, {
+		"ID": "20362735",
+		"description": "4 W/E 08/09/14"
+	}, {
+		"ID": "20362734",
+		"description": "4 W/E 07/12/14"
+	}, {
+		"ID": "20362733",
+		"description": "4 W/E 06/14/14"
+	}, {
+		"ID": "20362732",
+		"description": "4 W/E 05/17/14"
+	}, {
+		"ID": "20362731",
+		"description": "4 W/E 04/19/14"
+	}, {
+		"ID": "20362730",
+		"description": "4 W/E 03/22/14"
+	}, {
+		"ID": "20362729",
+		"description": "4 W/E 02/22/14"
+	}, {
+		"ID": "20362728",
+		"description": "4 W/E 01/25/14"
+	}, {
+		"ID": "20362727",
+		"description": "4 W/E 12/28/13"
+	}, {
+		"ID": "20362726",
+		"description": "4 W/E 11/30/13"
+	}, {
+		"ID": "20362725",
+		"description": "4 W/E 11/02/13"
+	}, {
+		"ID": "20362724",
+		"description": "4 W/E 10/05/13"
+	}, {
+		"ID": "20362723",
+		"description": "4 W/E 09/07/13"
+	}, {
+		"ID": "20362722",
+		"description": "4 W/E 08/10/13"
+	}, {
+		"ID": "20362721",
+		"description": "4 W/E 07/13/13"
+	}, {
+		"ID": "20362720",
+		"description": "4 W/E 06/15/13"
+	}, {
+		"ID": "20362719",
+		"description": "4 W/E 05/18/13"
+	}, {
+		"ID": "20362718",
+		"description": "4 W/E 04/20/13"
+	}, {
+		"ID": "20362717",
+		"description": "4 W/E 03/23/13"
+	}, {
+		"ID": "20362716",
+		"description": "4 W/E 02/23/13"
+	}, {
+		"ID": "20362715",
+		"description": "4 W/E 01/26/13"
+	}, {
+		"ID": "20362714",
+		"description": "4 W/E 12/29/12"
+	}, {
+		"ID": "20362713",
+		"description": "4 W/E 12/01/12"
+	}, {
+		"ID": "20362712",
+		"description": "4 W/E 11/03/12"
+	}, {
+		"ID": "20362711",
+		"description": "4 W/E 10/06/12"
+	}, {
+		"ID": "20362710",
+		"description": "4 W/E 09/08/12"
+	}, {
+		"ID": "20362709",
+		"description": "4 W/E 08/11/12"
+	}, {
+		"ID": "20362708",
+		"description": "4 W/E 07/14/12"
+	}, {
+		"ID": "20362707",
+		"description": "4 W/E 06/16/12"
+	}, {
+		"ID": "20362706",
+		"description": "4 W/E 05/19/12"
+	}, {
+		"ID": "20362705",
+		"description": "4 W/E 04/21/12"
+	}, {
+		"ID": "20362704",
+		"description": "4 W/E 03/24/12"
+	}, {
+		"ID": "20362703",
+		"description": "4 W/E 02/25/12"
+	}, {
+		"ID": "20362702",
+		"description": "4 W/E 01/28/12"
+	}, {
+		"ID": "20362701",
+		"description": "4 W/E 12/31/11"
+	}, {
+		"ID": "20362700",
+		"description": "4 W/E 12/03/11"
+	}, {
+		"ID": "20362699",
+		"description": "4 W/E 11/05/11"
+	}, {
+		"ID": "20362698",
+		"description": "4 W/E 10/08/11"
+	}, {
+		"ID": "20362697",
+		"description": "4 W/E 09/10/11"
+	}, {
+		"ID": "20362696",
+		"description": "4 W/E 08/13/11"
+	}, {
+		"ID": "20362695",
+		"description": "4 W/E 07/16/11"
+	}, {
+		"ID": "20362694",
+		"description": "4 W/E 06/18/11"
+	}, {
+		"ID": "20362693",
+		"description": "4 W/E 05/21/11"
+	}, {
+		"ID": "20362692",
+		"description": "4 W/E 04/23/11"
+	}, {
+		"ID": "20362691",
+		"description": "4 W/E 03/26/11"
+	}, {
+		"ID": "20362690",
+		"description": "4 W/E 02/26/11"
+	}, {
+		"ID": "20362689",
+		"description": "4 W/E 01/29/11"
+	}, {
+		"ID": "20362688",
+		"description": "4 W/E 01/01/11"
+	}, {
+		"ID": "20362687",
+		"description": "4 W/E 12/04/10"
+	}, {
+		"ID": "20362686",
+		"description": "4 W/E 11/06/10"
+	}, {
+		"ID": "20362685",
+		"description": "4 W/E 10/09/10"
+	}, {
+		"ID": "20362684",
+		"description": "4 W/E 09/11/10"
+	}, {
+		"ID": "20362683",
+		"description": "4 W/E 08/14/10"
+	}]
+}

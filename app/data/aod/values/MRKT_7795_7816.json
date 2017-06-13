@@ -1,0 +1,146 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4482350",
+		"description": "East North Central Div Conv"
+	}, {
+		"ID": "4378773",
+		"description": "East North Central Division Drug"
+	}, {
+		"ID": "4513742",
+		"description": "East North Central Division FDMx"
+	}, {
+		"ID": "4378693",
+		"description": "East North Central Division Food"
+	}, {
+		"ID": "4378772",
+		"description": "East North Central Division xAOC"
+	}, {
+		"ID": "4482389",
+		"description": "East South Central Div Conv"
+	}, {
+		"ID": "4378703",
+		"description": "East South Central Division Drug"
+	}, {
+		"ID": "4513747",
+		"description": "East South Central Division FDMx"
+	}, {
+		"ID": "4378720",
+		"description": "East South Central Division Food"
+	}, {
+		"ID": "4379551",
+		"description": "East South Central Division xAOC"
+	}, {
+		"ID": "4482349",
+		"description": "Middle Atlantic Div Conv"
+	}, {
+		"ID": "4378667",
+		"description": "Middle Atlantic Division Drug"
+	}, {
+		"ID": "4513746",
+		"description": "Middle Atlantic Division FDMx"
+	}, {
+		"ID": "4378770",
+		"description": "Middle Atlantic Division Food"
+	}, {
+		"ID": "4379549",
+		"description": "Middle Atlantic Division xAOC"
+	}, {
+		"ID": "4482373",
+		"description": "Mountain Div Conv"
+	}, {
+		"ID": "4378746",
+		"description": "Mountain Division Drug"
+	}, {
+		"ID": "4513759",
+		"description": "Mountain Division FDMx"
+	}, {
+		"ID": "4378756",
+		"description": "Mountain Division Food"
+	}, {
+		"ID": "4379552",
+		"description": "Mountain Division xAOC"
+	}, {
+		"ID": "4482366",
+		"description": "New England Div Conv"
+	}, {
+		"ID": "4378765",
+		"description": "New England Division Drug"
+	}, {
+		"ID": "4513750",
+		"description": "New England Division FDMx"
+	}, {
+		"ID": "4378672",
+		"description": "New England Division Food"
+	}, {
+		"ID": "4378763",
+		"description": "New England Division xAOC"
+	}, {
+		"ID": "4482356",
+		"description": "Pacific Div Conv"
+	}, {
+		"ID": "4378761",
+		"description": "Pacific Division Drug"
+	}, {
+		"ID": "4513752",
+		"description": "Pacific Division FDMx"
+	}, {
+		"ID": "4378751",
+		"description": "Pacific Division Food"
+	}, {
+		"ID": "4378804",
+		"description": "Pacific Division xAOC"
+	}, {
+		"ID": "4482399",
+		"description": "South Atlantic Div Conv"
+	}, {
+		"ID": "4378787",
+		"description": "South Atlantic Division Drug"
+	}, {
+		"ID": "4513751",
+		"description": "South Atlantic Division FDMx"
+	}, {
+		"ID": "4378791",
+		"description": "South Atlantic Division Food"
+	}, {
+		"ID": "4378782",
+		"description": "South Atlantic Division xAOC"
+	}, {
+		"ID": "4482398",
+		"description": "West North Central Div Conv"
+	}, {
+		"ID": "4378691",
+		"description": "West North Central Division Drug"
+	}, {
+		"ID": "4513758",
+		"description": "West North Central Division FDMx"
+	}, {
+		"ID": "4378780",
+		"description": "West North Central Division Food"
+	}, {
+		"ID": "4379550",
+		"description": "West North Central Division xAOC"
+	}, {
+		"ID": "4482372",
+		"description": "West South Central Div Conv"
+	}, {
+		"ID": "4378708",
+		"description": "West South Central Division Drug"
+	}, {
+		"ID": "4513743",
+		"description": "West South Central Division FDMx"
+	}, {
+		"ID": "4378725",
+		"description": "West South Central Division Food"
+	}, {
+		"ID": "4378797",
+		"description": "West South Central Division xAOC"
+	}]
+}

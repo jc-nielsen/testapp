@@ -1,0 +1,152 @@
+{
+    "status": "success",
+    "data": [{
+        "email": "divya.booravalli@nielsen.com",
+        "organizationId": "CLIENT MANUFACTURER",
+        "organizationDescription": "Description associated with MANUFACTURER",
+        "personaId": 10000,
+        "personaTitle": "Retail Analyst",
+        "assetId": 10016,
+        "isFavorite": false,
+        "placement": {
+            "cardType": "linechart",
+            "size": {
+                "x": 2,
+                "y": 2
+            },
+            "position": [0, 1],
+            "xsize": {
+                "min": 1,
+                "max": 2
+            },
+            "ysize": {
+                "min": 1,
+                "max": 2
+            }
+        },
+        "assetType": "HOMECARD",
+        "title": "Loyalty Sales Tree",
+        "description": "",
+        "initialCreation": "03/09/2016",
+        "lastModified": "03/09/2016",
+        "lastAccessed": "03/09/2016",
+        "status": "PUBLIC",
+        "imageUrl": "http://image.url",
+        "launchUrl": "data/loyaltysalestreedata.json",
+        "parameters": {
+            "categoryName": "YOGURT",
+            "brandName": "YOPLAIT"
+        }
+	}, {
+        "email": "divya.booravalli@nielsen.com",
+        "organizationId": "CLIENT MANUFACTURER",
+        "organizationDescription": "Description associated with MANUFACTURER",
+        "personaId": 10000,
+        "personaTitle": "Retail Analyst",
+        "assetId": 10015,
+        "isFavorite": false,
+        "placement": {
+            "cardType": "multiBarHorizontalChart",
+            "size": {
+                "x": 1,
+                "y": 2
+            },
+            "position": [0, 0],
+            "xsize": {
+                "min": 1,
+                "max": 2
+            },
+            "ysize": {
+                "min": 1,
+                "max": 2
+            }
+        },
+        "assetType": "HOMECARD",
+        "title": "Segment Performance in Market",
+        "description": "",
+        "initialCreation": "03/09/2016",
+        "lastModified": "03/09/2016",
+        "lastAccessed": "03/09/2016",
+        "status": "PUBLIC",
+        "imageUrl": "http://image.url",
+        "launchUrl": "data/segmentperformancedata.json",
+        "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+        }
+	},{
+        "email": "divya.booravalli@nielsen.com",
+        "organizationId": "CLIENT MANUFACTURER",
+        "organizationDescription": "Description associated with MANUFACTURER",
+        "personaId": 10000,
+        "personaTitle": "Retail Analyst",
+        "assetId": 10015,
+        "isFavorite": false,
+        "placement": {
+            "cardType": "performanceLoyalty",
+            "size": {
+                "x": 1,
+                "y": 1
+            },
+            "position": [0, 0],
+            "xsize": {
+                "min": 1,
+                "max": 1
+            },
+            "ysize": {
+                "min": 1,
+                "max": 1
+            }
+        },
+        "assetType": "HOMECARD",
+        "title": "Total Performance vs Loyalty",
+        "description": "",
+        "initialCreation": "03/09/2016",
+        "lastModified": "03/09/2016",
+        "lastAccessed": "03/09/2016",
+        "status": "PUBLIC",
+        "imageUrl": "http://image.url",
+        "launchUrl": "data/perfvsloyalty.json",
+        "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+        }
+	},{
+        "email": "divya.booravalli@nielsen.com",
+        "organizationId": "CLIENT MANUFACTURER",
+        "organizationDescription": "Description associated with MANUFACTURER",
+        "personaId": 10000,
+        "personaTitle": "Retail Analyst",
+        "assetId": 10015,
+        "isFavorite": false,
+        "placement": {
+            "cardType": "segmentPerformance",
+            "size": {
+                "x": 2,
+                "y": 1
+            },
+            "position": [2, 1],
+            "xsize": {
+                "min": 1,
+                "max": 2
+            },
+            "ysize": {
+                "min": 1,
+                "max": 1
+            }
+        },
+        "assetType": "HOMECARD",
+        "title": "Segment vs Performance Driver Matrix",
+        "description": "",
+        "initialCreation": "03/09/2016",
+        "lastModified": "03/09/2016",
+        "lastAccessed": "03/09/2016",
+        "status": "PUBLIC",
+        "imageUrl": "http://image.url",
+        "launchUrl": "data/perfvsloyalty.json",
+        "parameters": {
+            "market": "Total US xAOC",
+            "category": "HERBAL TEA"
+        }
+	}]
+}

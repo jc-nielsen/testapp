@@ -1,0 +1,359 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4378040",
+		"description": "Atlanta Drug"
+	}, {
+		"ID": "4377660",
+		"description": "CVS & Alb & Longs Corp ex HI Rem"
+	}, {
+		"ID": "4139389",
+		"description": "CVS & Alb & Longs Corp ex HI TA"
+	}, {
+		"ID": "4391399",
+		"description": "CVS & Alb & Longs Corp ex HI xAOC Rem"
+	}, {
+		"ID": "4377920",
+		"description": "CVS & Alb & Longs Southwest Rem"
+	}, {
+		"ID": "4066713",
+		"description": "CVS & Alb & Longs Southwest TA"
+	}, {
+		"ID": "4391393",
+		"description": "CVS & Alb & Longs Southwest xAOC Rem"
+	}, {
+		"ID": "4380331",
+		"description": "CVS & Alb Midwest Rem"
+	}, {
+		"ID": "4066710",
+		"description": "CVS & Alb Midwest TA"
+	}, {
+		"ID": "4391363",
+		"description": "CVS & Alb Midwest xAOC Rem"
+	}, {
+		"ID": "4387766",
+		"description": "CVS & Alb Total Rem"
+	}, {
+		"ID": "4391375",
+		"description": "CVS & Alb Total xAOC Rem"
+	}, {
+		"ID": "4379957",
+		"description": "CVS & Alb West Rem"
+	}, {
+		"ID": "4066721",
+		"description": "CVS & Alb West TA"
+	}, {
+		"ID": "4391369",
+		"description": "CVS & Alb West xAOC Rem"
+	}, {
+		"ID": "4377915",
+		"description": "CVS Deep South Rem"
+	}, {
+		"ID": "4066706",
+		"description": "CVS Deep South TA"
+	}, {
+		"ID": "4391315",
+		"description": "CVS Deep South xAOC Rem"
+	}, {
+		"ID": "4377650",
+		"description": "CVS Michigan Rem"
+	}, {
+		"ID": "4066716",
+		"description": "CVS Michigan TA"
+	}, {
+		"ID": "4391319",
+		"description": "CVS Michigan xAOC Rem"
+	}, {
+		"ID": "4377912",
+		"description": "CVS Mid South Rem"
+	}, {
+		"ID": "4066717",
+		"description": "CVS Mid South TA"
+	}, {
+		"ID": "4391323",
+		"description": "CVS Mid South xAOC Rem"
+	}, {
+		"ID": "4377648",
+		"description": "CVS Midwest Rem"
+	}, {
+		"ID": "4066711",
+		"description": "CVS Midwest TA"
+	}, {
+		"ID": "4379960",
+		"description": "CVS Midwest fmr Albertsons Rem"
+	}, {
+		"ID": "4066726",
+		"description": "CVS Midwest fmr Albertsons TA"
+	}, {
+		"ID": "4389593",
+		"description": "CVS Midwest fmr Albertsons xAOC Rem"
+	}, {
+		"ID": "4391327",
+		"description": "CVS Midwest xAOC Rem"
+	}, {
+		"ID": "4377653",
+		"description": "CVS Northeast Rem"
+	}, {
+		"ID": "4066719",
+		"description": "CVS Northeast TA"
+	}, {
+		"ID": "4391330",
+		"description": "CVS Northeast xAOC Rem"
+	}, {
+		"ID": "4377917",
+		"description": "CVS Southwest Rem"
+	}, {
+		"ID": "4066714",
+		"description": "CVS Southwest TA"
+	}, {
+		"ID": "4380334",
+		"description": "CVS Southwest fmr Albertsons Rem"
+	}, {
+		"ID": "4066729",
+		"description": "CVS Southwest fmr Albertsons TA"
+	}, {
+		"ID": "4389600",
+		"description": "CVS Southwest fmr Albertsons xAOC Rem_MCM"
+	}, {
+		"ID": "4391334",
+		"description": "CVS Southwest xAOC Rem_MCM"
+	}, {
+		"ID": "4377910",
+		"description": "CVS Total Rem_MCM"
+	}, {
+		"ID": "4066668",
+		"description": "CVS Total TA_MCM"
+	}, {
+		"ID": "4387776",
+		"description": "CVS Total fmr Albertsons Rem"
+	}, {
+		"ID": "4066727",
+		"description": "CVS Total fmr Albertsons TA"
+	}, {
+		"ID": "4389614",
+		"description": "CVS Total fmr Albertsons xAOC Rem"
+	}, {
+		"ID": "4391335",
+		"description": "CVS Total xAOC Rem"
+	}, {
+		"ID": "4070323",
+		"description": "CVS West Cluster TA"
+	}, {
+		"ID": "4380337",
+		"description": "CVS West fmr Albertsons Rem"
+	}, {
+		"ID": "4066728",
+		"description": "CVS West fmr Albertsons TA"
+	}, {
+		"ID": "4389607",
+		"description": "CVS West fmr Albertsons xAOC Rem"
+	}, {
+		"ID": "4373795",
+		"description": "Chicago Drug"
+	}, {
+		"ID": "4378422",
+		"description": "Detroit Drug"
+	}, {
+		"ID": "4066625",
+		"description": "Duane Reade Burroughs Cluster TA"
+	}, {
+		"ID": "4377672",
+		"description": "Duane Reade Burroughs Rem"
+	}, {
+		"ID": "4066626",
+		"description": "Duane Reade Manhattan Cluster TA"
+	}, {
+		"ID": "4377935",
+		"description": "Duane Reade Manhattan Rem"
+	}, {
+		"ID": "4377933",
+		"description": "Duane Reade Rem"
+	}, {
+		"ID": "4066627",
+		"description": "Duane Reade Suburban Cluster TA"
+	}, {
+		"ID": "4377675",
+		"description": "Duane Reade Suburban Rem"
+	}, {
+		"ID": "4066320",
+		"description": "Duane Reade Total TA"
+	}, {
+		"ID": "4378773",
+		"description": "East North Central Division Drug"
+	}, {
+		"ID": "4378703",
+		"description": "East South Central Division Drug"
+	}, {
+		"ID": "4378048",
+		"description": "Houston Drug"
+	}, {
+		"ID": "4379719",
+		"description": "Kinney Drugs Total Rem"
+	}, {
+		"ID": "4081980",
+		"description": "Kinney Drugs Total TA"
+	}, {
+		"ID": "4457857",
+		"description": "Kinney Drugs Total xAOC Rem"
+	}, {
+		"ID": "4380013",
+		"description": "Longs N Calif Rem"
+	}, {
+		"ID": "4066370",
+		"description": "Longs N Calif TA"
+	}, {
+		"ID": "4391680",
+		"description": "Longs N Calif xAOC Rem"
+	}, {
+		"ID": "4380401",
+		"description": "Longs S Calif Rem"
+	}, {
+		"ID": "4066411",
+		"description": "Longs S Calif TA"
+	}, {
+		"ID": "4391685",
+		"description": "Longs S Calif xAOC Rem"
+	}, {
+		"ID": "4136983",
+		"description": "Longs Southwest Cluster TA"
+	}, {
+		"ID": "4387780",
+		"description": "Longs Total California Rem"
+	}, {
+		"ID": "4066369",
+		"description": "Longs Total California TA"
+	}, {
+		"ID": "4391687",
+		"description": "Longs Total California xAOC Rem"
+	}, {
+		"ID": "4378051",
+		"description": "Los Angeles Drug"
+	}, {
+		"ID": "4378667",
+		"description": "Middle Atlantic Division Drug"
+	}, {
+		"ID": "4378689",
+		"description": "Midwest Region Drug"
+	}, {
+		"ID": "4378746",
+		"description": "Mountain Division Drug"
+	}, {
+		"ID": "4378765",
+		"description": "New England Division Drug"
+	}, {
+		"ID": "4378054",
+		"description": "New York Drug"
+	}, {
+		"ID": "4379509",
+		"description": "Northeast Region Drug"
+	}, {
+		"ID": "4378761",
+		"description": "Pacific Division Drug"
+	}, {
+		"ID": "4378495",
+		"description": "Philadelphia Drug"
+	}, {
+		"ID": "4378511",
+		"description": "Pittsburgh Drug"
+	}, {
+		"ID": "4442557",
+		"description": "Rite Aid Corp Total Rem"
+	}, {
+		"ID": "4442539",
+		"description": "Rite Aid Corp Total TA"
+	}, {
+		"ID": "4444131",
+		"description": "Rite Aid Corp Total xAOC Rem"
+	}, {
+		"ID": "4442592",
+		"description": "Rite Aid Division 1 - West Rem"
+	}, {
+		"ID": "4442531",
+		"description": "Rite Aid Division 1 - West TA"
+	}, {
+		"ID": "4391814",
+		"description": "Rite Aid Division 1 - West xAOC Rem"
+	}, {
+		"ID": "4442558",
+		"description": "Rite Aid Division 2 - North Rem"
+	}, {
+		"ID": "4442540",
+		"description": "Rite Aid Division 2 - North TA"
+	}, {
+		"ID": "4391818",
+		"description": "Rite Aid Division 2 - North xAOC Rem"
+	}, {
+		"ID": "4442594",
+		"description": "Rite Aid Division 3 - Mid Atlantic Rem"
+	}, {
+		"ID": "4442532",
+		"description": "Rite Aid Division 3 - Mid Atlantic TA"
+	}, {
+		"ID": "4444118",
+		"description": "Rite Aid Division 3 - Mid Atlantic xAOC Rem"
+	}, {
+		"ID": "4442560",
+		"description": "Rite Aid Division 4 - NY Metro Rem"
+	}, {
+		"ID": "4442541",
+		"description": "Rite Aid Division 4 - NY Metro TA"
+	}, {
+		"ID": "4391827",
+		"description": "Rite Aid Division 4 - NY Metro xAOC Rem"
+	}, {
+		"ID": "4442596",
+		"description": "Rite Aid Division 5 - South Rem"
+	}, {
+		"ID": "4442533",
+		"description": "Rite Aid Division 5 - South TA"
+	}, {
+		"ID": "4444125",
+		"description": "Rite Aid Division 5 - South xAOC Rem"
+	}, {
+		"ID": "4378537",
+		"description": "San Francisco Drug"
+	}, {
+		"ID": "4378787",
+		"description": "South Atlantic Division Drug"
+	}, {
+		"ID": "4379524",
+		"description": "South Region Drug"
+	}, {
+		"ID": "4379332",
+		"description": "Total US Drug"
+	}, {
+		"ID": "4519745",
+		"description": "Total US Rem & Independent Drug"
+	}, {
+		"ID": "4511306",
+		"description": "Walgreens Corp Southern Region Rem"
+	}, {
+		"ID": "4507667",
+		"description": "Walgreens Corp Southern Region TA"
+	}, {
+		"ID": "4511259",
+		"description": "Walgreens Corp Western Region Rem"
+	}, {
+		"ID": "4507671",
+		"description": "Walgreens Corp Western Region TA"
+	}, {
+		"ID": "4378558",
+		"description": "Washington DC Drug"
+	}, {
+		"ID": "4378691",
+		"description": "West North Central Division Drug"
+	}, {
+		"ID": "4378759",
+		"description": "West Region Drug"
+	}, {
+		"ID": "4378708",
+		"description": "West South Central Division Drug"
+	}]
+}

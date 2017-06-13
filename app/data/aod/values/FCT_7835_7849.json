@@ -1,0 +1,192 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "BU_PCT_DT",
+            "description": "% Units Base"
+            },
+        {
+            "ID": "BU_PCT_DT_PT_CHG",
+            "description": "% Units Base CYA"
+            },
+        {
+            "ID": "BU_PCT_DT_YAGO",
+            "description": "% Units Base YA"
+            },
+        {
+            "ID": "INCR_PCT_U_DT",
+            "description": "% Units Incr"
+            },
+        {
+            "ID": "INCR_PCT_U_DT_PT_CHG",
+            "description": "% Units Incr CYA"
+            },
+        {
+            "ID": "INCR_PCT_U_DT_YAGO",
+            "description": "% Units Incr YA"
+            },
+        {
+            "ID": "BU",
+            "description": "Base Units"
+            },
+        {
+            "ID": "BU_PCT_CHG_PREV",
+            "description": "Base Units % Chg Prev"
+            },
+        {
+            "ID": "BU_PCT_CHG",
+            "description": "Base Units % Chg YA"
+            },
+        {
+            "ID": "BU_000",
+            "description": "Base Units (000)"
+            },
+        {
+            "ID": "BU_000_CHG_YAGO",
+            "description": "Base Units (000) CYA"
+            },
+        {
+            "ID": "BU_000_YAGO",
+            "description": "Base Units (000) YA"
+            },
+        {
+            "ID": "BU_CHG_PREV",
+            "description": "Base Units CPP"
+            },
+        {
+            "ID": "BU_CHG_YAGO",
+            "description": "Base Units CYA"
+            },
+        {
+            "ID": "BU_PREV",
+            "description": "Base Units Prev"
+            },
+        {
+            "ID": "BU_YAGO",
+            "description": "Base Units YA"
+            },
+        {
+            "ID": "INCR_U",
+            "description": "Incr Units"
+            },
+        {
+            "ID": "INCR_U_PCT_CHG_PREV",
+            "description": "Incr Units % Chg Prev"
+            },
+        {
+            "ID": "INCR_U_PCT_CHG",
+            "description": "Incr Units % Chg YA"
+            },
+        {
+            "ID": "INCR_U_000",
+            "description": "Incr Units (000)"
+            },
+        {
+            "ID": "INCR_U_000_CHG_YAGO",
+            "description": "Incr Units (000) CYA"
+            },
+        {
+            "ID": "INCR_U_000_YAGO",
+            "description": "Incr Units (000) YA"
+            },
+        {
+            "ID": "INCR_U_CHG_PREV",
+            "description": "Incr Units CPP"
+            },
+        {
+            "ID": "INCR_U_CHG_YAGO",
+            "description": "Incr Units CYA"
+            },
+        {
+            "ID": "INCR_U_PREV",
+            "description": "Incr Units Prev"
+            },
+        {
+            "ID": "INCR_U_YAGO",
+            "description": "Incr Units YA"
+            },
+        {
+            "ID": "SUBSIDIZED_U_VOL",
+            "description": "Subsidized Units"
+            },
+        {
+            "ID": "U",
+            "description": "Units"
+            },
+        {
+            "ID": "U_PCT_CHG_PREV",
+            "description": "Units % Chg Prev"
+            },
+        {
+            "ID": "U_PCT_CHG",
+            "description": "Units % Chg YA"
+            },
+        {
+            "ID": "U_PCT_LIFT",
+            "description": "Units % Lift"
+            },
+        {
+            "ID": "U_PCT_LIFT_PT_CHG",
+            "description": "Units % Lift CYA"
+            },
+        {
+            "ID": "U_PCT_LIFT_YAGO",
+            "description": "Units % Lift YA"
+            },
+        {
+            "ID": "U_000",
+            "description": "Units (000)"
+            },
+        {
+            "ID": "U_000_CHG_YAGO",
+            "description": "Units (000) CYA"
+            },
+        {
+            "ID": "U_000_YAGO",
+            "description": "Units (000) YA"
+            },
+        {
+            "ID": "U_CHG_PREV",
+            "description": "Units CPP"
+            },
+        {
+            "ID": "U_CHG_YAGO",
+            "description": "Units CYA"
+            },
+        {
+            "ID": "U_IPP",
+            "description": "Units IPP"
+            },
+        {
+            "ID": "U_IYA",
+            "description": "Units IYA"
+            },
+        {
+            "ID": "U_PREV",
+            "description": "Units Prev"
+            },
+        {
+            "ID": "U_YAGO",
+            "description": "Units YA"
+            },
+        {
+            "ID": "NUM_WKS_AVG_U",
+            "description": "Units per Week Selling"
+            },
+        {
+            "ID": "NUM_WKS_AVG_U_CHG_YAGO",
+            "description": "Units per Week Selling CYA"
+            },
+        {
+            "ID": "NUM_WKS_AVG_U_YAGO",
+            "description": "Units per Week Selling YA"
+            }
+        ]
+}

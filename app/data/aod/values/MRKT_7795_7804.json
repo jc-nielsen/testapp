@@ -1,0 +1,431 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4427556",
+		"description": "Atlanta Conv"
+	}, {
+		"ID": "4378040",
+		"description": "Atlanta Drug"
+	}, {
+		"ID": "4513737",
+		"description": "Atlanta FDMx"
+	}, {
+		"ID": "4379449",
+		"description": "Atlanta xAOC"
+	}, {
+		"ID": "4378374",
+		"description": "Baltimore Food"
+	}, {
+		"ID": "4427827",
+		"description": "Birmingham Conv"
+	}, {
+		"ID": "4378093",
+		"description": "Birmingham Food"
+	}, {
+		"ID": "4576568",
+		"description": "Birmingham xAOC"
+	}, {
+		"ID": "4427829",
+		"description": "Boston Conv"
+	}, {
+		"ID": "4513748",
+		"description": "Boston FDMx"
+	}, {
+		"ID": "4378388",
+		"description": "Boston Food"
+	}, {
+		"ID": "4378383",
+		"description": "Boston xAOC"
+	}, {
+		"ID": "4378100",
+		"description": "Buffalo Rochester Food"
+	}, {
+		"ID": "4576572",
+		"description": "Buffalo Rochester xAOC"
+	}, {
+		"ID": "4378103",
+		"description": "Charlotte Food"
+	}, {
+		"ID": "4576438",
+		"description": "Charlotte xAOC"
+	}, {
+		"ID": "4427833",
+		"description": "Chicago Conv"
+	}, {
+		"ID": "4373795",
+		"description": "Chicago Drug"
+	}, {
+		"ID": "4513738",
+		"description": "Chicago FDMx"
+	}, {
+		"ID": "4373740",
+		"description": "Chicago Food"
+	}, {
+		"ID": "4373790",
+		"description": "Chicago xAOC"
+	}, {
+		"ID": "4427837",
+		"description": "Cincinnati Conv"
+	}, {
+		"ID": "4378107",
+		"description": "Cincinnati Food"
+	}, {
+		"ID": "4576442",
+		"description": "Cincinnati xAOC"
+	}, {
+		"ID": "4427841",
+		"description": "Cleveland Conv"
+	}, {
+		"ID": "4378111",
+		"description": "Cleveland Food"
+	}, {
+		"ID": "4576582",
+		"description": "Cleveland xAOC"
+	}, {
+		"ID": "4378405",
+		"description": "Columbus Food"
+	}, {
+		"ID": "4576586",
+		"description": "Columbus xAOC"
+	}, {
+		"ID": "4427576",
+		"description": "Dallas/Ft. Worth Conv"
+	}, {
+		"ID": "4379359",
+		"description": "Dallas/Ft. Worth Food"
+	}, {
+		"ID": "4501903",
+		"description": "Dallas/Ft. Worth xAOC"
+	}, {
+		"ID": "4427579",
+		"description": "Denver Conv"
+	}, {
+		"ID": "4379364",
+		"description": "Denver Food"
+	}, {
+		"ID": "4576452",
+		"description": "Denver xAOC"
+	}, {
+		"ID": "4378126",
+		"description": "Des Moines Food"
+	}, {
+		"ID": "4427851",
+		"description": "Detroit Conv"
+	}, {
+		"ID": "4378422",
+		"description": "Detroit Drug"
+	}, {
+		"ID": "4513749",
+		"description": "Detroit FDMx"
+	}, {
+		"ID": "4378418",
+		"description": "Detroit Food"
+	}, {
+		"ID": "4379466",
+		"description": "Detroit xAOC"
+	}, {
+		"ID": "4378426",
+		"description": "Grand Rapids Food"
+	}, {
+		"ID": "4378525",
+		"description": "Greenville Food"
+	}, {
+		"ID": "4378139",
+		"description": "Hartford New Haven Food"
+	}, {
+		"ID": "4576456",
+		"description": "Hartford New Haven xAOC"
+	}, {
+		"ID": "4427586",
+		"description": "Houston Conv"
+	}, {
+		"ID": "4378048",
+		"description": "Houston Drug"
+	}, {
+		"ID": "4378429",
+		"description": "Houston Food"
+	}, {
+		"ID": "4511167",
+		"description": "Houston xAOC"
+	}, {
+		"ID": "4379373",
+		"description": "Indianapolis Food"
+	}, {
+		"ID": "4576459",
+		"description": "Indianapolis xAOC"
+	}, {
+		"ID": "4378150",
+		"description": "Jacksonville Food"
+	}, {
+		"ID": "4379380",
+		"description": "Kansas City Food"
+	}, {
+		"ID": "4576462",
+		"description": "Kansas City xAOC"
+	}, {
+		"ID": "4378156",
+		"description": "Las Vegas Food"
+	}, {
+		"ID": "4576059",
+		"description": "Las Vegas xAOC"
+	}, {
+		"ID": "4427589",
+		"description": "Little Rock Conv"
+	}, {
+		"ID": "4378160",
+		"description": "Little Rock Food"
+	}, {
+		"ID": "4427591",
+		"description": "Los Angeles Conv"
+	}, {
+		"ID": "4378051",
+		"description": "Los Angeles Drug"
+	}, {
+		"ID": "4513744",
+		"description": "Los Angeles FDMx"
+	}, {
+		"ID": "4378438",
+		"description": "Los Angeles Food"
+	}, {
+		"ID": "4379473",
+		"description": "Los Angeles xAOC"
+	}, {
+		"ID": "4427864",
+		"description": "Louisville Conv"
+	}, {
+		"ID": "4378167",
+		"description": "Louisville Food"
+	}, {
+		"ID": "4576359",
+		"description": "Louisville xAOC"
+	}, {
+		"ID": "4378170",
+		"description": "Memphis Food"
+	}, {
+		"ID": "4427867",
+		"description": "Miami Conv"
+	}, {
+		"ID": "4378448",
+		"description": "Miami Food"
+	}, {
+		"ID": "4501941",
+		"description": "Miami xAOC"
+	}, {
+		"ID": "4378453",
+		"description": "Milwaukee Food"
+	}, {
+		"ID": "4576065",
+		"description": "Milwaukee xAOC"
+	}, {
+		"ID": "4427602",
+		"description": "Minneapolis Conv"
+	}, {
+		"ID": "4378457",
+		"description": "Minneapolis Food"
+	}, {
+		"ID": "4576366",
+		"description": "Minneapolis xAOC"
+	}, {
+		"ID": "4427874",
+		"description": "Nashville Conv"
+	}, {
+		"ID": "4378460",
+		"description": "Nashville Food"
+	}, {
+		"ID": "4576071",
+		"description": "Nashville xAOC"
+	}, {
+		"ID": "4378186",
+		"description": "New Orleans Mobile Food"
+	}, {
+		"ID": "4576074",
+		"description": "New Orleans Mobile xAOC"
+	}, {
+		"ID": "4427608",
+		"description": "New Orleans/Mobile Conv"
+	}, {
+		"ID": "4427879",
+		"description": "New York Conv"
+	}, {
+		"ID": "4378054",
+		"description": "New York Drug"
+	}, {
+		"ID": "4513753",
+		"description": "New York FDMx"
+	}, {
+		"ID": "4378189",
+		"description": "New York Food"
+	}, {
+		"ID": "4379479",
+		"description": "New York xAOC"
+	}, {
+		"ID": "4138237",
+		"description": "Oahu Food"
+	}, {
+		"ID": "4378476",
+		"description": "Oklahoma City Tulsa Food"
+	}, {
+		"ID": "4427615",
+		"description": "Oklahoma City/Tulsa Conv"
+	}, {
+		"ID": "4378197",
+		"description": "Omaha Food"
+	}, {
+		"ID": "4427617",
+		"description": "Orlando Conv"
+	}, {
+		"ID": "4378482",
+		"description": "Orlando Food"
+	}, {
+		"ID": "4427620",
+		"description": "Philadelphia Conv"
+	}, {
+		"ID": "4378495",
+		"description": "Philadelphia Drug"
+	}, {
+		"ID": "4513745",
+		"description": "Philadelphia FDMx"
+	}, {
+		"ID": "4378490",
+		"description": "Philadelphia Food"
+	}, {
+		"ID": "4378485",
+		"description": "Philadelphia xAOC"
+	}, {
+		"ID": "4427892",
+		"description": "Phoenix Conv"
+	}, {
+		"ID": "4378207",
+		"description": "Phoenix Food"
+	}, {
+		"ID": "4576622",
+		"description": "Phoenix xAOC"
+	}, {
+		"ID": "4378511",
+		"description": "Pittsburgh Drug"
+	}, {
+		"ID": "4513754",
+		"description": "Pittsburgh FDMx"
+	}, {
+		"ID": "4378211",
+		"description": "Pittsburgh Food"
+	}, {
+		"ID": "4379489",
+		"description": "Pittsburgh xAOC"
+	}, {
+		"ID": "4427896",
+		"description": "Portland Conv"
+	}, {
+		"ID": "4378215",
+		"description": "Portland Food"
+	}, {
+		"ID": "4379402",
+		"description": "Raleigh Durham Food"
+	}, {
+		"ID": "4576081",
+		"description": "Raleigh Durham xAOC"
+	}, {
+		"ID": "4427899",
+		"description": "Raleigh/Durham Conv"
+	}, {
+		"ID": "4427667",
+		"description": "Remaining US Conv"
+	}, {
+		"ID": "4378563",
+		"description": "Remaining US Food"
+	}, {
+		"ID": "4378311",
+		"description": "Richmond Norfolk Food"
+	}, {
+		"ID": "4576628",
+		"description": "Richmond Norfolk xAOC"
+	}, {
+		"ID": "4427901",
+		"description": "Richmond/Norfolk Conv"
+	}, {
+		"ID": "4378518",
+		"description": "Sacramento Food"
+	}, {
+		"ID": "4576631",
+		"description": "Sacramento xAOC"
+	}, {
+		"ID": "4378318",
+		"description": "Salt Lake City Boise Food"
+	}, {
+		"ID": "4576634",
+		"description": "Salt Lake City Boise xAOC"
+	}, {
+		"ID": "4427635",
+		"description": "San Antonio Conv"
+	}, {
+		"ID": "4379414",
+		"description": "San Diego Food"
+	}, {
+		"ID": "4427907",
+		"description": "San Francisco Conv"
+	}, {
+		"ID": "4378537",
+		"description": "San Francisco Drug"
+	}, {
+		"ID": "4513755",
+		"description": "San Francisco FDMx"
+	}, {
+		"ID": "4378325",
+		"description": "San Francisco Food"
+	}, {
+		"ID": "4378529",
+		"description": "San Francisco xAOC"
+	}, {
+		"ID": "4427642",
+		"description": "Seattle Conv"
+	}, {
+		"ID": "4379418",
+		"description": "Seattle Food"
+	}, {
+		"ID": "4576637",
+		"description": "Seattle xAOC"
+	}, {
+		"ID": "4378332",
+		"description": "St Louis Food"
+	}, {
+		"ID": "4576640",
+		"description": "St Louis xAOC"
+	}, {
+		"ID": "4427913",
+		"description": "St. Louis Conv"
+	}, {
+		"ID": "4378541",
+		"description": "Syracuse Food"
+	}, {
+		"ID": "4427646",
+		"description": "Tampa Conv"
+	}, {
+		"ID": "4378339",
+		"description": "Tampa Food"
+	}, {
+		"ID": "4576643",
+		"description": "Tampa xAOC"
+	}, {
+		"ID": "4378558",
+		"description": "Washington DC Drug"
+	}, {
+		"ID": "4513739",
+		"description": "Washington DC FDMx"
+	}, {
+		"ID": "4378554",
+		"description": "Washington DC Food"
+	}, {
+		"ID": "4378549",
+		"description": "Washington DC xAOC"
+	}, {
+		"ID": "4379422",
+		"description": "West Texas Food"
+	}]
+}

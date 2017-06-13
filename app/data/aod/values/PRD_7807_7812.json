@@ -1,0 +1,71 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "20391072",
+		"description": "AMJ 15 - W/E 06/27/15"
+	}, {
+		"ID": "20391071",
+		"description": "JFM 15 - W/E 03/28/15"
+	}, {
+		"ID": "20389564",
+		"description": "OND 14 - W/E 12/27/14"
+	}, {
+		"ID": "20362785",
+		"description": "JAS 14 - W/E 09/27/14"
+	}, {
+		"ID": "20362784",
+		"description": "AMJ 14 - W/E 06/28/14"
+	}, {
+		"ID": "20362783",
+		"description": "JFM 14 - W/E 03/29/14"
+	}, {
+		"ID": "20362782",
+		"description": "OND 13 - W/E 12/28/13"
+	}, {
+		"ID": "20362781",
+		"description": "JAS 13 - W/E 09/28/13"
+	}, {
+		"ID": "20362780",
+		"description": "AMJ 13 - W/E 06/29/13"
+	}, {
+		"ID": "20362779",
+		"description": "JFM 13 - W/E 03/30/13"
+	}, {
+		"ID": "20362778",
+		"description": "OND 12 - W/E 12/29/12"
+	}, {
+		"ID": "20362777",
+		"description": "JAS 12 - W/E 09/29/12"
+	}, {
+		"ID": "20362776",
+		"description": "AMJ 12 - W/E 06/30/12"
+	}, {
+		"ID": "20362775",
+		"description": "JFM 12 - W/E 03/31/12"
+	}, {
+		"ID": "20362774",
+		"description": "OND 11 - W/E 12/31/11"
+	}, {
+		"ID": "20362773",
+		"description": "JAS 11 - W/E 10/01/11"
+	}, {
+		"ID": "20362772",
+		"description": "AMJ 11 - W/E 07/02/11"
+	}, {
+		"ID": "20362771",
+		"description": "JFM 11 - W/E 04/02/11"
+	}, {
+		"ID": "20362770",
+		"description": "OND 10 - W/E 01/01/11"
+	}, {
+		"ID": "20362769",
+		"description": "JAS 10 - W/E 10/02/10"
+	}]
+}

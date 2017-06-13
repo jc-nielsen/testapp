@@ -1,0 +1,61 @@
+{
+    "objects": {
+        "data": [{
+            "values": [{
+                "params": null,
+                "id": 0,
+                "value": 5
+			}, {
+                "params": null,
+                "id": 4,
+                "value": 7.0
+			}, {
+                "params": null,
+                "id": 12,
+                "value": 7.0
+			}, {
+                "params": null,
+                "id": 52,
+                "value": 5.0
+			}],
+            "key": "Category",
+            "colorAlpha":0.5,
+            "color": "#447733"
+		}, {
+            "values": [{
+                "params": null,
+                "id": 0,
+                "value": 16
+			}, {
+                "params": null,
+                "id": 4,
+                "value": 16.0
+			}, {
+                "params": null,
+                "id": 12,
+                "value": 14.0
+			}, {
+                "params": null,
+                "id": 52,
+                "value": 11.0
+			}],
+            "key": "Brand",
+            "colorAlpha":0.5,
+            "color": "#bbaa44"
+		}],
+        "chartType": "LINE",
+        "chartProperty": null,
+        "chartAttribute": {
+            "additionalAttributes": [{
+                "label": "Category",
+                "value": "HAIRCARE"
+			}, {
+                "label": "Brand",
+                "value": "PERFEKSJON"
+			}, {
+                "label": "Market",
+                "value": "Total US xAOC"
+			}]
+        }
+    }
+}

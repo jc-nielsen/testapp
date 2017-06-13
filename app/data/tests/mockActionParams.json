@@ -1,0 +1,965 @@
+"use strict";
+angular.module('oneview.mockActionParams', []).value('mockParam', {
+    "cardId": "57c5aaeba4abff5db7f95d44",
+    "card": {
+        "cardType": "CHART",
+        "createdBy": "2d9169d9fcc1a51b6280c240965072a0",
+        "createdDate": 1472572139481,
+        "favorite": false,
+        "focusTags": ["PROMOTIONS", "BRAND_LOYALTY", "MARKET_SHARE"],
+        "id": "57c5aaeba4abff5db7f95d44",
+        "status": "COMPLETED",
+        "title": "Carbonated Soft Drinks",
+        "updatedBy": "2d9169d9fcc1a51b6280c240965072a0",
+        "updatedDate": 1472572141577,
+        "userTags": ["Profiles Luke", "Smith Trackers", "Global Trackers"],
+        "dataSelection": {
+            "dataContext": {
+                "url": "data/categoryKPI/carbonatedSoftDrinks.json"
+            }
+        },
+        "legend": false,
+        "placement": {
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "resizable": true,
+            "size": {
+                "height": 1,
+                "width": 1
+            }
+        },
+        "reportSpecification": {
+            "objects": [{
+                "type": "PIE"
+            }]
+        },
+        "options": [{
+            "title": "Opportunities",
+            "submenu": [{
+                "title": "Category Performance",
+                "id": "oppo_cat_perf",
+                "$$hashKey": "object:248"
+            }, {
+                "title": "Carbonated Soft Drinks vlaue & share decline",
+                "$$hashKey": "object:249"
+            }, {
+                "title": "Contact Account Manager",
+                "$$hashKey": "object:250"
+            }, {
+                "title": "Innovation Opprtunity",
+                "$$hashKey": "object:251"
+            }],
+            "$$hashKey": "object:217"
+        }, {
+            "title": "Recommended for You",
+            "submenu": [{
+                "title": "Business Drives",
+                "$$hashKey": "object:270"
+            }, {
+                "title": "Insight Studio",
+                "$$hashKey": "object:271"
+            }],
+            "$$hashKey": "object:218"
+        }, {
+            "title": "Add Story",
+            "submenu": [{
+                "title": "New Story",
+                "id": "open_newstory_prompt",
+                "$$hashKey": "object:1420"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57ea4d2ffc730442758338ba",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/27/2016 06:42:55",
+                    "updatedDate": "09/27/2016 06:42:55",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea4d2ffc730442758338ba",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1421"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e2325ffc7304a37217bbee",
+                    "title": "Drinks",
+                    "description": "Drinks",
+                    "userTags": ["Drinks"],
+                    "accessedDate": "09/27/2016 06:40:17",
+                    "createdDate": "09/21/2016 03:10:23",
+                    "updatedDate": "09/27/2016 06:40:17",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e2325ffc7304a37217bbee",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Drinks",
+                "$$hashKey": "object:1422"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57ea3d2efc730442758338a0",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "accessedDate": "09/27/2016 06:38:56",
+                    "createdDate": "09/27/2016 05:34:38",
+                    "updatedDate": "09/27/2016 06:38:56",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea3d2efc730442758338a0",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1423"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e54698fc7304f0c2841654",
+                    "title": "Beverages Renamed",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Beverages Renamed"],
+                    "accessedDate": "09/27/2016 06:09:10",
+                    "updatedDate": "09/27/2016 06:09:10",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e54698fc7304f0c2841654",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Beverages Renamed",
+                "$$hashKey": "object:1424"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e942cafc7304b8e49d9535",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/27/2016 06:08:50",
+                    "createdDate": "09/26/2016 11:46:18",
+                    "updatedDate": "09/27/2016 06:08:50",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e942cafc7304b8e49d9535",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1425"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da63810cf2a7d92a9d3a9f",
+                    "title": "Category KPI",
+                    "userTags": ["Category KPI"],
+                    "accessedDate": "09/27/2016 06:08:37",
+                    "createdDate": "09/15/2016 05:01:53",
+                    "updatedDate": "09/27/2016 06:08:37",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da63810cf2a7d92a9d3a9f",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category KPI",
+                "$$hashKey": "object:1426"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57ea3ca2fc7304427583389c",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/27/2016 05:32:18",
+                    "updatedDate": "09/27/2016 05:32:19",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea3ca2fc7304427583389c",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1427"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57ea3c90fc73044275833898",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/27/2016 05:32:00",
+                    "updatedDate": "09/27/2016 05:32:00",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea3c90fc73044275833898",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1428"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57ea3a04fc73044275833889",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/27/2016 05:28:19",
+                    "createdDate": "09/27/2016 05:21:08",
+                    "updatedDate": "09/27/2016 05:28:19",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea3a04fc73044275833889",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1429"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e9402bfc7304b8e49d9520",
+                    "title": "Untitled Story",
+                    "description": "Untitled Story",
+                    "userTags": ["Untitled Story"],
+                    "accessedDate": "09/26/2016 11:35:15",
+                    "createdDate": "09/26/2016 11:35:07",
+                    "updatedDate": "09/26/2016 11:35:15",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e9402bfc7304b8e49d9520",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Untitled Story",
+                "$$hashKey": "object:1430"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e8bbd9fc7304b8e49d93cb",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/26/2016 07:49:38",
+                    "updatedDate": "09/26/2016 07:49:38",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e8bbd9fc7304b8e49d93cb",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1431"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e0d4e2fc73047dc68da508",
+                    "title": "Juice",
+                    "description": "Juice Drinks - Share of Wallet",
+                    "userTags": ["Juice"],
+                    "accessedDate": "09/26/2016 07:33:30",
+                    "updatedDate": "09/26/2016 07:33:30",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e0d4e2fc73047dc68da508",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Juice",
+                "$$hashKey": "object:1432"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e8f694fc7304b8e49d945b",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/26/2016 07:26:45",
+                    "createdDate": "09/26/2016 06:21:08",
+                    "updatedDate": "09/26/2016 07:29:32",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e8f694fc7304b8e49d945b",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1433"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e8eda7fc7304b8e49d9435",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "createdDate": "09/26/2016 05:43:03",
+                    "updatedDate": "09/26/2016 05:43:03",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e8eda7fc7304b8e49d9435",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1434"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e21bdefc7304a37217bbd2",
+                    "title": "Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Soft Drinks"],
+                    "accessedDate": "09/26/2016 05:06:11",
+                    "updatedDate": "09/26/2016 05:06:11",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e21bdefc7304a37217bbd2",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Soft Drinks",
+                "$$hashKey": "object:1435"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e4d6e3fc7304b44a8703d7",
+                    "title": "Trends",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Trends"],
+                    "accessedDate": "09/23/2016 03:19:50",
+                    "updatedDate": "09/23/2016 03:19:53",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e4d6e3fc7304b44a8703d7",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Trends",
+                "$$hashKey": "object:1436"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfe057fc73047dc68da4a7",
+                    "title": "Juice Drinks - Share of Wallet",
+                    "description": "Juice Drinks - Share of Wallet",
+                    "userTags": ["Juice Drinks - Share of Wallet"],
+                    "accessedDate": "09/23/2016 02:52:28",
+                    "createdDate": "09/19/2016 08:55:51",
+                    "updatedDate": "09/23/2016 02:52:28",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfe057fc73047dc68da4a7",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Juice Drinks - Share of Wallet",
+                "$$hashKey": "object:1437"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e12297fc73047dc68da59f",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/23/2016 02:52:22",
+                    "createdDate": "09/20/2016 07:50:47",
+                    "updatedDate": "09/23/2016 02:52:22",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e12297fc73047dc68da59f",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1438"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dbec090cf2d2066177a210",
+                    "title": "tamil test",
+                    "description": "Liquid Beverages",
+                    "userTags": ["tamil test"],
+                    "accessedDate": "09/22/2016 08:36:01",
+                    "updatedDate": "09/23/2016 00:21:21",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dbec090cf2d2066177a210",
+                    "actionId": "ExistingStory"
+                },
+                "title": "tamil test",
+                "$$hashKey": "object:1439"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e0ea78fc73047dc68da529",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/21/2016 05:41:14",
+                    "createdDate": "09/20/2016 03:51:20",
+                    "updatedDate": "09/21/2016 05:41:14",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e0ea78fc73047dc68da529",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1440"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d8dead0cf2034f20cd9159",
+                    "title": "KPIs",
+                    "description": "Haircare KPIs",
+                    "userTags": ["KPIs"],
+                    "accessedDate": "09/21/2016 03:24:57",
+                    "updatedDate": "09/21/2016 03:24:57",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dead0cf2034f20cd9159",
+                    "actionId": "ExistingStory"
+                },
+                "title": "KPIs",
+                "$$hashKey": "object:1441"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e2358bfc7304a37217bbf4",
+                    "title": "Juice Drinks - Share of Wallet",
+                    "description": "Juice Drinks - Share of Wallet",
+                    "userTags": ["Juice Drinks - Share of Wallet"],
+                    "createdDate": "09/21/2016 03:23:55",
+                    "updatedDate": "09/21/2016 03:23:56",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e2358bfc7304a37217bbf4",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Juice Drinks - Share of Wallet",
+                "$$hashKey": "object:1442"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e159ebfc7304a37217bbba",
+                    "title": "tytytryrtyrty",
+                    "description": "tytytryrtyrty",
+                    "userTags": ["tytytryrtyrty"],
+                    "accessedDate": "09/21/2016 02:58:00",
+                    "createdDate": "09/20/2016 11:46:51",
+                    "updatedDate": "09/21/2016 03:07:26",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e159ebfc7304a37217bbba",
+                    "actionId": "ExistingStory"
+                },
+                "title": "tytytryrtyrty",
+                "$$hashKey": "object:1443"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e23032fc7304a37217bbea",
+                    "title": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/21/2016 03:01:06",
+                    "updatedDate": "09/21/2016 03:01:06",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e23032fc7304a37217bbea",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1444"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d94f580cf2034f20cd9218",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/20/2016 11:51:52",
+                    "createdDate": "09/14/2016 09:23:36",
+                    "updatedDate": "09/20/2016 11:51:52",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d94f580cf2034f20cd9218",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1445"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da61560cf2a7d92a9d3a8f",
+                    "title": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/20/2016 10:35:29",
+                    "createdDate": "09/15/2016 04:52:38",
+                    "updatedDate": "09/20/2016 10:35:29",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da61560cf2a7d92a9d3a8f",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1446"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e1466bfc7304a37217bb6a",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/20/2016 10:23:44",
+                    "createdDate": "09/20/2016 10:23:39",
+                    "updatedDate": "09/20/2016 10:23:44",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e1466bfc7304a37217bb6a",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1447"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d8dccc0cf2034f20cd914a",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "accessedDate": "09/19/2016 03:43:56",
+                    "updatedDate": "09/20/2016 10:14:18",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dccc0cf2034f20cd914a",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1448"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e1440ffc7304a37217bb64",
+                    "title": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/20/2016 10:13:35",
+                    "updatedDate": "09/20/2016 10:13:35",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e1440ffc7304a37217bb64",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1449"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e10f42fc73047dc68da588",
+                    "title": "Category Sales Trend",
+                    "description": "Category Sales Trend",
+                    "userTags": ["Category Sales Trend"],
+                    "createdDate": "09/20/2016 06:28:18",
+                    "updatedDate": "09/20/2016 06:28:18",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e10f42fc73047dc68da588",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Category Sales Trend",
+                "$$hashKey": "object:1450"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e0deb6fc73047dc68da519",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/20/2016 05:37:08",
+                    "createdDate": "09/20/2016 03:01:10",
+                    "updatedDate": "09/20/2016 05:37:08",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e0deb6fc73047dc68da519",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1451"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57e0d65ffc73047dc68da512",
+                    "title": "Haircare KPIs",
+                    "description": "Haircare KPIs",
+                    "userTags": ["Haircare KPIs"],
+                    "accessedDate": "09/20/2016 03:27:48",
+                    "createdDate": "09/20/2016 02:25:35",
+                    "updatedDate": "09/20/2016 03:27:48",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57e0d65ffc73047dc68da512",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Haircare KPIs",
+                "$$hashKey": "object:1452"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfb699fc73047dc68da486",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "accessedDate": "09/20/2016 02:15:42",
+                    "createdDate": "09/19/2016 05:57:45",
+                    "updatedDate": "09/20/2016 02:15:42",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb699fc73047dc68da486",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1453"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfc8d1fc73047dc68da48e",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/19/2016 07:16:40",
+                    "createdDate": "09/19/2016 07:15:29",
+                    "updatedDate": "09/19/2016 07:16:40",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfc8d1fc73047dc68da48e",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1454"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfb66afc73047dc68da482",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/19/2016 05:56:58",
+                    "updatedDate": "09/19/2016 05:56:58",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb66afc73047dc68da482",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1455"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfb649fc73047dc68da47e",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/19/2016 05:56:25",
+                    "updatedDate": "09/19/2016 05:56:25",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb649fc73047dc68da47e",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1456"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dfb59ffc73047dc68da47a",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "createdDate": "09/19/2016 05:53:35",
+                    "updatedDate": "09/19/2016 05:53:36",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dfb59ffc73047dc68da47a",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1457"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da4c8b0cf2a7d92a9d3a78",
+                    "title": "Haircare KPIs",
+                    "userTags": ["Haircare KPIs"],
+                    "accessedDate": "09/19/2016 04:56:55",
+                    "createdDate": "09/15/2016 03:23:55",
+                    "updatedDate": "09/19/2016 04:56:55",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da4c8b0cf2a7d92a9d3a78",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Haircare KPIs",
+                "$$hashKey": "object:1458"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d94d8c0cf2034f20cd91ed",
+                    "title": "Ad Channel Performance",
+                    "description": "Ad Channel Performance",
+                    "userTags": ["Ad Channel Performance"],
+                    "accessedDate": "09/14/2016 09:16:03",
+                    "createdDate": "09/14/2016 09:15:56",
+                    "updatedDate": "09/19/2016 04:06:13",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d94d8c0cf2034f20cd91ed",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Ad Channel Performance",
+                "$$hashKey": "object:1459"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d8dcf90cf2034f20cd9152",
+                    "title": "Ad Channel Performance",
+                    "description": "Ad Channel Performance",
+                    "userTags": ["Ad Channel Performance"],
+                    "accessedDate": "09/16/2016 11:37:01",
+                    "createdDate": "09/14/2016 01:15:37",
+                    "updatedDate": "09/16/2016 11:37:01",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d8dcf90cf2034f20cd9152",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Ad Channel Performance",
+                "$$hashKey": "object:1460"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57dbf3f80cf2d2066177a21e",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/16/2016 09:30:50",
+                    "createdDate": "09/16/2016 09:30:32",
+                    "updatedDate": "09/16/2016 09:30:50",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57dbf3f80cf2d2066177a21e",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1461"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da314c0cf2a7d92a9d3a62",
+                    "title": "dont delete",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages", "testing", "dont delete"],
+                    "accessedDate": "09/16/2016 08:47:14",
+                    "updatedDate": "09/16/2016 08:56:17",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da314c0cf2a7d92a9d3a62",
+                    "actionId": "ExistingStory"
+                },
+                "title": "dont delete",
+                "$$hashKey": "object:1462"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57daa2600cf2a7d92a9d3af5",
+                    "title": "Carbonated Soft Drinks",
+                    "description": "Carbonated Soft Drinks",
+                    "userTags": ["Carbonated Soft Drinks"],
+                    "accessedDate": "09/15/2016 09:30:36",
+                    "createdDate": "09/15/2016 09:30:08",
+                    "updatedDate": "09/15/2016 09:30:36",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57daa2600cf2a7d92a9d3af5",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Carbonated Soft Drinks",
+                "$$hashKey": "object:1463"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da8f270cf2a7d92a9d3add",
+                    "title": "Citrello vs Category",
+                    "description": "Citrello vs Category",
+                    "userTags": ["Citrello vs Category"],
+                    "accessedDate": "09/15/2016 09:29:41",
+                    "createdDate": "09/15/2016 08:08:07",
+                    "updatedDate": "09/15/2016 09:29:41",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da8f270cf2a7d92a9d3add",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Citrello vs Category",
+                "$$hashKey": "object:1464"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da79fd0cf2a7d92a9d3acf",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/15/2016 06:37:55",
+                    "createdDate": "09/15/2016 06:37:49",
+                    "updatedDate": "09/15/2016 06:37:55",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79fd0cf2a7d92a9d3acf",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1465"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da79ab0cf2a7d92a9d3acb",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/15/2016 06:36:33",
+                    "createdDate": "09/15/2016 06:36:27",
+                    "updatedDate": "09/15/2016 06:36:33",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79ab0cf2a7d92a9d3acb",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1466"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da79000cf2a7d92a9d3ac7",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/15/2016 06:33:42",
+                    "createdDate": "09/15/2016 06:33:36",
+                    "updatedDate": "09/15/2016 06:33:42",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da79000cf2a7d92a9d3ac7",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1467"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57d9441b0cf2034f20cd91e4",
+                    "title": "Haircare KPIs",
+                    "description": "Haircare KPIs",
+                    "userTags": ["Haircare KPIs"],
+                    "accessedDate": "09/15/2016 06:06:49",
+                    "createdDate": "09/14/2016 08:35:39",
+                    "updatedDate": "09/15/2016 06:09:40",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57d9441b0cf2034f20cd91e4",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Haircare KPIs",
+                "$$hashKey": "object:1468"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da70c70cf2a7d92a9d3ab3",
+                    "title": "Liquid Beverages",
+                    "description": "Liquid Beverages",
+                    "userTags": ["Liquid Beverages"],
+                    "accessedDate": "09/15/2016 05:58:36",
+                    "createdDate": "09/15/2016 05:58:31",
+                    "updatedDate": "09/15/2016 05:58:36",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da70c70cf2a7d92a9d3ab3",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Liquid Beverages",
+                "$$hashKey": "object:1469"
+            }, {
+                "id": "open_addtostory_prompt",
+                "story": {
+                    "id": "57da64130cf2a7d92a9d3aa2",
+                    "title": "Haircare KPIs",
+                    "userTags": ["Haircare KPIs"],
+                    "accessedDate": "09/15/2016 05:33:47",
+                    "createdDate": "09/15/2016 05:04:19",
+                    "updatedDate": "09/15/2016 05:33:47",
+                    "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57da64130cf2a7d92a9d3aa2",
+                    "actionId": "ExistingStory"
+                },
+                "title": "Haircare KPIs",
+                "$$hashKey": "object:1470"
+            }],
+            "$$hashKey": "object:1415"
+        }, {
+            "title": "Download As",
+            "submenu": [{
+                "title": "Excel",
+                "$$hashKey": "object:306"
+            }, {
+                "title": "Image",
+                "$$hashKey": "object:307"
+            }, {
+                "title": "PDF",
+                "$$hashKey": "object:308"
+            }, {
+                "title": "PowerPoint",
+                "$$hashKey": "object:309"
+            }],
+            "$$hashKey": "object:220"
+        }, {
+            "title": "Edit",
+            "id": "action_edit_card",
+            "$$hashKey": "object:221"
+        }, {
+            "title": "Remove",
+            "id": "action_remove_card",
+            "$$hashKey": "object:222"
+        }, {
+            "title": "Send",
+            "id": "action_send_card",
+            "$$hashKey": "object:223"
+        }],
+        "$$hashKey": "object:170",
+        "donut": "true",
+        "data": [{
+            "label": "YTD 2016",
+            "value": "2",
+            "subValues": [{
+                "id": 1,
+                "label": "Share",
+                "value": "18.3%"
+            }, {
+                "id": 2,
+                "label": "Growth",
+                "value": "-0.1%"
+            }, {
+                "id": 3,
+                "label": "Change",
+                "value": "-0.5%"
+            }],
+            "params": [{
+                "id": "1",
+                "label": "Market Breakdown",
+                "value": "Arvo (FULL TSR)"
+            }, {
+                "id": "2",
+                "label": "Super Category",
+                "value": "GROCERY STAPLES & NON FOOD"
+            }, {
+                "id": "3",
+                "label": "Period Group",
+                "value": "Latest 52 Weeks"
+            }, {
+                "id": "4",
+                "label": "Sales Value",
+                "value": "222,825,931"
+            }]
+        }, {
+            "label": "Year Ago",
+            "value": "12",
+            "subValues": [{
+                "id": 1,
+                "label": "Share",
+                "value": "12.3%"
+            }, {
+                "id": 2,
+                "label": "Change",
+                "value": "-0.1%"
+            }, {
+                "id": 3,
+                "label": "Growth",
+                "value": "-1.1%"
+            }],
+            "params": [{
+                "id": "1",
+                "label": "Market Breakdown",
+                "value": "Grocery Multiples minus Arvo (FULL TSR)"
+            }, {
+                "id": "2",
+                "label": "Super Category",
+                "value": "GROCERY STAPLES & NON FOOD"
+            }, {
+                "id": "3",
+                "label": "Period Group",
+                "value": "Latest 52 Weeks"
+            }, {
+                "id": "4",
+                "label": "Sales Value",
+                "value": "22,060,855,136"
+            }]
+        }],
+        "parameterData": null,
+        "chartOptions": {
+            "chart": {
+                "donut": "true",
+                "donutRatio": 0.65,
+                "color": ["#23527c", "#DADEE0"],
+                "tooltip": {},
+                "margin": {
+                    "top": 10,
+                    "right": 0,
+                    "bottom": 0,
+                    "left": 0
+                },
+                "legendPosition": "right",
+                "legend": {
+                    "margin": {
+                        "top": 20,
+                        "bottom": 0,
+                        "left": 0
+                    }
+                },
+                "pie": {
+                    "margin": {
+                        "top": -20,
+                        "bottom": 0
+                    }
+                }
+            },
+            "title": {
+                "css": {
+                    "position": "absolute",
+                    "left": "11%",
+                    "top": "15%"
+                }
+            }
+        },
+        "tabledata": true,
+        "innerdata": [{
+            "id": 1,
+            "label": "Share",
+            "value": "18.3%"
+        }, {
+            "id": 2,
+            "label": "Growth",
+            "value": "-0.1%"
+        }, {
+            "id": 3,
+            "label": "Change",
+            "value": "-0.5%"
+        }],
+        "height": 180
+    },
+    "story": {
+        "id": "57ea4d2ffc730442758338ba",
+        "title": "Carbonated Soft Drinks",
+        "description": "Carbonated Soft Drinks",
+        "userTags": ["Carbonated Soft Drinks"],
+        "createdDate": "09/27/2016 06:42:55",
+        "updatedDate": "09/27/2016 06:42:55",
+        "launchUrl": "https://answersdev.nielsen.com/oneview/#/story?id=57ea4d2ffc730442758338ba",
+        "actionId": "ExistingStory"
+    }
+});

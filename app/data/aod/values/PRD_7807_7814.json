@@ -1,0 +1,23 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "20389566",
+		"description": "Cal Yr 2014 W/E 12/27/14"
+	}, {
+		"ID": "20363382",
+		"description": "Cal Yr 2013 W/E 12/28/13"
+	}, {
+		"ID": "20363381",
+		"description": "Cal Yr 2012 W/E 12/29/12"
+	}, {
+		"ID": "20363380",
+		"description": "Cal Yr 2011 W/E 12/31/11"
+	}]
+}

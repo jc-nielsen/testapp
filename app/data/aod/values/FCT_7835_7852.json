@@ -1,0 +1,88 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "AVG_E_PRC",
+            "description": "Avg EQ Price"
+            },
+        {
+            "ID": "AVG_E_PRC_PCT_CHG_PREV",
+            "description": "Avg EQ Price % Chg Prev"
+            },
+        {
+            "ID": "AVG_E_PRC_PCT_CHG",
+            "description": "Avg EQ Price % Chg YA"
+            },
+        {
+            "ID": "AVG_E_PRC_CHG_PREV",
+            "description": "Avg EQ Price CPP"
+            },
+        {
+            "ID": "AVG_E_PRC_CHG_YAGO",
+            "description": "Avg EQ Price CYA"
+            },
+        {
+            "ID": "AVG_E_PRC_DISC",
+            "description": "Avg EQ Price Disc"
+            },
+        {
+            "ID": "AVG_E_PRC_DISC_CHG_YAGO",
+            "description": "Avg EQ Price Disc CYA"
+            },
+        {
+            "ID": "AVG_E_PRC_DISC_YAGO",
+            "description": "Avg EQ Price Disc YA"
+            },
+        {
+            "ID": "AVG_E_PRC_IYA",
+            "description": "Avg EQ Price IYA"
+            },
+        {
+            "ID": "AVG_E_PRC_PREV",
+            "description": "Avg EQ Price Prev"
+            },
+        {
+            "ID": "AVG_E_PRC_YAGO",
+            "description": "Avg EQ Price YA"
+            },
+        {
+            "ID": "BE_PRC",
+            "description": "Base EQ Price"
+            },
+        {
+            "ID": "BE_PRC_PCT_CHG_PREV",
+            "description": "Base EQ Price % Chg Prev"
+            },
+        {
+            "ID": "BE_PRC_PCT_CHG",
+            "description": "Base EQ Price % Chg YA"
+            },
+        {
+            "ID": "BE_PRC_CHG_PREV",
+            "description": "Base EQ Price CPP"
+            },
+        {
+            "ID": "BE_PRC_CHG_YAGO",
+            "description": "Base EQ Price CYA"
+            },
+        {
+            "ID": "BE_PRC_IYA",
+            "description": "Base EQ Price IYA"
+            },
+        {
+            "ID": "BE_PRC_PREV",
+            "description": "Base EQ Price Prev"
+            },
+        {
+            "ID": "BE_PRC_YAGO",
+            "description": "Base EQ Price YA"
+            }
+        ]
+}

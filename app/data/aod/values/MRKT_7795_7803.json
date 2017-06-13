@@ -1,0 +1,182 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Group/Level/Values"
+	},
+	"catalogueGroupLevelValue": [{
+		"ID": "4342982",
+		"description": "AAFES All Other CONUS"
+	}, {
+		"ID": "4356646",
+		"description": "AAFES All Other Europe"
+	}, {
+		"ID": "4356640",
+		"description": "AAFES All Other Pacific"
+	}, {
+		"ID": "4356638",
+		"description": "AAFES Contingency CONUS & OCONUS"
+	}, {
+		"ID": "4342980",
+		"description": "AAFES Convenience CONUS"
+	}, {
+		"ID": "4356637",
+		"description": "AAFES Convenience Europe"
+	}, {
+		"ID": "4356644",
+		"description": "AAFES Convenience Pacific"
+	}, {
+		"ID": "4342981",
+		"description": "AAFES Main CONUS"
+	}, {
+		"ID": "4356639",
+		"description": "AAFES Main Europe"
+	}, {
+		"ID": "4356645",
+		"description": "AAFES Main Pacific"
+	}, {
+		"ID": "4070816",
+		"description": "DeCA Alaska"
+	}, {
+		"ID": "4159682",
+		"description": "DeCA Alaska & Hawaii"
+	}, {
+		"ID": "4206547",
+		"description": "DeCA CONUS ex AK & HI K1"
+	}, {
+		"ID": "4206555",
+		"description": "DeCA CONUS ex AK & HI K2"
+	}, {
+		"ID": "4206548",
+		"description": "DeCA CONUS ex AK & HI K3"
+	}, {
+		"ID": "4206556",
+		"description": "DeCA CONUS ex AK & HI K4"
+	}, {
+		"ID": "4206549",
+		"description": "DeCA CONUS ex AK & HI K5"
+	}, {
+		"ID": "4502855",
+		"description": "DeCA Central Area"
+	}, {
+		"ID": "4511407",
+		"description": "DeCA Central Area Rem"
+	}, {
+		"ID": "4502856",
+		"description": "DeCA East Area"
+	}, {
+		"ID": "4511405",
+		"description": "DeCA East Area Rem"
+	}, {
+		"ID": "4066200",
+		"description": "DeCA East Central"
+	}, {
+		"ID": "4435144",
+		"description": "DeCA East Central xAOC Rem"
+	}, {
+		"ID": "4066322",
+		"description": "DeCA East Northeast"
+	}, {
+		"ID": "4435145",
+		"description": "DeCA East Northeast xAOC Rem"
+	}, {
+		"ID": "4066208",
+		"description": "DeCA East Southern"
+	}, {
+		"ID": "4435146",
+		"description": "DeCA East Southern xAOC Rem"
+	}, {
+		"ID": "4066141",
+		"description": "DeCA East Total"
+	}, {
+		"ID": "4435143",
+		"description": "DeCA East Total xAOC Rem"
+	}, {
+		"ID": "4071296",
+		"description": "DeCA Hawaii"
+	}, {
+		"ID": "4071161",
+		"description": "DeCA OCONUS Europe"
+	}, {
+		"ID": "4071297",
+		"description": "DeCA OCONUS Far East"
+	}, {
+		"ID": "4066210",
+		"description": "DeCA West Midwest"
+	}, {
+		"ID": "4435011",
+		"description": "DeCA West Midwest xAOC Rem"
+	}, {
+		"ID": "4066442",
+		"description": "DeCA West Northwest ex AK & HI"
+	}, {
+		"ID": "4435012",
+		"description": "DeCA West Northwest ex AK & HI xAOC Rem"
+	}, {
+		"ID": "4066163",
+		"description": "DeCA West Northwest inc AK & HI"
+	}, {
+		"ID": "4066447",
+		"description": "DeCA West Southwest"
+	}, {
+		"ID": "4435016",
+		"description": "DeCA West Southwest xAOC Rem"
+	}, {
+		"ID": "4066418",
+		"description": "DeCA West Total ex AK & HI"
+	}, {
+		"ID": "4434997",
+		"description": "DeCA West Total ex AK & HI xAOC Rem"
+	}, {
+		"ID": "4066417",
+		"description": "DeCA West Total inc AK & HI"
+	}, {
+		"ID": "4342988",
+		"description": "NEXCOM All Other CONUS"
+	}, {
+		"ID": "4356643",
+		"description": "NEXCOM All Other Europe"
+	}, {
+		"ID": "4356649",
+		"description": "NEXCOM All Other Pacific"
+	}, {
+		"ID": "4342989",
+		"description": "NEXCOM Conv & All Other AK & HI"
+	}, {
+		"ID": "4342986",
+		"description": "NEXCOM Convenience CONUS"
+	}, {
+		"ID": "4356648",
+		"description": "NEXCOM Convenience Europe"
+	}, {
+		"ID": "4356642",
+		"description": "NEXCOM Convenience Pacific"
+	}, {
+		"ID": "4342985",
+		"description": "NEXCOM Main AK & HI"
+	}, {
+		"ID": "4342987",
+		"description": "NEXCOM Main CONUS"
+	}, {
+		"ID": "4356641",
+		"description": "NEXCOM Main Europe"
+	}, {
+		"ID": "4356647",
+		"description": "NEXCOM Main Pacific"
+	}, {
+		"ID": "4066224",
+		"description": "Total DeCA CONUS ex AK & HI"
+	}, {
+		"ID": "4434929",
+		"description": "Total DeCA CONUS ex AK & HI xAOC Rem"
+	}, {
+		"ID": "4066222",
+		"description": "Total DeCA CONUS inc AK & HI"
+	}, {
+		"ID": "4109474",
+		"description": "Total DeCA OCONUS"
+	}]
+}

@@ -1,0 +1,51 @@
+[
+    {
+        "id": "scorecard",
+        "index": 4
+    },
+    {
+        "id": "activity",
+        "index": 0
+    },
+    {
+        "id": "haircare",
+        "index": 1
+    },
+    {
+        "id": "quickaccess",
+        "index": 2
+    },
+    {
+        "id": "npdwatch",
+        "index": 3
+    },
+    {
+        "id": "npdwatch",
+        "index": 6
+    },
+    {
+        "id": "newsinsights",
+        "index": 5
+    },
+    {
+        "id": "retailfactbook",
+        "index": 7
+    },
+    {
+        "id": "webinars",
+        "index": 8
+    },
+    {
+        "id": "nscore",
+        "index": 11
+    },
+    {
+        "id": "recentaccess",
+        "index": 10
+    },
+    {
+        "id": "notifications",
+        "index": 9
+    }
+
+]

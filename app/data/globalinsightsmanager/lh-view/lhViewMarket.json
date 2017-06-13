@@ -1,0 +1,98 @@
+[
+    {
+        "name": "Sort",
+        "type": "radio",
+        "class": "sort-style",
+        "items": [
+            {
+                "title": "Last Updated",
+                "event": "",
+                "value": "Last Updated"
+
+            },
+            {
+                "title": "Last Accessed",
+                "event": "",
+                "value": "Last Accessed"
+            },
+            {
+                "title": "Popular",
+                "event": "",
+                "value": "Popular"
+            }
+        ]
+    },
+    {
+        "name": "Filter",
+        "type": "checkbox",
+        "class": "filter-style",
+        "items": [
+            {
+                "title": "Last 12 months",
+                "event": "",
+                "value": "Last 12 months"
+            },
+            {
+                "title": "Favourite",
+                "event": "",
+                "value": "favourite"
+            },
+            {
+                "title": "Recommended",
+                "event": "",
+                "value": "recommended"
+            }
+        ]
+    },
+    {
+        "name": "Regions",
+        "type": "checkbox",
+        "class": "regions-style",
+        "items": [
+            {
+                "title": "World Wide",
+                "event": "",
+                "value": "World Wide"
+            },
+            {
+                "title": "US & Canada",
+                "event": "",
+                "value": "US & Canada"
+            },
+            {
+                "title": "Europe",
+                "event": "",
+                "value": "Europe"
+            },
+            {
+                "title": "Latin America",
+                "event": "",
+                "value": "Latin America"
+            },
+            {
+                "title": "Asia Pacific",
+                "event": "",
+                "value": "Asia Pacific"
+            }
+        ]
+    },
+    {
+        "name": "Segment",
+        "type": "checkbox",
+        "class": "segment-style",
+        "items": [
+            {
+                "title": "Industry Trends",
+                "event": "",
+                "value": "Industry Trends"
+            },
+            {
+                "title": "Customer 360",
+                "event": "",
+                "value": "Customer 360"
+            }
+        ]
+    }
+
+
+]

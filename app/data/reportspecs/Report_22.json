@@ -1,0 +1,379 @@
+{
+      "accessedDate": "10 May 2017, 11:54 AM",
+      "createdBy": "Arthi Kasturirangan",
+      "createdDate": "28 Apr 2017, 10:47 PM",
+      "description": "Product Contribution to Sales by Retailer Market",
+      "favorite": true,
+      "status": "COMPLETED",
+      "title": "Product Contribution to Sales by Retailer Market",
+      "updatedBy": "Kathleen Tuttle",
+      "updatedDate": "10 May 2017, 11:54 AM",
+      "userTags": [
+        "Performance Overview"
+      ],
+      "previewUrl": "data/CategoryAssessment/preview/Report-22.PNG",
+      "components": [
+        {
+          "type": "CHART",
+          "chartConfigs": [
+            {
+              "chartType": "MULTIBAR_HORIZONTAL",
+              "dataDefinition": {
+                "xaxis": [
+                  {
+                    "value": "mkt_sdesc",
+                    "valueType": "COLUMN",
+                    "displayValueType": "COLUMN",
+                    "displayValue": "mkt_sdesc"
+                  }
+                ],
+                "series": [
+                  {
+                    "value": "metric1"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "displayFormat": "%",
+                  "font": {
+                    "size": 10
+                  },
+                  "majorTickMarkType": "NONE",
+                  "minorTickMarkType": "NONE",
+                  "reversePlotOrder": false,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "NEXT",
+                  "noOfTick": 5
+                },
+                "yAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "font": {
+                    "size": 10
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "LOW"
+                }
+              },
+              "seriesConfig": {
+                "showValues": true,
+                "showMarker": true
+              },
+              "seriesConfigs": {
+                "metric1": {
+                  "color": "#0f406d",
+                  "showValues": true,
+                  "showMarker": false
+                }
+              },
+              "colorPalette": [
+                "#C1B930",
+                "#FEABDC"
+              ],
+              "distinctColors": false
+            },
+            {
+              "chartType": "LABELS",
+              "dataDefinition": {
+                "series": [
+                  {
+                    "value": "metric2"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "crossAt": 0,
+                  "displayFormat": "+,.01f",
+                  "font": {
+                    "size": 15
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": true,
+                  "showMaxMin": false
+                }
+              },
+              "distinctColors": false
+            }
+          ],
+          "chartProperty": {
+            "legend": {
+              "font": {
+                "name": "Open Sans",
+                "color": "#172730",
+                "size": 12
+              }
+            },
+            "margin": {
+              "bottom": 80,
+              "left": 40,
+              "right": 70,
+              "top": 10
+            },
+            "showControls": false,
+            "showLegend": false,
+            "showTitle": true,
+            "showValues": false,
+            "showXaxis": true,
+            "showYaxis": true,
+            "enableLocalAction": false,
+            "showMarker": false,
+            "gapWidth": 30,
+            "showDataTable": false,
+            "showTable": false
+          },
+          "dataService": "reporting/report/58ed1aaa12888e517bf9db3e"
+        },
+        {
+          "type": "CHART",
+          "chartConfigs": [
+            {
+              "chartType": "MULTIBAR_HORIZONTAL",
+              "dataDefinition": {
+                "xaxis": [
+                  {
+                    "value": "mkt_sdesc",
+                    "valueType": "COLUMN",
+                    "displayValueType": "COLUMN",
+                    "displayValue": "mkt_sdesc"
+                  }
+                ],
+                "series": [
+                  {
+                    "value": "metric1"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "displayFormat": "%",
+                  "font": {
+                    "size": 10
+                  },
+                  "majorTickMarkType": "NONE",
+                  "minorTickMarkType": "NONE",
+                  "reversePlotOrder": false,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": false,
+                  "tickMarkLabelPosition": "NEXT",
+                  "noOfTick": 5
+                },
+                "yAxis": {
+                  "axisLabel": "",
+                  "crossAt": 0,
+                  "font": {
+                    "size": 10
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": false,
+                  "showAxisLine": true,
+                  "showMaxMin": true,
+                  "tickMarkLabelPosition": "LOW"
+                }
+              },
+              "seriesConfig": {
+                "showValues": true,
+                "showMarker": true
+              },
+              "seriesConfigs": {
+                "metric1": {
+                  "color": "#18888e",
+                  "showValues": false,
+                  "showMarker": false
+                }
+              },
+              "colorPalette": [
+                "#C1B930",
+                "#FEABDC"
+              ],
+              "distinctColors": false
+            },
+            {
+              "chartType": "LABELS",
+              "dataDefinition": {
+                "series": [
+                  {
+                    "value": "metric2"
+                  }
+                ]
+              },
+              "axisConfig": {
+                "showXaxis": true,
+                "showYaxis": true,
+                "xAxis": {
+                  "crossAt": 0,
+                  "displayFormat": "+,.01f",
+                  "font": {
+                    "size": 15
+                  },
+                  "reversePlotOrder": true,
+                  "showAxisLabel": true,
+                  "showMaxMin": false
+                }
+              },
+              "distinctColors": false
+            }
+          ],
+          "chartProperty": {
+            "legend": {
+              "font": {
+                "name": "Open Sans",
+                "color": "#172730",
+                "size": 12
+              }
+            },
+            "margin": {
+              "bottom": 80,
+              "left": 10,
+              "right": 100,
+              "top": 10
+            },
+            "showControls": false,
+            "showLegend": false,
+            "showTitle": true,
+            "showValues": false,
+            "showXaxis": true,
+            "showYaxis": true,
+            "enableLocalAction": false,
+            "showMarker": false,
+            "gapWidth": 30,
+            "showDataTable": false,
+            "showTable": false
+          },
+          "dataService": "reporting/report/58ed1b50958b1f04cf060a40"
+        },
+        {
+          "type": "HEADER",
+          "id": "COMP_HEADER",
+          "content": "[Product Hierarchy Selector] Contribution to [Drill Up] Sales By Retailer Market"
+        }
+      ],
+      "reportLayout": {
+        "type": "CARD",
+        "columns": 2,
+        "tiles": [
+          {
+            "row": 0,
+            "column": 0,
+            "columnSpan": 1,
+            "rowSpan": 1
+          },
+          {
+            "row": 0,
+            "column": 0,
+            "columnSpan": 1,
+            "rowSpan": 1
+          }
+        ]
+      },
+      "prompts": [
+        {
+          "type": "HIERARCHY",
+          "dimension": "product",
+          "promptId": "Product Hierarchy Selector",
+          "promptName": "Product",
+          "readOnly": false,
+          "order": 1,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "product",
+          "promptId": "Drill Up",
+          "promptName": "Product Benchmark",
+          "readOnly": false,
+          "order": 3,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Multiple Retailer Markets",
+          "promptName": "Multiple Retailer Markets",
+          "readOnly": false,
+          "order": 5,
+          "multiple": true,
+          "maxSelection": 2,
+          "minSelection": 2,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Market Type",
+          "promptName": "Primary Comparison Market",
+          "readOnly": false,
+          "order": 7,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "No of Weeks",
+          "promptName": "Time Period",
+          "readOnly": false,
+          "order": 10,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "Period Date",
+          "promptName": "Time Period End Date",
+          "readOnly": false,
+          "order": 11,
+          "multiple": false,
+          "metric": false
+        }
+      ],
+      "promptLayout": {
+        "type": "FLOW",
+        "elements": [
+          {
+            "componentId": "Product Hierarchy Selector",
+            "seperator": true
+          },
+          {
+            "componentId": "Drill Up",
+            "seperator": true
+          },
+          {
+            "componentId": "Multiple Retailer Markets",
+            "seperator": false
+          },
+          {
+            "componentId": "Market Type",
+            "seperator": true
+          },
+          {
+            "componentId": "No of Weeks",
+            "seperator": false
+          },
+          {
+            "componentId": "Period Date",
+            "seperator": false
+          }
+        ]
+      },
+      "header": "COMP_HEADER"
+    }

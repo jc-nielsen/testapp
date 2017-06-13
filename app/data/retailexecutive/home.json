@@ -1,0 +1,385 @@
+[
+	{
+		"size": {
+			"x": 2,
+			"y": 1
+		},
+		"position": [
+      0,
+      0
+    ],
+		"type": "scorecard",
+		"xsize": {
+			"min": 2,
+			"max": 2
+		},
+		"ysize": {
+			"min": 1,
+			"max": 2
+		},
+		"header": {
+			"title": "Scorecard - WBA Latest 13 weeks’",
+			"colorClass": "bgTeal",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-option_add",
+					"iconName": "add"
+        },
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 3
+		},
+		"position": [
+      0,
+      2
+    ],
+		"type": "activity",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Activity",
+			"colorClass": "bgViolet",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      1,
+      0
+    ],
+		"type": "haircare",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Haircare KPIS",
+			"colorClass": "bgBlue",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_download",
+					"iconName": "like"
+        },
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      1,
+      1
+    ],
+		"type": "quickaccess",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Quick Access",
+			"colorClass": "bgBlue",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      2,
+      0
+    ],
+		"type": "npdwatch",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "NPD WATCH - PERFECTION LEAVE-IN 270ML",
+			"colorClass": "bgOrange",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_download",
+					"iconName": "like"
+        },
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      2,
+      1
+    ],
+		"type": "newsinsights",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "News and Insights",
+			"colorClass": "bgTeal",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_share",
+					"iconName": "share"
+        },
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      3,
+      0
+    ],
+		"type": "retailfactbook",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Retail Fact Book",
+			"colorClass": "bgDarkBlueOne",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      3,
+      1
+    ],
+		"type": "webinars",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Webinars",
+			"colorClass": "bgOrange",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      3,
+      2
+    ],
+		"type": "nscore",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Nielsen News",
+			"colorClass": "bgGreen",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_share",
+					"iconName": "share"
+        },
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 2
+		},
+		"position": [
+      4,
+      0
+    ],
+		"type": "recentaccess",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Recent Access",
+			"colorClass": "bgBlue",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  },
+	{
+		"size": {
+			"x": 1,
+			"y": 1
+		},
+		"position": [
+      4,
+      1
+    ],
+		"type": "notifications",
+		"xsize": {
+			"min": 1,
+			"max": null
+		},
+		"ysize": {
+			"min": 1,
+			"max": null
+		},
+		"header": {
+			"title": "Notifications",
+			"colorClass": "bgViolet",
+			"iconList": [
+				{
+					"iconClass": "nlsn-icon-action_refresh",
+					"iconName": "refresh"
+        },
+				{
+					"iconClass": "nlsn-icon-action_favorite",
+					"iconName": "favourite"
+        }
+      ]
+		}
+  }
+]

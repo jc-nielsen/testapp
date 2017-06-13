@@ -1,0 +1,626 @@
+
+
+    {
+        "summary":
+        {
+            "locale":
+            {
+                "country": "US",
+                "language": "en"
+            },
+            "API-Version": "v1",
+            "API-Name": "Catalogue/Hierarchy/Level/Values"
+        },
+        "catalogueHierarchyLevelValue":
+        [
+            {
+                "ID": "A&P Banner xAOC Comp",
+                "description": "A&P Banner xAOC Comp"
+            },
+            {
+                "ID": "A&P Corp New York Metro xAOC Comp",
+                "description": "A&P Corp New York Metro xAOC Comp"
+            },
+            {
+                "ID": "A&P Corp Philadelphia xAOC Comp",
+                "description": "A&P Corp Philadelphia xAOC Comp"
+            },
+            {
+                "ID": "A&P Corp Total US All Ban xAOC Comp",
+                "description": "A&P Corp Total US All Ban xAOC Comp"
+            },
+            {
+                "ID": "ALB/SFY Jewel Div xAOC Comp",
+                "description": "ALB/SFY Jewel Div xAOC Comp"
+            },
+            {
+                "ID": "ALB/SFY Shaws Div xAOC Comp",
+                "description": "ALB/SFY Shaws Div xAOC Comp"
+            },
+            {
+                "ID": "Acme Fresh Market Total xAOC Comp",
+                "description": "Acme Fresh Market Total xAOC Comp"
+            },
+            {
+                "ID": "Ahold USA Corp Total xAOC Comp",
+                "description": "Ahold USA Corp Total xAOC Comp"
+            },
+            {
+                "ID": "BI-LO Central xAOC Comp",
+                "description": "BI-LO Central xAOC Comp"
+            },
+            {
+                "ID": "BI-LO Eastern xAOC Comp",
+                "description": "BI-LO Eastern xAOC Comp"
+            },
+            {
+                "ID": "BI-LO Foothills xAOC Comp",
+                "description": "BI-LO Foothills xAOC Comp"
+            },
+            {
+                "ID": "BI-LO Total xAOC Comp",
+                "description": "BI-LO Total xAOC Comp"
+            },
+            {
+                "ID": "BJs Central Region xAOC Comp",
+                "description": "BJs Central Region xAOC Comp"
+            },
+            {
+                "ID": "BJs North Region xAOC Comp",
+                "description": "BJs North Region xAOC Comp"
+            },
+            {
+                "ID": "BJs South Region xAOC Comp",
+                "description": "BJs South Region xAOC Comp"
+            },
+            {
+                "ID": "BJs Total xAOC Comp",
+                "description": "BJs Total xAOC Comp"
+            },
+            {
+                "ID": "Big Y Total xAOC Comp",
+                "description": "Big Y Total xAOC Comp"
+            },
+            {
+                "ID": "Brookshires Total xAOC Comp",
+                "description": "Brookshires Total xAOC Comp"
+            },
+            {
+                "ID": "CVS & Alb & Longs Corp ex HI xAOC Comp",
+                "description": "CVS & Alb & Longs Corp ex HI xAOC Comp"
+            },
+            {
+                "ID": "CVS & Alb & Longs Southwest xAOC Comp",
+                "description": "CVS & Alb & Longs Southwest xAOC Comp"
+            },
+            {
+                "ID": "CVS & Alb Midwest xAOC Comp",
+                "description": "CVS & Alb Midwest xAOC Comp"
+            },
+            {
+                "ID": "CVS & Alb Total xAOC Comp",
+                "description": "CVS & Alb Total xAOC Comp"
+            },
+            {
+                "ID": "CVS & Alb West xAOC Comp",
+                "description": "CVS & Alb West xAOC Comp"
+            },
+            {
+                "ID": "CVS Deep South xAOC Comp",
+                "description": "CVS Deep South xAOC Comp"
+            },
+            {
+                "ID": "CVS Michigan xAOC Comp",
+                "description": "CVS Michigan xAOC Comp"
+            },
+            {
+                "ID": "CVS Mid South xAOC Comp",
+                "description": "CVS Mid South xAOC Comp"
+            },
+            {
+                "ID": "CVS Midwest fmr Albertsons xAOC Comp",
+                "description": "CVS Midwest fmr Albertsons xAOC Comp"
+            },
+            {
+                "ID": "CVS Midwest xAOC Comp",
+                "description": "CVS Midwest xAOC Comp"
+            },
+            {
+                "ID": "CVS Northeast xAOC Comp",
+                "description": "CVS Northeast xAOC Comp"
+            },
+            {
+                "ID": "CVS Southwest fmr Albertsons xAOC Comp",
+                "description": "CVS Southwest fmr Albertsons xAOC Comp"
+            },
+            {
+                "ID": "CVS Southwest xAOC Comp",
+                "description": "CVS Southwest xAOC Comp"
+            },
+            {
+                "ID": "CVS Total fmr Albertsons xAOC Comp",
+                "description": "CVS Total fmr Albertsons xAOC Comp"
+            },
+            {
+                "ID": "CVS Total xAOC Comp",
+                "description": "CVS Total xAOC Comp"
+            },
+            {
+                "ID": "CVS West fmr Albertsons xAOC Comp",
+                "description": "CVS West fmr Albertsons xAOC Comp"
+            },
+            {
+                "ID": "Central Grocers Total xAOC Comp",
+                "description": "Central Grocers Total xAOC Comp"
+            },
+            {
+                "ID": "Coborns Cashwise Total Corp xAOC Comp",
+                "description": "Coborns Cashwise Total Corp xAOC Comp"
+            },
+            {
+                "ID": "Copps xAOC Comp",
+                "description": "Copps xAOC Comp"
+            },
+            {
+                "ID": "Cub Minneapolis xAOC Comp",
+                "description": "Cub Minneapolis xAOC Comp"
+            },
+            {
+                "ID": "DeCA East Central xAOC Comp",
+                "description": "DeCA East Central xAOC Comp"
+            },
+            {
+                "ID": "DeCA East Northeast xAOC Comp",
+                "description": "DeCA East Northeast xAOC Comp"
+            },
+            {
+                "ID": "DeCA East Southern xAOC Comp",
+                "description": "DeCA East Southern xAOC Comp"
+            },
+            {
+                "ID": "DeCA East Total xAOC Comp",
+                "description": "DeCA East Total xAOC Comp"
+            },
+            {
+                "ID": "DeCA West Midwest xAOC Comp",
+                "description": "DeCA West Midwest xAOC Comp"
+            },
+            {
+                "ID": "DeCA West Northwest ex AK & HI xAOC Comp",
+                "description": "DeCA West Northwest ex AK & HI xAOC Comp"
+            },
+            {
+                "ID": "DeCA West Southwest xAOC Comp",
+                "description": "DeCA West Southwest xAOC Comp"
+            },
+            {
+                "ID": "DeCA West Total ex AK & HI xAOC Comp",
+                "description": "DeCA West Total ex AK & HI xAOC Comp"
+            },
+            {
+                "ID": "DeMoulas Total xAOC Comp",
+                "description": "DeMoulas Total xAOC Comp"
+            },
+            {
+                "ID": "Dillons Incl Bakers xAOC Comp",
+                "description": "Dillons Incl Bakers xAOC Comp"
+            },
+            {
+                "ID": "Duane Reade Total xAOC Comp",
+                "description": "Duane Reade Total xAOC Comp"
+            },
+            {
+                "ID": "Family Dollar California xAOC Comp",
+                "description": "Family Dollar California xAOC Comp"
+            },
+            {
+                "ID": "Family Dollar xAOC Comp",
+                "description": "Family Dollar xAOC Comp"
+            },
+            {
+                "ID": "Farm Fresh Total xAOC Comp",
+                "description": "Farm Fresh Total xAOC Comp"
+            },
+            {
+                "ID": "Fiesta Total xAOC Comp",
+                "description": "Fiesta Total xAOC Comp"
+            },
+            {
+                "ID": "Food 4 Less Total Incl MW xAOC Comp",
+                "description": "Food 4 Less Total Incl MW xAOC Comp"
+            },
+            {
+                "ID": "Fred Meyer Total ex Alaska xAOC Comp",
+                "description": "Fred Meyer Total ex Alaska xAOC Comp"
+            },
+            {
+                "ID": "Frys Total xAOC Comp",
+                "description": "Frys Total xAOC Comp"
+            },
+            {
+                "ID": "Giant Carlisle Total xAOC Comp",
+                "description": "Giant Carlisle Total xAOC Comp"
+            },
+            {
+                "ID": "Giant Eagle Total xAOC Comp",
+                "description": "Giant Eagle Total xAOC Comp"
+            },
+            {
+                "ID": "Giant Landover Total xAOC Comp",
+                "description": "Giant Landover Total xAOC Comp"
+            },
+            {
+                "ID": "HAC Total xAOC Comp",
+                "description": "HAC Total xAOC Comp"
+            },
+            {
+                "ID": "Harps Total xAOC Comp",
+                "description": "Harps Total xAOC Comp"
+            },
+            {
+                "ID": "Harris Teeter Total xAOC Comp",
+                "description": "Harris Teeter Total xAOC Comp"
+            },
+            {
+                "ID": "Hy-Vee Total xAOC Comp",
+                "description": "Hy-Vee Total xAOC Comp"
+            },
+            {
+                "ID": "IGA Supermarket Total xAOC Comp",
+                "description": "IGA Supermarket Total xAOC Comp"
+            },
+            {
+                "ID": "Ingles Total xAOC Comp",
+                "description": "Ingles Total xAOC Comp"
+            },
+            {
+                "ID": "KVAT Food City xAOC Comp",
+                "description": "KVAT Food City xAOC Comp"
+            },
+            {
+                "ID": "King Kullen Total xAOC Comp",
+                "description": "King Kullen Total xAOC Comp"
+            },
+            {
+                "ID": "King Soopers incl City Market xAOC Comp",
+                "description": "King Soopers incl City Market xAOC Comp"
+            },
+            {
+                "ID": "Kinney Drugs Total xAOC Comp",
+                "description": "Kinney Drugs Total xAOC Comp"
+            },
+            {
+                "ID": "Kmart Discount xAOC Comp",
+                "description": "Kmart Discount xAOC Comp"
+            },
+            {
+                "ID": "Kmart Total xAOC Comp",
+                "description": "Kmart Total xAOC Comp"
+            },
+            {
+                "ID": "Kroger Central xAOC Comp",
+                "description": "Kroger Central xAOC Comp"
+            },
+            {
+                "ID": "Kroger Cincinnati xAOC Comp",
+                "description": "Kroger Cincinnati xAOC Comp"
+            },
+            {
+                "ID": "Kroger Columbus xAOC Comp",
+                "description": "Kroger Columbus xAOC Comp"
+            },
+            {
+                "ID": "Kroger Corp Total xAOC Comp",
+                "description": "Kroger Corp Total xAOC Comp"
+            },
+            {
+                "ID": "Kroger Corp ex F4L FM xAOC Comp",
+                "description": "Kroger Corp ex F4L FM xAOC Comp"
+            },
+            {
+                "ID": "Kroger Corp ex F4L xAOC Comp",
+                "description": "Kroger Corp ex F4L xAOC Comp"
+            },
+            {
+                "ID": "Kroger Dallas xAOC Comp",
+                "description": "Kroger Dallas xAOC Comp"
+            },
+            {
+                "ID": "Kroger Delta xAOC Comp",
+                "description": "Kroger Delta xAOC Comp"
+            },
+            {
+                "ID": "Kroger Houston xAOC Comp",
+                "description": "Kroger Houston xAOC Comp"
+            },
+            {
+                "ID": "Kroger Michigan xAOC Comp",
+                "description": "Kroger Michigan xAOC Comp"
+            },
+            {
+                "ID": "Kroger Mid-Atlantic xAOC Comp",
+                "description": "Kroger Mid-Atlantic xAOC Comp"
+            },
+            {
+                "ID": "Kroger Southwest xAOC Comp",
+                "description": "Kroger Southwest xAOC Comp"
+            },
+            {
+                "ID": "Longs N Calif xAOC Comp",
+                "description": "Longs N Calif xAOC Comp"
+            },
+            {
+                "ID": "Longs S Calif xAOC Comp",
+                "description": "Longs S Calif xAOC Comp"
+            },
+            {
+                "ID": "Longs Total California xAOC Comp",
+                "description": "Longs Total California xAOC Comp"
+            },
+            {
+                "ID": "Lowes Food Total xAOC Comp",
+                "description": "Lowes Food Total xAOC Comp"
+            },
+            {
+                "ID": "Lunds & Byerlys Total xAOC Comp",
+                "description": "Lunds & Byerlys Total xAOC Comp"
+            },
+            {
+                "ID": "Marianos Total xAOC Comp",
+                "description": "Marianos Total xAOC Comp"
+            },
+            {
+                "ID": "Marsh Total Corp xAOC Comp",
+                "description": "Marsh Total Corp xAOC Comp"
+            },
+            {
+                "ID": "Meijer Central xAOC Comp",
+                "description": "Meijer Central xAOC Comp"
+            },
+            {
+                "ID": "Meijer Eastern xAOC Comp",
+                "description": "Meijer Eastern xAOC Comp"
+            },
+            {
+                "ID": "Meijer Mid Michigan xAOC Comp",
+                "description": "Meijer Mid Michigan xAOC Comp"
+            },
+            {
+                "ID": "Meijer Northern xAOC Comp",
+                "description": "Meijer Northern xAOC Comp"
+            },
+            {
+                "ID": "Meijer Southern xAOC Comp",
+                "description": "Meijer Southern xAOC Comp"
+            },
+            {
+                "ID": "Meijer Total xAOC Comp",
+                "description": "Meijer Total xAOC Comp"
+            },
+            {
+                "ID": "Meijer Western xAOC Comp",
+                "description": "Meijer Western xAOC Comp"
+            },
+            {
+                "ID": "NOT APPLICABLE",
+                "description": "NOT APPLICABLE"
+            },
+            {
+                "ID": "Niemann Foods Total xAOC Comp",
+                "description": "Niemann Foods Total xAOC Comp"
+            },
+            {
+                "ID": "Pathmark Northern xAOC Comp",
+                "description": "Pathmark Northern xAOC Comp"
+            },
+            {
+                "ID": "Pathmark Southern xAOC Comp",
+                "description": "Pathmark Southern xAOC Comp"
+            },
+            {
+                "ID": "Pathmark Total xAOC Comp",
+                "description": "Pathmark Total xAOC Comp"
+            },
+            {
+                "ID": "Pick n Save Corp Total xAOC Comp",
+                "description": "Pick n Save Corp Total xAOC Comp"
+            },
+            {
+                "ID": "Piggly Wiggly Midwest xAOC Comp",
+                "description": "Piggly Wiggly Midwest xAOC Comp"
+            },
+            {
+                "ID": "Price Chopper Total xAOC Comp",
+                "description": "Price Chopper Total xAOC Comp"
+            },
+            {
+                "ID": "Publix Lakeland xAOC Comp",
+                "description": "Publix Lakeland xAOC Comp"
+            },
+            {
+                "ID": "Publix Miami xAOC Comp",
+                "description": "Publix Miami xAOC Comp"
+            },
+            {
+                "ID": "QFC Total xAOC Comp",
+                "description": "QFC Total xAOC Comp"
+            },
+            {
+                "ID": "Ralphs Total xAOC Comp",
+                "description": "Ralphs Total xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Corp Total xAOC Comp",
+                "description": "Rite Aid Corp Total xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Division 1 - West xAOC Comp",
+                "description": "Rite Aid Division 1 - West xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Division 2 - North xAOC Comp",
+                "description": "Rite Aid Division 2 - North xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Division 3 - Mid Atlantic xAOC Comp",
+                "description": "Rite Aid Division 3 - Mid Atlantic xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Division 4 - NY Metro xAOC Comp",
+                "description": "Rite Aid Division 4 - NY Metro xAOC Comp"
+            },
+            {
+                "ID": "Rite Aid Division 5 - South xAOC Comp",
+                "description": "Rite Aid Division 5 - South xAOC Comp"
+            },
+            {
+                "ID": "Roundys Corp Total xAOC Comp",
+                "description": "Roundys Corp Total xAOC Comp"
+            },
+            {
+                "ID": "Rouses Total xAOC Comp",
+                "description": "Rouses Total xAOC Comp"
+            },
+            {
+                "ID": "SUPERVALU Eastern Region Indep xAOC Comp",
+                "description": "SUPERVALU Eastern Region Indep xAOC Comp"
+            },
+            {
+                "ID": "SUPERVALU Retail Total xAOC Comp",
+                "description": "SUPERVALU Retail Total xAOC Comp"
+            },
+            {
+                "ID": "Sam's Total xAOC Comp",
+                "description": "Sam's Total xAOC Comp"
+            },
+            {
+                "ID": "Schnucks Total xAOC Comp",
+                "description": "Schnucks Total xAOC Comp"
+            },
+            {
+                "ID": "Shop n Save St Louis xAOC Comp",
+                "description": "Shop n Save St Louis xAOC Comp"
+            },
+            {
+                "ID": "ShopKo Banner xAOC Comp",
+                "description": "ShopKo Banner xAOC Comp"
+            },
+            {
+                "ID": "ShopKo Hometown Banner xAOC Comp",
+                "description": "ShopKo Hometown Banner xAOC Comp"
+            },
+            {
+                "ID": "ShopKo Total xAOC Comp",
+                "description": "ShopKo Total xAOC Comp"
+            },
+            {
+                "ID": "ShopRite Total xAOC Comp",
+                "description": "ShopRite Total xAOC Comp"
+            },
+            {
+                "ID": "Shoppers Food Warehouse xAOC Comp",
+                "description": "Shoppers Food Warehouse xAOC Comp"
+            },
+            {
+                "ID": "Smiths Total xAOC Comp",
+                "description": "Smiths Total xAOC Comp"
+            },
+            {
+                "ID": "Stater Bros Total xAOC Comp",
+                "description": "Stater Bros Total xAOC Comp"
+            },
+            {
+                "ID": "Stop & Shop New England xAOC Comp",
+                "description": "Stop & Shop New England xAOC Comp"
+            },
+            {
+                "ID": "Stop & Shop New York xAOC Comp",
+                "description": "Stop & Shop New York xAOC Comp"
+            },
+            {
+                "ID": "Stop & Shop Total xAOC Comp",
+                "description": "Stop & Shop Total xAOC Comp"
+            },
+            {
+                "ID": "Strack & Van Til Total xAOC Comp",
+                "description": "Strack & Van Til Total xAOC Comp"
+            },
+            {
+                "ID": "Superfresh Philadelphia xAOC Comp",
+                "description": "Superfresh Philadelphia xAOC Comp"
+            },
+            {
+                "ID": "Target Total xAOC Comp",
+                "description": "Target Total xAOC Comp"
+            },
+            {
+                "ID": "Tops Total xAOC Comp",
+                "description": "Tops Total xAOC Comp"
+            },
+            {
+                "ID": "Total DeCA CONUS ex AK & HI xAOC Comp",
+                "description": "Total DeCA CONUS ex AK & HI xAOC Comp"
+            },
+            {
+                "ID": "Waldbaums xAOC Comp",
+                "description": "Waldbaums xAOC Comp"
+            },
+            {
+                "ID": "Walgreens Corp Southern Region xAOC Comp",
+                "description": "Walgreens Corp Southern Region xAOC Comp"
+            },
+            {
+                "ID": "Walgreens Corp Western Region xAOC Comp",
+                "description": "Walgreens Corp Western Region xAOC Comp"
+            },
+            {
+                "ID": "Wegmans Total xAOC Comp",
+                "description": "Wegmans Total xAOC Comp"
+            },
+            {
+                "ID": "Weis Total xAOC Comp",
+                "description": "Weis Total xAOC Comp"
+            },
+            {
+                "ID": "Winco Intermountain xAOC Comp",
+                "description": "Winco Intermountain xAOC Comp"
+            },
+            {
+                "ID": "Winco N California xAOC Comp",
+                "description": "Winco N California xAOC Comp"
+            },
+            {
+                "ID": "Winco Northwest xAOC Comp",
+                "description": "Winco Northwest xAOC Comp"
+            },
+            {
+                "ID": "Winco Southwest xAOC Comp",
+                "description": "Winco Southwest xAOC Comp"
+            },
+            {
+                "ID": "Winco Total xAOC Comp",
+                "description": "Winco Total xAOC Comp"
+            },
+            {
+                "ID": "Winn-Dixie Jacksonville Region xAOC Comp",
+                "description": "Winn-Dixie Jacksonville Region xAOC Comp"
+            },
+            {
+                "ID": "Winn-Dixie Miami Region xAOC Comp",
+                "description": "Winn-Dixie Miami Region xAOC Comp"
+            },
+            {
+                "ID": "Winn-Dixie Montgomery Region xAOC Comp",
+                "description": "Winn-Dixie Montgomery Region xAOC Comp"
+            },
+            {
+                "ID": "Winn-Dixie New Orleans Region xAOC Comp",
+                "description": "Winn-Dixie New Orleans Region xAOC Comp"
+            },
+            {
+                "ID": "Winn-Dixie Tampa Region xAOC Comp",
+                "description": "Winn-Dixie Tampa Region xAOC Comp"
+            }
+        ]
+    }
+

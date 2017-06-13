@@ -1,0 +1,68 @@
+{
+    "catalogueLogicalDimension": {
+        "ID": "DEFAULT",
+        "description": "DEFAULT",
+        "dimension": [{
+            "ID": "FOCUS",
+            "type": "Focus",
+            "description": "Focus"
+		}, {
+            "ID": "MRKT",
+            "type": "Market",
+            "description": "Market",
+            "prompt": [{
+                "ID": "MRKT",
+                "description": "Market"
+			}, {
+                "ID": "MRKT_COMP",
+                "description": "Comparison Market",
+                "isShare": "true"
+			}, {
+                "ID": "MRKT_SHR",
+                "description": "Market Share To",
+                "isShare": "true"
+			}]
+		}, {
+            "ID": "PRDC",
+            "type": "Product",
+            "description": "Products",
+            "prompt": [{
+                "ID": "PRDC",
+                "description": "Products"
+			}, {
+                "ID": "PRDC_SHR",
+                "description": "Product Share",
+                "isShare": "true"
+			}]
+		}, {
+            "ID": "PRD",
+            "type": "Periods",
+            "description": "Periods",
+            "prompt": [{
+                "ID": "PRDC",
+                "description": "Product"
+			}, {
+                "ID": "PRDC_SHR",
+                "description": "Product Share",
+                "isShare": "true"
+			}]
+		}, {
+            "ID": "FCT",
+            "type": "FACT",
+            "description": "Facts",
+            "prompt": [{
+                "ID": "PRDC",
+                "description": "Product"
+			}, {
+                "ID": "PRDC_SHR",
+                "description": "Product Share",
+                "isShare": "true"
+			}]
+		}, {
+            "ID": "OVERVIEW",
+            "type": "Overview",
+            "description": "Overview"
+		}]
+    }
+
+}

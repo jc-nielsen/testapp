@@ -1,0 +1,54 @@
+[{
+	"title": "Dashboards",
+	"url": "#/dashboard",
+	"img": "assets/images/dashboard.png"
+	}, {
+	"title": "Stories",
+	"url": "#/discovery?assetType=STORY",
+	"img": "assets/images/stories.png"
+	}, {
+		"title": "Performance Dashboard",
+		"url": "#/PerformanceDashboard",
+		"img": "assets/images/retail_insights.png"
+	},{
+	"title": "Market News",
+	"url": null,
+	"img": "assets/images/market_news.png"
+	}, {
+	"title": "Retail Insights",
+	"url": "https://glb.answersqc.nielsen.com:443/mstw.LEB-NDX-UAT-1/servlet/mstrWeb?evt=2048001&src=mstrWeb.2048001&visMode=0&currentViewMedia=1&documentID=D29AE5F811E653B900000080EF45E091&server=AUE2RHENDXTISU02&Project=NDX%20BI%20Retailer%20MVP&port=0&share=1",
+	"img": "assets/images/retail_insights.png"
+	}, {
+	"title": "Market Scorecard",
+	"url": "https://glb.answersqc.nielsen.com/mstw.LEB-NDX-UAT-1/servlet/mstrWeb?evt=2048001&src=mstrWeb.2048001&visMode=0&currentViewMedia=1&documentID=00D30F7A470B3F02E45F798F6240BAE6&server=AUE2RHENDXTISU02&Project=NDX%20BI%20Retailer%20MVP&port=0&share=1",
+	"img": "assets/images/arvo_store_locator.png"
+	}, {
+	"title": "Competitor Scorecard",
+	"url": "https://glb.answersqc.nielsen.com:443/mstw.LEB-NDX-UAT-1/servlet/mstrWeb?evt=2048001&src=mstrWeb.2048001&visMode=0&currentViewMedia=1&documentID=54A4E82F11E64A8116D00080EF85EAF6&server=AUE2RHENDXTISU02&Project=NDX%20BI%20Retailer%20MVP&port=0&share=1",
+	"img": "assets/images/business_drivers.png"
+	}, {
+	"title": "Global Track Complete",
+	"url": "https://h1.answersqc.nielsen.com:443/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=2048001&src=mstrWeb.2048001&visMode=0&currentViewMedia=1&documentID=26F03BB44EA1FB5D20C89999C97A8F71&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=QA%20GTC%20SYNDICATED%20TEMPLATE_3.1_mstr10&port=0&share=1",
+	"img": "assets/images/gtc.png"
+	}, {
+	"title": "Retailer - 2.0",
+	"url": "https://h1.answersqc.nielsen.com:443/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=2048001&src=mstrWeb.2048001&visMode=0&currentViewMedia=1&documentID=2668D3DE11E5692802910080EFB5E7BF&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=UAT%20ER%20TSR%20Full%20Retailer%20Preview_mstr10&port=0&share=1",
+	"img": "assets/images/retail_insights.png"
+	}, {
+	"title": "Business Drivers",
+	"url": null,
+	"img": "assets/images/business_drivers.png"
+	}, {
+	"title": "Ad-hoc analysis",
+	"url": "#/discovery?assetType=TEMPLATE",
+	"img": "assets/images/stories.png"
+	}, {
+	"title": "Developer Studio",
+	"url": "https://glb.answersqc.nielsen.com/developerstudio/",
+	"img": "assets/images/developer_studio.png"
+	}, {
+	"title": "Enrichment Studio",
+	"url": "https://dc1.answersqc.nielsen.com/qc/IntegrationStudio/console/",
+	"img": "assets/images/enrichment_studio.png"
+	}
+]

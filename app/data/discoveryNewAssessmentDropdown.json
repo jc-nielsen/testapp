@@ -1,0 +1,160 @@
+{
+  "data": [{
+    "title": "New folder...",
+    "image": "",
+    "seperator": "true"
+  }, {
+    "title": "Share...",
+    "image": "nlsn-icon-account",
+    "seperator": "false"
+  }, {
+    "title": "Move to...",
+    "image": "",
+    "seperator": "false"
+  }, {
+    "title": "Favourite",
+    "image": "nlsn-icon-star",
+    "seperator": "false"
+  }, {
+    "title": "Rename...",
+    "image": "",
+    "seperator": "true"
+  }, {
+    "title": "Remove",
+    "image": "nlsn-icon-delete",
+    "seperator": "false"
+  }],
+  "collectionheader": [{
+    "title": "Favorite",
+    "image": "nlsn-icon-star",
+    "seprator": "false",
+    "disable":"false",
+    "action":"favorite"
+  },
+  {
+    "title": "Rename...",
+    "image": "nlsn-icon-option_edit",
+    "seprator": "false",
+    "disable":"false",
+    "action":"rename"
+  },
+    {
+    "title": "Create a template...",
+    "image": "nlsn-icon-widgets",
+    "seprator": "true",
+    "disable":"false",
+    "action":"createtemplate"
+  },
+  {
+    "title": "Comment",
+    "image": "nlsn-icon-comments",
+    "seprator": "false",
+    "disable":"true",
+    "action":"comment"
+  },
+  {
+    "title": "Share",
+    "image": "nlsn-icon-account-multiple",
+    "seprator": "false",
+    "disable":"true",
+    "action":"share"
+  },
+  {
+    "title": "Subscribe",
+    "image": "fa fa-rss",
+    "seprator": "true",
+    "disable":"true",
+    "action":"subscribe"
+  },
+  {
+    "title": "View Details...",
+    "image": "nlsn-icon-info_fill",
+    "seprator": "false",
+    "disable":"false",
+    "action":"viewdetails"
+  }],
+  "reportheader": [{
+    "title": "Favorite",
+    "image": "nlsn-icon-star",
+    "seprator": "true",
+    "disable":"false",
+    "action": "favorite"
+  },
+    {
+    "title": "Save view",
+    "image": "nlsn-icon-save",
+    "seprator": "false",
+    "disable":"false",
+    "action": "saveview"
+  },
+  {
+    "title": "Rename view",
+    "image": "nlsn-icon-option_edit",
+    "seprator": "false",
+    "disable":"false",
+    "action": "renameview"
+  },
+  {
+    "title": "Remove View",
+    "image": "nlsn-icon-delete",
+    "seprator": "true",
+    "disable":"true",
+    "action": "deleteview"
+  },
+  {
+    "title": "View Insights...",
+    "image": "fa fa-lightbulb-o",
+    "seprator": "false",
+    "disable":"true",
+    "action":"viewinsights"
+  },
+  {
+    "title": "Format...",
+    "image": "nlsn-icon-pencil",
+    "seprator": "false",
+    "disable":"true",
+    "action":"format"
+  },
+  {
+    "title": "Send to",
+    "image": "nlsn-icon-file-chart",
+    "seprator": "true",
+    "disable":"false",
+    "action":"sendto"
+  },
+  {
+    "title": "Comments",
+    "image": "nlsn-icon-comments",
+    "seprator": "false",
+    "disable":"true",
+    "action":"comments"
+  },
+  {
+    "title": "Share",
+    "image": "nlsn-icon-account-multiple",
+    "seprator": "false",
+    "disable":"true",
+    "action":"share"
+  },
+  {
+    "title": "Subscribe",
+    "image": "fa fa-rss",
+    "seprator": "true",
+    "disable":"true",
+    "action":"subscribe"
+  },
+  {
+    "title": "Report Builder",
+    "image": "nlsn-icon-file-chart",
+    "seprator": "true",
+    "disable":"true",
+    "action":"reportbuilder"
+  },
+  {
+    "title": "View Details",
+    "image": "nlsn-icon-info_fill",
+    "seprator": "false",
+    "disable":"false",
+    "action":"details"
+  }]
+}

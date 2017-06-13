@@ -1,0 +1,42 @@
+[
+    {
+        "date": "12/07/2015",
+        "items": [
+            {
+                "image": "assets/images/userImage.png",
+                "title": "Jason Smith",
+                "description": "Created Chart",
+                "time": "9:12 am"
+      },
+            {
+                "image": "assets/images/userImage2.png",
+                "title": "Sarah Fox",
+                "description": "Created Brand B-Mexico case",
+                "time": "11:34 am"
+      },
+            {
+                "image": "assets/images/userImage.png",
+                "title": "Jason Smith",
+                "description": "Assigned new action ‘Review’ to Sarah for ‘Brand B-Mexico’ case",
+                "time": "1:00 pm"
+      }
+    ]
+  },
+    {
+        "date": "12/08/2015",
+        "items": [
+            {
+                "image": "assets/images/userImage.png",
+                "title": "Jason Smith",
+                "description": "Changed Brand B-Mexico case state to Plan",
+                "time": "9:30 am"
+      },
+            {
+                "image": "assets/images/userImage2.png",
+                "title": "Sarah Fox",
+                "description": "Changed Brand B-Mexico case state to Execute",
+                "time": "2:45 pm"
+      }
+    ]
+  }
+]

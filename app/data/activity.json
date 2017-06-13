@@ -1,0 +1,168 @@
+[{
+    "tabs": [
+        {
+            "type": "activity",
+            "name": "Activities"
+        },
+        {
+            "type": "alert",
+            "name": "Alert"
+
+        },
+        {
+            "type": "recommended",
+            "name": "Recommended"
+        }
+    ],
+    "data": [
+        {
+            "id": "activity_01",
+            "type": "activity",
+            "title": "KPI Alert",
+            "subject": "RE: Italy Pepsi Performance",
+            "image": "assets/images/analytics.jpg",
+            "imageClass": "fa fa-file-excel-o",
+            "colorClass": "colorDarkGreen",
+            "dateCreated": "2016-03-11T05:20:43.511Z",
+            "read":true,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "Your market share is down due to sales in Arvo being down.  This is due to pricing and  promotions.",
+            "link": "data/52 Week POC Templatev0.22 - 1901.xls"
+}, {
+            "id": "activity_02",
+            "type": "activity",
+            "title": "Sarah Beach",
+            "subject": "RE: Italy Perfeksjon Performance",
+            "image": "assets/images/activity/img_01.png",
+            "imageClass": "",
+            "colorClass": "blue",
+            "dateCreated": "2016-03-11T08:05:55.511Z",
+            "read":false,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "Brand analysis to explain declining sales in Blades"
+}, {
+            "id": "activity_03",
+            "type": "activity",
+            "title": "Report Complete",
+            "subject": "Perfeksjon NPD Monitor",
+            "image": "assets/images/analytics.jpg",
+            "imageClass": "fa fa-bar-chart",
+            "colorClass": "blue",
+            "dateCreated": "2016-03-11T04:20:43.511Z",
+            "read":true,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "Trimmers NPD tracker"
+}, {
+            "id": "activity_04",
+            "type": "alert",
+            "title": "Planned Outage",
+            "subject": "RE: Italy Pepsi Performance",
+            "image": "assets/images/activity_downtime.png",
+            "imageClass": "fa fa-power-off",
+            "colorClass": "colorOrange",
+            "dateCreated": "2017-03-11T05:20:43.511Z",
+            "read":false,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "Between 10pm and 12pm EST on Saturday"
+},  {
+            "id": "activity_05",
+            "type": "activity",
+            "title": "Have your say",
+            "subject": "Sign up for the Answers Forum",
+            "image": "assets/images/activity_forum.png",
+            "imageClass": "fa fa-pencil-square-o",
+            "colorClass": "blue",
+            "dateCreated": "2016-03-09T04:20:43.511Z",
+            "read":true,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "What do you think of the new benchmarking report?"
+}, {
+            "id": "activity_06",
+            "type": "recommended",
+            "title": "New Whitepaper",
+            "subject": "Assortment Calculator",
+            "image": "assets/images/recent_brand_promotions.png",
+            "imageClass": "fa fa-calculator",
+            "colorClass": "violet",
+            "dateCreated": "2016-03-11T06:20:43.511Z",
+            "read":false,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "Understand the impact of the new…."
+}, {
+            "id": "activity_08",
+            "type": "",
+            "title": "Review this analysis...",
+            "subject": "Italy Perfeksjon Performance",
+            "image": "assets/images/activity/img_07.png",
+            "imageClass": "",
+            "colorClass": "green",
+            "dateCreated": "2016-03-11T08:20:43.511Z",
+            "read":true,
+            "iconList": [{
+                "iconClass": "fa fa-thumb-tack",
+                "iconName": "pin"
+	}, {
+                "iconClass": "fa fa-clock-o",
+                "iconName": "snooze"
+	}, {
+                "iconClass": "fa fa-check",
+                "iconName": "done"
+	}],
+            "description": "What is the impact of innovation on..."
+}
+]
+}]

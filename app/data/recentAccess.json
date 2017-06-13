@@ -1,0 +1,79 @@
+[
+    {
+        "title": "Retail Analytics",
+        "subtitle": "Leading Labels",
+        "icon": "fa fa-pie-chart blue",
+        "items": [
+            {
+                "title": "Opportunity Targeting",
+                "access_time": "2016-01-21T18:25:43.511Z",
+                "status": "ready",
+                "imageURL": "assets/images/recent_opportunity_target.png",
+
+                "url": "#/insights"
+
+            },
+            {
+                "title": "Global Market Evaluator",
+                "subtitle": "Global Market Evaluator",
+                "access_time": "2016-01-24T18:25:43.511Z",
+                "status": "not_ready",
+                "progress": "60",
+                "imageURL": "assets/images/recent_global_mkt_eval.png",
+                "icon": "fa fa-balance-scale orange",
+                "url": ""
+            }
+        ]
+    },
+    {
+        "title": "Brand Promotions",
+        "subtitle": "Global Market Evaluator",
+        "icon": "fa fa-product-hunt colorRed",
+        "items": [
+            {
+                "title": "Brand Promotions",
+
+                "access_time": "2016-01-14T08:15:33.211Z",
+                "status": "ready",
+                "imageURL": "assets/images/recent_brand_promotions.png",
+
+                "url": "#/bubbleChart"
+            },
+            {
+                "title": "Price Explorer",
+                "subtitle": "Global Market Evaluator",
+                "access_time": "2016-01-12T18:25:43.511Z",
+                "status": "ready",
+                "imageURL": "assets/images/recent_price_explorer.png",
+                "icon": "fa fa-credit-card skyBlue",
+                "url": "#/barChart"
+            }
+        ]
+    },
+    {
+        "title": "Consumer Trends",
+        "subtitle": "Global Market Evaluator",
+        "icon": "fa fa-percent colorRed",
+        "items": [
+            {
+                "title": "Regional Performance",
+
+                "access_time": "2016-01-01T18:25:43.511Z",
+                "status": "ready",
+                "imageURL": "assets/images/recent_regional_performance.png",
+                "progress": "45",
+
+                "url": ""
+            },
+            {
+                "title": "New Product Introduction",
+                "subtitle": "Global Market Evaluator",
+                "access_time": "2016-01-20T18:25:43.511Z",
+                "status": "ready",
+                "imageURL": "assets/images/recent_product_introductions.png",
+                "icon": "fa fa-plus-square skyBlue",
+                "url": ""
+            }
+        ]
+    }
+]

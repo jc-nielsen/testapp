@@ -1,0 +1,555 @@
+{
+    "id": "575eaa7fd7d744d5b2fce287",
+    "assetId": null,
+    "title": "Category Performance",
+    "description": null,
+    "userTags": null,
+    "focusTags": null,
+    "favorite": false,
+    "status": "COMPLETED",
+    "createdBy": "5758843bc3d8460c2e164edd",
+    "createdDate": 1465418817614,
+    "updatedBy": "5758843bc3d8460c2e164edd",
+    "accessedDate": 1465450619262,
+    "updatedDate": 1465418817614,
+    "cards": [{
+        "id": "CPB",
+        "assetId": null,
+        "title": "Cereal Performance in the US",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822799,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 2,
+                "y": 1
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "size": {
+                "height": 2,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "reporting/chart/brandComparison"
+			},
+			"prompts": [{
+                "id": null,
+                "name": "categoryName",
+                "value": "HOT CEREAL"
+			}, {
+                "id": null,
+                "name": "period",
+                "value": "Latest 4 Wks - W/E 02/21/15"
+			}, {
+                "id": null,
+                "name": "rank",
+                "value": 5
+			}]
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "MULTIBAR",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "donut": false
+	}, {
+        "id": "EXT",
+        "assetId": null,
+        "title": "Category Sales Trend",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822920,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 4,
+                "y": 0
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 3,
+                "width": 3
+            },
+            "size": {
+                "height": 2,
+                "width": 2
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "data/categorySalesTrend/categorySalesTrendLPlusB.json"
+			},
+			"prompts": []
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "MULTICHART",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "donut": false,
+        "src": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true"
+	}, {
+        "id": "EXTMB",
+        "assetId": null,
+        "title": "Category Sales Trend",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822920,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 0,
+                "y": 1
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 3,
+                "width": 3
+            },
+            "size": {
+                "height": 2,
+                "width": 2
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "data/categorySalesTrend/categorySalesTrend.json"
+			},
+			"prompts": []
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "MULTIBAR",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": "null",
+        "colorScale": null,
+        "legendPosition": null,
+        "chartType": "MULTIBAR",
+        "donut": false,
+        "src": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true"
+	}, {
+        "id": "SC",
+        "assetId": null,
+        "title": "Starbucks vs Category",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822679,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 2,
+                "y": 0
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "size": {
+                "height": 2,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "reporting/chart/categoryBrandTotal"
+			},
+			"prompts": [{
+                "id": null,
+                "name": "categoryName",
+                "value": "COFFEE"
+			}, {
+                "id": null,
+                "name": "brandName",
+                "value": "STARBUCKS"
+			}, {
+                "id": null,
+                "name": "period",
+                "value": "Latest 4 Wks - W/E 02/21/15"
+			}, {
+                "id": null,
+                "name": "rank",
+                "value": 5
+			}]
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "LINE",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "chartType": "LINE",
+        "donut": false
+	}, {
+        "id": "TNB",
+        "assetId": null,
+        "title": "Favorite Coffee Brands",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822732,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 2,
+                "y": 2
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "size": {
+                "height": 2,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "reporting/chart/topNBrands"
+			},
+			"prompts": [{
+                "id": null,
+                "name": "categoryName",
+                "value": "COFFEE"
+			}, {
+                "id": null,
+                "name": "period",
+                "value": "Latest 4 Wks - W/E 02/21/15"
+			}, {
+                "id": null,
+                "name": "rank",
+                "value": 5
+			}]
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "PIE",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "chartType": "PIE",
+        "donut": false
+	}, {
+        "id": "TNC",
+        "assetId": null,
+        "title": "Kraft Foods - Top Categories",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822855,
+        "cardType": "CHART",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 1,
+                "y": 0
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "size": {
+                "height": 1,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "reporting/chart/topNCategory"
+			},
+			"prompts": [{
+                "id": null,
+                "name": "ManufacturerName",
+                "value": "KRAFT FOODS, INC."
+			}, {
+                "id": null,
+                "name": "period",
+                "value": "Latest 4 Wks - W/E 02/21/15"
+			}, {
+                "id": null,
+                "name": "rank",
+                "value": 5
+			}]
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "PIE",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "chartType": "PIE",
+        "donut": true
+	}, {
+        "id": "CKPI",
+        "assetId": null,
+        "title": "Category KPI",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822855,
+        "cardType": "CHART",
+        "mstrReport": true,
+        "launchUrl": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 1,
+                "width": 1
+            },
+            "size": {
+                "height": 1,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "data/categoryKPI/categoryKPI.json"
+			},
+			"prompts": []
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "PIE",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "chartType": "PIE",
+        "donut": true,
+        "src": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true"
+	}, {
+        "id": "CSKPI",
+        "assetId": null,
+        "title": "Category Sample KPI",
+        "description": null,
+        "userTags": null,
+        "focusTags": null,
+        "favorite": false,
+        "status": "COMPLETED",
+        "createdBy": null,
+        "createdDate": null,
+        "updatedBy": "5758843bc3d8460c2e164edd",
+        "accessedDate": null,
+        "updatedDate": 1465418822855,
+        "cardType": "CHART",
+        "mstrReport": true,
+        "launchUrl": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true",
+        "placement": {
+            "id": null,
+            "position": {
+                "x": 0,
+                "y": 0
+            },
+            "minSize": {
+                "height": 1,
+                "width": 1
+            },
+            "maxSize": {
+                "height": 2,
+                "width": 2
+            },
+            "size": {
+                "height": 1,
+                "width": 1
+            },
+            "resizable": true
+        },
+        "dataSelection": {
+			"id": null,
+			"dataContext": {
+				"service": null,
+				"contextId": null,
+				"contextName": null,
+				"url": "data/categoryKPI/categorySampleKPI.json"
+			},
+			"prompts": []
+		},
+        "reportSpecification": {
+			"id": null,
+			"objects": [{
+				"type": "PIE",
+				"layout": null
+			}],
+			"pageBy": null
+		},
+        "dimension": null,
+        "options": null,
+        "linkedReport": null,
+        "colorScale": null,
+        "legendPosition": null,
+        "donut": true,
+        "src": "https://h1.answersqc.nielsen.com/mstw.LEB-NIS-UAT-OOB-2/servlet/mstrWeb?evt=3140&src=mstrWeb.3140&documentID=45E202FC11E62D9132C20080EFD52E24&server=DAYRHECDXI007.ENTERPRISENET.ORG&Project=NDX%20DM%20POC%20Separate%20Facts%20only&port=0&share=1&useDefAns=true"
+	}],
+    "defaultDashboard": false,
+    "folderId": null
+}

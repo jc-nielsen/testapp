@@ -1,0 +1,188 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "AD_BE_PRC",
+            "description": "Any Disp Base EQ Price"
+            },
+        {
+            "ID": "AD_BE_PRC_PCT_CHG_PREV",
+            "description": "Any Disp Base EQ Price % Chg Prev"
+            },
+        {
+            "ID": "AD_BE_PRC_PCT_CHG",
+            "description": "Any Disp Base EQ Price % Chg YA"
+            },
+        {
+            "ID": "AD_BE_PRC_CHG_PREV",
+            "description": "Any Disp Base EQ Price CPP"
+            },
+        {
+            "ID": "AD_BE_PRC_CHG_YAGO",
+            "description": "Any Disp Base EQ Price CYA"
+            },
+        {
+            "ID": "AD_BE_PRC_PREV",
+            "description": "Any Disp Base EQ Price Prev"
+            },
+        {
+            "ID": "AD_BE_PRC_YAGO",
+            "description": "Any Disp Base EQ Price YA"
+            },
+        {
+            "ID": "AD_BU_PRC",
+            "description": "Any Disp Base Unit Price"
+            },
+        {
+            "ID": "AD_BU_PRC_PCT_CHG_PREV",
+            "description": "Any Disp Base Unit Price % Chg Prev"
+            },
+        {
+            "ID": "AD_BU_PRC_PCT_CHG",
+            "description": "Any Disp Base Unit Price % Chg YA"
+            },
+        {
+            "ID": "AD_BU_PRC_CHG_PREV",
+            "description": "Any Disp Base Unit Price CPP"
+            },
+        {
+            "ID": "AD_BU_PRC_CHG_YAGO",
+            "description": "Any Disp Base Unit Price CYA"
+            },
+        {
+            "ID": "AD_BU_PRC_PREV",
+            "description": "Any Disp Base Unit Price Prev"
+            },
+        {
+            "ID": "AD_BU_PRC_YAGO",
+            "description": "Any Disp Base Unit Price YA"
+            },
+        {
+            "ID": "AD_E_PRC",
+            "description": "Any Disp EQ Price"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_CHG_PREV",
+            "description": "Any Disp EQ Price % Chg Prev"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_CHG",
+            "description": "Any Disp EQ Price % Chg YA"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_DISC",
+            "description": "Any Disp EQ Price % Disc"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_DISC_CHG_YAGO",
+            "description": "Any Disp EQ Price % Disc CYA"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_DISC_IYA",
+            "description": "Any Disp EQ Price % Disc IYA"
+            },
+        {
+            "ID": "AD_E_PRC_PCT_DISC_YAGO",
+            "description": "Any Disp EQ Price % Disc YA"
+            },
+        {
+            "ID": "AD_E_PRC_CHG_PREV",
+            "description": "Any Disp EQ Price CPP"
+            },
+        {
+            "ID": "AD_E_PRC_CHG_YAGO",
+            "description": "Any Disp EQ Price CYA"
+            },
+        {
+            "ID": "AD_E_PRC_DISC",
+            "description": "Any Disp EQ Price Disc"
+            },
+        {
+            "ID": "AD_E_PRC_DISC_CHG_YAGO",
+            "description": "Any Disp EQ Price Disc CYA"
+            },
+        {
+            "ID": "AD_E_PRC_DISC_YAGO",
+            "description": "Any Disp EQ Price Disc YA"
+            },
+        {
+            "ID": "AD_E_PRC_IYA",
+            "description": "Any Disp EQ Price IYA"
+            },
+        {
+            "ID": "AD_E_PRC_PREV",
+            "description": "Any Disp EQ Price Prev"
+            },
+        {
+            "ID": "AD_E_PRC_YAGO",
+            "description": "Any Disp EQ Price YA"
+            },
+        {
+            "ID": "AD_U_PRC",
+            "description": "Any Disp Unit Price"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_CHG_PREV",
+            "description": "Any Disp Unit Price % Chg Prev"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_CHG",
+            "description": "Any Disp Unit Price % Chg YA"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_DISC",
+            "description": "Any Disp Unit Price % Disc"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_DISC_CHG_YAGO",
+            "description": "Any Disp Unit Price % Disc CYA"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_DISC_IYA",
+            "description": "Any Disp Unit Price % Disc IYA"
+            },
+        {
+            "ID": "AD_U_PRC_PCT_DISC_YAGO",
+            "description": "Any Disp Unit Price % Disc YA"
+            },
+        {
+            "ID": "AD_U_PRC_CHG_PREV",
+            "description": "Any Disp Unit Price CPP"
+            },
+        {
+            "ID": "AD_U_PRC_CHG_YAGO",
+            "description": "Any Disp Unit Price CYA"
+            },
+        {
+            "ID": "AD_U_PRC_DISC",
+            "description": "Any Disp Unit Price Disc"
+            },
+        {
+            "ID": "AD_U_PRC_DISC_CHG_YAGO",
+            "description": "Any Disp Unit Price Disc CYA"
+            },
+        {
+            "ID": "AD_U_PRC_DISC_YAGO",
+            "description": "Any Disp Unit Price Disc YA"
+            },
+        {
+            "ID": "AD_U_PRC_IYA",
+            "description": "Any Disp Unit Price IYA"
+            },
+        {
+            "ID": "AD_U_PRC_PREV",
+            "description": "Any Disp Unit Price Prev"
+            },
+        {
+            "ID": "AD_U_PRC_YAGO",
+            "description": "Any Disp Unit Price YA"
+            }
+        ]
+}

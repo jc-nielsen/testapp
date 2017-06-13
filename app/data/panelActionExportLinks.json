@@ -1,0 +1,13 @@
+[
+	{
+		"title": "Upload to SAP",
+		"status": "Upload to corporate ERP system",
+		"icon": "fa fa-upload",
+		"img": "assets/images/loading_to_sap.png"
+    },
+	{
+		"title": "Retailer Event Review Presentation",
+		"status": "Standard presentation for retailer review",
+		"icon": "fa fa-file-powerpoint-o"
+     }
+]

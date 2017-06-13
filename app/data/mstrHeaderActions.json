@@ -1,0 +1,9 @@
+[{
+  "icon": "nlsn-icon-bell-outline",
+  "actionid": "toggleNotifications",
+  "ariaLabel": "Notifications"
+}, {
+  "icon": "nlsn-icon-apps2",
+  "actionid": "toggleApplications",
+  "ariaLabel": "Applications"
+}]

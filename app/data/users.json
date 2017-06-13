@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Jason Smith",
+        "email": "jason@nielsen.com",
+        "userImage": "assets/images/userImage.png",
+        "persona": [{
+                "id": 1,
+                "name": "Global Insights Manager",
+                "path": "globalinsightsmanager",
+                "role": "Manufacturer",
+                "image": "assets/images/userpersona.png",
+                "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+                "reference": "#/home?role=globalinsightsmanager"
+	}, {
+    "id": 2,
+    "name": "Category Buyer",
+    "path": "categorybuyer",
+    "role": "Retailer",
+    "image": "assets/images/userpersona.png",
+    "reference": "#/home?role=categorybuyer",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}, {
+    "id": 3,
+    "name": "Retail Executive",
+    "path": "retailexecutive",
+    "role": "Retailer",
+    "image": "assets/images/userpersona.png",
+    "reference": "#/home?role=retailexecutive",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}, {
+    "id": 4,
+    "name": "Category Manager",
+    "path": "categorymanager",
+    "role": "Manufacturer",
+    "image": "assets/images/userpersona.png",
+    "reference": "#/home?role=categorymanager",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+}
+]
+     }
+
+]

@@ -1,0 +1,188 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Group/Level/Values"
+    },
+    "catalogueGroupLevelValue": [
+        {
+            "ID": "APD_BE_PRC",
+            "description": "Any Price Decr Base EQ Price"
+            },
+        {
+            "ID": "APD_BE_PRC_PCT_CHG_PREV",
+            "description": "Any Price Decr Base EQ Price % Chg Prev"
+            },
+        {
+            "ID": "APD_BE_PRC_PCT_CHG",
+            "description": "Any Price Decr Base EQ Price % Chg YA"
+            },
+        {
+            "ID": "APD_BE_PRC_CHG_PREV",
+            "description": "Any Price Decr Base EQ Price CPP"
+            },
+        {
+            "ID": "APD_BE_PRC_CHG_YAGO",
+            "description": "Any Price Decr Base EQ Price CYA"
+            },
+        {
+            "ID": "APD_BE_PRC_PREV",
+            "description": "Any Price Decr Base EQ Price Prev"
+            },
+        {
+            "ID": "APD_BE_PRC_YAGO",
+            "description": "Any Price Decr Base EQ Price YA"
+            },
+        {
+            "ID": "APD_BU_PRC",
+            "description": "Any Price Decr Base Unit Price"
+            },
+        {
+            "ID": "APD_BU_PRC_PCT_CHG_PREV",
+            "description": "Any Price Decr Base Unit Price % Chg Prev"
+            },
+        {
+            "ID": "APD_BU_PRC_PCT_CHG",
+            "description": "Any Price Decr Base Unit Price % Chg YA"
+            },
+        {
+            "ID": "APD_BU_PRC_CHG_PREV",
+            "description": "Any Price Decr Base Unit Price CPP"
+            },
+        {
+            "ID": "APD_BU_PRC_CHG_YAGO",
+            "description": "Any Price Decr Base Unit Price CYA"
+            },
+        {
+            "ID": "APD_BU_PRC_PREV",
+            "description": "Any Price Decr Base Unit Price Prev"
+            },
+        {
+            "ID": "APD_BU_PRC_YAGO",
+            "description": "Any Price Decr Base Unit Price YA"
+            },
+        {
+            "ID": "APD_E_PRC",
+            "description": "Any Price Decr EQ Price"
+            },
+        {
+            "ID": "APD_E_PRC_PCT_CHG_PREV",
+            "description": "Any Price Decr EQ Price % Chg Prev"
+            },
+        {
+            "ID": "APD_E_PRC_PCT_CHG",
+            "description": "Any Price Decr EQ Price % Chg YA"
+            },
+        {
+            "ID": "APD_E_PRC_DISC",
+            "description": "Any Price Decr EQ Price % Disc"
+            },
+        {
+            "ID": "APD_E_PRC_DISC_CHG_YAGO",
+            "description": "Any Price Decr EQ Price % Disc CYA"
+            },
+        {
+            "ID": "APD_E_PRC_DISC_IYA",
+            "description": "Any Price Decr EQ Price % Disc IYA"
+            },
+        {
+            "ID": "APD_E_PRC_DISC_YAGO",
+            "description": "Any Price Decr EQ Price % Disc YA"
+            },
+        {
+            "ID": "APD_E_PRC_CHG_PREV",
+            "description": "Any Price Decr EQ Price CPP"
+            },
+        {
+            "ID": "APD_E_PRC_CHG_YAGO",
+            "description": "Any Price Decr EQ Price CYA"
+            },
+        {
+            "ID": "APD_E_PRC_DISCOUNT",
+            "description": "Any Price Decr EQ Price Disc"
+            },
+        {
+            "ID": "APD_E_PRC_DISCOUNT_CHG_YAGO",
+            "description": "Any Price Decr EQ Price Disc CYA"
+            },
+        {
+            "ID": "APD_E_PRC_DISCOUNT_YAGO",
+            "description": "Any Price Decr EQ Price Disc YA"
+            },
+        {
+            "ID": "APD_E_PRC_IYA",
+            "description": "Any Price Decr EQ Price IYA"
+            },
+        {
+            "ID": "APD_E_PRC_PREV",
+            "description": "Any Price Decr EQ Price Prev"
+            },
+        {
+            "ID": "APD_E_PRC_YAGO",
+            "description": "Any Price Decr EQ Price YA"
+            },
+        {
+            "ID": "APD_U_PRC",
+            "description": "Any Price Decr Unit Price"
+            },
+        {
+            "ID": "APD_U_PRC_PCT_CHG_PREV",
+            "description": "Any Price Decr Unit Price % Chg Prev"
+            },
+        {
+            "ID": "APD_U_PRC_PCT_CHG",
+            "description": "Any Price Decr Unit Price % Chg YA"
+            },
+        {
+            "ID": "APD_U_PRC_DISC",
+            "description": "Any Price Decr Unit Price % Disc"
+            },
+        {
+            "ID": "APD_U_PRC_DISC_CHG_YAGO",
+            "description": "Any Price Decr Unit Price % Disc CYA"
+            },
+        {
+            "ID": "APD_U_PRC_DISC_IYA",
+            "description": "Any Price Decr Unit Price % Disc IYA"
+            },
+        {
+            "ID": "APD_U_PRC_DISC_YAGO",
+            "description": "Any Price Decr Unit Price % Disc YA"
+            },
+        {
+            "ID": "APD_U_PRC_CHG_PREV",
+            "description": "Any Price Decr Unit Price CPP"
+            },
+        {
+            "ID": "APD_U_PRC_CHG_YAGO",
+            "description": "Any Price Decr Unit Price CYA"
+            },
+        {
+            "ID": "APD_U_PRC_DISCOUNT",
+            "description": "Any Price Decr Unit Price Disc"
+            },
+        {
+            "ID": "APD_U_PRC_DISCOUNT_CHG_YAGO",
+            "description": "Any Price Decr Unit Price Disc CYA"
+            },
+        {
+            "ID": "APD_U_PRC_DISCOUNT_YAGO",
+            "description": "Any Price Decr Unit Price Disc YA"
+            },
+        {
+            "ID": "APD_U_PRC_IYA",
+            "description": "Any Price Decr Unit Price IYA"
+            },
+        {
+            "ID": "APD_U_PRC_PREV",
+            "description": "Any Price Decr Unit Price Prev"
+            },
+        {
+            "ID": "APD_U_PRC_YAGO",
+            "description": "Any Price Decr Unit Price YA"
+            }
+        ]
+}

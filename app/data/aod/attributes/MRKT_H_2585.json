@@ -1,0 +1,22 @@
+{
+    "summary": {
+        "locale": {
+            "country": "US",
+            "language": "en"
+        },
+        "API-Version": "v1",
+        "API-Name": "Catalogue/Hierarchy/Levels"
+    },
+    "catalogueHierarchyLevel": [{
+        "ID": "2395",
+        "description": "Comp Market_MCM",
+        "level": [{
+            "ID": "2394",
+            "description": "All",
+            "level": [{
+                "ID": "2396",
+                "description": "TA and Remaining"
+			}]
+		}]
+	}]
+}

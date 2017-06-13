@@ -1,0 +1,299 @@
+{
+      "accessedDate": "10 May 2017, 11:43 AM",
+      "createdBy": "Arthi Kasturirangan",
+      "createdDate": "28 Apr 2017, 10:45 PM",
+      "description": "Item Rank",
+      "favorite": false,
+      "status": "COMPLETED",
+      "title": "Item Ranking",
+      "updatedBy": "Vaikhari Joshi",
+      "updatedDate": "10 May 2017, 11:43 AM",
+      "userTags": [
+        "Promotion and Price"
+      ],
+      "previewUrl": "data/CategoryAssessment/preview/Report-44.png",
+      "launchUrl": "#/report/5903c60a2efa092d400acd89",
+      "components": [
+        {
+          "type": "TABLE",
+          "tableConfig": {
+            "headerRow": true,
+            "totalRow": false,
+            "bandedRows": true,
+            "firstColumn": true,
+            "lastColumn": false,
+            "bandedColumns": false,
+            "mode": "compact",
+            "columnWidths": [
+              210,
+              100,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80,
+              80
+            ],
+            "defaultRowProperty": {
+              "shade": {
+                "color": "#ffffff"
+              },
+              "bandedShade": {
+                "color": "#e3e3e3"
+              }
+            },
+            "columnProperties": {
+              "0": {
+                "displayFormat": "",
+                "shade": {
+                  "color": "#ffffff"
+                },
+                "bandedShade": {
+                  "color": "#ededed"
+                },
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "1": {
+                "displayFormat": "",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "2": {
+                "displayFormat": "[Black]f;[Black]f;[Black]f",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "3": {
+                "displayFormat": "[Green]#,##0;[Red]#,##0;[Black]0",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "4": {
+                "displayFormat": "[Green].1f;[Red].1f;[Black]0",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "5": {
+                "displayFormat": "[Green]f;[Red]f;[Black]f",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "6": {
+                "displayFormat": "[Black]f;[Black]f;[Black]f",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "7": {
+                "displayFormat": "[Green]#,##0;[Red]#,##0;[Black]0",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "8": {
+                "displayFormat": "[Green].1f;[Red].1f;[Black]0",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              },
+              "9": {
+                "displayFormat": "[Black]f;[Black]f;[Black]f",
+                "cellTooltip": true,
+                "enableColumnResizing": false,
+                "enableColumnMoving": false,
+                "enableSort": false,
+                "enableFilter": false
+              }
+            },
+            "defaultColumnProperty": {},
+            "numHeaderRows": 2,
+            "dataDefinition": [
+              {
+                "value": "col1"
+              },
+              {
+                "value": "col2"
+              },
+              {
+                "value": "col3"
+              },
+              {
+                "value": "col4"
+              },
+              {
+                "value": "col5"
+              },
+              {
+                "value": "col6"
+              },
+              {
+                "value": "col7"
+              },
+              {
+                "value": "col8"
+              },
+              {
+                "value": "col9"
+              },
+              {
+                "value": "col10"
+              }
+            ]
+          },
+          "prompts": [
+            {
+              "title": null,
+              "items": [
+                {
+                  "title": "Item Ranking View Filter",
+                  "promptId": "Item Ranking View Filter"
+                }
+              ]
+            }
+          ],
+          "dataService": "reporting/report/#58b5a29012888e4d817171a1#5908e4de06ee6e05924ecb4e"
+        },
+        {
+          "type": "HEADER",
+          "id": "COMP_HEADER",
+          "content": "[Product Hierarchy Selector] Sales Ranking by UPC"
+        }
+      ],
+      "reportLayout": {
+        "type": "CARD",
+        "columns": 1,
+        "tiles": [
+          {
+            "row": 0,
+            "column": 0,
+            "columnSpan": 1,
+            "rowSpan": 1
+          }
+        ]
+      },
+      "prompts": [
+        {
+          "type": "HIERARCHY",
+          "dimension": "product",
+          "promptId": "Product Hierarchy Selector",
+          "promptName": "Product",
+          "readOnly": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Retailer Markets",
+          "promptName": "Primary Retailer",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "market",
+          "promptId": "Market Type",
+          "promptName": "Primary Comparison Market",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "fact",
+          "promptId": "Value / Units",
+          "promptName": "Value / Units",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "No of Weeks",
+          "promptName": "Primary Time Period",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "Period Date",
+          "promptName": "Primary Time Period End Date",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        },
+        {
+          "type": "LIST",
+          "dimension": "period",
+          "promptId": "Year Ago / Previous Period",
+          "promptName": "Comparison Time Period",
+          "readOnly": false,
+          "multiple": false,
+          "metric": false
+        }
+      ],
+      "promptLayout": {
+        "type": "FLOW",
+        "elements": [
+          {
+            "componentId": "Product Hierarchy Selector",
+            "seperator": true
+          },
+          {
+            "componentId": "Retailer Markets",
+            "seperator": false
+          },
+          {
+            "componentId": "Market Type",
+            "seperator": true
+          },
+          {
+            "componentId": "Value / Units",
+            "seperator": true
+          },
+          {
+            "componentId": "No of Weeks",
+            "seperator": false
+          },
+          {
+            "componentId": "Period Date",
+            "seperator": false
+          },
+          {
+            "componentId": "Year Ago / Previous Period",
+            "seperator": false
+          }
+        ]
+      },
+      "header": "COMP_HEADER"
+    }

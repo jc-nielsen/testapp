@@ -1,0 +1,17 @@
+{
+	"summary": {
+		"locale": {
+			"country": "US",
+			"language": "en"
+		},
+		"API-Version": "v1",
+		"API-Name": "Catalogue/Attribute/Values"
+	},
+	"catalogueAttributeValue": [{
+		"ID": "NOT APPLICABLE",
+		"description": "NOT APPLICABLE"
+	}, {
+		"ID": "xAOC Comp",
+		"description": "xAOC Comp"
+	}]
+}

@@ -1,0 +1,36 @@
+{
+	"tabHeading": "",
+	"cardTitle": "",
+	"cardSubTitle": "",
+	"tabData": [{
+		"groupHeading": "Menu Options",
+		"groupData": [{
+			"iconClass": "nlsn-icon-menu_settings",
+			"iconName": "Properties"
+        }, {
+			"iconClass": "nlsn-icon-trash-o",
+			"iconName": "Trash"
+        }, {
+			"iconClass": "nlsn-icon-action_share",
+			"iconName": "Share"
+        }, {
+			"iconClass": "nlsn-icon-option_edit",
+			"iconName": "Edit"
+        }, {
+			"iconClass": "fa fa-external-link",
+			"iconName": "Open"
+        }]
+    }, {
+		"groupHeading": "Size",
+		"groupData": ["Resizable", "1 * 1", "1 * 2", "2 * 1", "2 * 2"]
+    }, {
+		"groupHeading": "Card Interactions",
+		"groupData": ["Publish", "Subscribe"]
+    }, {
+		"groupHeading": "Schedule",
+		"groupData": ["Refresh on dataset update"]
+    }, {
+		"groupHeading": "Focus",
+		"groupData": ["New Products", "Markets", "Promotions", "Brand Loyalty", "Market Share", "Shopper Behaviors", "Consumer Segments", "Retail Location", "Channels"]
+    }]
+}

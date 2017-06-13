@@ -1,0 +1,71 @@
+//Used as mock response for DashboardListService.getDashboards();
+"use strict";
+angular.module('oneview.dashboardListData',
+[]).value('dashboardList',
+{
+	"accessedDate": 1472571123943,
+	"favorite": false,
+	"id": "ROOT",
+	"title": "All Folders",
+	"updatedBy": "2d9169d9fcc1a51b6280c240965072a0",
+	"updatedDate": 1472571186729,
+	"dashboards": [
+		{
+			"accessedDate": 1474467457684,
+			"createdBy": "2d9169d9fcc1a51b6280c240965072a0",
+			"createdDate": 1472572123096,
+			"favorite": false,
+			"focusTags": [
+				"NEW_PRODUCTS",
+				"MARKETS",
+				"PROMOTIONS",
+				"BRAND_LOYALTY",
+				"MARKET_SHARE",
+				"RETAIL_LOCATION",
+				"CONSUMER_SEGMENTS"
+			],
+			"id": "57c5aadba4abff5db7f95d36",
+			"status": "COMPLETED",
+			"title": "Retail Insights",
+			"updatedBy": "2d9169d9fcc1a51b6280c240965072a0",
+			"updatedDate": 1472572125253,
+			"userTags": [
+				"Unileaver Shampoo",
+				"Profiles Luke",
+				"Smith Trackers",
+				"Global Trackers"
+			],
+			"defaultDashboard": false
+		},
+		{
+			"accessedDate": 1474542373204,
+			"createdBy": "2d9169d9fcc1a51b6280c240965072a0",
+			"createdDate": 1472572134897,
+			"favorite": false,
+			"focusTags": [
+				"NEW_PRODUCTS",
+				"MARKETS",
+				"PROMOTIONS",
+				"BRAND_LOYALTY",
+				"MARKET_SHARE",
+				"RETAIL_LOCATION",
+				"CONSUMER_SEGMENTS"
+			],
+			"id": "57c5aae6a4abff5db7f95d40",
+			"status": "COMPLETED",
+			"title": "Citrello Performance",
+			"updatedBy": "2d9169d9fcc1a51b6280c240965072a0",
+			"updatedDate": 1472572136911,
+			"userTags": [
+				"Unileaver Shampoo",
+				"Profiles Luke",
+				"Smith Trackers",
+				"Global Trackers"
+			],
+			"defaultDashboard": true
+		}
+	],
+	"edit": true,
+	"expanded": true,
+	"folders": []
+});
