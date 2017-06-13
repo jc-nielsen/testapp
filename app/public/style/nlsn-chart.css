@@ -1,17 +1,6 @@
 /* global chart styles */
 
 /*****************************************************************************/
-/* axis */
-.nlsn-chart-axis path {
-  display: none;
-}
-
-/* Hide axis tick lines except grid. Allows ticksize to act as a margin for axis. */
-.nlsn-chart-axis.tick line:not(.nlsn-chart-grid) {
-  display: none;
-}
-
-/*****************************************************************************/
 /* base elements */
 /* svg container contains the svg element */
 .nlsn-chart-svg-container {
