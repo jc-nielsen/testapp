@@ -33,7 +33,7 @@ angular.module('nlsnChart.donut.module', [])
           nv.utils.windowResize(onResize);
 
           function onResize() {
-            //chart.update();
+            chart.update();
           }
 
           nv.addGraph(function () {
@@ -44,16 +44,13 @@ angular.module('nlsnChart.donut.module', [])
                 .y(function (d) {
                   return d.value
                 })
-                .showLabels(true)     //Display pie labels
-                .labelThreshold(.05)  //Configure the minimum slice size for labels to show up
-                .labelType("percent") //Configure what type of data to show in the label. Can be "key", "value" or "percent"
-                .donut(true)          //Turn on Donut mode. Makes pie chart look tasty!
-                .donutRatio(0.35)     //Configure how big you want the donut hole size to be.
+                .showLabels(false)
+                .donut(true)
+                .donutRatio(0.6)
             ;
 
             d3.select("svg")
                 .datum(chartData.data)
-                .transition().duration(350)
                 .call(chart);
 
             return chart;

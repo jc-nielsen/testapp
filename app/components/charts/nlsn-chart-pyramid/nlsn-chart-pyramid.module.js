@@ -76,7 +76,7 @@ angular.module('nlsnChart.pyramid.module', [])
           chart.config.headingLabelColor = chart.config.defaultColor1;
           chart.config.axisColor = chart.config.defaultColor1;
           chart.config.gridColor = chart.config.defaultColor2;
-          chart.config.gridStrokeWidth = 1;
+          chart.config.gridStrokeWidth = 1.5;
           chart.config.axisTopMargin = 4;
         }
 

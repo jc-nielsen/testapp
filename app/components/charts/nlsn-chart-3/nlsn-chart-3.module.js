@@ -9,7 +9,7 @@ angular.module('nlsnChart.3.module', [])
         var containerElement;
         var svgElement;
         var theController = function ($scope) {
-          $scope.chartData = nlsnDataSvc.getChartDataDonut();
+          $scope.chartData = nlsnDataSvc.getChartDataNvd3Donut();
         };
 
         return {

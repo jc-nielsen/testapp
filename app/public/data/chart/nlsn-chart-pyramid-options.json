@@ -1,8 +1,0 @@
-[
-  {
-    "chartHeight": "300",
-    "chartTitle": "The chart title goes here",
-    "chartWidth": "400",
-    "serviceUrl":"/public/data/chart/nlsn-chart-donut-data.json"
-  }
-]
