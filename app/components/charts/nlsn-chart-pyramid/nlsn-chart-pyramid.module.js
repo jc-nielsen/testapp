@@ -2,10 +2,8 @@
 
 angular.module('nlsnChart.pyramid.module', [])
     .directive('nlsnChartPyramid', [
-      '$document',
-      '$window',
       'nlsnDataSvc',
-      function ($document, $window, nlsnDataSvc) {
+      function (nlsnDataSvc) {
         var containerElement;
         var theController = function ($scope) {
           $scope.chartData = nlsnDataSvc.getChartDataPyramid();
@@ -31,26 +29,6 @@ angular.module('nlsnChart.pyramid.module', [])
           chart.containerElement = containerElement;
           chart.data = newValue.data;
           chart.heading = newValue.heading;
-
-          nv.utils.windowResize(onResize);
-
-          function onResize() {
-            var element = chart.containerElement[0][0];
-
-            // Extract the width and height that was computed by CSS.
-            var width = element.clientWidth;
-            var height = element.clientHeight;
-            //console.log('width =' + width);
-            //console.log('height =' + height);
-
-            //get window size
-            //var availableWidth = $window.innerWidth;
-            //var availableHeight = $window.innerHeight;
-
-            //chart.svgElement
-            //    .attr('width', width)
-            //    .attr('height', height);
-          }
 
           configureChart(chart);
           createPanels(chart);
@@ -83,7 +61,7 @@ angular.module('nlsnChart.pyramid.module', [])
           chart.config.rowSpacerHeight = 2;
           chart.config.headingMarginBottom = 8;
           // Position of label for each row, left/middle/right
-          chart.config.recordLabelPosition = 'left';
+          chart.config.recordLabelPosition = 'right';
           // Alignment of label for each row, left/middle/right
           chart.config.recordLabelAlign = 'right';
           chart.config.centerDividerWidth = 1;
