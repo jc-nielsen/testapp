@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nvd3-dp">
+
+<head>
+  <meta charset="utf-8">
+  <title>nvd3-dp examples</title>
+
+  <link rel="stylesheet" href="./assets/nv.d3.min.css"/>
+
+  <script src="./assets/angular.min.js"></script>
+  <script src="./assets/d3.js"></script>
+  <script src="./assets/nv.d3.js"></script>
+  <script src="../assets/js/angular-nvd3/angular-nvd3.js"></script>
+  <script src="../assets/js/lodash/lodash.js"></script>
+
+  <script src="./assets/nvd3chartlibrary.js"></script>
+
+  <script src="./assets/common.js"></script>
+
+  <script src="./multiBarChart.PointChange.WithNesting.js"></script>
+
+</head>
+
+<body ng-controller="MainCtrl">
+
+  <nvd3 options="options" data="data" api='api'></nvd3>
+
+</body>
+
+</html>

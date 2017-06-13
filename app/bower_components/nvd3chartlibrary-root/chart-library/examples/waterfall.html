@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="nvd3-dp">
+<head>
+  <meta charset="utf-8">
+  <title>nvd3-dp examples</title>
+  <link rel="stylesheet" href="../node_modules/nvd3/build/nv.d3.min.css"/>
+
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/d3/d3.min.js"></script>
+  <script src="../node_modules/nvd3/build/nv.d3.js"></script>
+  <script src="../assets/js/angular-nvd3/angular-nvd3.js"></script>
+
+  <script src="../build/nvd3chartlibrary.js"></script>
+
+  <script src="./waterfall.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+<!--   <select ng-model='optionsName' ng-change='optionsNameChange()'>
+    <option value='options1'>options 1</option>
+    <option value='options2'>options 2</option>
+  </select> -->
+
+  <nvd3 options="options" data="data"></nvd3>
+
+</body>
+
+</html>

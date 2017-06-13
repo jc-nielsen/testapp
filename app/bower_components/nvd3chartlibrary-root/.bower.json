@@ -1,0 +1,27 @@
+{
+  "name": "nvd3chartlibrary-root",
+  "description": "Root for NVD3 based chart library",
+  "main": "chart-library/build/nvd3chartlibrary.js",
+  "private": true,
+  "license": "private",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@adlm.nielsen.com:7999/ndx-cd/nvd3chartlibrary.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "f80f837716",
+  "_resolution": {
+    "type": "branch",
+    "branch": "develop",
+    "commit": "f80f83771620a8fc6228504e909466c518e23f7a"
+  },
+  "_source": "ssh://git@adlm.nielsen.com:7999/ndx-cd/nvd3chartlibrary.git",
+  "_target": "develop",
+  "_originalSource": "ssh://git@adlm.nielsen.com:7999/ndx-cd/nvd3chartlibrary.git"
+}
