@@ -26,9 +26,10 @@ angular.module('nlsnChart.pyramid.module', [])
           }
 
           var chart = {};
+          var mockData = newValue;
           chart.containerElement = containerElement;
-          chart.data = newValue.data;
-          chart.heading = newValue.heading;
+          chart.data = mockData.data;
+          chart.options = mockData.options;
 
           configureChart(chart);
           createPanels(chart);
@@ -364,7 +365,7 @@ angular.module('nlsnChart.pyramid.module', [])
           // X is set to middle of column to use with text anchor middle
           chart.headingGroup.baseElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
-              .text(chart.heading.metric0Label)
+              .text(chart.options.metric0Label)
               .attr('x', chart.metricsPanel[0].x + (chart.metricsPanel[0].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
@@ -374,7 +375,7 @@ angular.module('nlsnChart.pyramid.module', [])
           // X is set to middle of column to use with text anchor middle
           chart.headingGroup.baseElement.append('text')
               .attr('class', 'nlsn-chart-metric-label')
-              .text(chart.heading.metric1Label)
+              .text(chart.options.metric1Label)
               .attr('x', chart.metricsPanel[1].x + (chart.metricsPanel[1].width / 2) + chart.config.margin.left)
               .attr('y', chart.config.margin.top - chart.config.headingMarginBottom)
               .attr('text-anchor', 'middle')
@@ -458,7 +459,7 @@ angular.module('nlsnChart.pyramid.module', [])
                 theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric-color" style="background-color:';
                 theHtml += chart.config.metric0BarColor + '">&nbsp;</span>';
-                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric0Label + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.options.metric0Label + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric0 + '</span>';
                 theHtml += '</div>';
                 return theHtml;
@@ -471,7 +472,7 @@ angular.module('nlsnChart.pyramid.module', [])
                 theHtml += '<span class="nlsn-chart-tooltip-dimension">' + d.sharedLabel + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric-color" style="background-color:';
                 theHtml += chart.config.metric1BarColor + '">&nbsp;</span>';
-                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.heading.metric1Label + '</span>';
+                theHtml += '<span class="nlsn-chart-tooltip-heading">' + chart.options.metric1Label + '</span>';
                 theHtml += '<span class="nlsn-chart-tooltip-metric">' + d.metric1 + '</span>';
                 theHtml += '</div>';
                 return theHtml;

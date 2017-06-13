@@ -1,6 +1,6 @@
 {
-  "heading":{
-    "headingLabel": "Arvo",
+  "options":{
+    "chartTitle": "Arvo",
     "metric0Label": "$ Sales per Point of Distribution",
     "metric1Label": "# of SKU's"
   },
