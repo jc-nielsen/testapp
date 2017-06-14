@@ -16,14 +16,7 @@
 
   var arc = d3.svg.arc()
       .innerRadius(r * .8)
-      .outerRadius(r)
-//      .startAngle(function (d) {
-//        return d.startAngle + Math.PI / 2;
-//      })
-//      .endAngle(function (d) {
-//        return d.endAngle + Math.PI / 2;
-//      })
-      ;
+      .outerRadius(r);
 
   // pie function transform data into specific format
   var pie = d3.layout.pie()
