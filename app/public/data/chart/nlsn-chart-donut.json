@@ -9,29 +9,40 @@
       "top": 10
     },
     "donutRatio": 0.5,
-    "metricColor": "#09578D",
-    "oppositeMetricColor": "#D3D3D3",
-    "textColor": "#777777",
-    "negativeValueColor": "#8B091E",
     "centerDividerColor": "#E5E5E5",
-    "valueFontSize": "12pt",
-    "subValueFontSize": "10pt"
+    "metrics":[
+      {
+        "labelColor": "#888888",
+        "labelFontSize": "12pt",
+        "metricColor": "#09578D",
+        "negativeValueColor": "#8B091E",
+        "valueColor": "#09578D",
+        "valueFontSize": "18pt"
+      },{
+        "labelColor": "#888888",
+        "labelFontSize": "10pt",
+        "metricColor": "#D3D3D3",
+        "negativeValueColor": "#8B091E",
+        "valueColor": "#09578D",
+        "valueFontSize": "10pt"
+      }
+    ]
   },
   "data": [
     {
       "id": 1,
       "label": "Share",
-      "value": "27.3%"
+      "value": 27.3
     },
     {
       "id": 2,
       "label": "Growth",
-      "value": "0.4%"
+      "value": 0.4
     },
     {
       "id": 3,
       "label": "Change",
-      "value": "-0.4%"
+      "value": -0.4
     }
   ]
 }
