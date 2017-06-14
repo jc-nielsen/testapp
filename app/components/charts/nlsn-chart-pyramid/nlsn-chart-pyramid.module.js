@@ -2,8 +2,9 @@
 
 angular.module('nlsnChart.pyramid.module', [])
     .directive('nlsnChartPyramid', [
+      'nlsnChartHelperSvc',
       'nlsnDataSvc',
-      function (nlsnDataSvc) {
+      function (nlsnChartHelperSvc, nlsnDataSvc) {
         var containerElement;
         var theController = function ($scope) {
           $scope.chartData = nlsnDataSvc.getChartDataPyramid();
@@ -35,7 +36,7 @@ angular.module('nlsnChart.pyramid.module', [])
           configureChart(chart);
           createPanels(chart);
           calculateSettings(chart);
-          drawBaseElement(chart);
+          nlsnChartHelperSvc.drawBaseElement(chart);
           drawHeadings(chart);
           drawAxis(chart);
           drawGrid(chart);
@@ -49,6 +50,10 @@ angular.module('nlsnChart.pyramid.module', [])
 
         function configureChart(chart) {
           chart.config = {};
+
+          //TODO move to json
+          chart.options.height = 300;
+          chart.options.width = 400;
 
           // Configurable properties
           chart.config.width = 400;
@@ -188,23 +193,6 @@ angular.module('nlsnChart.pyramid.module', [])
           chart.centerDividerPanel.x = chart.metricsPanel[0].x + chart.metricsPanel[0].width + chart.dataPanel.x;
           chart.centerDividerPanel.y = chart.dataPanel.y;
           chart.centerDividerPanel.height = chart.dataPanel.height;
-        }
-
-        function drawBaseElement(chart) {
-          // Remove any existing chart1 elements.
-          chart.containerElement.selectAll('*').remove();
-
-          chart.containerElement
-              .attr('class', 'nlsn-chart-svg-container');
-
-          chart.svgElement = chart.containerElement.append('svg');
-
-          chart.svgElement
-              .attr('class', 'nlsn-chart-svg-content-responsive')
-              .attr("viewBox", "0 0 " + chart.config.width + " " + chart.config.height)
-              .attr('width', "100%")
-              .attr('height', "100%")
-              .attr("preserveAspectRatio", "xMinYMin meet");
         }
 
         function drawAxis(chart) {

@@ -2,8 +2,9 @@
 
 angular.module('nlsnChart.donut.module', [])
     .directive('nlsnChartDonut', [
+      'nlsnChartHelperSvc',
       'nlsnDataSvc',
-      function (nlsnDataSvc) {
+      function (nlsnChartHelperSvc, nlsnDataSvc) {
         var containerElement;
         var svgElement;
         var theController = function ($scope) {
@@ -23,38 +24,65 @@ angular.module('nlsnChart.donut.module', [])
         };
 
         function renderChart(newValue, oldValue, scope) {
+          var chart = {};
+          var chartData;
+
           if (!(newValue && newValue.data && newValue.data.length)) {
             return;
           }
 
-          var chartData = newValue;
-          var chart;
+          chartData = newValue;
+          chart.containerElement = containerElement;
 
-          nv.utils.windowResize(onResize);
+          //nv.utils.windowResize(onResize);
 
-          function onResize() {
-            chart.update();
-          }
+          //function onResize() {
+          //  chart.update();
+          //}
 
-          nv.addGraph(function () {
-            chart = nv.models.pieChart()
-                .x(function (d) {
-                  return d.label
-                })
-                .y(function (d) {
-                  return d.value
-                })
-                .showLabels(false)
-                .donut(true)
-                .donutRatio(0.6)
-            ;
+          getOptions(chart, chartData);
+          getData(chart, chartData);
+          getConfig(chart);
+          calculateSettings(chart);
+          nlsnChartHelperSvc.drawBaseElement(chart);
+          drawPie(chart);
+          drawCenterDivider(chart);
+          drawLabels(chart);
+          drawMetrics(chart);
+        }
 
-            d3.select("svg")
-                .datum(chartData.data)
-                .call(chart);
+        function getOptions(chart, chartData) {
+          chart.options = chartData.options;
+        }
 
-            return chart;
-          });
+        function getData(chart, chartData) {
+          chart.data = chartData.data;
+        }
+
+        // Configurable Settings - internal to component - not avail from any inputs.
+        function getConfig(chart) {
+          chart.config = {};
+        }
+
+        function calculateSettings(chart) {
+          chart.settings = {};
+          chart.settings.radius = Math.min(chart.options.width, chart.options.height) / 2;
+        }
+
+        function drawPie(chart) {
+
+        }
+
+        function drawCenterDivider(chart) {
+
+        }
+
+        function drawLabels(chart) {
+
+        }
+
+        function drawMetrics(chart) {
+
         }
 
       }])

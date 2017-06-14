@@ -14,6 +14,7 @@ angular.module('myApp', [
   'nlsnChart.pyramid.module',
   'nlsnChart.donut.module',
   'nlsnChart.3.module',
+  'nlsnChartHelperSvc.module',
   'nlsnDataSvc.module'
 ]).config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');
