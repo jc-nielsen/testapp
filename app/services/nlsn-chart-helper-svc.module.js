@@ -3,7 +3,7 @@
 angular.module('nlsnChartHelperSvc.module', [])
   .service('nlsnChartHelperSvc', [function () {
 
-    // Requires chart.containerElement
+    // Requires chart.containerElement, chart.options.width, chart.options.height
     this.drawBaseElement = function (chart) {
       // Remove any existing chart1 elements.
       chart.containerElement.selectAll('*').remove();
