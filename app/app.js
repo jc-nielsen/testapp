@@ -12,7 +12,7 @@ angular.module('myApp', [
   'nlsnChart5Page.module',
   'nlsnChart6Page.module',
   'nlsnChart.pyramid.module',
-  'nlsnChart.donut.module',
+  'nlsnChart.donut-share.module',
   'nlsnChart.3.module',
   'nlsnChartHelperSvc.module',
   'nlsnDataSvc.module'

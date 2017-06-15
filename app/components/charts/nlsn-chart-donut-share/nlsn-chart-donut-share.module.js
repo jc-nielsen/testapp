@@ -1,14 +1,14 @@
 'use strict';
 
-angular.module('nlsnChart.donut.module', [])
-  .directive('nlsnChartDonut', [
+angular.module('nlsnChart.donut-share.module', [])
+  .directive('nlsnChartDonutShare', [
     'nlsnChartHelperSvc',
     'nlsnDataSvc',
     function (nlsnChartHelperSvc, nlsnDataSvc) {
       var containerElement;
       var svgElement;
       var theController = function ($scope) {
-        $scope.chartData = nlsnDataSvc.getChartDataDonut();
+        $scope.chartData = nlsnDataSvc.getChartDataDonutShare();
       };
 
       return {

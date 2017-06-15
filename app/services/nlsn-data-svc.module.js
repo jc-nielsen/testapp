@@ -3,8 +3,8 @@
 angular.module('nlsnDataSvc.module', [])
   .service('nlsnDataSvc', ['$resource', function ($resource) {
 
-    this.getChartDataDonut = function () {
-      var pyramidChartApiUrl = '/public/data/chart/nlsn-chart-donut.json';
+    this.getChartDataDonutShare = function () {
+      var pyramidChartApiUrl = '/public/data/chart/nlsn-chart-donut-share.json';
       var theResource = $resource(pyramidChartApiUrl, null,
         {
           'query': {method: 'GET', isArray: false}
