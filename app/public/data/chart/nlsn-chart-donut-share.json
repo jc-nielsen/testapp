@@ -32,7 +32,7 @@
         "metricColor": "#09578D",
         "negativeValueColor": "#8B091E",
         "valueColor": "#09578D",
-        "valueFontSize": "80",
+        "valueFontSize": "56pt",
         "valueFormat": ".1%"
       },
       {
