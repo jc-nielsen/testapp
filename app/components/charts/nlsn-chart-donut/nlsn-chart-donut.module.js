@@ -256,8 +256,8 @@ angular.module('nlsnChart.donut.module', [])
           var metric;
           for (var i = 0; i < chart.metrics.length; i++) {
             chart.svgElement.append('text')
-                .attr('x', (chart.metricsPanel[i].x + (chart.metricsPanel[i].width / 2)))
-                .attr('y', (chart.metricsPanel[i].y + 30))
+                .attr('x', ((chart.metricsPanel[i].x + (chart.metricsPanel[i].width / 2)) + chart.options.metrics[i].marginLabel.left) - chart.options.metrics[i].marginLabel.right)
+                .attr('y', ((chart.metricsPanel[i].y + chart.metricsPanel[i].height) - chart.options.metrics[i].marginLabel.bottom))
                 .attr('text-anchor', 'middle')
                 .attr('font-size', chart.options.metrics[i].labelFontSize)
                 .attr('fill', chart.options.metrics[i].labelColor)
@@ -275,7 +275,8 @@ angular.module('nlsnChart.donut.module', [])
               metricColor = chart.options.metrics[i].valueColor;
             }
             chart.svgElement.append('text')
-                .attr('transform', 'translate(' + (chart.metricsPanel[i].x + (chart.metricsPanel[i].width / 2)) + ',' + (chart.metricsPanel[i].y + 100) + ')')
+                .attr('x', ((chart.metricsPanel[i].x + (chart.metricsPanel[i].width / 2)) + chart.options.metrics[i].marginValue.left) - chart.options.metrics[i].marginValue.right)
+                .attr('y', ((chart.metricsPanel[i].y + chart.metricsPanel[i].height) - chart.options.metrics[i].marginValue.bottom))
                 .attr('text-anchor', 'middle')
                 .attr('font-size', chart.options.metrics[i].valueFontSize)
                 .attr('fill', metricColor)
