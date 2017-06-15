@@ -8,9 +8,11 @@
       "right": 20,
       "top": 20
     },
+    "gridColor": "#D3D3D3",
+    "gridStrokeWidth": "2",
     "donutRatio": 0.8,
     "centerDividerColor": "#E5E5E5",
-    "metrics":[
+    "metrics": [
       {
         "labelColor": "#888888",
         "labelFontSize": "12pt",
@@ -18,7 +20,8 @@
         "negativeValueColor": "#8B091E",
         "valueColor": "#09578D",
         "valueFontSize": "18pt"
-      },{
+      },
+      {
         "labelColor": "#888888",
         "labelFontSize": "10pt",
         "metricColor": "#D3D3D3",

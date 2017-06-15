@@ -46,7 +46,7 @@ angular.module('nlsnChart.donut.module', [])
         createPanels(chart);
         calculateSettings(chart);
         nlsnChartHelperSvc.drawBaseElement(chart);
-        drawTestPanels(chart);
+        //drawTestPanels(chart);
         drawPie(chart);
         drawCenterDivider(chart);
         drawLabels(chart);
@@ -67,6 +67,7 @@ angular.module('nlsnChart.donut.module', [])
       // Configurable Settings - internal to component - not avail from any inputs.
       function getConfig(chart) {
         chart.config = {};
+        chart.config.centerDividerMargin = 2;
         chart.config.centerDividerWidth = 2;
         chart.config.metricsPanelMargin = 1;
       }
@@ -75,6 +76,9 @@ angular.module('nlsnChart.donut.module', [])
       function createPanels(chart) {
         // Create a panel for the center divider
         chart.centerDividerPanel = {};
+        // Create a panel for the horizontal and vertical lines.
+        chart.centerDividerPanel.horizontalPanel = {};
+        chart.centerDividerPanel.verticlePanel = {};
 
         // The dataPanel is the box containing the data graph area, includes record labels.
         chart.dataPanel = {};
@@ -108,6 +112,7 @@ angular.module('nlsnChart.donut.module', [])
         chart.piePanel.radius = chart.piePanel.diameter / 2;
         chart.piePanel.innerRadius = chart.piePanel.radius * chart.options.donutRatio;
         chart.piePanel.innerDiameter = chart.piePanel.innerRadius * 2;
+        chart.piePanel.arcWidth = chart.piePanel.radius - chart.piePanel.innerRadius;
         chart.piePanel.height = chart.piePanel.diameter;
         chart.piePanel.width = chart.piePanel.diameter;
         chart.piePanel.x = chart.dataPanel.x + ((chart.dataPanel.width - chart.piePanel.width) / 2) + (chart.piePanel.width / 2);
@@ -138,8 +143,22 @@ angular.module('nlsnChart.donut.module', [])
 
         chart.metricsPanel[2].height = chart.piePanel.innerRadius - (chart.config.metricsPanelMargin * 2);
         chart.metricsPanel[2].width = chart.piePanel.innerRadius - (chart.config.metricsPanelMargin * 2);
-        chart.metricsPanel[2].x = chart.dataPanel.x + (chart.piePanel.radius - chart.piePanel.innerRadius) + (chart.config.metricsPanelMargin * 3) + chart.metricsPanel[1].width;
-        chart.metricsPanel[2].y = chart.dataPanel.y + (chart.piePanel.radius - chart.piePanel.innerRadius) + (chart.config.metricsPanelMargin * 3) + chart.metricsPanel[1].height;
+        chart.metricsPanel[2].x = chart.dataPanel.x + chart.piePanel.arcWidth + (chart.config.metricsPanelMargin * 3) + chart.metricsPanel[1].width;
+        chart.metricsPanel[2].y = chart.dataPanel.y + chart.piePanel.arcWidth + (chart.config.metricsPanelMargin * 3) + chart.metricsPanel[1].height;
+
+        // Position the center dividers.
+        chart.centerDividerPanel.horizontalPanel.width = chart.piePanel.innerDiameter - (chart.config.centerDividerMargin * 2);
+        chart.centerDividerPanel.verticlePanel.height = chart.piePanel.innerRadius - (chart.config.centerDividerMargin * 2);
+
+        chart.centerDividerPanel.horizontalPanel.x1 = chart.piePanel.x - ( chart.piePanel.innerRadius - chart.config.centerDividerMargin);
+        chart.centerDividerPanel.horizontalPanel.x2 = chart.centerDividerPanel.horizontalPanel.x1 + chart.centerDividerPanel.horizontalPanel.width;
+        chart.centerDividerPanel.horizontalPanel.y1 = chart.piePanel.y;
+        chart.centerDividerPanel.horizontalPanel.y2 = chart.piePanel.y;
+
+        chart.centerDividerPanel.verticlePanel.x1 = chart.piePanel.x;
+        chart.centerDividerPanel.verticlePanel.x2 = chart.piePanel.x;
+        chart.centerDividerPanel.verticlePanel.y1 = chart.piePanel.y;
+        chart.centerDividerPanel.verticlePanel.y2 = chart.piePanel.y + chart.centerDividerPanel.verticlePanel.height;
       }
 
       function drawTestPanels(chart) {
@@ -202,6 +221,33 @@ angular.module('nlsnChart.donut.module', [])
       }
 
       function drawCenterDivider(chart) {
+        chart.svgElement.append('line')
+          .attr(
+            {
+              'class': 'nlsn-chart-divider',
+              'x1': chart.centerDividerPanel.horizontalPanel.x1,
+              'x2': chart.centerDividerPanel.horizontalPanel.x2,
+              'y1': chart.centerDividerPanel.horizontalPanel.y1,
+              'y2': chart.centerDividerPanel.horizontalPanel.y2,
+              'fill': 'none',
+              'shape-rendering': 'crispEdges',
+              'stroke': chart.options.gridColor,
+              'stroke-width': chart.options.gridStrokeWidth
+            });
+
+        chart.svgElement.append('line')
+          .attr(
+            {
+              'class': 'nlsn-chart-divider',
+              'x1': chart.centerDividerPanel.verticlePanel.x1,
+              'x2': chart.centerDividerPanel.verticlePanel.x2,
+              'y1': chart.centerDividerPanel.verticlePanel.y1,
+              'y2': chart.centerDividerPanel.verticlePanel.y2,
+              'fill': 'none',
+              'shape-rendering': 'crispEdges',
+              'stroke': chart.options.gridColor,
+              'stroke-width': chart.options.gridStrokeWidth
+            });
 
       }
 
