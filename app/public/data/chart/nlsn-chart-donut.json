@@ -15,19 +15,27 @@
     "metrics": [
       {
         "labelColor": "#888888",
-        "labelFontSize": "12pt",
+        "labelFontSize": "14pt",
         "metricColor": "#09578D",
         "negativeValueColor": "#8B091E",
         "valueColor": "#09578D",
-        "valueFontSize": "18pt"
+        "valueFontSize": "24pt"
       },
       {
         "labelColor": "#888888",
-        "labelFontSize": "10pt",
+        "labelFontSize": "12pt",
         "metricColor": "#D3D3D3",
         "negativeValueColor": "#8B091E",
-        "valueColor": "#09578D",
-        "valueFontSize": "10pt"
+        "valueColor": "#888888",
+        "valueFontSize": "12pt"
+      },
+      {
+        "labelColor": "#888888",
+        "labelFontSize": "12pt",
+        "metricColor": "#D3D3D3",
+        "negativeValueColor": "#8B091E",
+        "valueColor": "#888888",
+        "valueFontSize": "12pt"
       }
     ]
   },
