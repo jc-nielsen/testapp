@@ -14,67 +14,70 @@
     "centerDividerColor": "#E5E5E5",
     "metrics": [
       {
-        "name":"donut top text panel",
+        "name": "donut top text panel",
         "labelColor": "#888888",
         "labelFontSize": "24pt",
         "marginLabel": {
           "bottom": 86,
           "left": 0,
-          "right":0,
-          "top":0
+          "right": 0,
+          "top": 0
         },
         "marginValue": {
           "bottom": 8,
           "left": 0,
-          "right":0,
-          "top":0
+          "right": 0,
+          "top": 0
         },
         "metricColor": "#09578D",
         "negativeValueColor": "#8B091E",
         "valueColor": "#09578D",
-        "valueFontSize": "80"
+        "valueFontSize": "80",
+        "valueFormat": ".1%"
       },
       {
-        "name":"donut bottom left text panel",
+        "name": "donut bottom left text panel",
         "labelColor": "#888888",
         "labelFontSize": "18pt",
         "marginLabel": {
           "bottom": 106,
           "left": 10,
-          "right":0,
-          "top":0
+          "right": 0,
+          "top": 0
         },
         "marginValue": {
           "bottom": 60,
           "left": 10,
-          "right":0,
-          "top":0
+          "right": 0,
+          "top": 0
         },
         "metricColor": "#D3D3D3",
         "negativeValueColor": "#8B091E",
         "valueColor": "#888888",
-        "valueFontSize": "32pt"
+        "valueFontSize": "32pt",
+        "valueFormat": ".1%"
       },
       {
-        "name":"donut bottom right text panel",
+        "name": "donut bottom right text panel",
         "labelColor": "#888888",
         "labelFontSize": "18pt",
         "marginLabel": {
           "bottom": 106,
-          "left":0,
+          "left": 0,
           "right": 10,
-          "top":0
+          "top": 0
         },
         "marginValue": {
           "bottom": 60,
-          "left":0,
+          "left": 0,
           "right": 10,
-          "top":0
+          "top": 0
         },
         "metricColor": "#D3D3D3",
         "negativeValueColor": "#8B091E",
         "valueColor": "#888888",
-        "valueFontSize": "32pt"
+        "valueFontSize": "32pt",
+        "valueFormat": ".1%"
       }
     ]
   },
