@@ -1,7 +1,0 @@
-﻿$axure.loadCurrentPage(
-(function() {
-    var _ = function() { var r={},a=arguments; for(var i=0; i<a.length; i+=2) r[a[i]]=a[i+1]; return r; }
-    var _creator = function() { return _(b,c,d,e,f,g,h,g,i,_(j,k),l,[m,n,o,p,q,r,s,t,u,v,w,x,y,z,A],B,_(C,D,E,F,G,H,I,_(),J,_(K,L,M,N,O,_(P,Q,R,S),T,null,U,N,V,N,W,X,Y,null,Z,ba,bb,bc,bd,be,bf,ba),bg,_(),bh,_(),bi,_(bj,[])),bk,_(),bl,_());}; 
-var b="url",c="ci_value.html",d="generationDate",e=new Date(1491397043385.11),f="isCanvasEnabled",g=false,h="isAdaptiveEnabled",i="sketchKeys",j="",k="s0",l="variables",m="OnLoadVariable",n="ProductSelection",o="MarketSelection",p="BenchmarkMktSelection",q="BaseMetricSelection",r="PeriodAggregationSel",s="PeriodEndDateSel",t="PeriodComparisonSel",u="PDExceptionsTab",v="DataPointLabelsOn",w="GridlinesOn",x="CurrSym",y="DontShowConceptWarning",z="CollectionName",A="CollectionReports",B="page",C="packageId",D="c4049b4a98e94550b0e12e7ec444a444",E="type",F="Axure:Page",G="name",H="CI Value",I="notes",J="style",K="baseStyle",L="627587b6038d43cca051c114ac41ad32",M="pageAlignment",N="near",O="fill",P="fillType",Q="solid",R="color",S=0xFFEEEEEE,T="image",U="imageHorizontalAlignment",V="imageVerticalAlignment",W="imageRepeat",X="auto",Y="favicon",Z="sketchFactor",ba="0",bb="colorStyle",bc="appliedColor",bd="fontName",be="Applied Font",bf="borderWidth",bg="adaptiveStyles",bh="interactionMap",bi="diagram",bj="objects",bk="masters",bl="objectPaths";
-return _creator();
-})());

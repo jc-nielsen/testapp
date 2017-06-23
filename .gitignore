@@ -1,9 +1,9 @@
 logs/*
 !.gitkeep
 node_modules/
-bower_components/*
-!bower_components/nvd3chartlibrary-root/
+bower_components/
 tmp
 .DS_Store
 .idea
 _ignore/
+app/bower_components/
